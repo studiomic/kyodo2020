@@ -14,7 +14,15 @@
 /* File...base */
 @import "base";
 /* File...wapper */
-// @import "wapper";
+@import "wapper";
+/* File...common-section.scss */
+@import "common-section.scss";
+/* File...media */
+@import "media";
+
+
+
+
 /* File...section */
 // @import "section";
 /* File...time-stamp */
@@ -22,10 +30,6 @@
 /* File...contact */
 
 
-/* File...Blog-base-responsive */
-// @import "Blog-base-responsive";
-/* File...Blog-top-responsive */
-// @import "Blog-top-responsive";
 /* File...common */
 // @import "common";
 /* File...ThemesPlus */

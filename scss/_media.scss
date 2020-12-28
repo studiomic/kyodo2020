@@ -1,0 +1,39 @@
+// main: ./blog-style.scss
+
+//* contactUs
+//----------------------------------------------------*/
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	// a[href^="tel:"] {
+	// pointer-events: none;
+	// cursor: default;
+	// }
+	a[href^="tel:"]{
+    pointer-events: none;
+  }
+	// .container {
+	// 	// width: 90%;
+	// 	width: 600px;
+	// 	padding: 0 1rem;
+	// }
+
+	.contactUs {
+		width: 940px;
+		// margin: 0 auto;
+		// background: $col-28;
+		// border-radius: 8px;
+		// color: $col-Fa;
+		// padding: 2rem;
+		// div {
+		// 	border: 1px solid $col-Fa;
+		// 	display: flex;
+		// 	// border-radius: 8px;
+		// }
+		// svg {
+		// 	fill: $col-Fa;
+		// }
+
+	}
+} //@media MD 1024
