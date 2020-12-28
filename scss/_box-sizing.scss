@@ -1,0 +1,39 @@
+// main: ./style-front.min.scss
+
+/* BOX　SIZING
+----------------------------------------------------*/
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
+----------------------------------------------------*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+/* HEADER NAV BOX　SIZING
+----------------------------------------------------*/
+// header {
+// 	-webkit-box-sizing: content-box;
+// 	-moz-box-sizing: content-box;
+// 	-o-box-sizing: content-box;
+// 	-ms-box-sizing: content-box;
+// 	box-sizing: content-box;
+// }
+
+/* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
+REMOVE:2018/2/14
+----------------------------------------------------*/
+// pre
+// code {
+// 	white-space: -moz-pre-wrap; /* Mozilla */
+// 	white-space: -pre-wrap;     /* Opera 4-6 */
+// 	white-space: -o-pre-wrap;   /* Opera 7 */
+// 	white-space: pre-wrap;      /* CSS3 */
+// 	word-wrap: break-word;      /* IE 5.5+ */
+// }

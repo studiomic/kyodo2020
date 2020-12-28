@@ -1,0 +1,53 @@
+// main: ../style-front.min.scss
+
+@font-face {
+	font-family: 'Noto Serif Japanese';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/NotoSerifCJKjp-Regular.otf) format('opentype');
+}
+
+@font-face {
+	font-family: 'Noto Serif Japanese';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../fonts/NotoSerifCJKjp-Bold.otf) format('opentype');
+}
+@font-face {
+	font-family: 'Noto Serif Japanese';
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/NotoSerifCJKjp-Black.otf) format('opentype');
+}
+
+$BasefontFamily: 'Lato','Noto Sans JP', system-ui, sans-serif;
+$fontFamilyJP: 'Noto Sans JP', system-ui, sans-serif;
+$fontFamilyEN:'Verdana', sans-serif;
+$fontFamilyLato: 'Lato', 'Open Sans', sans-serif;
+
+// font-family: $fontFamilyJP;
+// font-family: "Times New Roman", Times, serif;
+
+// $fontFamily: "Yu Gothic", YuGothic, 'Lato', "Noto Sans","Hiragino Kaku Gothic Pro", "HiraKakuPro-W6", "HiraMaruPro-W4", Meiryo, sans-serif;
+
+
+// $fontFamilySys: system-ui,"Segoe UI","Yu Gothic UI",sans-serif;
+
+// %fontFamilyAP: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+// %fontFamilyJP:"Noto Serif Japanese","Hiragino Kaku Gothic Pro","HiraKakuPro-W6","HiraMaruPro-W4","Kozuka Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","Noto Sans Japanese","Noto Sans",sans-serif;
+
+
+// %fontFamilyMin:Georgia, "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
+
+// %fontFamilyTimes:'Times', sans-serif;
+
+// font-family: $fontFamily;
+// font-family: $fontFamilyAP;
+// font-family: $fontFamilyJP;
+// font-family: $fontFamilyEN;
+// font-family: $fontFamilyMin;
+// font-family: $fontFamilyTimes;
+// font-family: 'Lato', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Noto Sans JP', sans-serif;

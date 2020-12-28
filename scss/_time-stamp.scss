@@ -1,0 +1,46 @@
+// main: ../style-front.min.scss
+// main: ./style-mod.min.scss
+
+
+//* FRONT-PAGE BLOG SECTION
+//----------------------------------------------------*/
+.ici {
+	max-height: 200px;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+
+
+time {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: inline-flex;
+	// font-family: $fontFamilyLato;
+	font-weight: 300;
+	text-transform: uppercase;
+	flex-direction: column;
+	// flex-basis: 80px;
+	min-width: 80px;
+	max-width: 80px;
+	// margin-right: 10px;
+	text-align: center;
+	padding: 10px 0;
+	background: $col-24;
+	color: $col-F5;
+
+	span:nth-of-type(2) {
+		font-size: 1.5rem;
+		padding: 0.2rem 0;
+	}
+	span {
+		width: 100%;
+		line-height: 1;
+	}
+
+}
