@@ -1,0 +1,50 @@
+// main: ./blog-style.scss
+
+//* contactUs
+//----------------------------------------------------*/
+.contactUs {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	background: $col-28;
+	border-radius: 8px;
+	color: $col-Fa;
+	padding: 2rem;
+	text-align: center;
+	h3 {
+		// display: block;
+		background: $col-28;
+		line-height: 1;
+
+		font-weight: normal;
+	}
+	div {
+		border: 1px solid $col-Fa;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	svg {
+		fill: $col-Fa;
+	}
+	.atto {
+		&:hover, &:active, &:focus {
+			fill: $col-aa;
+			// height: 86px;
+			transition-duration: 1s;
+		}
+	}
+	address {
+		font-family: $fontFamilySys;
+		font-style: normal;
+		font-size: 2rem;
+		margin: 0 2rem;
+		a {
+			color: $col-Fa;
+			&:hover, &:active, &:focus {
+				color: $hover-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}

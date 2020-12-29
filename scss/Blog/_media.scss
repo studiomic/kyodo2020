@@ -1,0 +1,152 @@
+// main: ./blog-style.scss
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (min-width:40em) {}//640px
+@media (max-width:63em) {
+	//* header
+	header {
+		height: 240px;
+		padding-top: 40px;
+		h1 {
+			font-weight: normal;
+			position: relative;
+			span { display: none;}
+			a {
+				background-size: 200px;
+				min-height: 200px;
+				font-size: 3rem;
+				padding-top: 90px;
+				&:hover, &:active, &:focus {
+					background-size: 200px;
+				}
+			}
+		}
+	} //* header
+
+	//* FOOTER
+	footer {
+		min-height: 240px;
+		padding-top: 1rem;
+		h2 {
+			font-size: 1rem;
+			margin-bottom: 1rem;
+			a {
+				background-size: 150px;
+				padding-top: 90px;
+				&:hover, &:active, &:focus {
+					background-size: 150px;
+					color: $col-aa;
+					text-decoration: none;
+				}
+			}
+		}
+		address {
+			margin-bottom: 1rem;
+		}
+
+	} //* FOOTER
+
+
+
+	.contactUs {
+		h3 {
+			// display: block;
+			// background: $col-28;
+			// margin: 0 auto;
+			margin-bottom: 1rem;
+			font-weight: normal;
+		}
+		div {
+			// z-index:1;
+			// position: static;
+			// padding: 1rem;
+			justify-content: center;
+			align-items: center;
+			// flex-direction: column;
+		}
+		svg {
+			width: 60px;
+		}
+		.atto {
+			&:hover, &:active, &:focus {
+				height: 50px;
+			}
+		}
+		address {
+			font-size: 1.2rem;
+		}
+	} //contactUs
+
+} //* @media SM
+
+
+
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	a[href^="tel:"]{
+    pointer-events: none;
+	}
+	footer {
+		// width: 100%;
+		height: 350px;
+		// background: $footer-Bg-Color;
+		// color: $col-F5;
+		// text-align: center;
+		// padding-top: 2rem;
+		address {
+			// font-style: normal;
+			// font-size: 0.8rem;
+			// line-height: 1.7;
+			margin-bottom: 4rem;
+		}
+	}
+
+
+
+	.contactUs {
+		width: 940px;
+
+		h3 {
+			display: block;
+			// background: $col-28;
+			margin: 0 auto -0.5em;
+			// line-height: 1;
+			// width: 100%;
+			width: 40%;
+			z-index:10;
+			position: relative;
+			padding: 0 1rem;
+
+			// padding: 0 1rem;
+			// font-weight: normal;
+		}
+
+		div {
+			z-index:1;
+			position: static;
+			padding: 2rem;
+
+
+
+			// border: 1px solid $col-Fa;
+			// display: flex;
+			// justify-content: center;
+			// align-items: center;
+		}
+		.atto {
+			&:hover, &:active, &:focus {
+				height: 86px;
+			}
+		}
+
+
+
+	}
+} //@media MD 1024
+
+//* @media LG 1200
+//----------------------------------------------------*/
+@media (min-width:75em) {}

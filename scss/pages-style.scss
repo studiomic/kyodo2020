@@ -12,17 +12,16 @@
 /* File...box-sizing */
 @import "box-sizing";
 /* File...base */
-@import "Blog/base";
+@import "Pages/base";
 /* File...share-footer */
 @import "share-footer";
-
 
 /* File...wapper */
 @import "wapper";
 /* File...common-section.scss */
-@import "Blog/common-section.scss";
+@import "Pages/common-section.scss";
 /* File...media */
-@import "Blog/media";
+@import "Pages/media";
 
 
 
@@ -36,5 +35,7 @@
 
 /* File...common */
 // @import "common";
+/* File...ThemesPlus */
+// @import "ThemesPlus";
 /* File...Blog-container */
 // @import "Blog-container";
