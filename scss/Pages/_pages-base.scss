@@ -1,38 +1,17 @@
 // main: ../pages-style.scss
 
-//* HTML BODY
-//----------------------------------------------------*/
-html, body {
-	color: $text-color;
-	background: $col-F;
-	position: relative;
-	font-size: 16px;
-	font-family: $BasefontFamily;
-}
-
-//* ANCHOR
-//----------------------------------------------------*/
-a {
-	text-decoration: none;
-	color: $link-color;
-	&:hover, &:active, &:focus {
-		color: $hover-color;
-		text-decoration: underline;
-	}
-}
-
 /* HEADER
 ----------------------------------------------------*/
 header {
 	position: relative;
-	height: 180px;
-	text-align: center;
 	background: $col-00 url(../img/logo-onwhite.png)no-repeat;
 	background-position: center center;
 	background-size: auto 180px;
+	height: 180px;
+	text-align: center;
 	color: $col-Fa;
-	margin: 0;
-	padding: 0;
+	// margin: 0;
+	// padding: 0;
 	h1 {
 		height: 140px;
 		line-height: 1;
@@ -44,9 +23,7 @@ header {
 			margin: 0 auto;
 			width: 240px;
 			height: 135px;
-
 			&:hover, &:active, &:focus {
-				transition-duration: 1s;
 				background: #aaa;
 				background-size: auto 180px;
 				mix-blend-mode: multiply;
@@ -69,7 +46,6 @@ header {
 			color: $col-Fa;
 
 			&:hover, &:active, &:focus {
-				transition-duration: 1s;
 				color: $col-66;
 				text-decoration: none;
 			}
@@ -77,24 +53,22 @@ header {
 	}
 }
 
-//* FOOTER
+//* Front-Page ONLY FOOTER CLASS
 //----------------------------------------------------*/
 .frontFoot {
-	padding-top: 1rem;
+	padding-top: 2rem;
 	h1 {
 		font-size: 1.4rem;
 		margin-bottom: 1rem;
 		a {
-			background: url(../apple-touch-icon.png)no-repeat;
+			background: url(../img/logo.png)no-repeat;
 			background-position: center top;
-			background-size: 170px;
-			display: block;
+			background-size: 200px;
+			display: inline-block;
+			width: auto;
 			color: $col-F5;
 			padding-top: 130px;
-			// opacity: 0.7;
-			// font-size: 5.4rem;
 			&:hover, &:active, &:focus {
-				transition-duration: 1s;
 				background: url(../img/logo-onwhite.png)no-repeat;
 				background-position: center top;
 				background-size: 200px;
@@ -103,5 +77,8 @@ header {
 			}
 		}
 	}
-
+	small {
+		display: block;
+		margin-top: 4rem;
+	}
 }

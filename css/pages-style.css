@@ -24,7 +24,7 @@
 /* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
 REMOVE:2018/2/14
 ----------------------------------------------------*/
-/* File...base */
+/* File...share-base */
 html, body {
   color: #282828;
   background: #fff;
@@ -41,95 +41,9 @@ a {
 a:hover, a:active, a:focus {
   color: #3D446F;
   text-decoration: underline;
-}
-
-/* HEADER
-----------------------------------------------------*/
-header {
-  position: relative;
-  height: 180px;
-  text-align: center;
-  background: #000 url(../img/logo-onwhite.png) no-repeat;
-  background-position: center center;
-  background-size: auto 180px;
-  color: #fafafa;
-  margin: 0;
-  padding: 0;
-}
-
-header h1 {
-  height: 140px;
-  line-height: 1;
-}
-
-header h1 a {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
-  margin: 0 auto;
-  width: 240px;
-  height: 135px;
-}
-
-header h1 a:hover, header h1 a:active, header h1 a:focus {
   transition-duration: 1s;
-  background: #aaa;
-  background-size: auto 180px;
-  mix-blend-mode: multiply;
 }
 
-header nav ul {
-  list-style: none;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-}
-
-header nav li {
-  padding: 0 1rem;
-}
-
-header nav a {
-  color: #fafafa;
-}
-
-header nav a:hover, header nav a:active, header nav a:focus {
-  transition-duration: 1s;
-  color: #666;
-  text-decoration: none;
-}
-
-.frontFoot {
-  padding-top: 1rem;
-}
-
-.frontFoot h1 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-.frontFoot h1 a {
-  background: url(../apple-touch-icon.png) no-repeat;
-  background-position: center top;
-  background-size: 170px;
-  display: block;
-  color: #f5f5f5;
-  padding-top: 130px;
-}
-
-.frontFoot h1 a:hover, .frontFoot h1 a:active, .frontFoot h1 a:focus {
-  transition-duration: 1s;
-  background: url(../img/logo-onwhite.png) no-repeat;
-  background-position: center top;
-  background-size: 200px;
-  color: #aaa;
-  text-decoration: none;
-}
-
-/* File...share-footer */
 footer {
   width: 100%;
   background: #282828;
@@ -166,12 +80,99 @@ footer h2 a {
 }
 
 footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
-  transition-duration: 1s;
   background: url(../img/logo-onwhite.png) no-repeat;
   background-position: center top;
   background-size: 200px;
   color: #aaa;
   text-decoration: none;
+}
+
+/* File...base */
+/* HEADER
+----------------------------------------------------*/
+header {
+  position: relative;
+  background: #000 url(../img/logo-onwhite.png) no-repeat;
+  background-position: center center;
+  background-size: auto 180px;
+  height: 180px;
+  text-align: center;
+  color: #fafafa;
+}
+
+header h1 {
+  height: 140px;
+  line-height: 1;
+}
+
+header h1 a {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 135px;
+}
+
+header h1 a:hover, header h1 a:active, header h1 a:focus {
+  background: #aaa;
+  background-size: auto 180px;
+  mix-blend-mode: multiply;
+}
+
+header nav ul {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+header nav li {
+  padding: 0 1rem;
+}
+
+header nav a {
+  color: #fafafa;
+}
+
+header nav a:hover, header nav a:active, header nav a:focus {
+  color: #666;
+  text-decoration: none;
+}
+
+.frontFoot {
+  padding-top: 2rem;
+}
+
+.frontFoot h1 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.frontFoot h1 a {
+  background: url(../img/logo.png) no-repeat;
+  background-position: center top;
+  background-size: 200px;
+  display: inline-block;
+  width: auto;
+  color: #f5f5f5;
+  padding-top: 130px;
+}
+
+.frontFoot h1 a:hover, .frontFoot h1 a:active, .frontFoot h1 a:focus {
+  background: url(../img/logo-onwhite.png) no-repeat;
+  background-position: center top;
+  background-size: 200px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.frontFoot small {
+  display: block;
+  margin-top: 4rem;
 }
 
 /* File...wapper */
@@ -222,7 +223,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
 /* File...common-section.scss */
 .contactUs {
   position: relative;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   background: #282828;
   border-radius: 8px;
@@ -250,13 +251,12 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
 
 .contactUs .atto:hover, .contactUs .atto:active, .contactUs .atto:focus {
   fill: #aaa;
-  transition-duration: 1s;
 }
 
 .contactUs address {
   font-family: system-ui, sans-serif;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin: 0 2rem;
 }
 
@@ -269,7 +269,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   text-decoration: underline;
 }
 
-/* File...media */
+/* File...share-media */
 @media (max-width: 63em) {
   footer {
     min-height: 240px;
@@ -281,7 +281,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   }
   footer h2 a {
     background-size: 150px;
-    padding-top: 90px;
+    padding: 90px 1rem 0;
   }
   footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
     background-size: 150px;
@@ -291,13 +291,18 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   footer address {
     margin-bottom: 1rem;
   }
+  .contactUs {
+    padding: 1rem;
+  }
   .contactUs h3 {
-    margin-bottom: 1rem;
+    font-size: 1rem;
     font-weight: normal;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid #fafafa;
   }
   .contactUs div {
-    justify-content: center;
-    align-items: center;
+    border: none;
+    padding: 0 2rem;
   }
   .contactUs svg {
     width: 60px;
@@ -306,7 +311,8 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
     height: 50px;
   }
   .contactUs address {
-    font-size: 1.2rem;
+    font-size: 32px;
+    white-space: nowrap;
   }
 }
 
@@ -338,6 +344,60 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   }
   .contactUs .atto:hover, .contactUs .atto:active, .contactUs .atto:focus {
     height: 86px;
+  }
+}
+
+/* File...media */
+@media (max-width: 63em) {
+  header {
+    max-width: 100%;
+    height: 140px;
+    background-size: auto 120px;
+  }
+  header h1 {
+    height: 100px;
+  }
+  header h1 a {
+    width: 200px;
+    height: 95px;
+  }
+  header nav ul {
+    max-width: 100%;
+    font-size: .8rem;
+  }
+  header nav li {
+    display: block;
+    width: 50%;
+    padding: 0 .5rem;
+  }
+  .frontFoot {
+    max-width: 100%;
+    padding-top: 1rem;
+  }
+  .frontFoot h1 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  .frontFoot h1 a {
+    background-size: 150px;
+    padding: 90px 1rem 0;
+  }
+  .frontFoot h1 a:hover, .frontFoot h1 a:active, .frontFoot h1 a:focus {
+    background-size: 150px;
+  }
+  .frontFoot p {
+    font-size: 0.8rem;
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .frontFoot small {
+    display: block;
+    margin-top: 2rem;
+  }
+  .frontFoot span {
+    display: block;
+    padding-bottom: 1rem;
   }
 }
 

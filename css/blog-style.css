@@ -24,7 +24,7 @@
 /* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
 REMOVE:2018/2/14
 ----------------------------------------------------*/
-/* File...base */
+/* File...share-base */
 html, body {
   color: #282828;
   background: #fff;
@@ -41,53 +41,9 @@ a {
 a:hover, a:active, a:focus {
   color: #3D446F;
   text-decoration: underline;
-}
-
-/* HEADER
-----------------------------------------------------*/
-header {
-  position: relative;
-  background: url(../img/blog-head-full.png) no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 350px;
-  text-align: center;
-  padding-top: 65px;
-}
-
-header h1 {
-  font-weight: normal;
-  position: relative;
-}
-
-header h1 span {
-  display: none;
-}
-
-header h1 a {
-  text-decoration: none;
-  background: url(../img/logo-onwhite.png) no-repeat;
-  background-position: center top;
-  display: block;
-  min-height: 200px;
-  color: #fafafa;
-  opacity: 0.7;
-  font-size: 5.4rem;
-  padding-top: 110px;
-  letter-spacing: 0.1em;
-  mix-blend-mode: hard-light;
-}
-
-header h1 a:hover, header h1 a:active, header h1 a:focus {
   transition-duration: 1s;
-  background: url(../img/logo-transparent.png) no-repeat;
-  background-position: center top;
-  opacity: 0.4;
-  text-decoration: none;
-  color: #242424;
 }
 
-/* File...share-footer */
 footer {
   width: 100%;
   background: #282828;
@@ -124,12 +80,55 @@ footer h2 a {
 }
 
 footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
-  transition-duration: 1s;
   background: url(../img/logo-onwhite.png) no-repeat;
   background-position: center top;
   background-size: 200px;
   color: #aaa;
   text-decoration: none;
+}
+
+/* File...base */
+/* HEADER
+----------------------------------------------------*/
+header {
+  position: relative;
+  background: url(../img/blog-head-full.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 350px;
+  text-align: center;
+  padding-top: 65px;
+}
+
+header h1 {
+  font-weight: normal;
+  position: relative;
+}
+
+header h1 span {
+  display: none;
+}
+
+header h1 a {
+  text-decoration: none;
+  background: url(../img/logo-onwhite.png) no-repeat;
+  background-position: center top;
+  display: block;
+  min-height: 200px;
+  color: #fafafa;
+  opacity: 0.7;
+  font-size: 5.4rem;
+  padding-top: 110px;
+  letter-spacing: 0.1em;
+  mix-blend-mode: hard-light;
+}
+
+header h1 a:hover, header h1 a:active, header h1 a:focus {
+  background: url(../img/logo-transparent.png) no-repeat;
+  background-position: center top;
+  opacity: 0.4;
+  text-decoration: none;
+  color: #242424;
 }
 
 /* File...wapper */
@@ -180,7 +179,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
 /* File...common-section.scss */
 .contactUs {
   position: relative;
-  width: 90%;
+  width: 96%;
   margin: 0 auto;
   background: #282828;
   border-radius: 8px;
@@ -208,13 +207,12 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
 
 .contactUs .atto:hover, .contactUs .atto:active, .contactUs .atto:focus {
   fill: #aaa;
-  transition-duration: 1s;
 }
 
 .contactUs address {
   font-family: system-ui, sans-serif;
   font-style: normal;
-  font-size: 2rem;
+  font-size: 2.6rem;
   margin: 0 2rem;
 }
 
@@ -227,28 +225,8 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   text-decoration: underline;
 }
 
-/* File...media */
+/* File...share-media */
 @media (max-width: 63em) {
-  header {
-    height: 240px;
-    padding-top: 40px;
-  }
-  header h1 {
-    font-weight: normal;
-    position: relative;
-  }
-  header h1 span {
-    display: none;
-  }
-  header h1 a {
-    background-size: 200px;
-    min-height: 200px;
-    font-size: 3rem;
-    padding-top: 90px;
-  }
-  header h1 a:hover, header h1 a:active, header h1 a:focus {
-    background-size: 200px;
-  }
   footer {
     min-height: 240px;
     padding-top: 1rem;
@@ -259,7 +237,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   }
   footer h2 a {
     background-size: 150px;
-    padding-top: 90px;
+    padding: 90px 1rem 0;
   }
   footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
     background-size: 150px;
@@ -269,13 +247,18 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   footer address {
     margin-bottom: 1rem;
   }
+  .contactUs {
+    padding: 1rem 1rem 0;
+  }
   .contactUs h3 {
-    margin-bottom: 1rem;
+    font-size: 1rem;
     font-weight: normal;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid #fafafa;
   }
   .contactUs div {
-    justify-content: center;
-    align-items: center;
+    border: none;
+    padding: 0 1rem;
   }
   .contactUs svg {
     width: 60px;
@@ -284,7 +267,8 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
     height: 50px;
   }
   .contactUs address {
-    font-size: 1.2rem;
+    font-size: 22px;
+    white-space: nowrap;
   }
 }
 
@@ -316,6 +300,30 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
   }
   .contactUs .atto:hover, .contactUs .atto:active, .contactUs .atto:focus {
     height: 86px;
+  }
+}
+
+/* File...media */
+@media (max-width: 63em) {
+  header {
+    height: 240px;
+    padding-top: 40px;
+  }
+  header h1 {
+    font-weight: normal;
+    position: relative;
+  }
+  header h1 span {
+    display: none;
+  }
+  header h1 a {
+    background-size: 200px;
+    min-height: 200px;
+    font-size: 3rem;
+    padding-top: 90px;
+  }
+  header h1 a:hover, header h1 a:active, header h1 a:focus {
+    background-size: 200px;
   }
 }
 

@@ -1,18 +1,11 @@
-// main: ../pages-style.scss
+// main: ./blog-style.scss
+// main: ./pages-style.scss
 
 //* @media SM
 //----------------------------------------------------*/
 // @media (min-width:40em) {}//640px
 @media (max-width:63em) {
-	//* header
-	header {
-		h1 {
-			a {
-				&:hover, &:active, &:focus {
-				}
-			}
-		}
-	} //* header
+	//* header-SHARE
 
 	//* FOOTER
 	footer {
@@ -23,7 +16,7 @@
 			margin-bottom: 1rem;
 			a {
 				background-size: 150px;
-				padding-top: 90px;
+				padding: 90px 1rem 0;
 				&:hover, &:active, &:focus {
 					background-size: 150px;
 					color: $col-aa;
@@ -34,26 +27,21 @@
 		address {
 			margin-bottom: 1rem;
 		}
-
 	} //* FOOTER
 
 
-
+	//* contactUs
 	.contactUs {
+		padding: 1rem 1rem 0;
 		h3 {
-			// display: block;
-			// background: $col-28;
-			// margin: 0 auto;
-			margin-bottom: 1rem;
+			font-size: 1rem;
 			font-weight: normal;
+			padding-bottom: .8rem;
+			border-bottom: 1px solid $col-Fa;
 		}
 		div {
-			// z-index:1;
-			// position: static;
-			// padding: 1rem;
-			justify-content: center;
-			align-items: center;
-			// flex-direction: column;
+			border: none;
+			padding: 0 1rem;
 		}
 		svg {
 			width: 60px;
@@ -64,7 +52,8 @@
 			}
 		}
 		address {
-			font-size: 1.2rem;
+			font-size: 22px;
+			white-space: nowrap;
 		}
 	} //contactUs
 
@@ -80,61 +69,34 @@
     pointer-events: none;
 	}
 	footer {
-		// width: 100%;
 		height: 350px;
-		// background: $footer-Bg-Color;
-		// color: $col-F5;
-		// text-align: center;
-		// padding-top: 2rem;
 		address {
-			// font-style: normal;
-			// font-size: 0.8rem;
-			// line-height: 1.7;
 			margin-bottom: 4rem;
 		}
 	}
 
-
-
 	.contactUs {
 		width: 940px;
-
 		h3 {
 			display: block;
-			// background: $col-28;
 			margin: 0 auto -0.5em;
-			// line-height: 1;
-			// width: 100%;
 			width: 40%;
 			z-index:10;
 			position: relative;
 			padding: 0 1rem;
-
-			// padding: 0 1rem;
-			// font-weight: normal;
 		}
-
 		div {
 			z-index:1;
 			position: static;
 			padding: 2rem;
-
-
-
-			// border: 1px solid $col-Fa;
-			// display: flex;
-			// justify-content: center;
-			// align-items: center;
 		}
 		.atto {
 			&:hover, &:active, &:focus {
 				height: 86px;
 			}
 		}
-
-
-
 	}
+
 } //@media MD 1024
 
 //* @media LG 1200

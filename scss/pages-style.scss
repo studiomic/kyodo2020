@@ -11,17 +11,20 @@
 @import "fontfamily";
 /* File...box-sizing */
 @import "box-sizing";
+/* File...share-base */
+@import "share-base";
 /* File...base */
-@import "Pages/base";
-/* File...share-footer */
-@import "share-footer";
+@import "Pages/pages-base";
 
 /* File...wapper */
 @import "wapper";
 /* File...common-section.scss */
-@import "Pages/common-section.scss";
+@import "common-section.scss";
+
+/* File...share-media */
+@import "share-media";
 /* File...media */
-@import "Pages/media";
+@import "Pages/pages-media";
 
 
 

@@ -1,26 +1,5 @@
 // main: ../blog-style.scss
 
-//* HTML BODY
-//----------------------------------------------------*/
-html, body {
-	color: $text-color;
-	background: $col-F;
-	position: relative;
-	font-size: 16px;
-	font-family: $BasefontFamily;
-}
-
-//* ANCHOR
-//----------------------------------------------------*/
-a {
-	text-decoration: none;
-	color: $link-color;
-	&:hover, &:active, &:focus {
-		color: $hover-color;
-		text-decoration: underline;
-	}
-}
-
 /* HEADER
 ----------------------------------------------------*/
 header {
@@ -47,16 +26,11 @@ header {
 			padding-top: 110px;
 			letter-spacing: 0.1em;
 			mix-blend-mode: hard-light;
-
 			&:hover, &:active, &:focus {
-				transition-duration: 1s;
 				background: url(../img/logo-transparent.png)no-repeat;
-
 				background-position: center top;
 				opacity: 0.4;
 				text-decoration: none;
-				// color: $col-Fa;
-
 				color: $col-24;
 			}
 		}
