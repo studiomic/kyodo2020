@@ -2,17 +2,37 @@
 <html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 <head>
 	<meta charset="UTF-8">
-	<title>Kyoudou-Front-page</title>
+	<title>Kyoudou-Front-NAV</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/pages-style.css">
 
+
+	<!-- drawer.css -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css"> -->
+	<!-- jquery & iScroll -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+	<!-- drawer.js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+
+	<script src="js/nav.js"></script>
+	<link rel="stylesheet" href="css/pages-style.css">
 </head>
 
-<body>
-	<header>
+<body class="drawer drawer--top">
+	<header role="banner">
+		<nav class="nav-bar">
+			<h1><a href="#">株式会社共同</a></h1>
+			<ul>
+				<li><a href="#">会社概要</a></li>
+				<li><a href="#">運送・貨物・倉庫</a></li>
+				<li><a href="#">旅客事業部</a></li>
+				<li><a href="#">採用情報</a></li>
+			</ul>
+		</nav>
+
 		<h1><a href="#">Kyoudou</a></h1>
 		<nav class="main-nav">
 			<ul>
@@ -23,14 +43,39 @@
 			</ul>
 		</nav>
 
-	</header>
+		<button type="button" class="drawer-toggle drawer-hamburger">
+			<span class="sr-only">toggle navigation</span>
+			<span class="drawer-hamburger-icon"></span>
+		</button>
+		<nav class="drawer-nav" role="navigation">
+			<ul class="drawer-menu">
+				<li><a class="drawer-brand" href="#">Brand</a></li>
+				<li><a class="drawer-menu-item" href="#">会社概要</a></li>
+				<li><a class="drawer-menu-item" href="#">NEWS</a></li>
+				<li><a class="drawer-menu-item" href="#">物流・運送・貨物事業</a></li>
+				<li><a class="drawer-menu-item" href="#">横浜営業所</a></li>
+				<li><a class="drawer-menu-item" href="#">厚木営業所</a></li>
+				<li><a class="drawer-menu-item" href="#">古賀営業所</a></li>
+				<li><a class="drawer-menu-item" href="#">旅客事業</a></li>
+				<li><a class="drawer-menu-item" href="#">採用情報</a></li>
+				<li><a class="drawer-menu-item" href="#">お問い合わせ</a></li>
+				<li><a class="drawer-menu-item" href="#">プライバシーポリシー</a></li>
+				<li><a class="drawer-menu-item" href="#">BLOG</a></li>
+			</ul>
+		</nav>
+  </header>
+
+	<br><br><br><br>
+	<br><br><br><br>
+	<br><br><br><br>
 
 
-	<main>
+
+  <main role="main">
 		<section class="container">
 		</section>
 
-<br><br><br><br>
+		<br><br><br><br>
 
 		<section class="contactUs">
 			<h3>お問い合わせは、お電話かEメールで</h3>
@@ -47,36 +92,39 @@
 				</p>
 			</div>
 		</section>
-	</main>
-	<!-- <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path d="M19 2c0-1.104-.896-2-2-2h-10c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10c1.104 0 2-.896 2-2v-20zm-8.5 0h3c.276 0 .5.224.5.5s-.224.5-.5.5h-3c-.276 0-.5-.224-.5-.5s.224-.5.5-.5zm1.5 20c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-14.024h10v14.024z"/></svg> -->
 
-	<br><br><br><br>
-	<br><br><br><br>
-	<br><br><br><br>
-	<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+		<br><br><br><br>
+
+  </main>
 
 
-<!--
+
 	<footer>
 		<h2><a href="#">株式会社共同</a></h2>
 		<address>
 			<p>〒244-0845 神奈川県横浜市栄区金井町164-1</p>
 			<p>TEL &nbsp; 045-851-1551 &nbsp; &nbsp; FAX &nbsp; 045-851-0081</p>
 		</address>
-		<small>Copyright &copy; 2020 Kyoudou Co.,Ltd. All Rights Reserved.</small>
-	</footer>
- -->
-	<footer class="frontFoot">
-		<!-- <img src="apple-touch-icon.png" alt=""> -->
-		<h1><a href="#">株式会社共同</a></h1>
-		<p>物流・運送・貨物事業部　一般貨物・特殊輸送・専属輸送・大型倉庫</p>
-		<p>旅客事業部　乗合バス・貸切バス・特定バス・福祉施設送迎バス</p>
 		<small>Copyright &copy; 2020 Kyoudou Co.,Ltd. <span>All Rights Reserved.</span></small>
 	</footer>
 
-
-
-
-
+<script>
+	$(document).ready(function() {
+	  $('.drawer').drawer();
+	});
+</script>
 </body>
 </html>
