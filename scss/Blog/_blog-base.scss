@@ -15,10 +15,12 @@ header {
 		position: relative;
 		span { display: none;}
 		a {
+			display: block;
+			width: 300px;
+			margin: 0 auto;
 			text-decoration: none;
 			background: url(../img/logo-onwhite.png)no-repeat;
 			background-position: center top;
-			display: block;
 			min-height: 200px;
 			color: $col-Fa;
 			opacity: 0.7;
@@ -33,6 +35,33 @@ header {
 				text-decoration: none;
 				color: $col-24;
 			}
+		}
+	}
+}
+/* 2ND NAV BAR
+----------------------------------------------------*/
+.nav-bar {
+	// background-color: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.9) url(../img/kyoudou.png)no-repeat;
+	background-position: center center;
+	display: none;
+	height: 60px;
+	h2 {
+		text-align: center;
+		a {
+			// border: 1px solid $blue;
+			display: block;
+			width: 160px;
+			height: 60px;
+			margin: 0 auto;
+			text-indent: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			&:hover, &:active, &:focus {
+				background-color: rgba(0, 0, 0, 0.6);
+				background-blend-mode: darken;
+			}
+
 		}
 	}
 }

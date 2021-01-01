@@ -44,6 +44,44 @@ a:hover, a:active, a:focus {
   transition-duration: 1s;
 }
 
+nav a {
+  color: #fafafa;
+}
+
+nav a:hover, nav a:active, nav a:focus {
+  color: #666;
+  text-decoration: none;
+}
+
+.drawer-menu {
+  padding-bottom: 2rem;
+}
+
+.drawer-menu li {
+  display: block;
+  padding: .75rem;
+}
+
+.drawer-menu li:last-of-type {
+  padding-bottom: 3rem;
+}
+
+a.drawer-brand {
+  display: inline-block;
+  background: url(../img/kyoudou.png) no-repeat;
+  background-position: center center;
+  width: 160px;
+  height: 50px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+a:hover.drawer-brand {
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+
 footer {
   width: 100%;
   background: #282828;
@@ -141,21 +179,13 @@ nav.main-nav li {
   padding: 0 1rem;
 }
 
-nav.main-nav a {
-  color: #fafafa;
-}
-
-nav.main-nav a:hover, nav.main-nav a:active, nav.main-nav a:focus {
-  color: #666;
-  text-decoration: none;
-}
-
 /* 2ND NAV BAR
 ----------------------------------------------------*/
 .nav-bar {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   position: relative;
   display: none;
+  height: 60px;
 }
 
 .nav-bar h1 {
@@ -446,6 +476,9 @@ nav.main-nav a:hover, nav.main-nav a:active, nav.main-nav a:focus {
     width: 50%;
     padding: 0 .5rem;
   }
+  .nav-bar ul {
+    display: none;
+  }
   .frontFoot {
     max-width: 100%;
     padding-top: 1rem;
@@ -492,17 +525,6 @@ nav.main-nav a:hover, nav.main-nav a:active, nav.main-nav a:focus {
   height: 100%;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.9);
-}
-
-.drawer-brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  line-height: 3.75rem;
-  display: block;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
-  text-decoration: none;
-  color: #fff;
 }
 
 .drawer-menu {
@@ -661,244 +683,6 @@ nav.main-nav a:hover, nav.main-nav a:active, nav.main-nav a:focus {
   width: auto;
   height: auto;
   margin: 0;
-}
-
-/*!------------------------------------*    Sidebar
-\*!------------------------------------*/
-.drawer--sidebar {
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.drawer--sidebar .drawer-contents {
-  background-color: #fff;
-}
-
-@media (min-width: 64em) {
-  .drawer--sidebar .drawer-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-  .drawer--sidebar .drawer-nav {
-    display: block;
-    transform: none;
-    position: fixed;
-    width: 12.5rem;
-    height: 100%;
-  }
-  /*! Left */
-  .drawer--sidebar.drawer--left .drawer-nav {
-    left: 0;
-    border-right: 1px solid #ddd;
-  }
-  .drawer--sidebar.drawer--left .drawer-contents {
-    margin-left: 12.5rem;
-  }
-  /*! Right */
-  .drawer--sidebar.drawer--right .drawer-nav {
-    right: 0;
-    border-left: 1px solid #ddd;
-  }
-  .drawer--sidebar.drawer--right .drawer-contents {
-    margin-right: 12.5rem;
-  }
-  /*! container */
-  .drawer--sidebar .drawer-container {
-    max-width: 48rem;
-  }
-}
-
-@media (min-width: 75em) {
-  .drawer--sidebar .drawer-nav {
-    width: 16.25rem;
-  }
-  .drawer--sidebar.drawer--left .drawer-contents {
-    margin-left: 16.25rem;
-  }
-  .drawer--sidebar.drawer--right .drawer-contents {
-    margin-right: 16.25rem;
-  }
-  /*! container */
-  .drawer--sidebar .drawer-container {
-    max-width: 60rem;
-  }
-}
-
-/*!------------------------------------*    Navbar
-\*!------------------------------------*/
-.drawer--navbarTopGutter {
-  padding-top: 3.75rem;
-}
-
-.drawer-navbar .drawer-navbar-header {
-  border-bottom: 1px solid #ddd;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.drawer-navbar {
-  z-index: 102;
-  top: 0;
-  width: 100%;
-}
-
-/*! .drawer-navbar modifier */
-.drawer-navbar--fixed {
-  position: fixed;
-}
-
-.drawer-navbar-header {
-  position: relative;
-  z-index: 102;
-  box-sizing: border-box;
-  width: 100%;
-  height: 3.75rem;
-  padding: 0 0.75rem;
-  text-align: center;
-}
-
-.drawer-navbar .drawer-brand {
-  line-height: 3.75rem;
-  display: inline-block;
-  padding-top: 0;
-  padding-bottom: 0;
-  text-decoration: none;
-}
-
-.drawer-navbar .drawer-brand:hover {
-  background-color: transparent;
-}
-
-.drawer-navbar .drawer-nav {
-  padding-top: 3.75rem;
-}
-
-.drawer-navbar .drawer-menu {
-  padding-bottom: 7.5rem;
-}
-
-@media (min-width: 64em) {
-  .drawer-navbar {
-    height: 3.75rem;
-    border-bottom: 1px solid #ddd;
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  .drawer-navbar .drawer-navbar-header {
-    position: relative;
-    display: block;
-    float: left;
-    width: auto;
-    padding: 0;
-    border: 0;
-  }
-  .drawer-navbar .drawer-menu--right {
-    float: right;
-  }
-  .drawer-navbar .drawer-menu li {
-    float: left;
-  }
-  .drawer-navbar .drawer-menu-item {
-    line-height: 3.75rem;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .drawer-navbar .drawer-hamburger {
-    display: none;
-  }
-  .drawer-navbar .drawer-nav {
-    position: relative;
-    left: 0;
-    overflow: visible;
-    width: auto;
-    height: 3.75rem;
-    padding-top: 0;
-    transform: translate3d(0, 0, 0);
-  }
-  .drawer-navbar .drawer-menu {
-    padding: 0;
-  }
-  /*! dropdown */
-  .drawer-navbar .drawer-dropdown-menu {
-    position: absolute;
-    width: 16.25rem;
-    border: 1px solid #ddd;
-  }
-  .drawer-navbar .drawer-dropdown-menu-item {
-    padding-left: 0.75rem;
-  }
-}
-
-/*!------------------------------------*    Dropdown
-\*!------------------------------------*/
-.drawer-dropdown-menu {
-  display: none;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-}
-
-.drawer-dropdown-menu > li {
-  width: 100%;
-  list-style: none;
-}
-
-.drawer-dropdown-menu-item {
-  line-height: 3.75rem;
-  display: block;
-  padding: 0;
-  padding-right: 0.75rem;
-  padding-left: 1.5rem;
-  text-decoration: none;
-  color: #fff;
-}
-
-.drawer-dropdown-menu-item:hover {
-  text-decoration: underline;
-  color: #555;
-  background-color: transparent;
-}
-
-/*! open */
-.drawer-dropdown.open > .drawer-dropdown-menu {
-  display: block;
-}
-
-/*! drawer-caret */
-.drawer-dropdown .drawer-caret {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 4px;
-  transition: transform .2s ease, opacity .2s ease;
-  transform: rotate(0deg);
-  vertical-align: middle;
-  border-top: 4px solid;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
-}
-
-/*! open */
-.drawer-dropdown.open .drawer-caret {
-  transform: rotate(180deg);
-}
-
-/*!------------------------------------*    Container
-\*!------------------------------------*/
-.drawer-container {
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 64em) {
-  .drawer-container {
-    max-width: 60rem;
-  }
-}
-
-@media (min-width: 75em) {
-  .drawer-container {
-    max-width: 70rem;
-  }
 }
 
 /* File...section */

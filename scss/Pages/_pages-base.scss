@@ -35,8 +35,6 @@ header {
 nav.main-nav {
 	position: relative;
 	z-index: 10;
-
-
 	ul {
 		list-style: none;
 		text-transform: uppercase;
@@ -48,13 +46,13 @@ nav.main-nav {
 	li {
 		padding: 0 1rem;
 	}
-	a {
-		color: $col-Fa;
-		&:hover, &:active, &:focus {
-			color: $col-66;
-			text-decoration: none;
-		}
-	}
+	// a {
+	// 	color: $col-Fa;
+	// 	&:hover, &:active, &:focus {
+	// 		color: $col-66;
+	// 		text-decoration: none;
+	// 	}
+	// }
 }
 /* 2ND NAV BAR
 ----------------------------------------------------*/
@@ -62,9 +60,11 @@ nav.main-nav {
 	// background: $col-28;
 	// background: $col-14;
 	// background-color: rgba(0, 0, 0, 0.84);
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.9);
 	position: relative;
 	display: none;
+	height: 60px;
+
 	h1 {
 		background: url(../img/logo-onwhite.png)no-repeat;
 		background-position: center left;

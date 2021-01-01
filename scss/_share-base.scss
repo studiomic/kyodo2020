@@ -1,3 +1,6 @@
+// main: ./blog-style.scss
+// main: ./pages-style.scss
+
 //* HTML BODY
 //----------------------------------------------------*/
 html, body {
@@ -18,6 +21,47 @@ a {
 		text-decoration: underline;
 		transition-duration: 1s;
 	}
+}
+
+//* DRAWER + MAIN NAV SHARE STYLE
+//----------------------------------------------------*/
+nav {
+	a {
+		color: $col-Fa;
+		&:hover, &:active, &:focus {
+			color: $col-66;
+			text-decoration: none;
+		}
+	}
+}
+
+.drawer-menu {
+	padding-bottom: 2rem;
+	li {
+		// font-size: $drawer-fontSize;
+		display: block;
+		padding: .75rem;
+	}
+	li:last-of-type {
+		padding-bottom: 3rem;
+	}
+}
+
+a.drawer-brand {
+	display: inline-block;
+   background: url(../img/kyoudou.png)no-repeat;
+   background-position: center center;
+	width: 160px;
+   height: 50px;
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   // border: 1px solid $red;
+}
+
+a:hover.drawer-brand {
+	background-color: rgba(0, 0, 0, 0.6);
+	background-blend-mode: darken;
 }
 
 //* FOOTER
