@@ -360,16 +360,23 @@ nav.main-nav li {
   position: relative;
 }
 
+.postFront img {
+  width: 460px;
+}
+
 .postFront h2 {
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
-  background: #fff;
-  background: #ccc;
+  background: rgba(255, 255, 255, 0.8);
   margin-bottom: 1rem;
   display: inline-block;
   padding: 1rem;
   position: relative;
   margin-top: -40px;
+}
+
+.postFront section section p {
+  margin: 0 0 1rem;
 }
 
 .postFront article:nth-child(odd) {
@@ -382,46 +389,100 @@ nav.main-nav li {
   z-index: -1;
   top: 0;
   bottom: 0;
-  left: -50%;
-  width: 100%;
+  left: -500px;
+  width: 1000px;
+}
+
+.postFront article:nth-child(odd) img {
+  margin-right: 10px;
+}
+
+.postFront article:nth-child(odd) img:nth-of-type(2) {
+  position: absolute;
+  top: 10px;
 }
 
 .postFront article:nth-child(odd) h2:before {
+  position: absolute;
   content: " ";
   background: #fff;
-  background: #ccc;
-  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
   z-index: -1;
   top: 0;
   bottom: 0;
   left: -200%;
-  width: 200%;
+  width: 300%;
+  box-shadow: -2px -1px 2px rgba(40, 40, 40, 0.2);
 }
 
 .postFront article:nth-child(odd) h2:after {
   position: absolute;
   content: " ";
-  background: #ddd;
-  border-top: 1px solid #282828;
+  border-top: 1px solid #333;
   width: 100%;
-  height: 10px;
+  height: 1px;
   display: block;
-  left: -125%;
-  width: 220%;
+  left: -225%;
+  width: 320%;
+}
+
+.postFront article:nth-child(odd) section section {
+  padding: 1rem 1rem 2rem 0;
 }
 
 .postFront article:nth-child(even) {
+  text-align: right;
   z-index: 1;
 }
 
 .postFront article:nth-child(even):after {
   content: " ";
   position: absolute;
-  z-index: -1;
+  z-index: -3;
   top: 0;
   bottom: 0;
   left: 50%;
   width: 100%;
+  display: block;
+}
+
+.postFront article:nth-child(even) h2:before {
+  position: absolute;
+  content: " ";
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1500px;
+  box-shadow: -2px -1px 2px rgba(40, 40, 40, 0.2);
+}
+
+.postFront article:nth-child(even) h2:after {
+  position: absolute;
+  content: " ";
+  background: #ddd;
+  border-top: 1px solid #333;
+  width: 100%;
+  height: 1px;
+  display: block;
+  left: 1rem;
+  width: 320%;
+}
+
+.postFront article:nth-child(even) img:nth-of-type(1) {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.postFront article:nth-child(even) section section {
+  text-align: left;
+  padding: 1rem 0 2rem 1rem;
+}
+
+.postFront article:nth-child(even) section section p {
+  margin: 0 0 1rem;
 }
 
 @media (max-width: 63em) {

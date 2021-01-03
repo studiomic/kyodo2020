@@ -217,30 +217,20 @@ header h1 a:hover, header h1 a:active, header h1 a:focus {
   line-height: 1.7;
 }
 
-.container p {
-  margin-bottom: 1rem;
+.wf5 {
+  background: #f5f5f5;
 }
 
-.ikenokoi {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  min-height: 40vh;
-  background-image: url(../img/pict-04.jpg);
-  mix-blend-mode: hard-light;
-  mix-blend-mode: color-dodge;
-  mix-blend-mode: multiply;
-  mix-blend-mode: difference;
+@media (max-width: 63em) {
+  .container {
+    width: 100%;
+  }
 }
 
-.kanreiki {
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  min-height: 40vh;
-  background-image: url(../img/photo-01.jpg);
-  mix-blend-mode: hard-light;
-  background-attachment: fixed;
+@media (min-width: 64em) {
+  .container {
+    width: 940px;
+  }
 }
 
 /* File...common-section.scss */
