@@ -31,24 +31,44 @@
 
 //* FRONT PAGE ENTRYS
 //----------------------------------------------------*/
-$uptoh2:40px;
 .postFront {
 	margin-top: 80px;
 	position: relative;
 	max-width: 100%;
 	overflow: hidden;
 	article {
-		background: $col-F5;
 		position: relative;
+		background: $col-F5;
+		width: 100%;
+		padding-top: 2rem;
+		margin-bottom: 2rem;
 	}
 	h2 {
 		font-family: $fontFamilyMIN;
 		font-weight: 500;
 		background: rgba(255,255,255,.8);
 		margin-bottom: 1rem;
-		display: inline-block;
 		padding: 1rem;
 		position: relative;
+		display: inline-block;
+
+		&:before,&:after {
+			position: absolute;
+			content: " ";
+			top: 0;
+		}
+		&:before {
+			bottom: 0;
+			background: rgba(255,255,255,.8);
+			box-shadow: -2px -1px 2px rgba(40,40,40,.2);
+			z-index: -1;
+		}
+		&:after {
+			// border-bottom: 1px solid $col-33;
+			display: block;
+			width: 100%;
+			height: 1px;
+		}
 	}
 	section section {
 		padding: 1rem;
@@ -57,51 +77,34 @@ $uptoh2:40px;
 		}
 	}
 
-	//* FRONT PAGE ENTRYS ODD + EVEN = ALL
-	//----------------------------------------------------*/
-	article {
-		&:before,&:after {
-			position: absolute;
-			content: " ";
-			background: $col-F5;
-			top: 0;
-			bottom: 0;
-		}
-
-		h2 {
-			&:before,&:after {
-				position: absolute;
-				content: " ";
-			}
-			&:before {
-				background: rgba(255,255,255,.8);
-				z-index: -1;
-				top: 0;
-				bottom: 0;
-				box-shadow: -2px -1px 2px rgba(40,40,40,.2);
-			}
-			&:after {
-				display: block;
-				// border-top: 1px solid $col-66;
-				border-top: 1px solid $rgb-04;
-				// border-top: 1px solid RED;
-				height: 1px;
-			}
-		}
-	}
 	//* FRONT PAGE ENTRYS Kisu.1.3 ODD
-	//----------------------------------------------------*/
 	article:nth-child(odd) {
 		h2 {
+			&:before {
+				left: -200%;
+				width: 300%;
+			}
 			&:after {
-				width: 100%;
+				left: -225%;
+				width: 320%;
 			}
 		}
 	}
 
 	//* FRONT PAGE ENTRYS Gusu.2 EVEN
-	//----------------------------------------------------*/
 	article:nth-child(even) {
+		z-index: 1;
+		&:after {
+			content: " ";
+			background: $col-F5;
+			position: absolute;
+			z-index: -3;
+			top: 0;
+			bottom: 0;
+			left: 50%;
+			width: 100%;
+			display: block;
+		}
 		h2 {
 			&:before {
 				left: 0;
@@ -134,23 +137,14 @@ $uptoh2:40px;
 			}
 		}
 	}
-	//* FRONT PAGE POST
+	//* FRONT PAGE ENTRYS
 	.postFront {
-		article {
-			width: 100%;
-			padding-top: 1rem;
-			margin-bottom: 2rem;
-		}
-		h2 {
-			width: 100%;
-		}
 		img {
 			width: 100%;
 		}
 	}
-} //* @media SM
 
-
+}
 
 //* @media MD 1024
 //----------------------------------------------------*/
@@ -178,32 +172,43 @@ $uptoh2:40px;
 			}
 		}
 	} //.newsFront
-	// .postFront {
-	// 	article {
-	// 	}
-	// }
 
-	//* FRONT PAGE ENTRYS @media MD 1024
+	//* FRONT PAGE ENTRYS 1024
 	//----------------------------------------------------*/
+	$uptoh2:40px;
+
 	.postFront {
+		margin-top: 80px;
 		padding-top: $uptoh2;
+		// max-width: 100%;
+		// overflow: hidden;
 		article {
 			width: 940px;
 			margin: 0 auto 80px;
+			&:before,&:after {
+				content: " ";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				background: $col-F5;
+				z-index: -3;
+			}
+
 		}
 		img {
 			width: 460px;
 		}
 		h2 {
 			margin-top: -$uptoh2;
+			border: 1px solid $blue;
+
 		}
 
-		//* FRONT PAGE ENTRYS Kisu.1.3 ODD @media MD 1024
+		//* FRONT PAGE ENTRYS Kisu.1.3 ODD
 		//----------------------------------------------------*/
 		article:nth-child(odd) {
 			z-index: 1;
 			&:before {
-				z-index: -1;
 				left: -500px;
 				width: 1000px;
 			}
@@ -214,14 +219,28 @@ $uptoh2:40px;
 				position: absolute;
 				top: 10px;
 			}
-
 			h2 {
 				&:before {
+					// position: absolute;
+					// content: " ";
+					// background: $col-F;
+					background: rgba(255,255,255,.8);
+					z-index: -1;
+					top: 0;
+					bottom: 0;
+					left: -200%;
+					width: 200%;
 					left: -200%;
 					width: 300%;
+					box-shadow: -2px -1px 2px rgba(40,40,40,.2);
 				}
 				&:after {
-					width: 100%;
+					// position: absolute;
+					// content: " ";
+					// border-top: 1px solid $col-33;
+					// width: 100%;
+					// height: 1px;
+					// display: block;
 					left: -225%;
 					width: 320%;
 				}
@@ -231,22 +250,45 @@ $uptoh2:40px;
 			}
 		}
 
-		//* FRONT PAGE ENTRYS Gusu.2 EVEN @media MD 1024
+		//* FRONT PAGE ENTRYS Gusu.2 EVEN
 		//----------------------------------------------------*/
 		article:nth-child(even) {
 			text-align: right;
 			z-index: 1;
 			&:after {
-				z-index: -3;
+				// z-index: -3;
+				// content: " ";
+				// background: $col-F5;
+				// position: absolute;
+				// top: 0;
+				// bottom: 0;
 				left: 50%;
 				width: 100%;
 				display: block;
 			}
 			h2 {
 				&:before {
+					// position: absolute;
+					// content: " ";
+					background: rgba(255,255,255,.8);
+					// background: $col-dd;
+					z-index: -1;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					left: -200%;
+					width: 200%;
 					width: 1500px;
+					box-shadow: -2px -1px 2px rgba(40,40,40,.2);
 				}
 				&:after {
+					// position: absolute;
+					// content: " ";
+					// background: #ddd;
+					// border-top: 1px solid $col-33;
+					// width: 100%;
+					// height: 1px;
+					display: block;
 					left: 1rem;
 					width: 320%;
 				}
@@ -255,8 +297,8 @@ $uptoh2:40px;
 				position: absolute;
 				left :10px;
 				top: 10px;
-				// border: 1px solid $red;
 			}
+
 			section section {
 				text-align: left;
 				padding: 1rem 0 2rem 1rem;
@@ -267,4 +309,4 @@ $uptoh2:40px;
 		} //even
 	}//* FRONT PAGE ENTRYS
 
-} //* @media MD 1024
+}
