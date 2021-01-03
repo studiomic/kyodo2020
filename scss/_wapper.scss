@@ -1,5 +1,4 @@
-// main: ../style-front.min.scss
-// main: ../pages-style.scss
+// main: ./pages-style.scss
 
 //* BASE BOX STYLE
 //----------------------------------------------------*/
@@ -18,43 +17,51 @@
 	display: flex;
 	flex-direction: column;
 }
-.container { //width: 600px;
+.container { //width: 940px;
 	margin: 0 auto;
 	line-height: 1.7;
-	p {
-		margin-bottom: 1rem;
-	}
+	// p {
+	// 	margin-bottom: 1rem;
+	// }
 }
 
-//* BG STYLE
+//* BLOCK COLOR SECTION
 //----------------------------------------------------*/
-@mixin Bgtype {
-	width: 100%;
-	background-position: center;
-	// background-attachment: fixed;
-	background-size: cover;
-	min-height: 40vh;
-	// position: relative;
+.wf5 {
+	background: $col-F5;
 }
 
-.ikenokoi {
-	@include Bgtype;
-	background-image: url(../img/pict-04.jpg);
-	// background-image: url(../img/pict-06.jpg);
-	// background-image: url(../img/photo-119.jpg);
-	// background-image: url(../img/bokeh-03.png);
-	// background-attachment: fixed;
-	// mix-blend-mode: soft-light;
 
-	mix-blend-mode: hard-light;
-	mix-blend-mode: color-dodge;
-	mix-blend-mode: multiply;
-	mix-blend-mode: difference;
-}
+//* @media SM
+//----------------------------------------------------*/
+@media (max-width:63em) {
+	.container {
+		width: 100%;
+	}
 
-.kanreiki {
-	@include Bgtype;
-	background-image: url(../img/photo-01.jpg);
-	mix-blend-mode: hard-light;
-	background-attachment: fixed;
-}
+} //* @media SM
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.container {
+		width: 940px;
+	}
+
+
+} //* @media MD 1024
+
+
+
+// @mixin Bgtype {
+// 	width: 100%;
+// 	background-position: center;
+// 	background-size: cover;
+// 	min-height: 40vh;
+// }
+// .kanreiki {
+// 	@include Bgtype;
+// 	background-image: url(../img/photo-01.jpg);
+// 	mix-blend-mode: hard-light;
+// 	background-attachment: fixed;
+// }

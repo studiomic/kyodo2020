@@ -1,7 +1,14 @@
+// main: ./pages-style.scss
 // main: ./blog-style.scss
 
-//* LOADER :not
+//* TATEGAKI
 //----------------------------------------------------*/
+.vertical {
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+}
+
+
 /*.none {
 	display: none;
 }

@@ -40,7 +40,6 @@ a {
 
 a:hover, a:active, a:focus {
   color: #3D446F;
-  text-decoration: underline;
   transition-duration: 1s;
 }
 

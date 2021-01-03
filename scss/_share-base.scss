@@ -18,7 +18,7 @@ a {
 	color: $link-color;
 	&:hover, &:active, &:focus {
 		color: $hover-color;
-		text-decoration: underline;
+		// text-decoration: underline;
 		transition-duration: 1s;
 	}
 }

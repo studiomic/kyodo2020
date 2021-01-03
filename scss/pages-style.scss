@@ -11,6 +11,8 @@
 @import "fontfamily";
 /* File...box-sizing */
 @import "box-sizing";
+/* File...common */
+@import "common";
 /* File...share-base */
 @import "share-base";
 /* File...base */
@@ -18,6 +20,15 @@
 
 /* File...wapper */
 @import "wapper";
+
+
+/* File...pages-section */
+@import "Pages/pages-section";
+/* File...time-stamp */
+@import "time-stamp";
+
+
+
 /* File...common-section.scss */
 @import "common-section.scss";
 
@@ -40,15 +51,9 @@
 // @import "nav/container";
 
 
-/* File...section */
-// @import "section";
-/* File...time-stamp */
-// @import "time-stamp";
 /* File...contact */
 
 
-/* File...common */
-// @import "common";
 /* File...ThemesPlus */
 // @import "ThemesPlus";
 /* File...Blog-container */
