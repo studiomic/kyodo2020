@@ -418,6 +418,28 @@ nav.main-nav li {
   width: 320%;
 }
 
+.greenMark {
+  margin: 80px auto;
+  position: relative;
+  min-height: 320px;
+  background: url(../img/greenMark.png) no-repeat;
+}
+
+.greenMark section {
+  mix-blend-mode: normal;
+  z-index: 2;
+  position: relative;
+}
+
+.gmark {
+  width: 100%;
+  min-height: 320px;
+  position: absolute;
+  display: inline-block;
+  background: url(../img/greenMarkCover.png) no-repeat;
+  mix-blend-mode: hard-light;
+}
+
 @media (max-width: 63em) {
   .newsFront {
     flex-direction: column;
@@ -443,6 +465,25 @@ nav.main-nav li {
   }
   .postFront img {
     width: 100%;
+  }
+  .greenMark {
+    width: 100%;
+    background-position: right 10px bottom;
+    background-size: 200px;
+  }
+  .greenMark section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .greenMark section img {
+    margin-bottom: 2rem;
+  }
+  .gmark {
+    height: 100%;
+    background-position: right 10px bottom;
+    background-size: 200px;
   }
 }
 
@@ -535,6 +576,17 @@ nav.main-nav li {
   }
   .postFront article:nth-child(even) section section p {
     margin: 0 0 1rem;
+  }
+  .greenMark {
+    max-width: 940px;
+    width: 640px;
+    background-position: right top;
+  }
+  .greenMark section img {
+    margin-right: 1rem;
+  }
+  .gmark {
+    background-position: right top;
   }
 }
 

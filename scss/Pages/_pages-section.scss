@@ -1,5 +1,8 @@
 // main: ../pages-style.scss
 
+$Pcwidth: 940px;
+$uptoh2: 40px;
+
 //* FRONT PAGE NEWS
 //----------------------------------------------------*/
 .newsFront {
@@ -31,7 +34,6 @@
 
 //* FRONT PAGE ENTRYS
 //----------------------------------------------------*/
-$uptoh2:40px;
 .postFront {
 	margin-top: 80px;
 	position: relative;
@@ -82,9 +84,7 @@ $uptoh2:40px;
 			}
 			&:after {
 				display: block;
-				// border-top: 1px solid $col-66;
 				border-top: 1px solid $rgb-04;
-				// border-top: 1px solid RED;
 				height: 1px;
 			}
 		}
@@ -115,6 +115,38 @@ $uptoh2:40px;
 	} //even
 }//* FRONT PAGE ENTRYS
 
+//* FRONT PAGE GREENMARK
+//----------------------------------------------------*/
+.greenMark {
+	margin: 80px auto;
+	position: relative;
+	min-height: 320px;
+	background: url(../img/greenMark.png)no-repeat;
+	// background-position: right top;
+	section {
+		mix-blend-mode: normal;
+		z-index:2;
+		position: relative;
+		// justify-content: flex-end;
+		// border: 1px solid $blue;
+	}
+}
+.gmark {
+	width: 100%;
+	min-height: 320px;
+	position: absolute;
+	display: inline-block;
+	background: url(../img/greenMarkCover.png)no-repeat;
+	mix-blend-mode: hard-light;
+	// background-position: right top;
+	// width: 284px;
+	// background-position: left bottom;
+
+	// mix-blend-mode: overlay;
+	// mix-blend-mode: soft-light;
+	// mix-blend-mode: screen;
+	// mix-blend-mode: color;
+}
 
 //* @media SM
 //----------------------------------------------------*/
@@ -148,6 +180,30 @@ $uptoh2:40px;
 			width: 100%;
 		}
 	}
+	//* FRONT PAGE GREENMARK
+	.greenMark {
+		width: 100%;
+		background-position: right 10px bottom;
+		background-size: 200px;
+		section {
+			display: inline-flex;
+			flex-direction: column;
+			align-items: center;
+			margin-left: 30px;
+			// width: auto;
+			img {
+				// margin-right: 1rem;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.gmark {
+		// width: 100%;
+		height: 100%;
+		background-position: right 10px bottom;
+		background-size: 200px;
+	}
+
 } //* @media SM
 
 
@@ -188,7 +244,7 @@ $uptoh2:40px;
 	.postFront {
 		padding-top: $uptoh2;
 		article {
-			width: 940px;
+			width: $Pcwidth;
 			margin: 0 auto 80px;
 		}
 		img {
@@ -266,5 +322,23 @@ $uptoh2:40px;
 			}
 		} //even
 	}//* FRONT PAGE ENTRYS
+
+	//* FRONT PAGE GREENMARK
+	//----------------------------------------------------*/
+	.greenMark {
+		max-width: $Pcwidth;
+		width: 640px;
+		background-position: right top;
+		section {
+			img {
+				margin-right: 1rem;
+				// margin-bottom:: 1rem;
+			}
+		}
+	}
+	.gmark {
+		background-position: right top;
+	}
+
 
 } //* @media MD 1024
