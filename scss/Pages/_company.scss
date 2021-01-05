@@ -1,0 +1,222 @@
+// main: ../pages-style.scss
+
+@mixin baseWrap {
+	text-align: center;
+	width: $sm-width;
+	margin: 0 auto;
+}
+
+@mixin titleH2 {
+	font-size: 2rem;
+	font-weight: normal;
+	margin: 4rem auto;
+	display: inline-block;
+	line-height: 2;
+}
+
+@mixin titleH3 {
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+	&:before,&:after {
+		font-size: 2.2rem;
+		font-weight: 500;
+		vertical-align: -0.25rem;
+	}
+	&:before {
+		content: "< ";
+	}
+	&:after {
+		content: " >";
+	}
+}
+
+@mixin pBox {
+	text-align: left;
+	border-radius: 8px;
+	padding: 2rem;
+	line-height: 1.7;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+@mixin comDL {
+	// width: 70%;
+	margin: 0 auto 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1.7;
+	align-items: stretch;
+}
+
+//* CONTENT
+//----------------------------------------------------*/
+// 会社概要
+.company {
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+.overview {
+	text-align: left;
+	width: $sm-width;
+	margin: 0 auto;
+	dl {
+		@include comDL;
+	}
+	// dt,dd {
+	// }
+	dt {
+		font-weight: 500;
+		border-bottom: 2px solid $rgb-03;
+	}
+	// dd {
+	// }
+}
+
+// 品質管理の4柱
+.qualityManagement,.basicPrinciple,.companyHistory {
+	@include baseWrap;
+}
+.qualityManagement {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+	h3 {
+		@include titleH3;
+		&:before,&:after {
+			color: $cyan;
+		}
+	}
+	article {
+		p {
+			@include pBox;
+			background: $cyan-01;
+			&:before {
+				// font-family: $fontFamilyMIN;
+				// font-family: $fontFamilyJP;
+				font-family: $fontFamilySys;
+				font-weight: bold;
+				font-size: 3rem;
+				position: absolute;
+				top: -2.5rem;
+				color: $cyan;
+			}
+		}
+		p:nth-of-type(1):before {
+			content: "1.";
+		}
+		p:nth-of-type(2):before {
+			content: "2.";
+		}
+		p:nth-of-type(3):before {
+			content: "3.";
+		}
+		p:nth-of-type(4):before {
+			content: "4.";
+		}
+	}
+} // .qualityManagement
+
+// 品質維持の基本理念
+.basicPrinciple {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $red-06;
+	}
+	h3 {
+		@include titleH3;
+		&:before,&:after {
+			color: $red;
+		}
+	}
+	article {
+		p {
+			@include pBox;
+			background: $red-01;
+		}
+	}
+} // .basicPrinciple
+
+// 沿革
+.companyHistory {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $blue-06;
+	}
+	dl {
+		@include comDL;
+	}
+	dt,dd {
+		text-align: left;
+	}
+	dt {
+		font-weight: 500;
+		border-bottom: 2px solid $blue-04;
+	}
+	// dd {
+	// }
+} // .companyHistory
+
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (max-width:63em) {}
+
+	// .overview,.companyHistory {
+	// 	span {
+	// 		display: block;
+	// 	}
+	// 	dl {
+	// 		width: 90%;
+	// 	}
+	// 	dt,dd {
+	// 		width: $sm-width;
+	// 	}
+	// 	dt {
+	// 		padding: 2rem 0 0;
+	// 	}
+	// 	// dd {
+	// 	// }
+	// }
+
+//* @media MD 1024
+//----------------------------------------------------*/
+// @media (min-width:64em) {}
+	// .overview,.qualityManagement,.basicPrinciple,.companyHistory {
+	// 	width: $main-width;
+	// }
+	// .overview {
+	// 	width: $main-width;
+	// 	dl {
+	// 		width: 70%;
+	// 	}
+	// 	dt,dd {
+	// 		padding: 1rem 0 1rem 1rem;
+	// 	}
+	// 	dt {
+	// 		width: 20%;
+	// 		font-weight: 500;
+	// 	}
+	// 	dd {
+	// 		width: 80%;
+	// 		border-bottom: 1px solid $rgb-01;
+	// 	}
+	// }
+	// .companyHistory {
+	// 	dl {
+	// 		width: 70%;
+	// 	}
+	// 	dt,dd {
+	// 		padding: 1rem 0 1rem 1rem;
+	// 	}
+	// 	dt {
+	// 		width: 30%;
+	// 		font-weight: 500;
+	// 	}
+	// 	dd {
+	// 		width: 70%;
+	// 		border-bottom: 1px solid $blue-02;
+	// 	}
+	// }

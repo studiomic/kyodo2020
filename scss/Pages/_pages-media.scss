@@ -1,85 +1,173 @@
 // main: ../pages-style.scss
 
-//* @media SM
-//----------------------------------------------------*/
-// @media (min-width:40em) {}//640px
-@media (max-width:63em) {
-	//* header
-	header {
-		max-width: 100%;
-		height: 140px;
-		background-size: auto 120px;
-		h1 {
-			height: 100px;
-			a {
-				// border: 1px solid $purple;
-				width: 200px;
-				height: 95px;
-			}
-		}
-	}
-
-	nav.main-nav {
-		ul {
-			max-width: 100%;
-			font-size: .8rem;
-		}
-		li {
-			display: block;
-			width: 50%;
-			padding: 0 .5rem;
-		}
-	}
-	.nav-bar {
-		ul { display: none; }
-	}
-
-
-
-
-
-
-
-
-	//* Front-Page ONLY FOOTER CLASS
-	.frontFoot {
-		max-width: 100%;
-		padding-top: 1rem;
-		h1 {
-			font-size: 1rem;
-			margin-bottom: 1rem;
-			a {
-				background-size: 150px;
-				padding: 90px 1rem 0;
-				&:hover, &:active, &:focus {
-					background-size: 150px;
-				}
-			}
-		}
-		p {
-			font-size: 0.8rem;
-			width: 80%;
-			margin: 0 auto;
-			text-align: left;
-		}
-		small {
-			display: block;
-			margin-top: 2rem;
-		}
-		span {
-			display: block;
-			padding-bottom: 1rem;
-		}
-	}
-} //* @media SM
-
-
-
-
 //* @media MD 1024
 //----------------------------------------------------*/
 @media (min-width:64em) {
+	//* Page-Section.scss
+	//----------------------------------------------------*/
+	.newsFront {
+		flex-direction: row;
+		article {
+			width: 50%;
+			text-align: center;
+			padding: 4rem 0;
+		}
+		article:nth-of-type(1) {
+			font-size: 2.5rem;
+			text-align: left;
+			line-height: 2;
+			text-shadow: 0 2px 5px #000;
+			font-family: $fontFamilyMIN;
+			font-weight: 500;
+			p {
+				text-align: left;
+				padding: 5rem 10rem 0;
+				// position: absolute;
+				// right: 150px;
+				// top: 90px;
+			}
+		}
+	} //.newsFront
 
+	//* FRONT PAGE ENTRYS @media MD 1024
+	//----------------------------------------------------*/
+	.postFront {
+		padding-top: $uptoh2;
+		article {
+			width: $main-width;
+			margin: 0 auto 80px;
+		}
+		img {
+			width: 460px;
+		}
+		h2 {
+			margin-top: -$uptoh2;
+		}
+
+		//* FRONT PAGE ENTRYS Kisu.1.3 ODD @media MD 1024
+		//----------------------------------------------------*/
+		article:nth-child(odd) {
+			z-index: 1;
+			&:before {
+				z-index: -1;
+				left: -500px;
+				width: 1000px;
+			}
+			img {
+				margin-right: 10px;
+			}
+			img:nth-of-type(2) {
+				position: absolute;
+				top: 10px;
+			}
+
+			h2 {
+				&:before {
+					left: -200%;
+					width: 300%;
+				}
+				&:after {
+					width: 100%;
+					left: -225%;
+					width: 320%;
+				}
+			}
+			section section {
+				padding: 1rem 1rem 2rem 0;
+			}
+		}
+
+		//* FRONT PAGE ENTRYS Gusu.2 EVEN @media MD 1024
+		//----------------------------------------------------*/
+		article:nth-child(even) {
+			text-align: right;
+			z-index: 1;
+			&:after {
+				z-index: -3;
+				left: 50%;
+				width: 100%;
+				display: block;
+			}
+			h2 {
+				&:before {
+					width: 1500px;
+				}
+				&:after {
+					left: 1rem;
+					width: 320%;
+				}
+			}
+			img:nth-of-type(1) {
+				position: absolute;
+				left :10px;
+				top: 10px;
+				// border: 1px solid $red;
+			}
+			section section {
+				text-align: left;
+				padding: 1rem 0 2rem 1rem;
+				p {
+					margin: 0 0 1rem;
+				}
+			}
+		} //even
+	}//* FRONT PAGE ENTRYS
+
+	//* FRONT PAGE GREENMARK
+	//----------------------------------------------------*/
+	.greenMark {
+		max-width: $main-width;
+		width: 640px;
+		background-position: right top;
+		section {
+			img {
+				margin-right: 1rem;
+				// margin-bottom:: 1rem;
+			}
+		}
+	}
+	.gmark {
+		background-position: right top;
+	}
+
+	//* Company.scss
+	//----------------------------------------------------*/
+	.overview,.qualityManagement,.basicPrinciple,.companyHistory {
+		width: $main-width;
+	}
+	.overview {
+		width: $main-width;
+		dl {
+			width: 70%;
+		}
+		dt,dd {
+			padding: 1rem 0 1rem 1rem;
+		}
+		dt {
+			width: 20%;
+			font-weight: 500;
+		}
+		dd {
+			width: 80%;
+			border-bottom: 1px solid $rgb-01;
+		}
+	}
+	.companyHistory {
+		dl {
+			width: 70%;
+		}
+		dt,dd {
+			padding: 1rem 0 1rem 1rem;
+		}
+		dt {
+			width: 30%;
+			font-weight: 500;
+		}
+		dd {
+			width: 70%;
+			border-bottom: 1px solid $blue-02;
+		}
+	}
 
 
 } //@media MD 1024

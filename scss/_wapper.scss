@@ -38,7 +38,6 @@
 	.container {
 		width: 100%;
 	}
-
 } //* @media SM
 
 //* @media MD 1024
@@ -46,6 +45,7 @@
 @media (min-width:64em) {
 	.container {
 		width: 940px;
+		margin: 0 auto;
 	}
 
 

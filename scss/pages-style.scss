@@ -17,25 +17,24 @@
 @import "share-base";
 /* File...base */
 @import "Pages/pages-base";
-
 /* File...wapper */
 @import "wapper";
-
-
-
 /* File...pages-section */
 @import "Pages/pages-section";
 /* File...time-stamp */
 @import "time-stamp";
 
+/* File...pages-company */
+@import "Pages/company";
 
-
-/* File...common-section.scss */
-@import "common-section.scss";
+/* File...common-section */
+@import "common-section";
 
 /* File...share-media */
 @import "share-media";
+
 /* File...media */
+@import "Pages/pages-mediaSM";
 @import "Pages/pages-media";
 
 
@@ -46,6 +45,18 @@
 @import "nav/position-top";
 @import "nav/hamburger";
 @import "nav/accessibility";
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (max-width:63em) {}
+
+//* @media MD 1024
+//----------------------------------------------------*/
+// @media (min-width:64em) {}
+
+
+
+
 // @import "nav/sidebar";
 // @import "nav/navbar";
 // @import "nav/dropdown";

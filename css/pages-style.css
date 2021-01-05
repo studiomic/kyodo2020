@@ -30,6 +30,12 @@ REMOVE:2018/2/14
   writing-mode: vertical-rl;
 }
 
+main > h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 4rem auto;
+}
+
 /*.none {
 	display: none;
 }
@@ -42,7 +48,7 @@ REMOVE:2018/2/14
 /*'display':'flex','align-items':'center','overflow':'hidden'});*/
 /* File...share-base */
 html, body {
-  color: #282828;
+  color: #363636;
   background: #fff;
   position: relative;
   font-size: 16px;
@@ -313,6 +319,7 @@ nav.main-nav li {
 @media (min-width: 64em) {
   .container {
     width: 940px;
+    margin: 0 auto;
   }
 }
 
@@ -440,156 +447,6 @@ nav.main-nav li {
   mix-blend-mode: hard-light;
 }
 
-@media (max-width: 63em) {
-  .newsFront {
-    flex-direction: column;
-    flex-direction: column-reverse;
-  }
-  .newsFront article {
-    width: 100%;
-  }
-  .newsFront article:nth-of-type(1) {
-    color: #fafafa;
-    font-size: 26px;
-  }
-  .newsFront article:nth-of-type(1) p {
-    padding: 4rem 2rem;
-  }
-  .postFront article {
-    width: 100%;
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-  }
-  .postFront h2 {
-    width: 100%;
-  }
-  .postFront img {
-    width: 100%;
-  }
-  .greenMark {
-    width: 100%;
-    background-position: right 10px bottom;
-    background-size: 200px;
-  }
-  .greenMark section {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 30px;
-  }
-  .greenMark section img {
-    margin-bottom: 2rem;
-  }
-  .gmark {
-    height: 100%;
-    background-position: right 10px bottom;
-    background-size: 200px;
-  }
-}
-
-@media (min-width: 64em) {
-  .newsFront {
-    flex-direction: row;
-  }
-  .newsFront article {
-    width: 50%;
-    text-align: center;
-    padding: 4rem 0;
-  }
-  .newsFront article:nth-of-type(1) {
-    font-size: 2.5rem;
-    text-align: left;
-    line-height: 2;
-    text-shadow: 0 2px 5px #000;
-    font-family: "Noto Serif JP", serif;
-    font-weight: 500;
-  }
-  .newsFront article:nth-of-type(1) p {
-    text-align: left;
-    padding: 5rem 10rem 0;
-  }
-  .postFront {
-    padding-top: 40px;
-  }
-  .postFront article {
-    width: 940px;
-    margin: 0 auto 80px;
-  }
-  .postFront img {
-    width: 460px;
-  }
-  .postFront h2 {
-    margin-top: -40px;
-  }
-  .postFront article:nth-child(odd) {
-    z-index: 1;
-  }
-  .postFront article:nth-child(odd):before {
-    z-index: -1;
-    left: -500px;
-    width: 1000px;
-  }
-  .postFront article:nth-child(odd) img {
-    margin-right: 10px;
-  }
-  .postFront article:nth-child(odd) img:nth-of-type(2) {
-    position: absolute;
-    top: 10px;
-  }
-  .postFront article:nth-child(odd) h2:before {
-    left: -200%;
-    width: 300%;
-  }
-  .postFront article:nth-child(odd) h2:after {
-    width: 100%;
-    left: -225%;
-    width: 320%;
-  }
-  .postFront article:nth-child(odd) section section {
-    padding: 1rem 1rem 2rem 0;
-  }
-  .postFront article:nth-child(even) {
-    text-align: right;
-    z-index: 1;
-  }
-  .postFront article:nth-child(even):after {
-    z-index: -3;
-    left: 50%;
-    width: 100%;
-    display: block;
-  }
-  .postFront article:nth-child(even) h2:before {
-    width: 1500px;
-  }
-  .postFront article:nth-child(even) h2:after {
-    left: 1rem;
-    width: 320%;
-  }
-  .postFront article:nth-child(even) img:nth-of-type(1) {
-    position: absolute;
-    left: 10px;
-    top: 10px;
-  }
-  .postFront article:nth-child(even) section section {
-    text-align: left;
-    padding: 1rem 0 2rem 1rem;
-  }
-  .postFront article:nth-child(even) section section p {
-    margin: 0 0 1rem;
-  }
-  .greenMark {
-    max-width: 940px;
-    width: 640px;
-    background-position: right top;
-  }
-  .greenMark section img {
-    margin-right: 1rem;
-  }
-  .gmark {
-    background-position: right top;
-  }
-}
-
 /* File...time-stamp */
 .blog-card {
   position: relative;
@@ -600,7 +457,7 @@ nav.main-nav li {
 
 .blog-card a {
   display: block;
-  color: #282828;
+  color: #363636;
 }
 
 .blog-card a:hover, .blog-card a:active, .blog-card a:focus {
@@ -660,7 +517,175 @@ time span {
   }
 }
 
-/* File...common-section.scss */
+/* File...pages-company */
+.company {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.overview {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.overview dl {
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7;
+  align-items: stretch;
+}
+
+.overview dt {
+  font-weight: 500;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.qualityManagement, .basicPrinciple, .companyHistory {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.qualityManagement h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6);
+}
+
+.qualityManagement h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.qualityManagement h3:before, .qualityManagement h3:after {
+  font-size: 2.2rem;
+  font-weight: 500;
+  vertical-align: -0.25rem;
+}
+
+.qualityManagement h3:before {
+  content: "< ";
+}
+
+.qualityManagement h3:after {
+  content: " >";
+}
+
+.qualityManagement h3:before, .qualityManagement h3:after {
+  color: #89b8c2;
+}
+
+.qualityManagement article p {
+  text-align: left;
+  border-radius: 8px;
+  padding: 2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  position: relative;
+  background: rgba(137, 184, 194, 0.1);
+}
+
+.qualityManagement article p:before {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  position: absolute;
+  top: -2.5rem;
+  color: #89b8c2;
+}
+
+.qualityManagement article p:nth-of-type(1):before {
+  content: "1.";
+}
+
+.qualityManagement article p:nth-of-type(2):before {
+  content: "2.";
+}
+
+.qualityManagement article p:nth-of-type(3):before {
+  content: "3.";
+}
+
+.qualityManagement article p:nth-of-type(4):before {
+  content: "4.";
+}
+
+.basicPrinciple h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(226, 120, 120, 0.6);
+}
+
+.basicPrinciple h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.basicPrinciple h3:before, .basicPrinciple h3:after {
+  font-size: 2.2rem;
+  font-weight: 500;
+  vertical-align: -0.25rem;
+}
+
+.basicPrinciple h3:before {
+  content: "< ";
+}
+
+.basicPrinciple h3:after {
+  content: " >";
+}
+
+.basicPrinciple h3:before, .basicPrinciple h3:after {
+  color: #e27878;
+}
+
+.basicPrinciple article p {
+  text-align: left;
+  border-radius: 8px;
+  padding: 2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  position: relative;
+  background: rgba(226, 120, 120, 0.1);
+}
+
+.companyHistory h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(132, 160, 198, 0.6);
+}
+
+.companyHistory dl {
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7;
+  align-items: stretch;
+}
+
+.companyHistory dt, .companyHistory dd {
+  text-align: left;
+}
+
+.companyHistory dt {
+  font-weight: 500;
+  border-bottom: 2px solid rgba(132, 160, 198, 0.4);
+}
+
+/* File...common-section */
 .fixed {
   display: block;
   position: fixed;
@@ -856,6 +881,199 @@ time span {
   .frontFoot span {
     display: block;
     padding-bottom: 1rem;
+  }
+  .newsFront {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .newsFront article {
+    width: 100%;
+  }
+  .newsFront article:nth-of-type(1) {
+    color: #fafafa;
+    font-size: 26px;
+  }
+  .newsFront article:nth-of-type(1) p {
+    padding: 4rem 2rem;
+  }
+  .postFront article {
+    width: 100%;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .postFront h2 {
+    width: 100%;
+  }
+  .postFront img {
+    width: 100%;
+  }
+  .greenMark {
+    width: 100%;
+    background-position: right 10px bottom;
+    background-size: 200px;
+  }
+  .greenMark section {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+  }
+  .greenMark section img {
+    margin-bottom: 2rem;
+  }
+  .gmark {
+    height: 100%;
+    background-position: right 10px bottom;
+    background-size: 200px;
+  }
+  .overview span, .companyHistory span {
+    display: block;
+  }
+  .overview dl, .companyHistory dl {
+    width: 90%;
+  }
+  .overview dt, .overview dd, .companyHistory dt, .companyHistory dd {
+    width: 100%;
+  }
+  .overview dt, .companyHistory dt {
+    padding: 2rem 0 0;
+  }
+}
+
+@media (min-width: 64em) {
+  .newsFront {
+    flex-direction: row;
+  }
+  .newsFront article {
+    width: 50%;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .newsFront article:nth-of-type(1) {
+    font-size: 2.5rem;
+    text-align: left;
+    line-height: 2;
+    text-shadow: 0 2px 5px #000;
+    font-family: "Noto Serif JP", serif;
+    font-weight: 500;
+  }
+  .newsFront article:nth-of-type(1) p {
+    text-align: left;
+    padding: 5rem 10rem 0;
+  }
+  .postFront {
+    padding-top: 40px;
+  }
+  .postFront article {
+    width: 940px;
+    margin: 0 auto 80px;
+  }
+  .postFront img {
+    width: 460px;
+  }
+  .postFront h2 {
+    margin-top: -40px;
+  }
+  .postFront article:nth-child(odd) {
+    z-index: 1;
+  }
+  .postFront article:nth-child(odd):before {
+    z-index: -1;
+    left: -500px;
+    width: 1000px;
+  }
+  .postFront article:nth-child(odd) img {
+    margin-right: 10px;
+  }
+  .postFront article:nth-child(odd) img:nth-of-type(2) {
+    position: absolute;
+    top: 10px;
+  }
+  .postFront article:nth-child(odd) h2:before {
+    left: -200%;
+    width: 300%;
+  }
+  .postFront article:nth-child(odd) h2:after {
+    width: 100%;
+    left: -225%;
+    width: 320%;
+  }
+  .postFront article:nth-child(odd) section section {
+    padding: 1rem 1rem 2rem 0;
+  }
+  .postFront article:nth-child(even) {
+    text-align: right;
+    z-index: 1;
+  }
+  .postFront article:nth-child(even):after {
+    z-index: -3;
+    left: 50%;
+    width: 100%;
+    display: block;
+  }
+  .postFront article:nth-child(even) h2:before {
+    width: 1500px;
+  }
+  .postFront article:nth-child(even) h2:after {
+    left: 1rem;
+    width: 320%;
+  }
+  .postFront article:nth-child(even) img:nth-of-type(1) {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  .postFront article:nth-child(even) section section {
+    text-align: left;
+    padding: 1rem 0 2rem 1rem;
+  }
+  .postFront article:nth-child(even) section section p {
+    margin: 0 0 1rem;
+  }
+  .greenMark {
+    max-width: 940px;
+    width: 640px;
+    background-position: right top;
+  }
+  .greenMark section img {
+    margin-right: 1rem;
+  }
+  .gmark {
+    background-position: right top;
+  }
+  .overview, .qualityManagement, .basicPrinciple, .companyHistory {
+    width: 940px;
+  }
+  .overview {
+    width: 940px;
+  }
+  .overview dl {
+    width: 70%;
+  }
+  .overview dt, .overview dd {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .overview dt {
+    width: 20%;
+    font-weight: 500;
+  }
+  .overview dd {
+    width: 80%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .companyHistory dl {
+    width: 70%;
+  }
+  .companyHistory dt, .companyHistory dd {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .companyHistory dt {
+    width: 30%;
+    font-weight: 500;
+  }
+  .companyHistory dd {
+    width: 70%;
+    border-bottom: 1px solid rgba(132, 160, 198, 0.2);
   }
 }
 
