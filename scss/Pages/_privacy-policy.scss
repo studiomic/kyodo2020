@@ -1,0 +1,41 @@
+// main: ../pages-style.scss
+
+@mixin titleH2-pp {
+	font-weight: normal;
+	margin: 4rem auto;
+	display: inline-block;
+}
+
+//* CONTENT
+//----------------------------------------------------*/
+.privacy-policy {
+	text-align: center;
+	padding-bottom: 4rem;
+	h2 {
+		@include titleH2-pp;
+		border-bottom: 2px solid $col-B1-08;
+	}
+	section {
+		p {
+			text-align: left;
+			line-height: 1.7;
+		}
+	}
+	article {
+		padding-bottom: 4rem;
+		section {
+			text-align: left;
+		}
+		h3 {
+			color: $col-B1-08;
+			margin: 2rem 0 .8rem;
+		}
+	}
+	span {
+		margin-right: 1rem;
+	}
+	ul {
+		margin: 0;
+		padding-left: 2rem;
+	}
+}

@@ -136,5 +136,30 @@
 		// dd {
 		// }
 	}
-
+	//* privacy-policy
+	//----------------------------------------------------*/
+	.privacy-policy {
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 22px;
+		}
+		article {
+			width: 90%;
+			margin: 0 auto;
+			h3 {
+				font-size: 1.1rem;
+			}
+			h4 {
+				margin: 3rem 0 2rem;
+			}
+		}
+		span {
+			display: block;
+		}
+	}
+	.intro {
+		padding: 0 1rem;
+	}
 } //* @media SM

@@ -1,9 +1,11 @@
+// main: ./pages-style.scss
 // main: ./blog-style.scss
 
 //* SIZE
 //----------------------------------------------------*/
 $main-width: 940px;
 $sm-width: 100%;
+$smpadd-width: 90%;
 $uptoh2: 40px;
 
 // $Pcwidth: 940px;
@@ -17,7 +19,7 @@ $uptoh2: 40px;
 //----------------------------------------------------*/
 $cyan: rgba(137,184,194,1); // $cyan: #89B8C2;
 $blue: rgba(132,160,198,1); //$blue: #84A0C6;
-$purple: #A093C7;
+$purple: rgba(160,147,199,1); //$purple: #A093C7;
 $green: #B4BE82;
 $red: rgba(226,120,120,1); // $red: #E27878;
 $orange: rgba(226,164,120,1); // $orange: #E2A478;
@@ -60,7 +62,6 @@ $cyan-03: rgba(137,184,194,.3);
 $cyan-02: rgba(137,184,194,.2);
 $cyan-01: rgba(137,184,194,.1);
 
-
 $blue-09: rgba(132,160,198,.9);
 $blue-08: rgba(132,160,198,.8);
 $blue-07: rgba(132,160,198,.7);
@@ -92,12 +93,32 @@ $orange-02: rgba(226,164,120,.2);
 $orange-01: rgba(226,164,120,.1);
 
 
+$col-B2: rgba(61,68,111,1); //$col-B2: #3D446F;
+$col-B2-09: rgba(61,68,111,.9);
+$col-B2-08: rgba(61,68,111,.8);
+$col-B2-07: rgba(61,68,111,.7);
+$col-B2-06: rgba(61,68,111,.6);
+$col-B2-05: rgba(61,68,111,.5);
+$col-B2-04: rgba(61,68,111,.4);
+$col-B2-03: rgba(61,68,111,.3);
+$col-B2-02: rgba(61,68,111,.2);
+$col-B2-01: rgba(61,68,111,.1);
 
+// $col-B1:#4C678B;
+$col-B1: rgba(76,103,139,1);
+$col-B1-09: rgba(76,103,139,0.9);
+$col-B1-08: rgba(76,103,139,0.8);
+$col-B1-07: rgba(76,103,139,0.7);
+$col-B1-06: rgba(76,103,139,0.6);
+$col-B1-05: rgba(76,103,139,0.5);
+$col-B1-04: rgba(76,103,139,0.4);
+$col-B1-03: rgba(76,103,139,0.3);
+$col-B1-02: rgba(76,103,139,0.2);
+$col-B1-01: rgba(76,103,139,0.1);
 
 $col-F1: #f1f1f1;
 $col-F5: #f5f5f5;
 $col-F6: #f6f6f6;
-
 $col-aa: #aaa;
 $col-cc: #ccc;
 $col-dd: #ddd;
@@ -108,17 +129,20 @@ $col-14: #141414;
 $col-22: #222;
 $col-24: #242424;
 $col-28: #282828;
-$col-00: #000;
-
-$col-B1:#4C678B;
-$col-B2:#3D446F;
-// $col-hart:#96999d;
+$col-00: $rgb-10; //#000;
 
 $text-color: $col-36;
 $link-color: $col-B1;
-$hover-color: $col-B2;
-
+$hover-color: $blue;
 $footer-Bg-Color: $col-28;
+
+// $col-B1:#4C678B;
+// $col-B2:#3D446F;
+// $col-hart:#96999d;
+
+
+// $hover-color: $col-B2;
+// $hover-color: $col-00;
 
 
 // %inpege-common-color: #89A0C2;
@@ -129,7 +153,7 @@ $footer-Bg-Color: $col-28;
 // #2b2d38
 // #4C678B;
 // #BABDC6;
-// #3D446F;
+
 // #D8DCEC;
 // #D96165;
 // #AAB4BF;

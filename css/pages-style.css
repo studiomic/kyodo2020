@@ -57,11 +57,11 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #4C678B;
+  color: #4c678b;
 }
 
 a:hover, a:active, a:focus {
-  color: #3D446F;
+  color: #84a0c6;
   transition-duration: 1s;
 }
 
@@ -151,7 +151,7 @@ footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
 ----------------------------------------------------*/
 header {
   position: relative;
-  background: #000 url(../img/logo-onwhite.png) no-repeat;
+  background: black url(../img/logo-onwhite.png) no-repeat;
   background-position: center center;
   background-size: auto 180px;
   height: 180px;
@@ -685,6 +685,46 @@ time span {
   border-bottom: 2px solid rgba(132, 160, 198, 0.4);
 }
 
+/* File...pages-company */
+.privacy-policy {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.privacy-policy h2 {
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  border-bottom: 2px solid rgba(76, 103, 139, 0.8);
+}
+
+.privacy-policy section p {
+  text-align: left;
+  line-height: 1.7;
+}
+
+.privacy-policy article {
+  padding-bottom: 4rem;
+}
+
+.privacy-policy article section {
+  text-align: left;
+}
+
+.privacy-policy article h3 {
+  color: rgba(76, 103, 139, 0.8);
+  margin: 2rem 0 .8rem;
+}
+
+.privacy-policy span {
+  margin-right: 1rem;
+}
+
+.privacy-policy ul {
+  margin: 0;
+  padding-left: 2rem;
+}
+
 /* File...common-section */
 .fixed {
   display: block;
@@ -739,7 +779,7 @@ time span {
 }
 
 .contactUs address a:hover, .contactUs address a:active, .contactUs address a:focus {
-  color: #3D446F;
+  color: #84a0c6;
   text-decoration: underline;
 }
 
@@ -938,6 +978,28 @@ time span {
   .overview dt, .companyHistory dt {
     padding: 2rem 0 0;
   }
+  .privacy-policy h1 {
+    font-size: 2rem;
+  }
+  .privacy-policy h2 {
+    font-size: 22px;
+  }
+  .privacy-policy article {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .privacy-policy article h3 {
+    font-size: 1.1rem;
+  }
+  .privacy-policy article h4 {
+    margin: 3rem 0 2rem;
+  }
+  .privacy-policy span {
+    display: block;
+  }
+  .intro {
+    padding: 0 1rem;
+  }
 }
 
 @media (min-width: 64em) {
@@ -1074,6 +1136,28 @@ time span {
   .companyHistory dd {
     width: 70%;
     border-bottom: 1px solid rgba(132, 160, 198, 0.2);
+  }
+  .privacy-policy section {
+    width: 940px;
+    margin: 0 auto;
+  }
+  .privacy-policy article section section {
+    padding: 0 0 2rem 2rem;
+  }
+  .privacy-policy article section section p {
+    margin: 0 0 0 1rem;
+  }
+  .privacy-policy article h3 {
+    letter-spacing: .2em;
+  }
+  .privacy-policy article h4 {
+    margin: 1rem 0;
+  }
+  .privacy-policy article p {
+    margin: 0 0 2rem 2rem;
+  }
+  .privacy-policy article ul {
+    padding-left: 2.5rem;
   }
 }
 

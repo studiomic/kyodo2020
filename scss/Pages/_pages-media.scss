@@ -168,7 +168,37 @@
 			border-bottom: 1px solid $blue-02;
 		}
 	}
-
+	//* .privacy-policy
+	//----------------------------------------------------*/
+	.privacy-policy {
+		section {
+			width: $main-width;
+			margin: 0 auto;
+		}
+		article {
+			section {
+				section {
+					padding: 0 0 2rem 2rem;
+					p {
+						margin: 0 0 0 1rem;
+					}
+				}
+			}
+			h3 {
+				letter-spacing: .2em;
+			}
+			h4 {
+				margin: 1rem 0;
+			}
+			p {
+				margin: 0 0 2rem 2rem;
+			}
+			ul {
+				// margin: 0;
+				padding-left: 2.5rem;
+			}
+		}
+	}
 
 } //@media MD 1024
 
