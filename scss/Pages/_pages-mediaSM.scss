@@ -3,7 +3,7 @@
 //* @media SM
 //----------------------------------------------------*/
 // @media (min-width:40em) {}//640px
-@media (max-width:63.99875em) {
+@media (max-width:63em) {
 	//* header
 	header {
 		max-width: 100%;
@@ -133,8 +133,9 @@
 		dt {
 			padding: 2rem 0 0;
 		}
-	}	//* Company.scss
-
+		// dd {
+		// }
+	}
 	//* privacy-policy
 	//----------------------------------------------------*/
 	.privacy-policy {
@@ -157,110 +158,8 @@
 		span {
 			display: block;
 		}
-	}	//* privacy-policy
-
-	//* BUS
-	//----------------------------------------------------*/
-	.saftyBus {
-		margin-top: 4rem;
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-	} // .saftyBus
-
-	.bus {
-		.container {
-			p {
-				margin: auto 1rem 1rem;
-			}
-		}
-		h2 {
-			font-size: 1.3rem;
-		}
-		h3 {
-			font-size: 1.3rem;
-		}
-		nav {
-			ul {
-				flex-wrap: wrap;
-				flex-direction: column;
-				border-bottom: 1px solid $col-cc;
-			}
-			li {
-				border-top: 1px solid $col-cc;
-				background: $col-Fa;
-
-				a {
-					padding: 2rem 1rem;
-				}
-			}
-		}
-	} // .bus
-
-	.kosuzume {
-		img {
-			width: $sm-width;
-		}
 	}
-	.diya {
-		flex-direction: column;
-		&::before {
-			font-size: 12rem;
-			top: -25px;
-			right: 24px;
-		}
-		article {
-			width: $sm-width;
-			section {
-				margin: 2rem 1rem 0;
-			}
-		}
-		article:nth-child(odd) {
-			h4 {
-				margin-left: .5rem;
-			}
-		}
-		article:nth-child(even) {
-			h4 {
-				margin-right: .5rem;
-			}
-		}
-	} // .diya
-
-	.vehicleList {
-		dt {
-			width: 100%;
-			font-weight: 500;
-			background: $col-F1;
-		}
-		dd{
-			width: 100%;
-		}
-		dd:nth-child(4n){
-			text-align: right;
-		}
-		dt:nth-of-type(1),dd:nth-of-type(1),dd:nth-of-type(2),dd:nth-of-type(3) {
-			display: none;
-		}
-	}
-	.mapbtm {
-		margin: 1rem auto 4rem 1rem;
-		span {
-			display: block;
-		}
-	}
-
-
-
-
-
-
-
-
-
 	.intro {
 		padding: 0 1rem;
 	}
-
 } //* @media SM

@@ -3,11 +3,116 @@
 //* @media SM
 //----------------------------------------------------*/
 @media (max-width:63em) {
+	.saftyBus {
+		margin-top: 4rem;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	} // .saftyBus
+
+	.bus {
+		.container {
+			p {
+				margin: auto 1rem 1rem;
+			}
+		}
+		h2 {
+			font-size: 1.3rem;
+		}
+		h3 {
+			font-size: 1.3rem;
+		}
+		nav {
+			ul {
+				flex-wrap: wrap;
+				flex-direction: column;
+				border-bottom: 1px solid $col-cc;
+			}
+			li {
+				border-top: 1px solid $col-cc;
+				background: $col-Fa;
+
+				a {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+	} // .bus
+
+	.kosuzume {
+		img {
+			width: $sm-width;
+		}
+	}
+
+	.diya {
+		flex-direction: column;
+		&::before {
+			font-size: 12rem;
+			top: -25px;
+			right: 24px;
+		}
+		article {
+			width: $sm-width;
+			section {
+				margin: 2rem 1rem 0;
+			}
+		}
+		article:nth-child(odd) {
+			h4 {
+				margin-left: .5rem;
+			}
+		}
+		article:nth-child(even) {
+			h4 {
+				margin-right: .5rem;
+			}
+		}
+	} // .diya
+
+	.vehicleList {
+		// display: flex;
+		// flex-wrap: wrap;
+		// width: $sm-width;
+		// margin-bottom: 6rem;
+		// dt,dd {
+		// 	border: 1px solid $col-F;
+		// 	padding: 1rem .5rem;
+		// 	background: $col-F5;
+		// }
+		dt {
+			width: 100%;
+			font-weight: 500;
+			background: $col-F1;
+
+		}
+		dd{
+			width: 100%;
+		}
+		dd:nth-child(4n){
+			text-align: right;
+		}
+
+dt:nth-of-type(1),
+		dd:nth-of-type(1),dd:nth-of-type(2),dd:nth-of-type(3) {
+			display: none;
+		}
+	}
+	// .vehicleType {
+	// 	div {
+	// 		padding-bottom: 3rem;
+	// 	}
+	// }
 
 
 
-
-
+	.mapbtm {
+		margin: 1rem auto 4rem 1rem;
+		span {
+			display: block;
+		}
+	}
 
 
 } //* @media SM
