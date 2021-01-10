@@ -8,23 +8,92 @@
 	writing-mode: vertical-rl;
 }
 
-main > h1 {
+* main > h1 {
 	// text-align: center;
 	font-size: 3rem;
 	font-weight: normal;
 	margin: 4rem auto;
 }
 
-// main {
-// 	text-align: center;
-// 	padding-bottom: 4rem;
+.tac {
+	text-align: center;
+}
+.pb4 {
+	padding-bottom: 4rem;
+}
+
+
+
+// .mt2 {
+// 	margin-top: 2rem;
+// }
+
+// .mt4 {
+// 	margin-top: 4rem;
+// }
+
+// .mb4 {
+// 	margin-bottom: 4rem;
 // }
 
 
-// .individual > h1 {
-// 	font-size: 5rem;
-// }
+//* fade in anchor
+//----------------------------------------------------*/
+@mixin fina {
+	position: relative;
+   display: inline-block;
+   transition: .4s;
+}
+	// transform: translateZ(0,0,0);
+	// position: relative;
+	//   display: inline-block;
+	//   padding: .5em 4em;
+	//   border: 2px solid #333;
+	//   color: #333;
+	//   text-align: center;
+	//   text-decoration: none;
+	//   transition: .3s;
 
+@mixin fina-hover {
+	color: $col-Fa;
+	transform: translate3d(0, 0, 10px);
+}
+// z-index: 1;
+
+@mixin fina-before {
+	color: $col-Fa;
+	position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   content: "";
+   background: $rgb-08;
+	transform-origin: right top;
+   transform: scale(0, 1);
+   transition: transform .4s;
+	z-index: -1;
+}
+@mixin fina-hover-before {
+	transform-origin: left top;
+   transform: scale(1, 1);
+}
+
+.fina {
+	@include fina;
+}
+
+.fina:hover {
+	@include fina-hover;
+}
+
+.fina::before {
+	@include fina-before;
+}
+
+.fina:hover::before {
+	@include fina-hover-before;
+}
 
 
 
@@ -39,7 +108,6 @@ main > h1 {
 	overflow: hidden;
 }*/
 /*'display':'flex','align-items':'center','overflow':'hidden'});*/
-
 
 //* BOOTSTRAP STYLES
 //----------------------------------------------------*/

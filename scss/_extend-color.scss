@@ -20,15 +20,14 @@ $uptoh2: 40px;
 $cyan: rgba(137,184,194,1); // $cyan: #89B8C2;
 $blue: rgba(132,160,198,1); //$blue: #84A0C6;
 $purple: rgba(160,147,199,1); //$purple: #A093C7;
-$green: #B4BE82;
+$green: rgba(180,190,130,1); //#B4BE82;
 $red: rgba(226,120,120,1); // $red: #E27878;
 $orange: rgba(226,164,120,1); // $orange: #E2A478;
 
-
-$iceBG: #161822;
-$col-F: #fff;
-$col-Fa: #fafafa;
-$col-Fc: #fcfcfc;
+$iceBG: rgba(22,24,34,1); //#161822;
+$col-F: rgba(255,255,255,1); //#fff;
+$col-Fa: rgba(250,250,250,1); //#fafafa;
+$col-Fc: rgba(252,252,252,1); //#fcfcfc;
 
 $rgb-F1: rgba(255,255,255,.1);
 $rgb-F2: rgba(255,255,255,.2);
@@ -116,35 +115,83 @@ $col-B1-03: rgba(76,103,139,0.3);
 $col-B1-02: rgba(76,103,139,0.2);
 $col-B1-01: rgba(76,103,139,0.1);
 
-$col-F1: #f1f1f1;
-$col-F5: #f5f5f5;
-$col-F6: #f6f6f6;
-$col-aa: #aaa;
-$col-cc: #ccc;
-$col-dd: #ddd;
-$col-33: #333;
-$col-66: #666;
-$col-36: #363636;
-$col-14: #141414;
-$col-22: #222;
-$col-24: #242424;
-$col-28: #282828;
+$col-F1: rgba(241,241,241,1); //#f1f1f1;
+$col-F5: rgba(245,245,245,1); //#f5f5f5;
+$col-F6: rgba(246,246,246,1); //#f6f6f6;
+$col-aa: rgba(170,170,170,1); //#aaa;
+$col-cc: rgba(204,204,204,1); //#ccc;
+$col-dd: rgba(221,221,221,1); //#ddd;
+$col-33: rgba(51,51,51,1); //#333;
+$col-66: rgba(102,102,102,1); //#666;
+$col-36: rgba(54,54,54,1); //#363636;
+$col-14: rgba(20,20,20,1); //#141414;
+$col-22: rgba(34,34,34,1); //#222;
+$col-24: rgba(36,36,36,1); //#242424;
+$col-28: rgba(40,40,40,1); //#282828;
 $col-00: $rgb-10; //#000;
+
+// #e9e9e9
+$bus-title: rgba(233,233,233,1);
+$bus-title-09: rgba(233,233,233,0.9);
+$bus-title-08: rgba(233,233,233,0.8);
+$bus-title-07: rgba(233,233,233,0.7);
+$bus-title-06: rgba(233,233,233,0.6);
+$bus-title-05: rgba(233,233,233,0.5);
+$bus-title-04: rgba(233,233,233,0.4);
+$bus-title-03: rgba(233,233,233,0.3);
+$bus-title-02: rgba(233,233,233,0.2);
+$bus-title-01: rgba(233,233,233,0.1);
+
+// #32b5588
+$bus-blue: rgba(43,85,136,1);
+$bus-blue-09: rgba(43,85,136,.9);
+$bus-blue-08: rgba(43,85,136,.8);
+$bus-blue-07: rgba(43,85,136,.7);
+$bus-blue-06: rgba(43,85,136,.6);
+$bus-blue-05: rgba(43,85,136,.5);
+$bus-blue-04: rgba(43,85,136,.4);
+$bus-blue-03: rgba(43,85,136,.3);
+$bus-blue-02: rgba(43,85,136,.2);
+$bus-blue-01: rgba(43,85,136,.1);
+
+// #2a3645
+$bus-navy: rgba(42,54,69,1);
+$bus-navy-09: rgba(42,54,69,.9);
+$bus-navy-08: rgba(42,54,69,.8);
+$bus-navy-07: rgba(42,54,69,.7);
+$bus-navy-06: rgba(42,54,69,.6);
+$bus-navy-05: rgba(42,54,69,.5);
+$bus-navy-04: rgba(42,54,69,.4);
+$bus-navy-03: rgba(42,54,69,.3);
+$bus-navy-02: rgba(42,54,69,.2);
+$bus-navy-01: rgba(42,54,69,.1);
+
+// #aa89bd
+$bus-days:　rgba(170,137,189,.25);
+$bus-year-10:　rgba(170,137,189,1);
+$bus-year-09: rgba(170,137,189,.9);
+$bus-year-08: rgba(170,137,189,.8);
+$bus-year-07: rgba(170,137,189,.7);
+$bus-year-06: rgba(170,137,189,.6);
+$bus-year-05: rgba(170,137,189,.5);
+$bus-year-04: rgba(170,137,189,.4);
+$bus-year-03: rgba(170,137,189,.3);
+$bus-year-02: rgba(170,137,189,.2);
+$bus-year-01: rgba(170,137,189,.1);
 
 $text-color: $col-36;
 $link-color: $col-B1;
 $hover-color: $blue;
 $footer-Bg-Color: $col-28;
 
+
+
+
 // $col-B1:#4C678B;
 // $col-B2:#3D446F;
 // $col-hart:#96999d;
-
-
 // $hover-color: $col-B2;
 // $hover-color: $col-00;
-
-
 // %inpege-common-color: #89A0C2;
 // %text-color-dark: #f5f5f5;
 // %service-Bg-Color: hsl(216, 20%, 95%);
@@ -153,7 +200,6 @@ $footer-Bg-Color: $col-28;
 // #2b2d38
 // #4C678B;
 // #BABDC6;
-
 // #D8DCEC;
 // #D96165;
 // #AAB4BF;
