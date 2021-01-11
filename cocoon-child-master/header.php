@@ -12,6 +12,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+
 <?php //ヘッドタグ内挿入用のアクセス解析用テンプレート
 get_template_part('tmp/head-analytics'); ?>
 <?php //AMPの案内タグを出力
@@ -32,6 +33,7 @@ if ($domains) {
 foreach ($domains as $domain): ?>
 <link rel="preconnect dns-prefetch" href="//<?php echo $domain; ?>">
 <?php endforeach; ?>
+
 <?php //Google Tag Manager
 if (is_analytics() && $tracking_id = get_google_tag_manager_tracking_id()): ?>
 <!-- Google Tag Manager -->
@@ -68,7 +70,6 @@ get_template_part('tmp/head-pwa'); ?>
 get_template_part('tmp-user/head-insert'); ?>
 </head>
 
-<!-- <body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage" data-barba="wrapper"> -->
 <body class="drawer drawer--top">
 <?php //body最初に挿入するアクセス解析ヘッダータグの取得
   get_template_part('tmp/body-top-analytics'); ?>

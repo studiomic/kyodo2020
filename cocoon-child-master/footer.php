@@ -57,9 +57,6 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
       </div>
     <?php endif ?>
 
-    <?php //フッターの最下部（フッターメニューやクレジットなど）
-    //get_template_part('tmp/footer-bottom'); ?>
-
     <?php //管理者用パネル
     get_template_part('tmp/admin-panel'); ?>
     <?php //モバイルヘッダーメニューボタン
@@ -81,7 +78,7 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
     <?php //フッターで読み込むscriptをまとめたもの
     //get_template_part('tmp/footer-scripts');?>
   <?php //barba.js処理
-  //get_template_part('tmp/footer-barba-js');?>
+  get_template_part('tmp/footer-barba-js');?>
 
   <footer>
   	<h2><a href="#">株式会社共同</a></h2>
@@ -91,5 +88,10 @@ if ( !defined( 'ABSPATH' ) ) exit; ?>
   	</address>
   	<small>Copyright &copy; <?php echo date( 'Y' ); ?> Kyoudou Co.,Ltd. All Rights Reserved.</small>
 	</footer>
+  <script>
+  	$(document).ready(function() {
+  	  $('.drawer').drawer();
+  	});
+  </script>
 </body>
 </html>
