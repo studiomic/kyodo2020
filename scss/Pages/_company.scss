@@ -64,18 +64,32 @@
 	dl {
 		@include comDL;
 	}
-	// dt,dd {
-	// }
 	dt {
 		font-weight: 500;
 		border-bottom: 2px solid $rgb-03;
 	}
-	// dd {
+}
+// 代表メッセージ
+.ceo-message {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $red-06;
+	}
+	section {
+		display: flex;
+	}
+	p {
+		text-align: left;
+		padding: 1rem;
+		line-height: 1.7;
+	}
+	// figcaption {
+	// 	// text-align: center;
 	// }
 }
 
 // 品質管理の4柱
-.qualityManagement,.basicPrinciple,.companyHistory {
+.ceo-message,.qualityManagement,.basicPrinciple,.companyHistory {
 	@include baseWrap;
 }
 .qualityManagement {
@@ -158,65 +172,3 @@
 	// dd {
 	// }
 } // .companyHistory
-
-
-//* @media SM
-//----------------------------------------------------*/
-// @media (max-width:63em) {}
-
-	// .overview,.companyHistory {
-	// 	span {
-	// 		display: block;
-	// 	}
-	// 	dl {
-	// 		width: 90%;
-	// 	}
-	// 	dt,dd {
-	// 		width: $sm-width;
-	// 	}
-	// 	dt {
-	// 		padding: 2rem 0 0;
-	// 	}
-	// 	// dd {
-	// 	// }
-	// }
-
-//* @media MD 1024
-//----------------------------------------------------*/
-// @media (min-width:64em) {}
-	// .overview,.qualityManagement,.basicPrinciple,.companyHistory {
-	// 	width: $main-width;
-	// }
-	// .overview {
-	// 	width: $main-width;
-	// 	dl {
-	// 		width: 70%;
-	// 	}
-	// 	dt,dd {
-	// 		padding: 1rem 0 1rem 1rem;
-	// 	}
-	// 	dt {
-	// 		width: 20%;
-	// 		font-weight: 500;
-	// 	}
-	// 	dd {
-	// 		width: 80%;
-	// 		border-bottom: 1px solid $rgb-01;
-	// 	}
-	// }
-	// .companyHistory {
-	// 	dl {
-	// 		width: 70%;
-	// 	}
-	// 	dt,dd {
-	// 		padding: 1rem 0 1rem 1rem;
-	// 	}
-	// 	dt {
-	// 		width: 30%;
-	// 		font-weight: 500;
-	// 	}
-	// 	dd {
-	// 		width: 70%;
-	// 		border-bottom: 1px solid $blue-02;
-	// 	}
-	// }

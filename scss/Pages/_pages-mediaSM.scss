@@ -120,6 +120,14 @@
 
 	//* Company.scss
 	//----------------------------------------------------*/
+	// 代表メッセージ
+	.ceo-message {
+		section {
+			flex-direction: column;
+		}
+
+	}
+
 	.overview,.companyHistory {
 		span {
 			display: block;

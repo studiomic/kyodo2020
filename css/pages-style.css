@@ -19,6 +19,10 @@
   margin: 0;
 }
 
+address {
+  font-style: normal;
+}
+
 /* HEADER NAV BOX　SIZING
 ----------------------------------------------------*/
 /* File...common */
@@ -148,7 +152,6 @@ footer {
 }
 
 footer address {
-  font-style: normal;
   font-size: 0.8rem;
   line-height: 1.7;
   margin-bottom: 4rem;
@@ -578,7 +581,26 @@ time span {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-.qualityManagement, .basicPrinciple, .companyHistory {
+.ceo-message h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(226, 120, 120, 0.6);
+}
+
+.ceo-message section {
+  display: flex;
+}
+
+.ceo-message p {
+  text-align: left;
+  padding: 1rem;
+  line-height: 1.7;
+}
+
+.ceo-message, .qualityManagement, .basicPrinciple, .companyHistory {
   text-align: center;
   width: 100%;
   margin: 0 auto;
@@ -918,6 +940,135 @@ time span {
   background: whitesmoke;
 }
 
+/* File...pages-yokohama */
+.yokohama {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.yokohama .vehicleType h4 {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.yokohama .headline {
+  position: relative;
+  background: url(../img/yokohama/yokohama-03.jpg) no-repeat;
+  background-size: cover;
+  height: 500px;
+  mix-blend-mode: hard-light;
+  text-align: left;
+  padding: 2rem 0 0 2rem;
+}
+
+.yokohama .headline h2 {
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1.7;
+}
+
+.yokohama .headline address {
+  background: rgba(76, 103, 139, 0.5);
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #fafafa;
+  line-height: 1.7;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.mixB {
+  background: rgba(132, 160, 198, 0.5);
+  background: rgba(0, 0, 0, 0.9);
+  background: #161822;
+}
+
+.addr {
+  background: rgba(76, 103, 139, 0.4);
+}
+
+.equipment {
+  width: 100%;
+  display: flex;
+}
+
+.equipment div {
+  padding-bottom: 1rem;
+}
+
+.equipment div h4 {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fafafa;
+  padding: .5rem;
+  margin: 4px 0 4px;
+}
+
+.equipment div p {
+  text-align: left;
+}
+
+.equipment img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 63em) {
+  .yokohama .headline {
+    background-position: top center;
+    height: 320px;
+    padding: 2rem 1rem;
+  }
+  .yokohama .headline h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  .yokohama .headline address {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fafafa;
+    line-height: 1.7;
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+    right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .buzContent {
+    width: 100%;
+  }
+  .buzContent p {
+    padding: 0 1rem;
+  }
+  .equipment {
+    flex-direction: column;
+  }
+  .equipment div {
+    width: 100%;
+  }
+  .equipment p {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 64em) {
+  .yokohama .headline {
+    background-position: center center;
+  }
+  .yokohama address {
+    bottom: -1.5rem;
+    right: 1rem;
+  }
+  .buzContent {
+    width: 940px;
+  }
+  .equipment {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .equipment div {
+    width: 32%;
+  }
+}
+
 /* File...common-section */
 .fixed {
   display: block;
@@ -926,6 +1077,25 @@ time span {
   left: 0;
   width: 100%;
   z-index: 100;
+}
+
+.buzContent {
+  margin: 0 auto;
+}
+
+.buzContent h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6);
+}
+
+.buzContent p {
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.7;
 }
 
 .contactUs {
@@ -962,7 +1132,6 @@ time span {
 
 .contactUs address {
   font-family: system-ui, sans-serif;
-  font-style: normal;
   font-size: 2.6rem;
   margin: 0 2rem;
 }
@@ -978,6 +1147,9 @@ time span {
 
 /* File...share-media */
 @media (max-width: 63.99875em) {
+  img {
+    max-width: 100%;
+  }
   footer {
     min-height: 240px;
     padding-top: 1rem;
@@ -1158,6 +1330,9 @@ time span {
     height: 100%;
     background-position: right 10px bottom;
     background-size: 200px;
+  }
+  .ceo-message section {
+    flex-direction: column;
   }
   .overview span, .companyHistory span {
     display: block;
@@ -1369,6 +1544,10 @@ time span {
   }
   .overview, .qualityManagement, .basicPrinciple, .companyHistory {
     width: 940px;
+  }
+  .ceo-message {
+    width: 940px;
+    margin: 0 auto;
   }
   .overview {
     width: 940px;

@@ -1,0 +1,89 @@
+// main: ../pages-style.scss
+
+//* YOKOHAMA
+//----------------------------------------------------*/
+.yokohama {
+	.vehicleType {
+		h4 {
+			background: $rgb-09;
+		}
+	}
+	text-align: center;
+	padding-bottom: 4rem;
+	.headline {
+		position: relative;
+		background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
+		// background-position: bottom -100px center;
+		// background-position: top -14rem center;
+		
+		background-size: cover;
+		height: 500px;
+		mix-blend-mode: hard-light;
+		text-align: left;
+		padding: 2rem 0 0 2rem;
+		h2 {
+			font-weight: normal;
+			font-size: 3rem;
+			line-height: 1.7;
+		}
+		address {
+			background: $col-B1-05;
+			font-size: 1.2rem;
+			padding: 2rem;
+			color: $col-Fa;
+			line-height: 1.7;
+			position: absolute;
+
+			// border: 1px solid $col-B1-09;
+			// border: 1px solid $col-Fa;
+			border: 1px solid $rgb-F6;
+		}
+	}
+}
+
+.mixB {
+	background: $blue-05;
+	background: $rgb-09;
+	// background: $rgb-10;
+	background: $iceBG;
+	// background: rgba(34,34,34,1);
+}
+
+.addr {
+	background: $col-B1-04;
+}
+
+.equipment {
+	// border: 1px solid $red;
+	width: 100%;
+	display: flex;
+	// flex-wrap: wrap;
+	// justify-content: space-between;
+	div {
+		// width: 32%;
+		padding-bottom: 1rem;
+		h4 {
+			background: $rgb-08;
+			color: $col-Fa;
+			padding: .5rem;
+			margin: 4px 0 4px;
+		}
+		p {
+			text-align: left;
+			// background: #333;
+			// line-height: 2;
+		}
+	}
+	// div:nth-of-type(3n+2) {
+	// 	// background: #666;
+	// 	padding: 0 2%;
+	// }
+	img {
+		width: 100%;
+		// position: relative;
+		display: block;
+		// box-shadow: -10px 2rem 0px 0px #000;
+	}
+
+	// border-bottom: 10px solid #222;
+}

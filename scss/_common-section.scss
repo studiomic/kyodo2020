@@ -12,6 +12,22 @@
 	z-index: 100;
 }
 
+//* YOKOHANA 事業内容
+//----------------------------------------------------*/
+.buzContent {
+	margin: 0 auto;
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+	p {
+		text-align: left;
+		margin-bottom: 1rem;
+		line-height: 1.7;
+	}
+}
+
+
 //* contactUs
 //----------------------------------------------------*/
 .contactUs {
@@ -45,7 +61,7 @@
 	}
 	address {
 		font-family: $fontFamilySys;
-		font-style: normal;
+		// font-style: normal;
 		font-size: 2.6rem;
 		margin: 0 2rem;
 		a {
