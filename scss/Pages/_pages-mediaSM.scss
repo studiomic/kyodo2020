@@ -259,6 +259,48 @@
 		}
 	}
 
+	//* yokohama
+	//----------------------------------------------------*/
+	.yokohama,.atsugi {
+		.headline {
+			background-position: top center;
+			height: 320px;
+			padding: 2rem 1rem;
+			h2 {
+				font-weight: normal;
+				font-size: 1.6rem;
+			}
+			address {
+				font-size: 1rem;
+				padding: 1rem;
+				color: $col-Fa;
+				line-height: 1.7;
+				position: absolute;
+				bottom: -1rem;
+				left: 1rem;
+				right: 1rem;
+				border: 1px solid $rgb-F6;
+			}
+		}
+	}
+
+	.buzContent {
+		width: $sm-width;
+		p {
+			padding: 0 1rem;
+		}
+
+	}
+	.equipment {
+		flex-direction: column;
+		div {
+			width: 100%;
+		}
+		p {
+			padding: 0 1rem;
+		}
+	}
+
 
 
 

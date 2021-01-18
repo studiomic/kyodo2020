@@ -941,6 +941,29 @@ time span {
 }
 
 /* File...pages-yokohama */
+.yokohama .headline, .atsugi .headline {
+  position: relative;
+  height: 500px;
+  text-align: left;
+  padding: 2rem 0 0 2rem;
+}
+
+.yokohama .headline h2, .atsugi .headline h2 {
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 1.7;
+}
+
+.yokohama .headline address, .atsugi .headline address {
+  background: rgba(76, 103, 139, 0.5);
+  font-size: 1.2rem;
+  padding: 2rem;
+  color: #fafafa;
+  line-height: 1.7;
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
 .yokohama {
   text-align: center;
   padding-bottom: 4rem;
@@ -951,35 +974,9 @@ time span {
 }
 
 .yokohama .headline {
-  position: relative;
   background: url(../img/yokohama/yokohama-03.jpg) no-repeat;
   background-size: cover;
-  height: 500px;
   mix-blend-mode: hard-light;
-  text-align: left;
-  padding: 2rem 0 0 2rem;
-}
-
-.yokohama .headline h2 {
-  font-weight: normal;
-  font-size: 3rem;
-  line-height: 1.7;
-}
-
-.yokohama .headline address {
-  background: rgba(76, 103, 139, 0.5);
-  font-size: 1.2rem;
-  padding: 2rem;
-  color: #fafafa;
-  line-height: 1.7;
-  position: absolute;
-  border: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-.mixB {
-  background: rgba(132, 160, 198, 0.5);
-  background: rgba(0, 0, 0, 0.9);
-  background: #161822;
 }
 
 .addr {
@@ -1011,62 +1008,41 @@ time span {
   display: block;
 }
 
-@media (max-width: 63em) {
-  .yokohama .headline {
-    background-position: top center;
-    height: 320px;
-    padding: 2rem 1rem;
-  }
-  .yokohama .headline h2 {
-    font-weight: normal;
-    font-size: 1.6rem;
-  }
-  .yokohama .headline address {
-    font-size: 1rem;
-    padding: 1rem;
-    color: #fafafa;
-    line-height: 1.7;
-    position: absolute;
-    bottom: -1rem;
-    left: 1rem;
-    right: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.6);
-  }
-  .buzContent {
-    width: 100%;
-  }
-  .buzContent p {
-    padding: 0 1rem;
-  }
-  .equipment {
-    flex-direction: column;
-  }
-  .equipment div {
-    width: 100%;
-  }
-  .equipment p {
-    padding: 0 1rem;
-  }
+/* File...pages-yokohama */
+.atsugi {
+  text-align: center;
+  padding-bottom: 4rem;
 }
 
-@media (min-width: 64em) {
-  .yokohama .headline {
-    background-position: center center;
-  }
-  .yokohama address {
-    bottom: -1.5rem;
-    right: 1rem;
-  }
-  .buzContent {
-    width: 940px;
-  }
-  .equipment {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .equipment div {
-    width: 32%;
-  }
+.atsugi .headline {
+  background: url(../img/atsugi/atsugi-4.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  mix-blend-mode: luminosity;
+}
+
+.atsugi img {
+  height: 350px;
+}
+
+.atsugi-photo {
+  margin-top: 4rem;
+}
+
+.atsugi-photo article {
+  width: 80%;
+  padding: 1rem 0;
+}
+
+.atsugi-photo article:nth-child(odd) {
+  margin: 0 auto 1rem 0;
+  background: rgba(133, 160, 199, 0.15);
+}
+
+.atsugi-photo article:nth-child(even) {
+  margin: 0 0 1rem auto;
+  background: rgba(242, 242, 242, 0.5);
+  background: rgba(185, 201, 223, 0.15);
 }
 
 /* File...common-section */
@@ -1077,6 +1053,14 @@ time span {
   left: 0;
   width: 100%;
   z-index: 100;
+}
+
+.mixB {
+  background: #161822;
+}
+
+.mixB4 {
+  background: rgba(132, 160, 198, 0.4);
 }
 
 .buzContent {
@@ -1436,6 +1420,41 @@ time span {
   .mapbtm span {
     display: block;
   }
+  .yokohama .headline, .atsugi .headline {
+    background-position: top center;
+    height: 320px;
+    padding: 2rem 1rem;
+  }
+  .yokohama .headline h2, .atsugi .headline h2 {
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+  .yokohama .headline address, .atsugi .headline address {
+    font-size: 1rem;
+    padding: 1rem;
+    color: #fafafa;
+    line-height: 1.7;
+    position: absolute;
+    bottom: -1rem;
+    left: 1rem;
+    right: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+  }
+  .buzContent {
+    width: 100%;
+  }
+  .buzContent p {
+    padding: 0 1rem;
+  }
+  .equipment {
+    flex-direction: column;
+  }
+  .equipment div {
+    width: 100%;
+  }
+  .equipment p {
+    padding: 0 1rem;
+  }
   .intro {
     padding: 0 1rem;
   }
@@ -1720,6 +1739,23 @@ time span {
   }
   .mapbtm span {
     margin-right: 1rem;
+  }
+  .yokohama .headline, .atsugi .headline {
+    background-position: center center;
+  }
+  .yokohama address, .atsugi address {
+    bottom: -1.5rem;
+    right: 1rem;
+  }
+  .buzContent {
+    width: 940px;
+  }
+  .equipment {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .equipment div {
+    width: 32%;
   }
 }
 

@@ -332,6 +332,29 @@
 			margin-right: 1rem;
 		}
 	}
+	//* yokohama
+	//----------------------------------------------------*/
+	.yokohama,.atsugi {
+		.headline {
+			background-position: center center;
+		}
+		address {
+			bottom: -1.5rem;
+			right: 1rem;
+		}
+	}
+	.buzContent {
+		width: $main-width;
+	}
+	.equipment {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		div {
+			width: 32%;
+		}
+	}
+
+
 
 
 } //@media MD 1024
