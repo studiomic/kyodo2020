@@ -40,6 +40,42 @@
 	}
 }
 
+//* BOX BLOCS LINK
+//----------------------------------------------------*/
+.inpage {
+	margin: 4rem 0;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		// justify-content: center;
+		list-style: none;
+		width: $sm-width;
+		z-index: 1;
+	}
+	li {
+		a {
+			color: $text-color;
+			@include fina;
+			flex-grow: 1;
+		}
+	}
+}
+
+.oukalink {
+	font-size: 1.4rem;
+	border-radius: 8px;
+	a {
+		border-radius: 8px;
+		background: $col-28;
+		color: $col-Fa;
+		line-height: 3;
+		width: 100%;
+		display: inline-block;
+		&:hover, &:active, &:focus {
+			background: $rgb-10;
+		}
+	}
+}
 
 //* contactUs
 //----------------------------------------------------*/

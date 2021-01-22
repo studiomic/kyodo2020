@@ -4,6 +4,28 @@
 //----------------------------------------------------*/
 // @media (min-width:40em) {}//640px
 @media (max-width:63.99875em) {
+	//* Common Styles
+	//----------------------------------------------------*/
+	nav.inpage {
+		ul {
+			flex-wrap: wrap;
+			flex-direction: column;
+			border-bottom: 1px solid $col-cc;
+		}
+		li {
+			border-top: 1px solid $col-cc;
+			background: $col-Fa;
+			width: $sm-width;
+
+			a {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+
+
+
+
 	//* header
 	header {
 		max-width: 100%;
@@ -167,6 +189,8 @@
 		}
 	}	//* privacy-policy
 
+
+
 	//* BUS
 	//----------------------------------------------------*/
 	.saftyBus {
@@ -188,21 +212,6 @@
 		}
 		h3 {
 			font-size: 1.3rem;
-		}
-		nav {
-			ul {
-				flex-wrap: wrap;
-				flex-direction: column;
-				border-bottom: 1px solid $col-cc;
-			}
-			li {
-				border-top: 1px solid $col-cc;
-				background: $col-Fa;
-
-				a {
-					padding: 2rem 1rem;
-				}
-			}
 		}
 	} // .bus
 
@@ -301,6 +310,23 @@
 		}
 	}
 
+	//* ATSUGI
+	//----------------------------------------------------*/
+	.atsugi-photo {
+		article {
+			width: 100%;
+		}
+	}
+
+
+	//* JOIN
+	//----------------------------------------------------*/
+	.us {
+		flex-direction: column;
+		section {
+			width: $sm-width;
+		}
+	}
 
 
 

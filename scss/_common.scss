@@ -15,27 +15,25 @@
 	margin: 4rem auto;
 }
 
+.title-group {
+	// background: $bus-title;
+	padding: 2rem;
+	margin-bottom: 2rem;
+	h1 {
+		font-weight: normal;
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+}
+
 .tac {
 	text-align: center;
 }
 .pb4 {
 	padding-bottom: 4rem;
 }
-
-
-
-// .mt2 {
-// 	margin-top: 2rem;
-// }
-
-// .mt4 {
-// 	margin-top: 4rem;
-// }
-
-// .mb4 {
-// 	margin-bottom: 4rem;
-// }
-
 
 //* fade in anchor
 //----------------------------------------------------*/
@@ -44,19 +42,11 @@
    display: inline-block;
    transition: .4s;
 }
-	// transform: translateZ(0,0,0);
-	// position: relative;
-	//   display: inline-block;
-	//   padding: .5em 4em;
-	//   border: 2px solid #333;
-	//   color: #333;
-	//   text-align: center;
-	//   text-decoration: none;
-	//   transition: .3s;
 
 @mixin fina-hover {
 	color: $col-Fa;
 	transform: translate3d(0, 0, 10px);
+	width: 100%;
 }
 // z-index: 1;
 
@@ -154,3 +144,24 @@
 // .gen_mb1 {
 // 	margin-bottom: 1em;
 // }
+// .mt2 {
+// 	margin-top: 2rem;
+// }
+
+// .mt4 {
+// 	margin-top: 4rem;
+// }
+
+// .mb4 {
+// 	margin-bottom: 4rem;
+// }
+
+	// transform: translateZ(0,0,0);
+	// position: relative;
+	//   display: inline-block;
+	//   padding: .5em 4em;
+	//   border: 2px solid #333;
+	//   color: #333;
+	//   text-align: center;
+	//   text-decoration: none;
+	//   transition: .3s;

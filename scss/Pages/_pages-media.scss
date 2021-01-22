@@ -3,6 +3,31 @@
 //* @media MD 1024
 //----------------------------------------------------*/
 @media (min-width:64em) {
+	//* Common Styles
+	//----------------------------------------------------*/
+	.inpage {
+		li {
+			border: 1px solid $col-cc;
+			position: relative;
+			a {
+				padding: 2rem 4rem;
+				// @include fina;
+				&:hover {
+					@include fina-hover;
+				}
+				&::before {
+					@include fina-before;
+				}
+				&:hover::before {
+					@include fina-hover-before;
+				}
+			}
+		}
+	}
+
+
+
+
 	//* Page-Section.scss
 	//----------------------------------------------------*/
 	.newsFront {
@@ -353,7 +378,44 @@
 			width: 32%;
 		}
 	}
+	//* ATSUGI
+	//----------------------------------------------------*/
+	.atsugi {
+		img {
+			height: 350px;
+		}
+	}
 
+	.atsugi-photo {
+		margin-top: 4rem;
+		article {
+			width: 80%;
+		}
+		article:nth-child(odd) {
+			margin: 0 auto 1rem 0;
+		}
+
+		article:nth-child(even) {
+			margin: 0 0 1rem auto;
+		}
+	}
+	//* JOIN
+	//----------------------------------------------------*/
+	.join {
+		.inpage {
+			li:nth-of-type(2) {
+				flex-grow: 2;
+				margin: 0 1rem;
+			}
+		}
+	}
+	.us {
+		width: 90%;
+		max-width: 1200px;
+		section {
+			width: 33%;
+		}
+	}
 
 
 
