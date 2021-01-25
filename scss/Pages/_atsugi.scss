@@ -3,18 +3,28 @@
 //* ATSUGI
 //----------------------------------------------------*/
 .atsugi {
-	text-align: center;
-	padding-bottom: 4rem;
+	// text-align: center;
+	// padding-bottom: 4rem;
 	.headline {
-		background: url(../img/atsugi/atsugi-4.jpg)no-repeat;
+		background: url(../img/atsugi/forklift.png)no-repeat;
+		// background: url(../img/atsugi/atsugi-6.png)no-repeat;
+		// background: url(../img/atsugi/8.jpg)no-repeat;
 		background-position: center center;
 		background-size: cover;
-		// mix-blend-mode: hard-light; //ハードライト
 		mix-blend-mode: luminosity; //輝度
+		// mix-blend-mode: lighten; //比較（明）
+		// mix-blend-mode: soft-light; //ソフトライト
+		// mix-blend-mode: hard-light; //ハードライト
+		color: $col-Fa;
+		// -ms-writing-mode: tb-rl;
+		// writing-mode: vertical-rl;
+		// text-orientation: mixed;
+		// text-align: left;
+		// line-height: 2;
+		text-shadow: 0 2px 5px #000;
+
+
 	}
-	// img {
-	// 	height: 350px;
-	// }
 }
 
 .atsugi-photo {

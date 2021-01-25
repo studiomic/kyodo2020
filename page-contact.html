@@ -2,7 +2,7 @@
 <html lang="ja" itemscope itemtype="http://schema.org/WebPage">
 <head>
 	<meta charset="UTF-8">
-	<title>JOIN US</title>
+	<title>CONTACT</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
@@ -58,59 +58,46 @@
 		</nav>
   </header>
 
-  <main role="main" class="join">
-		<section class="title-group">
-			<h1>採用情報</h1>
-			<p>JOIN US</p>
-		</section>
-
-		<section class="us">
-			<section>
-				<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
-				<h3>社員の声</h3>
-				<p>木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。名高い桟も、</p>
-			</section>
-			<section>
-				<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-large.png" alt="" height="270">
-				<h3>未経験者の方へ</h3>
-				<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてス</p>
-			</section>
-			<section>
-				<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
-				<h3>ご家族の皆様へ</h3>
-				<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。しかもあとで聞くとそれは書生という人間中で一番獰悪な種族であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてス</p>
-			</section>
-		</section>
-
-<br><br>
+  <main role="main" class="contact">
+		<h1>お問い合わせ</h1>
 		<p>
-			未経験者サポート体制・賞与・報奨金など待遇・ご家族の方へ・安全管理と講習・・・<br>
-			待遇・条件など優先順にボックスレイアウト、列挙数によって3列組み--4列組み<br>
-			2列2段組み、原稿によって変える
+			ご相談・お見積り・ご質問など、各種お問い合わせは下記のフォームからお送りください。<br>
+			メールでのお問い合わせは info@kyoudou-group.jp へ
 		</p>
-<br><br>
+		<form name="inquiry" action="/mail.php" method="post">
+			<dl>
+				<dt>お問い合わせ先<span class="brown">必須</span></dt>
+				<dd>
+					<input name="お問い合わせ先[]" type="checkbox" value="横浜営業所"> 横浜営業所
+					<input name="お問い合わせ先[]" type="checkbox" value="厚木営業所"> 厚木営業所
+					<input name="お問い合わせ先[]" type="checkbox" value="古河営業所"> 古河営業所
+					<input name="お問い合わせ先[]" type="checkbox" value="採用担当"> 採用担当<br>
+					<input name="お問い合わせ先[]" type="checkbox" value="旅客事業部"> 旅客事業部（貸切バス・乗合バス）
+				</dd>
+				<dt>お名前<span class="brown">必須</span></dt>
+				<dd><input name="お名前" id="name" type="text"></dd>
+				<dt>E-Mailアドレス<span class="brown">必須</span></dt>
+				<dd><input name="E-Mailアドレス" id="email" type="text"></dd>
+				<dt>会社名</dt>
+				<dd><input name="会社名" id="company" type="text"></dd>
+				<dt>電話番号</dt>
+				<dd><input name="電話番号" type="text"></dd>
+				<dt>FAX番号</dt>
+				<dd><input name="FAX番号" type="text"></dd>
+				<dt>郵便番号</dt>
+				<dd><input name="郵便番号" type="text"></dd>
+				<dt>ご住所</dt>
+				<dd><input name="ご住所" type="text" class="addr"></dd>
+				<dt>お問い合わせ内容</dt>
+				<dd><textarea name="お問い合わせ内容"></textarea></dd>
+				<dd><input type="submit" value="  確    認  "></dd>
+			</dl>
+		</form>
+			<!-- <p><input type="submit" value="  確    認  "></p> -->
 
-		<h2>募集要項</h2>
-<p>募集職種・勤務地・所属・給与・休日・・・・・</p>
-<br><br>
-<p>募集職種・勤務地・所属・給与・休日・・・・・</p>
-<br><br>
-<p>募集職種・勤務地・所属・給与・休日・・・・・</p>
-<br><br>
-<br><br>
 
 
-		<section class="container">
-			<p class="oukalink"><a href="#">エントリーフォームへ</a></p>
 
-			<nav class="inpage">
-				<ul>
-					<li><a href="#">社長からのメッセージ</a></li>
-					<li><a href="#">会社概要</a></li>
-					<li><a href="#">プライバシー・ポリシー</a></li>
-				</ul>
-			</nav>
-		</section>
 
 
 		<section class="contactUs">

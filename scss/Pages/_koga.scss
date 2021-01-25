@@ -1,0 +1,13 @@
+// main: ../pages-style.scss
+
+//* KOGA
+//----------------------------------------------------*/
+.koga {
+	.headline {
+		background: url(https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-large.png)no-repeat;
+		background-position: center center;
+		background-size: cover;
+		// mix-blend-mode: hard-light; //ハードライト
+		mix-blend-mode: luminosity; //輝度
+	}
+}

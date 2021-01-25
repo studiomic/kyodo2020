@@ -1,5 +1,5 @@
-// compileCompressed: ../css/$1.css
 // compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
 
 @charset "utf-8";
 
@@ -35,12 +35,17 @@
 @import "Pages/yokohama";
 /* File...pages-yokohama */
 @import "Pages/atsugi";
+/* File...pages-koga */
+@import "Pages/koga";
 /* File...pages-transport */
 @import "Pages/transport";
 
 /* File...pages-join */
 @import "Pages/join";
 
+
+/* File...pages-contact */
+@import "Pages/contact";
 
 
 @import "Pages/SM";

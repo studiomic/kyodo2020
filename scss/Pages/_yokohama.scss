@@ -2,19 +2,16 @@
 
 //* YOKOHAMA
 //----------------------------------------------------*/
-
-.yokohama,.atsugi {
+.shipping,.warehouse,.yokohama,.atsugi,.koga {
 	.headline {
 		position: relative;
-		// background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
-		// background-size: cover;
 		height: 500px;
-		// mix-blend-mode: hard-light;
 		text-align: left;
 		padding: 2rem 0 0 2rem;
 		h2 {
 			font-weight: normal;
 			font-size: 3rem;
+			font-size: 2.5rem;
 			line-height: 1.7;
 		}
 		address {
@@ -29,10 +26,9 @@
 	}
 }
 
-
 .yokohama {
-	text-align: center;
-	padding-bottom: 4rem;
+	// text-align: center;
+	// padding-bottom: 4rem;
 	.vehicleType {
 		h4 {
 			background: $rgb-09;

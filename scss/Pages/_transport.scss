@@ -3,9 +3,77 @@
 //* transport
 //----------------------------------------------------*/
 .transport {
+}
+
+.shipping {
+	.headline {
+		// background: url(../img/595023_m.jpg)no-repeat;
+		background: url(../img/mono4.png)no-repeat;
+		background-size: cover;
+		background-position: center top 80%;
+		// background-position: center center;
+
+		// mix-blend-mode: luminosity; //輝度
+		mix-blend-mode: hard-light; //ハードライト
+		color: $col-Fa;
+		// margin-bottom: 4rem;
+		padding: 3rem 0 0 6rem;
+		font-size: 1.2rem;
+		h3 {
+			font-size: 1.5rem;
+			font-weight: normal;
+			margin: 2rem 0 .5rem;
+			padding-bottom: .2rem;
+			border-bottom: 2px solid $col-Fa;
+			display: inline-block;
+			// font-size: 3rem;
+			// line-height: 1.7;
+		}
+	}
+	ul {
+		margin-left: 1.5rem;
+		// padding-left: 1rem;
+	}
+
+}
+
+.warehouse {
+	.headline {
+		background: url(../img/302502_m.jpg)no-repeat;
+		background: url(../img/mono3.png)no-repeat;
+		background-size: cover;
+		background-position: center center;
+		// mix-blend-mode: luminosity; //輝度
+		mix-blend-mode: hard-light; //ハードライト
+		color: $col-Fa;
+	}
+}
+
+.salesOffice {
 	text-align: center;
-	padding-bottom: 4rem;
-
-
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+	.flex {
+		// width: 96%;
+		margin: 0 auto;
+		max-width: 1300px;
+		// max-width: 1400px;
+		// justify-content:space-between;
+		justify-content: center;
+		flex-wrap: wrap;
+		// width: 100%;
+		article {
+			width: 30%;
+			margin: 0 1%;
+		}
+		img {
+			width: 100%;
+		}
+		p {
+			text-align: left;
+		}
+	}
 
 }

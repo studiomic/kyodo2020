@@ -52,10 +52,10 @@
 //* CONTENT
 //----------------------------------------------------*/
 // 会社概要
-.company {
-	text-align: center;
-	padding-bottom: 4rem;
-}
+// .company {
+// 	text-align: center;
+// 	padding-bottom: 4rem;
+// }
 
 .overview {
 	text-align: left;
@@ -68,7 +68,33 @@
 		font-weight: 500;
 		border-bottom: 2px solid $rgb-03;
 	}
+	ul {
+		margin-left: 1.5rem;
+		// padding-left: 1rem;
+	}
 }
+.office {
+	h2 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	p {
+		padding: 0 0 1rem 1rem;
+		margin-bottom: 1rem;
+		border-bottom: 1px solid $rgb-01;
+	}
+	p:last-child {
+		border-bottom: none;
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+}
+
+
+
+
+
 // 代表メッセージ
 .ceo-message {
 	h2 {

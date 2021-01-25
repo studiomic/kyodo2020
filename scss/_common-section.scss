@@ -19,9 +19,13 @@
 
 }
 .mixB4 {
-	// background: $iceBG;
-	// background: $rgb-F8;
-	background: $blue-04;
+	background: $iceBG;
+	background: $rgb-F8;
+	// background: $bus-navy-09;
+	background: $bus-blue-08;
+	background: $bus-blue-07;
+
+	// background: #20262E;
 }
 
 
@@ -37,6 +41,9 @@
 		text-align: left;
 		margin-bottom: 1rem;
 		line-height: 1.7;
+	}
+	ul {
+		text-align: left;
 	}
 }
 

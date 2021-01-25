@@ -8,6 +8,10 @@ $sm-width: 100%;
 $smpadd-width: 90%;
 $uptoh2: 40px;
 
+@mixin main-width {
+	width: $main-width;
+	margin: 0 auto;
+}
 
 // $Pcwidth: 940px;
 // border: 1px solid $blue;
@@ -15,6 +19,11 @@ $uptoh2: 40px;
 // border: 1px solid $purple;
 // border: 1px solid $cyan;
 
+
+$gray10: hsl(0,0%,10%);
+$gray20: hsl(0,0%,20%);
+$gray30: hsl(0,0%,30%);
+$gray40: hsl(0,0%,40%);
 $gray50: hsl(0,0%,50%);
 $gray60: hsl(0,0%,60%);
 $gray70: hsl(0,0%,70%);
