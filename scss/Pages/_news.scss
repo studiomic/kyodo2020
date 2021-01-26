@@ -1,0 +1,48 @@
+// main: ../pages-style.scss
+
+$circleSIZE: 5.5rem;
+
+//* NEWS
+//----------------------------------------------------*/
+.news {
+	.container {
+		text-align: left;
+		padding: 0 4rem;
+	}
+	article {
+		margin-bottom: 4rem;
+		h2 {
+			font-size: 1.4rem;
+			font-weight: normal;
+			line-height: 1;
+			border-bottom: 2px solid rgba(226,120,120,0.4);
+			border-bottom: 1px solid rgba(40,40,40,.5);
+			margin-left: $circleSIZE + 2rem;
+			padding: 1rem 0 .5rem 0;
+			margin-bottom: 1rem;
+		}
+		p {
+			text-align: left;
+			margin-left: $circleSIZE + 2rem;
+		}
+	}
+	time {
+		float: left;
+		font-family: Georgia, sans-serif;
+		line-height: 1.2;
+		background: $col-28;
+		color: $col-Fa;
+		border-radius: 50%;
+		width: $circleSIZE;
+		height: $circleSIZE;
+		// display: inline-block;
+		display: inline-flex;
+		// flex-direction: column;
+		flex-direction: column-reverse;
+		justify-content: center;
+		text-align: center;
+		span:nth-of-type(2) {
+			font-size: 1.5rem;
+		}
+	}
+}

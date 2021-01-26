@@ -19,31 +19,30 @@
 			}
 		}
 	}
-}
-
-time {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	display: inline-flex;
-	font-weight: 300;
-	text-transform: uppercase;
-	flex-direction: column;
-	justify-content: center;
-	min-width: 80px;
-	max-width: 80px;
-	text-align: center;
-	padding: auto 0;
-	background: rgba(0, 0, 0, 0.85);
-	color: $col-F5;
-	span:nth-of-type(2) {
-		font-size: 2rem;
-		padding: 0.5rem 0;
-	}
-	span {
-		width: 100%;
-		line-height: 1;
+	time {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		display: inline-flex;
+		font-weight: 300;
+		text-transform: uppercase;
+		flex-direction: column;
+		justify-content: center;
+		min-width: 80px;
+		max-width: 80px;
+		text-align: center;
+		padding: auto 0;
+		background: rgba(0, 0, 0, 0.85);
+		color: $col-F5;
+		span:nth-of-type(2) {
+			font-size: 2rem;
+			padding: 0.5rem 0;
+		}
+		span {
+			width: 100%;
+			line-height: 1;
+		}
 	}
 }
 
@@ -56,11 +55,7 @@ time {
 		div {
 			padding: 1rem 1rem 1rem 6rem;
 		}
-
-
-
 	}
-
 }
 //* @media MD 1024
 //----------------------------------------------------*/
@@ -72,11 +67,5 @@ time {
 			min-height: 7rem;
 			padding: 2rem 2rem 2rem 7rem;
 		}
-
-
-
-
-
 	}
-
 }

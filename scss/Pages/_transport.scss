@@ -2,22 +2,12 @@
 
 //* transport
 //----------------------------------------------------*/
-.transport {
-}
+// .transport {}
 
-.shipping {
+.warehouse,.shipping {
 	.headline {
-		// background: url(../img/595023_m.jpg)no-repeat;
-		background: url(../img/mono4.png)no-repeat;
-		background-size: cover;
-		background-position: center top 80%;
-		// background-position: center center;
-
-		// mix-blend-mode: luminosity; //輝度
 		mix-blend-mode: hard-light; //ハードライト
 		color: $col-Fa;
-		// margin-bottom: 4rem;
-		padding: 3rem 0 0 6rem;
 		font-size: 1.2rem;
 		h3 {
 			font-size: 1.5rem;
@@ -30,24 +20,24 @@
 			// line-height: 1.7;
 		}
 	}
+}
+
+.shipping {
+	.headline {
+		padding: 3rem 0 0 6rem;
+		// background: url(../img/595023_m.jpg)no-repeat;
+		background: url(../img/mono4.png)no-repeat;
+		background-position: center top 80%;
+		// background-position: center center;
+		// mix-blend-mode: luminosity; //輝度
+		// mix-blend-mode: hard-light; //ハードライト
+	}
 	ul {
 		margin-left: 1.5rem;
-		// padding-left: 1rem;
-	}
-
-}
-
-.warehouse {
-	.headline {
-		background: url(../img/302502_m.jpg)no-repeat;
-		background: url(../img/mono3.png)no-repeat;
-		background-size: cover;
-		background-position: center center;
-		// mix-blend-mode: luminosity; //輝度
-		mix-blend-mode: hard-light; //ハードライト
-		color: $col-Fa;
 	}
 }
+
+
 
 .salesOffice {
 	text-align: center;
@@ -66,14 +56,117 @@
 		// width: 100%;
 		article {
 			width: 30%;
-			margin: 0 1%;
+			margin: 0 1% 2rem;
 		}
 		img {
 			width: 100%;
+		}
+		h3 {
+			background: $rgb-08;
+			color: $col-Fa;
+			font-weight: normal;
+			line-height: 5;
+			position: relative;
+			margin-bottom: 1rem;
+			&::before,&::after {
+				position: absolute;
+				content: "";
+				width: 50%;
+				display: block;
+			}
+			&::before {
+				top: 1rem;
+				right: 5%;
+				border-top: 2px solid $orange;
+				// border-top: 2px solid $cyan;
+				// border-top: 2px solid $gray60;
+			}
+			&::after {
+				left: 5%;
+				bottom: 1rem;
+				// position: absolute;
+				// content: "";
+				// width: 40%;
+				// display: block;
+				border-top: 2px solid $green;
+				// border-top: 2px solid $gray60;
+			}
+		}
+		p {
+			text-align: left;
+			line-height: 1.7;
+			margin-bottom: 1rem;
+		}
+	}
+}
+
+.salesOffice,.warehouse {
+	.flex {
+		h3 {
+			background: $rgb-08;
+			color: $col-Fa;
+			font-weight: normal;
+			line-height: 5;
+			position: relative;
+			margin-bottom: 1rem;
+			&::before,&::after {
+				position: absolute;
+				content: "";
+				width: 50%;
+				display: block;
+			}
+			&::before {
+				top: 1rem;
+				right: 5%;
+				border-top: 2px solid $orange;
+				// border-top: 2px solid $cyan;
+				// border-top: 2px solid $gray60;
+			}
+			&::after {
+				left: 5%;
+				bottom: 1rem;
+				// position: absolute;
+				// content: "";
+				// width: 40%;
+				// display: block;
+				border-top: 2px solid $green;
+				// border-top: 2px solid $gray60;
+			}
+		}		
+	}
+
+}
+
+
+.warehouse {
+	.headline {
+		background: url(../img/302502_m.jpg)no-repeat;
+		background: url(../img/mono3.png)no-repeat;
+		background-position: center center;
+		text-align: center;
+		padding-top: 6rem;
+		// mix-blend-mode: luminosity; //輝度
+		// mix-blend-mode: hard-light; //ハードライト
+	}
+	.flex {
+		// width: 96%;
+		margin: 3rem auto;
+		max-width: 1300px;
+		// max-width: 1400px;
+		// justify-content:space-between;
+		justify-content: center;
+		flex-wrap: wrap;
+		// width: 100%;
+		article {
+			width: 45%;
+			margin: 0 1% 2rem;
+		}
+		img {
+			width: 100%;
+			height: 300px;
 		}
 		p {
 			text-align: left;
 		}
 	}
-
 }
