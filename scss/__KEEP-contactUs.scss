@@ -93,9 +93,7 @@
 	background: $col-28;
 	border-radius: 8px;
 	color: $col-Fa;
-	// padding: 2rem;
-	padding: 1.5rem;
-	padding: 1rem 1.5rem 1.5rem;
+	padding: 2rem;
 	text-align: center;
 	h3 {
 		background: $col-28;
@@ -114,12 +112,13 @@
 	.atto {
 		&:hover, &:active, &:focus {
 			fill: $col-aa;
+			// height: 86px;
 		}
 	}
 	address {
 		font-family: $fontFamilySys;
-		// font-size: 2.6rem;
-		font-size: 2rem;
+		// font-style: normal;
+		font-size: 2.6rem;
 		margin: 0 2rem;
 		a {
 			color: $col-Fa;

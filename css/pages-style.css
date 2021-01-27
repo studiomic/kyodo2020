@@ -377,139 +377,6 @@ nav.main-nav li {
   }
 }
 
-/* File...pages-section */
-.news,
-.transport,
-.privacy-policy,
-.join, .contact, .company,
-.koga, .yokohama, .atsugi {
-  text-align: center;
-  padding-bottom: 4rem;
-}
-
-.newsFront {
-  background: url(../img/front-header.png) no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  display: flex;
-}
-
-.newsFront article {
-  position: relative;
-  text-align: center;
-}
-
-.newsFront article:nth-of-type(1) {
-  color: #fafafa;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  text-align: left;
-  line-height: 2;
-  text-shadow: 0 2px 5px #000;
-  font-family: "Noto Serif JP", serif;
-  font-weight: 500;
-}
-
-.newsFront article:nth-of-type(1) span {
-  -ms-text-combine-horizontal: all;
-  -webkit-text-combine: horizontal;
-  text-combine-upright: all;
-}
-
-.postFront {
-  margin-top: 80px;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.postFront article {
-  background: whitesmoke;
-  position: relative;
-}
-
-.postFront h2 {
-  font-family: "Noto Serif JP", serif;
-  font-weight: 500;
-  background: rgba(255, 255, 255, 0.8);
-  margin-bottom: 1rem;
-  display: inline-block;
-  padding: 1rem;
-  position: relative;
-}
-
-.postFront section section {
-  padding: 1rem;
-}
-
-.postFront section section p {
-  margin: 0 0 1rem;
-}
-
-.postFront article:before, .postFront article:after {
-  position: absolute;
-  content: " ";
-  background: whitesmoke;
-  top: 0;
-  bottom: 0;
-}
-
-.postFront article h2:before, .postFront article h2:after {
-  position: absolute;
-  content: " ";
-}
-
-.postFront article h2:before {
-  background: rgba(255, 255, 255, 0.8);
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  box-shadow: -2px -1px 2px rgba(40, 40, 40, 0.2);
-}
-
-.postFront article h2:after {
-  display: block;
-  border-top: 1px solid rgba(0, 0, 0, 0.4);
-  height: 1px;
-}
-
-.postFront article:nth-child(odd) h2:after {
-  width: 100%;
-}
-
-.postFront article:nth-child(even) h2:before {
-  left: 0;
-  width: 1500px;
-}
-
-.postFront article:nth-child(even) h2:after {
-  left: 1rem;
-  width: 320%;
-}
-
-.greenMark {
-  margin: 80px auto;
-  position: relative;
-  min-height: 320px;
-  background: url(../img/greenMark.png) no-repeat;
-}
-
-.greenMark section {
-  mix-blend-mode: normal;
-  z-index: 2;
-  position: relative;
-}
-
-.gmark {
-  width: 100%;
-  min-height: 320px;
-  position: absolute;
-  display: inline-block;
-  background: url(../img/greenMarkCover.png) no-repeat;
-  mix-blend-mode: hard-light;
-}
-
 /* File...time-stamp */
 .blog-card {
   position: relative;
@@ -583,7 +450,7 @@ nav.main-nav li {
 /* File...pages-news */
 .news .container {
   text-align: left;
-  padding: 0 4rem;
+  padding: 0 2rem;
 }
 
 .news article {
@@ -991,21 +858,21 @@ nav.main-nav li {
 }
 
 /* File...pages-yokohama */
-.shipping .headline, .warehouse .headline, .yokohama .headline, .atsugi .headline, .koga .headline {
+.busFront .headline, .shipping .headline, .warehouse .headline, .yokohama .headline, .atsugi .headline, .koga .headline {
   position: relative;
   height: 500px;
   text-align: left;
   padding: 2rem 0 0 2rem;
 }
 
-.shipping .headline h2, .warehouse .headline h2, .yokohama .headline h2, .atsugi .headline h2, .koga .headline h2 {
+.busFront .headline h2, .shipping .headline h2, .warehouse .headline h2, .yokohama .headline h2, .atsugi .headline h2, .koga .headline h2 {
   font-weight: normal;
   font-size: 3rem;
   font-size: 2.5rem;
   line-height: 1.7;
 }
 
-.shipping .headline address, .warehouse .headline address, .yokohama .headline address, .atsugi .headline address, .koga .headline address {
+.busFront .headline address, .shipping .headline address, .warehouse .headline address, .yokohama .headline address, .atsugi .headline address, .koga .headline address {
   background: rgba(76, 103, 139, 0.5);
   font-size: 1.2rem;
   padding: 2rem;
@@ -1090,6 +957,12 @@ nav.main-nav li {
 }
 
 /* File...pages-transport */
+.transport h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 4rem auto;
+}
+
 .warehouse .headline, .shipping .headline {
   mix-blend-mode: hard-light;
   color: #fafafa;
@@ -1235,6 +1108,184 @@ nav.main-nav li {
   text-align: left;
 }
 
+/* File...pages-section */
+.news,
+.transport,
+.privacy-policy,
+.join, .contact, .company,
+.koga, .yokohama, .atsugi {
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.descFront {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.descFront p {
+  line-height: 1.7;
+  text-align: left;
+}
+
+.busFront .headline {
+  background: url(../img/bus.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  mix-blend-mode: hard-light;
+  color: #fafafa;
+  font-size: 1.2rem;
+  padding: 2rem 0 0 8.5rem !important;
+}
+
+.busFront .headline h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin: 2rem 0 .5rem;
+  padding-bottom: .2rem;
+  border-bottom: 2px solid #fafafa;
+  display: inline-block;
+}
+
+.greenSafety {
+  text-align: center;
+  margin: 0 auto;
+  width: 940px;
+}
+
+.greenSafety h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid #6ab574;
+}
+
+.newsFront {
+  background: url(../img/front-header.png) no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+}
+
+.newsFront article {
+  position: relative;
+  text-align: center;
+}
+
+.newsFront article:nth-of-type(1) {
+  color: #fafafa;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  text-align: left;
+  line-height: 2;
+  text-shadow: 0 2px 5px #000;
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+}
+
+.newsFront article:nth-of-type(1) span {
+  -ms-text-combine-horizontal: all;
+  -webkit-text-combine: horizontal;
+  text-combine-upright: all;
+}
+
+.postFront {
+  margin-top: 80px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.postFront article {
+  background: whitesmoke;
+  position: relative;
+}
+
+.postFront h2 {
+  font-family: "Noto Serif JP", serif;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding: 1rem;
+  position: relative;
+}
+
+.postFront section section {
+  padding: 1rem;
+}
+
+.postFront section section p {
+  margin: 0 0 1rem;
+}
+
+.postFront article:before, .postFront article:after {
+  position: absolute;
+  content: " ";
+  background: whitesmoke;
+  top: 0;
+  bottom: 0;
+}
+
+.postFront article h2:before, .postFront article h2:after {
+  position: absolute;
+  content: " ";
+}
+
+.postFront article h2:before {
+  background: rgba(255, 255, 255, 0.8);
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  box-shadow: -2px -1px 2px rgba(40, 40, 40, 0.2);
+}
+
+.postFront article h2:after {
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.4);
+  height: 1px;
+}
+
+.postFront article:nth-child(odd) h2:after {
+  width: 100%;
+}
+
+.postFront article:nth-child(even) h2:before {
+  left: 0;
+  width: 1500px;
+}
+
+.postFront article:nth-child(even) h2:after {
+  left: 1rem;
+  width: 320%;
+}
+
+.greenMark {
+  margin: 80px auto;
+  position: relative;
+  min-height: 320px;
+  background: url(../img/greenMark.png) no-repeat;
+}
+
+.greenMark section {
+  mix-blend-mode: normal;
+  z-index: 2;
+  position: relative;
+}
+
+.gmark {
+  width: 100%;
+  min-height: 320px;
+  position: absolute;
+  display: inline-block;
+  background: url(../img/greenMarkCover.png) no-repeat;
+  mix-blend-mode: hard-light;
+}
+
 /* File...pages-join */
 .join .title-group {
   background: rgba(180, 190, 130, 0.5);
@@ -1373,46 +1424,11 @@ textarea {
   }
 }
 
-.flex-title .time-wrap time {
-  transform: translate(0, 0);
-  width: 84px;
-  height: 84px;
-  border-radius: 100%;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  line-height: 1;
-  background: #333;
-  font-family: Georgia, "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-  color: #f5f5f5;
-}
-
-.index-list time {
-  transform: translate(0, 0);
-  width: 84px;
-  height: 84px;
-  border-radius: 100%;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  line-height: 1;
-  background: #eee;
-  font-family: Georgia, "ヒラギノ明朝 ProN W3", "HiraMinProN-W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "MS PMincho", "MS 明朝", serif;
-  color: #333;
-}
-
-.index-list time span {
-  font-size: 15px;
-  width: 100%;
-  line-height: 0.7;
-  padding: 0;
-}
-
-.index-list time span.front-day {
-  font-style: italic;
-  margin-top: -10px;
-  margin-bottom: 10px;
-  font-size: 24px;
+@media (min-width: 64em) {
+  .descFront {
+    width: 940px;
+    margin: 4rem auto;
+  }
 }
 
 /* File...common-section */
@@ -1504,7 +1520,8 @@ textarea {
   background: #282828;
   border-radius: 8px;
   color: #fafafa;
-  padding: 2rem;
+  padding: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
   text-align: center;
 }
 
@@ -1531,7 +1548,7 @@ textarea {
 
 .contactUs address {
   font-family: system-ui, sans-serif;
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin: 0 2rem;
 }
 
@@ -1612,6 +1629,10 @@ textarea {
   }
   .contactUs {
     width: 940px;
+  }
+  .contactUs svg {
+    width: 70px;
+    height: 70px;
   }
   .contactUs h3 {
     display: block;

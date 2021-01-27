@@ -2,7 +2,13 @@
 
 //* transport
 //----------------------------------------------------*/
-// .transport {}
+.transport {
+	h1 {
+		font-size: 3rem;
+		font-weight: normal;
+		margin: 4rem auto;
+	}
+}
 
 .warehouse,.shipping {
 	.headline {
@@ -132,7 +138,7 @@
 				border-top: 2px solid $green;
 				// border-top: 2px solid $gray60;
 			}
-		}		
+		}
 	}
 
 }

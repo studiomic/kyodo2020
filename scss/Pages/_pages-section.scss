@@ -12,6 +12,62 @@
 
 //* FRONT PAGE NEWS
 //----------------------------------------------------*/
+.description {}
+// .frontpage {
+// }
+.descFront {
+	text-align: center;
+	font-size: 1.2rem;
+	p {
+		line-height: 1.7;
+		text-align: left;
+
+	}
+	.introduction {}
+
+}
+
+.busFront {
+	.headline {
+		background: url(../img/bus.jpg)no-repeat;
+		background-position: center;
+		background-size: cover;
+		height: 500px;
+		mix-blend-mode: hard-light; //ハードライト
+		color: $col-Fa;
+		font-size: 1.2rem;
+		padding: 2rem 0 0 8.5rem !important;
+
+		// text-align: center !important;
+		h3 {
+			font-size: 1.5rem;
+			font-weight: normal;
+			margin: 2rem 0 .5rem;
+			padding-bottom: .2rem;
+			border-bottom: 2px solid $col-Fa;
+			display: inline-block;
+		}
+	}
+}
+
+.greenSafety {
+	text-align: center;
+	margin: 0 auto;
+	width: $main-width;
+	h2 {
+		@include titleH2;
+		// border-bottom: 3px solid $green;
+		border-bottom: 3px solid #6ab574;
+		//#73B062;0e9d4b
+		// $greenmark;#67B46E
+	}
+
+
+}
+
+
+//* FRONT PAGE NEWS
+//----------------------------------------------------*/
 .newsFront {
 	background: url(../img/front-header.png)no-repeat;
 	background-position: center bottom;
