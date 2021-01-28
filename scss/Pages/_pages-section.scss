@@ -1,6 +1,6 @@
 // main: ../pages-style.scss
 
-.news,
+.Front,.news,
 .transport,
 .privacy-policy,
 .join,.contact,.company,
@@ -12,20 +12,20 @@
 
 //* FRONT PAGE NEWS
 //----------------------------------------------------*/
-.description {}
-// .frontpage {
+// .description {}
+// // .frontpage {
+// // }
+// .descFront {
+// 	text-align: center;
+// 	font-size: 1.2rem;
+// 	p {
+// 		line-height: 1.7;
+// 		text-align: left;
+//
+// 	}
+// 	.introduction {}
+//
 // }
-.descFront {
-	text-align: center;
-	font-size: 1.2rem;
-	p {
-		line-height: 1.7;
-		text-align: left;
-
-	}
-	.introduction {}
-
-}
 
 .busFront {
 	.headline {
@@ -57,14 +57,121 @@
 	h2 {
 		@include titleH2;
 		// border-bottom: 3px solid $green;
-		border-bottom: 3px solid #6ab574;
+		border-bottom: 3px solid rgba(0,153,51,1); //#6ab574;
 		//#73B062;0e9d4b
 		// $greenmark;#67B46E
 	}
-
-
+	div {
+		height: 150px;
+	}
+	.flex {
+		justify-content:space-between;
+		section {
+			width: 32%;
+			p {
+				text-align: left;
+				line-height: 1.7;
+			}
+		}
+		h3 {
+			font-weight: normal;
+			padding: .5rem;
+			line-height: 1;
+			border-radius: 1rem 0;
+			margin: .5rem 0;
+		}
+		section:nth-of-type(1){
+			h3 {
+				background: rgba(205,222,0,.6); //#cdde00;
+			}
+		}
+		section:nth-of-type(2){
+			h3 {
+				background: rgba(0,153,51,.6); //#009933;
+			}
+		}
+		section:nth-of-type(3){
+			h3 {
+				background: rgba(239,197,65,1);
+			}
+		}
+	}
 }
 
+.safetyBottom {
+	margin: 4rem 0;
+	padding: 2rem;
+	text-align: left;
+	background: rgba(0,153,51,.4); //#009933;
+	border-radius: 1rem 0;
+	line-height: 1.7;
+}
+
+.joinFront {
+	text-align: center;
+	margin: 0 auto;
+	width: $main-width;
+	position: relative;
+
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $red-06;
+	}
+	div {
+		position: relative;
+		margin: -4rem 0 0 -2rem;
+		p {
+			display: none;
+		}
+		&::before,&::after {
+			position: absolute;
+			content: '';
+			display: block;
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			background-size: cover;
+
+		}
+
+		&::before {
+			background: url(../img/person-m.png)no-repeat;
+			left: 150px;
+			top: 80px;
+			// mix-blend-mode: hard-light; //ハードライト
+			// mix-blend-mode: luminosity; //輝度
+			// opacity: .8;
+		}
+		&::after {
+			background: url(../img/person-f.png)no-repeat;
+			left: 0px;
+			top: 0px;
+			// z-index: 0;
+		}
+
+	}
+	section {
+		position: relative;
+		// border: 1px solid $red-06;
+		// border-radius: 2rem 0 0 2rem;
+		border-radius: 50%;
+		display: inline-block;
+		z-index: 1;
+		// padding-left: 400px;
+		// margin: 0 0 0 440px;
+		margin-left: 440px;
+		padding: 4rem 0 4rem 4rem;
+		display: inline-block;
+		text-align: left;
+		// filter: drop-shadow( -1px 1px 0 white);
+		background: rgba(255,255,255,.8);
+		p {
+			font-size: 1.2em;
+			line-height: 1.7;
+			margin-bottom: 1rem;
+		}
+	}
+}
 
 //* FRONT PAGE NEWS
 //----------------------------------------------------*/
@@ -180,36 +287,35 @@
 
 //* FRONT PAGE GREENMARK
 //----------------------------------------------------*/
-.greenMark {
-	margin: 80px auto;
-	position: relative;
-	min-height: 320px;
-	background: url(../img/greenMark.png)no-repeat;
-	// background-position: right top;
-	section {
-		mix-blend-mode: normal;
-		z-index:2;
-		position: relative;
-		// justify-content: flex-end;
-		// border: 1px solid $blue;
-	}
-}
-.gmark {
-	width: 100%;
-	min-height: 320px;
-	position: absolute;
-	display: inline-block;
-	background: url(../img/greenMarkCover.png)no-repeat;
-	mix-blend-mode: hard-light;
-	// background-position: right top;
-	// width: 284px;
-	// background-position: left bottom;
-
-	// mix-blend-mode: overlay;
-	// mix-blend-mode: soft-light;
-	// mix-blend-mode: screen;
-	// mix-blend-mode: color;
-}
+// .greenMark {
+// 	margin: 80px auto;
+// 	position: relative;
+// 	min-height: 320px;
+// 	background: url(../img/greenMark.png)no-repeat;
+// 	// background-position: right top;
+// 	section {
+// 		mix-blend-mode: normal;
+// 		z-index:2;
+// 		position: relative;
+// 		// justify-content: flex-end;
+// 		// border: 1px solid $blue;
+// 	}
+// }
+// .gmark {
+// 	width: 100%;
+// 	min-height: 320px;
+// 	position: absolute;
+// 	display: inline-block;
+// 	background: url(../img/greenMarkCover.png)no-repeat;
+// 	mix-blend-mode: hard-light;
+// }
+// background-position: right top;
+// width: 284px;
+// background-position: left bottom;
+// mix-blend-mode: overlay;
+// mix-blend-mode: soft-light;
+// mix-blend-mode: screen;
+// mix-blend-mode: color;
 
 //* @media SM
 //----------------------------------------------------*/

@@ -990,6 +990,7 @@ nav.main-nav li {
 
 .salesOffice {
   text-align: center;
+  margin-top: 4rem;
 }
 
 .salesOffice h2 {
@@ -1109,23 +1110,13 @@ nav.main-nav li {
 }
 
 /* File...pages-section */
-.news,
+.Front, .news,
 .transport,
 .privacy-policy,
 .join, .contact, .company,
 .koga, .yokohama, .atsugi {
   text-align: center;
   padding-bottom: 4rem;
-}
-
-.descFront {
-  text-align: center;
-  font-size: 1.2rem;
-}
-
-.descFront p {
-  line-height: 1.7;
-  text-align: left;
 }
 
 .busFront .headline {
@@ -1160,7 +1151,118 @@ nav.main-nav li {
   margin: 4rem auto;
   display: inline-block;
   line-height: 2;
-  border-bottom: 3px solid #6ab574;
+  border-bottom: 3px solid #009933;
+}
+
+.greenSafety div {
+  height: 150px;
+}
+
+.greenSafety .flex {
+  justify-content: space-between;
+}
+
+.greenSafety .flex section {
+  width: 32%;
+}
+
+.greenSafety .flex section p {
+  text-align: left;
+  line-height: 1.7;
+}
+
+.greenSafety .flex h3 {
+  font-weight: normal;
+  padding: .5rem;
+  line-height: 1;
+  border-radius: 1rem 0;
+  margin: .5rem 0;
+}
+
+.greenSafety .flex section:nth-of-type(1) h3 {
+  background: rgba(205, 222, 0, 0.6);
+}
+
+.greenSafety .flex section:nth-of-type(2) h3 {
+  background: rgba(0, 153, 51, 0.6);
+}
+
+.greenSafety .flex section:nth-of-type(3) h3 {
+  background: #efc541;
+}
+
+.safetyBottom {
+  margin: 4rem 0;
+  padding: 2rem;
+  text-align: left;
+  background: rgba(0, 153, 51, 0.4);
+  border-radius: 1rem 0;
+  line-height: 1.7;
+}
+
+.joinFront {
+  text-align: center;
+  margin: 0 auto;
+  width: 940px;
+  position: relative;
+}
+
+.joinFront h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(226, 120, 120, 0.6);
+}
+
+.joinFront div {
+  position: relative;
+  margin: -4rem 0 0 -2rem;
+}
+
+.joinFront div p {
+  display: none;
+}
+
+.joinFront div::before, .joinFront div::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.joinFront div::before {
+  background: url(../img/person-m.png) no-repeat;
+  left: 150px;
+  top: 80px;
+}
+
+.joinFront div::after {
+  background: url(../img/person-f.png) no-repeat;
+  left: 0px;
+  top: 0px;
+}
+
+.joinFront section {
+  position: relative;
+  border-radius: 50%;
+  display: inline-block;
+  z-index: 1;
+  margin-left: 440px;
+  padding: 4rem 0 4rem 4rem;
+  display: inline-block;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.joinFront section p {
+  font-size: 1.2em;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
 .newsFront {
@@ -1262,28 +1364,6 @@ nav.main-nav li {
 .postFront article:nth-child(even) h2:after {
   left: 1rem;
   width: 320%;
-}
-
-.greenMark {
-  margin: 80px auto;
-  position: relative;
-  min-height: 320px;
-  background: url(../img/greenMark.png) no-repeat;
-}
-
-.greenMark section {
-  mix-blend-mode: normal;
-  z-index: 2;
-  position: relative;
-}
-
-.gmark {
-  width: 100%;
-  min-height: 320px;
-  position: absolute;
-  display: inline-block;
-  background: url(../img/greenMarkCover.png) no-repeat;
-  mix-blend-mode: hard-light;
 }
 
 /* File...pages-join */

@@ -1,66 +1,53 @@
-<!DOCTYPE html>
-<html lang="ja" itemscope itemtype="http://schema.org/WebPage">
-<head>
-	<meta charset="UTF-8">
-	<title>TRANSPORT</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="/apple-touch-icon.png" rel="apple-touch-icon">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
-	<!-- jquery & iScroll -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
-	<script src="js/nav.js"></script>
-	<link rel="stylesheet" href="css/pages-style.css">
-</head>
+<?php
+/*
+Template Name: frontw
+*/
+?>
+<?php get_template_part('pages/ind-header'); ?>
+<main role="main">
+	<section class="newsFront">
+		<article>
+			<p>創業<span>25</span>周年<br>東京と神奈川に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
+		</article>
 
-<body class="drawer drawer--top">
-	<header role="banner">
-		<nav class="nav-bar">
-			<h1><a href="Front-page.html">株式会社共同</a></h1>
-			<ul>
-				<li><a href="page-company.html">会社概要</a></li>
-				<li><a href="#">運送・貨物・倉庫</a></li>
-				<li><a href="#">旅客事業部</a></li>
-				<li><a href="#">採用情報</a></li>
-			</ul>
-		</nav>
+		<article>
+			<section class="blog-card">
+				<a href="#">
+					<time datetime="2018/3/3">
+						<span>Mar</span><span class="front-day">03</span><span>2018</span>
+					</time>
+					<div>
+						<p>NEWSカテゴリ最新3POSTの抜粋文表示...NEWSカテゴリ最新3POSTの抜粋文表示...</p>
+					</div>
+				</a>
+			</section>
 
-		<h1><a href="Front-page.html">Kyoudou</a></h1>
-		<nav class="main-nav">
-			<ul>
-				<li><a href="page-company.html">company</a></li>
-				<li><a href="#">works</a></li>
-				<li><a href="#">passenger bus</a></li>
-				<li><a href="#">join us</a></li>
-			</ul>
-		</nav>
+			<section class="blog-card">
+				<a href="#">
+					<time datetime="2018/2/25">
+						<span>Feb</span><span class="front-day">25</span><span>2018</span>
+					</time>
+					<div>
+						<p>健康診断車とUNICクレーンの記事は、写真とテキスト原稿待ち...健康診断車とUNICクレーンの記事は、写真とテキスト原稿待ち...</p>
+					</div>
+				</a>
+			</section>
 
-		<button type="button" class="drawer-toggle drawer-hamburger">
-			<span class="sr-only">toggle navigation</span>
-			<span class="drawer-hamburger-icon"></span>
-		</button>
-		<nav class="drawer-nav" role="navigation">
-			<ul class="drawer-menu">
-				<li><a class="drawer-brand" href="Front-page.html">Kyoudou</a></li>
-				<li><a href="page-company.html">会社概要</a></li>
-				<li><a href="#">NEWS</a></li>
-				<li><a href="#">物流・運送・貨物事業</a></li>
-				<li><a href="#">横浜営業所</a></li>
-				<li><a href="#">厚木営業所</a></li>
-				<li><a href="#">古賀営業所</a></li>
-				<li><a href="#">旅客事業</a></li>
-				<li><a href="#">採用情報</a></li>
-				<li><a href="#">お問い合わせ</a></li>
-				<li><a href="page-privacy-policy.html">プライバシーポリシー</a></li>
-				<li><a href="#">BLOG</a></li>
-			</ul>
-		</nav>
-  </header>
+			<section class="blog-card">
+				<a href="#">
+					<time datetime="2019/3/1">
+						<span>Mar</span><span class="front-day">01</span><span>2019</span>
+					</time>
+					<div>
+						<p>NEWSカテゴリ最新3POSTの抜粋文表示...NEWSカテゴリ最新3POSTの抜粋文表示...</p>
+					</div>
+				</a>
+			</section>
+		</article>
+	</section>
 
-	<main class="transport">
+	<section class="transport">
 		<h1>物流・運送・貨物事業</h1>
-
 		<section class="shipping">
 			<div class="mixB4">
 				<section class="headline">
@@ -101,24 +88,24 @@
 				<h2>営業所</h2>
 				<section class="flex">
 					<article>
-						<img src="img/yokohama/yokohama-27.jpg">
+						<img src="/wp/img/yokohama/yokohama-27.jpg">
 						<h3><span>横浜営業所</span></h3>
 						<p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p>
 					</article>
 					<article>
-						<img src="img/atsugi/forklift.png">
+						<img src="/wp/img/atsugi/forklift.png">
 						<h3><span>厚木営業所</span></h3>
 						<p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
 						<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p>
 					</article>
 					<article>
-						<img src="img/atsugi/atsugi-9.jpg">
+						<img src="/wp/img/atsugi/atsugi-9.jpg">
 						<h3><span>古河営業所</span></h3>
 						<p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
 					</article>
 
 					<article>
-						<img src="img/yokohama/yokohama-16.jpg">
+						<img src="/wp/img/yokohama/yokohama-16.jpg">
 						<h3><span>横浜本社営業所・整備工場</span></h3>
 						<p>ここのタイトルを「本社」営業所にするかはともかく、サイトのどこを探しても本社がどこか探しにくいのはモヤッとする。ので、横浜の所在地が本社と明言した方がいい気がする。</p>
 						<p>整備工場に隣接する事務所で管理・設備があることなど書いた上で、横浜ページの設備項目にリンク。もしくはこのページにも同じ内容を載せる。</p>
@@ -126,7 +113,7 @@
 
 
 					<article>
-						<img src="img/yokohama/yokohama-10.jpg">
+						<img src="/wp/img/yokohama/yokohama-10.jpg">
 						<h3><span>UNICクレーン</span></h3>
 						<p>運送・貨物事業部のトップは、営業所の列挙ページではなく総合的に事業内容、サービスを伝えるべき場所なので、横浜営業所保有のUNICクレーンは・・・という流れでここに載せる。</p>
 						<p>営業所という中見出しは微妙なので外しても良い</p>
@@ -139,12 +126,6 @@
 				</section>
 			</section>
 		</section>
-
-
-		<!-- 一般貨物の全般を扱う「横浜営業所」
-		トラックシャシーの専属輸送を扱う「厚木営業所」
-		物流倉庫を保有する「古賀営業所」 -->
-
 
 
 		<section class="warehouse">
@@ -181,54 +162,86 @@
 				</article>
 			</section>
 		</section>
+	</section>
+	<!-- transport -->
+
+			<section class="busFront">
+				<div class="mixB4">
+					<section class="headline">
+						<h2>旅客事業部</h2>
+						<h3>貸切バス・マイクロバス・特定バス</h3>
+						<p>
+							貸切チャーターバスをお客様の用途に合わせて手配いたします。<br>
+							冠婚葬祭や観光に適した1日〜数日単位の送迎依頼や<br>
+							学校・法人・個人・マンション等集合住宅からの定期便ご依頼など<br>
+							幅広くご利用いただいております。<br>
+						</p>
+						<h3>乗合バス・こすずめ号</h3>
+						<p>
+							小雀浄水場〜大船駅（循環）<br>
+							大船駅北口ターミナル〜小雀町内循環の乗合バス「こすずめ号」は、365日欠かさず運行しています。<br>
+							お近くの方はぜひご利用ください。
+						</p>
+					</section>
+				</div>
+			</section>
+
+			<section class="greenSafety">
+				<h2>環境への配慮と安全に対する取り組み</h2>
+				<section class="flex">
+					<section>
+						<div><img src="/wp/img/anzenyuryo.gif" alt="安全性優良事業所"></div>
+						<h3>安全性優良事業所</h3>
+						<p>
+							<a href="https://www.jta.or.jp/" target="_blank">全日本トラック協会</a>
+							による交通安全対策などへの取り組みを事業所単位で認定する安全性優良事業所「Gマーク」を取得しています。
+						</p>
+					</section>
+					<section>
+						<div><img src="/wp/img/green-keiei.gif" alt="グリーン経営認証"></div>
+						<h3>グリーン経営認証</h3>
+						<p>
+							<a href="https://www.green-m.jp/" target="_blank">公益財団法人交通エコロジー・モビリティ財団</a>
+							による環境保全を目的にした取り組みを行っている運輸事業者に対する認定制度「グリーン経営認証」を取得しています。
+						</p>
+					</section>
+					<section>
+						<div><img src="/wp/img/safetybus.png" alt="貸切バス事業者安全性評価認定" width="160"></div>
+						<h3>貸切バス事業者安全性評価認定</h3>
+						<p>
+							<a href="http://www.bus.or.jp/safety/index.html" target="_blank">公益社団法人日本バス協会</a>
+							による貸切バス事業者安全性評価認定制度の「2つ星」を取得いたしました。<br>
+							認定事業者は国土交通省並びに日本バス協会のホームページにて公表され、認定証のほか運行する車体に「SAFETY BUS」マークを貼付します。
+						</p>
+					</section>
+				</section>
+				<section class="safetyBottom">
+					<p>
+						昨今の輸送業界では常識になっているエアサスペンションは全車両に装備し、デジタルタコグラフによる車両管理、大阪府乗り入れ申請、24時間365日の完全対面点呼の実施、自社整備工場での日常点呼等、安全に、確実に、迅速にお客様のお荷物を運ぶことを全面支援いたします。
+						品質維持の基本構造、徹底した車輌管理・運行管理、車輌整備、入社教育制度について
+					</p>
+				</section>
+			</section>
+
+			<section class="joinFront">
+				<h2>採用情報</h2>
+				<div><p>Join Us</p></div>
+				<section>
+					<p>
+						株式会社共同では<br>
+						拠点3箇所の各営業所で中距離・長距離トラックドライバー<br>
+						横浜営業所でフォークリフト操縦者、自動車整備士、営業担当者<br>
+						横浜営業所・旅客事業部でバス・ドライバー、乗務員を募集しております。<br>
+					</p>
+					<p>
+						ドライバーについては、未経験者の方にもしっかりとした安全運転講習・新人研修などプロドライバーになるまでのサポート体制がありますので、輸送業務に興味のある方や将来のスキルアップを目指す方、ご応募をお待ちしています！
+					</p>
+				</section>
+			</section>
 
 
 
 
 
-
-
-		<!-- <img src="img/mono3.png" alt="">
-		<img src="img/mono4.png" alt="">
-		<img src="img/595023_m.jpg" alt="">
-		<img src="img/302502_m.jpg" alt=""> -->
-
-
-
-
-
-
-
-		<section class="contactUs">
-			<h3>お問い合わせは、お電話かEメールで</h3>
-			<div>
-				<p>
-					<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path d="M17.5 2c.276 0 .5.224.5.5v19c0 .276-.224.5-.5.5h-11c-.276 0-.5-.224-.5-.5v-19c0-.276.224-.5.5-.5h11zm2.5 0c0-1.104-.896-2-2-2h-12c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-20zm-9.5 1h3c.276 0 .5.224.5.501 0 .275-.224.499-.5.499h-3c-.275 0-.5-.224-.5-.499 0-.277.225-.501.5-.501zm1.5 18c-.553 0-1-.448-1-1s.447-1 1-1c.552 0 .999.448.999 1s-.447 1-.999 1zm5-3h-10v-13h10v13z"/></svg>
-				</p>
-				<p class="grow">
-					<address><a href="tel:045-851-1551"></a>045-851-1551</a></address>
-				</p>
-				<p>
-					<a href="mailto:info@kyoudou-group.jp">
-					<svg class="atto" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path d="M13.718 10.528c0 .792-.268 1.829-.684 2.642-1.009 1.98-3.063 1.967-3.063-.14 0-.786.27-1.799.687-2.58 1.021-1.925 3.06-1.624 3.06.078zm10.282 1.472c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-1.194c0-3.246-2.631-5.601-6.256-5.601-4.967 0-7.744 3.149-7.744 7.073 0 3.672 2.467 6.517 7.024 6.517 2.52 0 4.124-.726 5.122-1.288l-.687-.991c-1.022.593-2.251 1.136-4.256 1.136-3.429 0-5.733-2.199-5.733-5.473 0-5.714 6.401-6.758 9.214-5.071 2.624 1.642 2.524 5.578.582 7.083-1.034.826-2.199.799-1.821-.756 0 0 1.212-4.489 1.354-4.975h-1.364l-.271.952c-.278-.785-.943-1.295-1.911-1.295-2.018 0-3.722 2.19-3.722 4.783 0 1.73.913 2.804 2.38 2.804 1.283 0 1.95-.726 2.364-1.373-.3 2.898 5.725 1.557 5.725-3.525z"/></svg></a>
-				</p>
-			</div>
-		</section>
-  </main>
-
-	<footer>
-		<h2><a href="#">株式会社共同</a></h2>
-		<address>
-			<p>〒244-0845 神奈川県横浜市栄区金井町164-1</p>
-			<p>TEL &nbsp; 045-851-1551 &nbsp; &nbsp; FAX &nbsp; 045-851-0081</p>
-		</address>
-		<small>Copyright &copy; 2020 Kyoudou Co.,Ltd. <span>All Rights Reserved.</span></small>
-	</footer>
-
-<script>
-	$(document).ready(function() {
-	  $('.drawer').drawer();
-	});
-</script>
-</body>
-</html>
+<?php get_template_part('pages/section-contactus'); ?>
+<?php get_footer(); ?>
