@@ -4,14 +4,6 @@
 /* File...box-sizing */
 /* BOX　SIZING
 ----------------------------------------------------*/
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
 /* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
 ----------------------------------------------------*/
 * {
@@ -1386,6 +1378,7 @@ nav.main-nav li {
 
 .us section {
   text-align: center;
+  z-index: 20;
 }
 
 .us section p {
@@ -1398,14 +1391,106 @@ nav.main-nav li {
 }
 
 .us h3 {
-  font-size: 2rem;
+  padding: 15px 0;
+  margin: 10px 0;
+  border: solid 3px #3cb3e4;
+  position: relative;
+  text-align: center;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.us h3::before, .us h3::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  background: #3cb3e4;
+  border: solid 2px #3cb3e4;
+  width: 25px;
+  height: 20px;
+  z-index: -1;
+}
+
+.us h3::after {
+  left: 2px;
+  transform: rotate(120deg);
+}
+
+.us h3::before {
+  right: 2px;
+  transform: rotate(60deg);
+}
+
+.working {
+  display: flex;
+  margin: 0 auto;
+}
+
+.working h4 {
+  background: #89b8c2;
+  color: #fafafa;
   font-weight: normal;
-  margin: 4rem auto;
-  display: inline-block;
-  line-height: 2;
   font-size: 1.2rem;
-  margin: 2rem auto 1rem;
-  border-bottom: 2px solid rgba(226, 120, 120, 0.8);
+  line-height: 5;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.working h4::before, .working h4::after {
+  position: absolute;
+  content: "";
+  width: 50%;
+  display: block;
+}
+
+.working h4::before {
+  top: 1rem;
+  right: 5%;
+  border-top: 2px solid #DBC5C9;
+}
+
+.working h4::after {
+  left: 5%;
+  bottom: 1rem;
+  border-top: 2px solid #C3D8C7;
+}
+
+.working p {
+  text-align: left;
+}
+
+.recruitment {
+  width: 600px;
+  max-width: 940px;
+  margin: 0 auto 4rem;
+  margin-top: 4rem;
+}
+
+.recruitment h3 {
+  border-bottom: 2px solid #89b8c2;
+  display: inline-block;
+  padding-bottom: .5rem;
+}
+
+.recruitment dl {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 4rem 0;
+}
+
+.recruitment dt, .recruitment dd {
+  padding: 1rem;
+}
+
+.recruitment dt {
+  width: 20%;
+  border-bottom: 2px solid rgba(137, 184, 194, 0.5);
+}
+
+.recruitment dd {
+  border-bottom: 1px solid #cccccc;
+  width: 80%;
 }
 
 /* File...pages-contact */
@@ -2335,10 +2420,19 @@ textarea {
   }
   .us {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1300px;
   }
   .us section {
-    width: 33%;
+    width: 32%;
+    margin: 0 1% 2rem;
+  }
+  .working {
+    width: 100%;
+    max-width: 1300px;
+  }
+  .working section {
+    width: 24%;
+    margin: 2rem 1%;
   }
 }
 

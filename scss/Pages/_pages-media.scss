@@ -411,9 +411,19 @@
 	}
 	.us {
 		width: 90%;
-		max-width: 1200px;
+		max-width: 1300px;
 		section {
-			width: 33%;
+			// width: 32%;
+			width: 32%;
+			margin: 0 1% 2rem;
+		}
+	}
+	.working	{
+		width: 100%;
+		max-width: 1300px;
+		section {
+			width: 24%;
+			margin: 2rem 1%;
 		}
 	}
 

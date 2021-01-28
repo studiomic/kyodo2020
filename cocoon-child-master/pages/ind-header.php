@@ -17,7 +17,7 @@
 <body class="drawer drawer--top">
 	<header role="banner">
 		<nav class="nav-bar">
-			<h1><a href="<?php echo site_url(); ?>/bus">株式会社共同</a></h1>
+			<h1><a href="<?php echo site_url(); ?>">株式会社共同</a></h1>
 			<ul>
 				<li><a href="<?php echo site_url(); ?>/company">会社概要</a></li>
 				<li><a href="<?php echo site_url(); ?>#transport">運送・貨物・倉庫</a></li>
@@ -43,7 +43,7 @@
 		<nav class="drawer-nav" role="navigation">
 			<ul class="drawer-menu">
 				<li><a class="drawer-brand" href="<?php echo site_url(); ?>">Kyoudou</a></li>
-				<li><a href="<?php echo site_url(); ?>/transport">物流・運送・貨物事業</a></li>
+				<li><a href="<?php echo site_url(); ?>#transport">物流・運送・貨物事業</a></li>
 				<li><a href="<?php echo site_url(); ?>/yokohama">横浜営業所</a></li>
 				<li><a href="<?php echo site_url(); ?>/atsugi">厚木営業所</a></li>
 				<li><a href="<?php echo site_url(); ?>/koga">古河営業所</a></li>

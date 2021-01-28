@@ -1,14 +1,14 @@
-// main: ./style-front.min.scss
+// main: ./pages-style.scss
 
 /* BOX　SIZING
 ----------------------------------------------------*/
-*, *:before, *:after {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
+// *, *::before, *::after {
+// 	-webkit-box-sizing: border-box;
+// 	-moz-box-sizing: border-box;
+// 	-o-box-sizing: border-box;
+// 	-ms-box-sizing: border-box;
+// 	box-sizing: border-box;
+// }
 /* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
 ----------------------------------------------------*/
 * {
