@@ -3,17 +3,13 @@
 //* CONTACT FORM AREA
 //----------------------------------------------------*/
 .contact {
-	// text-align: center;
-	// padding-bottom: 4rem;
 	width: $sm-width;
+	p {
+		margin-bottom: 1rem;
+	}
 	input[type=checkbox] {
 		margin-left: 2rem;
-		// padding-top: .4rem;
-
-		// background: #000;
-	 // display: none;
 	}
-
 	form {
 		margin-bottom: 4rem;
 		p {
@@ -25,12 +21,7 @@
 	dl {
 		margin: 4rem 0 0;
 		text-align: left;
-		// line-height: 1.7;
 	}
-	// dt,dd {
-	// 	margin: 0;
-	// 	padding: 0;
-	// }
 	dt {
 		span {
 			font-size: .7rem;

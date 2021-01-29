@@ -26,7 +26,7 @@
 			<h1><a href="#">株式会社共同</a></h1>
 			<ul>
 				<li><a href="page-company.html">会社概要</a></li>
-				<li><a href="#">運送・貨物・倉庫</a></li>
+				<li><a href="#transport">運送・貨物・倉庫</a></li>
 				<li><a href="#">旅客事業部</a></li>
 				<li><a href="#">採用情報</a></li>
 			</ul>
@@ -36,7 +36,7 @@
 		<nav class="main-nav">
 			<ul>
 				<li><a href="page-company.html">company</a></li>
-				<li><a href="#">works</a></li>
+				<li><a href="#transport">works</a></li>
 				<li><a href="#">passenger bus</a></li>
 				<li><a href="#">join us</a></li>
 			</ul>
@@ -51,7 +51,7 @@
 				<li><a class="drawer-brand" href="Front-page.html">Kyoudou</a></li>
 				<li><a href="company">会社概要</a></li>
 				<li><a href="news">NEWS</a></li>
-				<li><a href="transport">物流・運送・貨物事業</a></li>
+				<li><a href="#transport">物流・運送・貨物事業</a></li>
 				<li><a href="yokohama">横浜営業所</a></li>
 				<li><a href="atsugi">厚木営業所</a></li>
 				<li><a href="koga">古河営業所</a></li>
@@ -67,7 +67,7 @@
   <main role="main" class="Front">
 		<section class="newsFront">
 			<article>
-				<p>創業<span>25</span>周年<br>東京と神奈川に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
+				<p>創業<span>25</span>周年<br>東京、神奈川、関東圏に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
 			</article>
 			<article>
 				<section class="blog-card">
@@ -106,24 +106,23 @@
 			</article>
 		</section>
 
-<section class="transport">
+
+<section class="transport" id="transport">
 	<h1>物流・運送・貨物事業</h1>
 	<section class="shipping">
 		<div class="mixB4">
 			<section class="headline">
 				<h2>輸送サービス</h2>
-				<h3>拠点</h3>
-				<p>
-					横浜営業所（神奈川県横浜市）<br>
-					厚木営業所（神奈川県厚木市）<br>
-					古河営業所（茨城県古河市）
-				</p>
-				<h3>配送</h3>
-				<p>
-					全国対応<br>
-					法人・個人依頼<br>
-					単回・定期・倉庫保管サービス
-				</p>
+				<div class="flex">
+					<article>
+						<h3>拠点</h3>
+						<p>横浜営業所（神奈川県横浜市）<br>厚木営業所（神奈川県厚木市）<br>古河営業所（茨城県古河市）</p>
+					</article>
+					<article>
+						<h3>配送</h3>
+						<p>全国対応<br>法人・個人依頼<br>単回・定期・倉庫保管サービス</p>
+					</article>
+				</div>
 			</section>
 		</div>
 
@@ -145,60 +144,64 @@
 		</section>
 
 		<section class="salesOffice">
-			<!-- <h2>営業所</h2> -->
 			<section class="flex">
 				<article>
-					<img src="img/yokohama/yokohama-27.jpg">
-					<h3><span>横浜営業所</span></h3>
+					<a href="/yokohama">
+						<!-- <div class="mixB"> -->
+						<img src="img/yokohama/yokohama-27.jpg">
+						<h3><span>横浜営業所</span></h3></a>
 					<p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p>
 				</article>
 				<article>
-					<img src="img/atsugi/forklift.png">
-					<h3><span>厚木営業所</span></h3>
+					<a href="/atsugi">
+						<img src="img/atsugi/forklift.png">
+						<h3><span>厚木営業所</span></h3></a>
 					<p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
 					<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p>
 				</article>
 				<article>
-					<img src="img/atsugi/atsugi-9.jpg">
-					<h3><span>古河営業所</span></h3>
+					<a href="/koga">
+						<img src="img/atsugi/atsugi-9.jpg">
+						<h3><span>古河営業所</span></h3></a>
 					<p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
 				</article>
-
 				<article>
-					<img src="img/yokohama/yokohama-16.jpg">
-					<h3><span>横浜本社営業所・整備工場</span></h3>
+					<a href="./page-yokohama.html#equipment">
+						<img src="img/yokohama/yokohama-16.jpg">
+						<h3><span>横浜本社営業所・整備工場</span></h3></a>
 					<p>ここのタイトルを「本社」営業所にするかはともかく、サイトのどこを探しても本社がどこか探しにくいのはモヤッとする。ので、横浜の所在地が本社と明言した方がいい気がする。</p>
 					<p>整備工場に隣接する事務所で管理・設備があることなど書いた上で、横浜ページの設備項目にリンク。もしくはこのページにも同じ内容を載せる。</p>
 				</article>
 
-
 				<article>
-					<img src="img/yokohama/yokohama-10.jpg">
-					<h3><span>UNICクレーン</span></h3>
+					<a href="#">
+						<img src="img/yokohama/yokohama-10.jpg">
+						<h3><span>UNICクレーン</span></h3></a>
 					<p>運送・貨物事業部のトップは、営業所の列挙ページではなく総合的に事業内容、サービスを伝えるべき場所なので、横浜営業所保有のUNICクレーンは・・・という流れでここに載せる。</p>
 					<p>営業所という中見出しは微妙なので外しても良い</p>
 				</article>
+
 				<article>
-					<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
-					<h3><span>巡回健康診断車</span></h3>
+					<a href="#">
+						<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
+						<h3><span>巡回健康診断車</span></h3></a>
 					<p>巡回健康診断車も同左で、新事業というよりサービス内容・対応車種が増えていくごとに、ここ事業内容で増やせるようにレイアウトする</p>
 				</article>
 			</section>
 		</section>
 	</section>
 
-
 	<section class="warehouse">
 		<div class="mixB4">
 			<section class="headline">
 				<h2>倉庫・保管サービス</h2>
-				<h3>拠点</h3>
+				<!-- <h3>拠点</h3> -->
+				<h3>(このセクションのテキストはすべてダミー)</h3>
 				<p>
 					横浜営業者（神奈川県横浜市）<br>
 					厚木営業所（神奈川県厚木市）<br>
 					古河営業所（茨城県古河市）
 				</p>
-				<h3>(このセクションのテキストはすべてダミー)</h3>
 			</section>
 		</div>
 		<section class="buzContent">
@@ -226,23 +229,27 @@
 <!-- transport -->
 
 		<section class="busFront">
+			<h1>送迎バス・旅客事業</h1>
 			<div class="mixB4">
+				<a href="/bus">
 				<section class="headline">
+					<div>
 					<h2>旅客事業部</h2>
 					<h3>貸切バス・マイクロバス・特定バス</h3>
 					<p>
 						貸切チャーターバスをお客様の用途に合わせて手配いたします。<br>
 						冠婚葬祭や観光に適した1日〜数日単位の送迎依頼や<br>
-						学校・法人・個人・マンション等集合住宅からの定期便ご依頼など<br>
+						学校・法人・個人・マンション等集合住宅からの定期ご依頼（特定バス）など<br>
 						幅広くご利用いただいております。<br>
 					</p>
 					<h3>乗合バス・こすずめ号</h3>
-					<p>
+					<!-- <p>
 						小雀浄水場〜大船駅（循環）<br>
 						大船駅北口ターミナル〜小雀町内循環の乗合バス「こすずめ号」は、365日欠かさず運行しています。<br>
 						お近くの方はぜひご利用ください。
-					</p>
-				</section>
+					</p> -->
+					</div>
+				</section></a>
 			</div>
 		</section>
 
@@ -286,6 +293,7 @@
 
 		<section class="joinFront">
 			<h2>採用情報</h2>
+			<a href="/join">
 			<div><p>Join Us</p></div>
 			<section>
 				<p>
@@ -297,7 +305,7 @@
 				<p>
 					ドライバーについては、未経験者の方にもしっかりとした安全運転講習・新人研修などプロドライバーになるまでのサポート体制がありますので、輸送業務に興味のある方や将来のスキルアップを目指す方、ご応募をお待ちしています！
 				</p>
-			</section>
+			</section></a>
 		</section>
 
 
@@ -311,9 +319,9 @@
 					<address><a href="tel:045-851-1551"></a>045-851-1551</a></address>
 				</p>
 				<p>
-					<a href="mailto:info@kyoudou-group.jp">
+				info<a href="mailto:info@kyoudou-group.jp">
 					<svg class="atto" xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24"><path d="M13.718 10.528c0 .792-.268 1.829-.684 2.642-1.009 1.98-3.063 1.967-3.063-.14 0-.786.27-1.799.687-2.58 1.021-1.925 3.06-1.624 3.06.078zm10.282 1.472c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-5-1.194c0-3.246-2.631-5.601-6.256-5.601-4.967 0-7.744 3.149-7.744 7.073 0 3.672 2.467 6.517 7.024 6.517 2.52 0 4.124-.726 5.122-1.288l-.687-.991c-1.022.593-2.251 1.136-4.256 1.136-3.429 0-5.733-2.199-5.733-5.473 0-5.714 6.401-6.758 9.214-5.071 2.624 1.642 2.524 5.578.582 7.083-1.034.826-2.199.799-1.821-.756 0 0 1.212-4.489 1.354-4.975h-1.364l-.271.952c-.278-.785-.943-1.295-1.911-1.295-2.018 0-3.722 2.19-3.722 4.783 0 1.73.913 2.804 2.38 2.804 1.283 0 1.95-.726 2.364-1.373-.3 2.898 5.725 1.557 5.725-3.525z"/></svg></a>
-				</p>
+				kyoudou-group.jp</p>
 			</div>
 		</section>
 

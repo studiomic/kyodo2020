@@ -60,7 +60,7 @@
 	<main role="main" class="Front">
 		<section class="newsFront">
 			<article>
-				<p>創業<span>25</span>周年<br>東京と神奈川に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
+				<p>創業<span>25</span>周年<br>東京、神奈川、関東圏に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
 			</article>
 
 			<article>
@@ -105,18 +105,16 @@
 				<div class="mixB4">
 					<section class="headline">
 						<h2>輸送サービス</h2>
-						<h3>拠点</h3>
-						<p>
-							横浜営業所（神奈川県横浜市）<br>
-							厚木営業所（神奈川県厚木市）<br>
-							古河営業所（茨城県古河市）
-						</p>
-						<h3>配送</h3>
-						<p>
-							全国対応<br>
-							法人・個人依頼<br>
-							単回・定期・倉庫保管サービス
-						</p>
+							<div class="flex">
+							<article>
+								<h3>拠点</h3>
+								<p>横浜営業所（神奈川県横浜市）<br>厚木営業所（神奈川県厚木市）<br>古河営業所（茨城県古河市）</p>
+							</article>
+							<article>
+								<h3>配送</h3>
+								<p>全国対応<br>法人・個人依頼<br>単回・定期・倉庫保管サービス</p>
+							</article>
+						</div>
 					</section>
 				</div>
 
@@ -140,36 +138,42 @@
 				<section class="salesOffice">
 					<section class="flex">
 						<article>
-							<img src="/wp/img/yokohama/yokohama-27.jpg">
-							<h3><span>横浜営業所</span></h3>
+							<a href="<?php echo site_url(); ?>/yokohama">
+								<img src="/wp/img/yokohama/yokohama-27.jpg">
+								<h3><span>横浜営業所</span></h3></a>
 							<p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p>
 						</article>
 						<article>
-							<img src="/wp/img/atsugi/forklift.png">
-							<h3><span>厚木営業所</span></h3>
+							<a href="<?php echo site_url(); ?>/atsugi">
+								<img src="/wp/img/atsugi/forklift.png">
+								<h3><span>厚木営業所</span></h3></a>
 							<p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
 							<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p>
 						</article>
 						<article>
-							<img src="/wp/img/atsugi/atsugi-9.jpg">
-							<h3><span>古河営業所</span></h3>
+							<a href="<?php echo site_url(); ?>/koga">
+								<img src="/wp/img/atsugi/atsugi-9.jpg">
+								<h3><span>古河営業所</span></h3></a>
 							<p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
 						</article>
 						<article>
-							<img src="/wp/img/yokohama/yokohama-16.jpg">
-							<h3><span>横浜本社営業所・整備工場</span></h3>
+							<a href="<?php echo site_url(); ?>/yokohama#equipment">
+								<img src="/wp/img/yokohama/yokohama-16.jpg">
+								<h3><span>横浜本社営業所・整備工場</span></h3></a>
 							<p>ここのタイトルを「本社」営業所にするかはともかく、サイトのどこを探しても本社がどこか探しにくいのはモヤッとする。ので、横浜の所在地が本社と明言した方がいい気がする。</p>
 							<p>整備工場に隣接する事務所で管理・設備があることなど書いた上で、横浜ページの設備項目にリンク。もしくはこのページにも同じ内容を載せる。</p>
 						</article>
 						<article>
-							<img src="/wp/img/yokohama/yokohama-10.jpg">
-							<h3><span>UNICクレーン</span></h3>
+							<a href="#">
+								<img src="/wp/img/yokohama/yokohama-10.jpg">
+								<h3><span>UNICクレーン</span></h3></a>
 							<p>運送・貨物事業部のトップは、営業所の列挙ページではなく総合的に事業内容、サービスを伝えるべき場所なので、横浜営業所保有のUNICクレーンは・・・という流れでここに載せる。</p>
 							<p>営業所という中見出しは微妙なので外しても良い</p>
 						</article>
 						<article>
-							<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
-							<h3><span>巡回健康診断車</span></h3>
+							<a href="#">
+								<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
+								<h3><span>巡回健康診断車</span></h3></a>
 							<p>巡回健康診断車も同左で、新事業というよりサービス内容・対応車種が増えていくごとに、ここ事業内容で増やせるようにレイアウトする</p>
 						</article>
 					</section>
@@ -213,8 +217,11 @@
 		</section><!-- transport -->
 
 		<section class="busFront">
+			<h1>送迎バス・旅客事業</h1>
 			<div class="mixB4">
+				<a href="<?php echo site_url(); ?>/bus">
 				<section class="headline">
+					<div>
 					<h2>旅客事業部</h2>
 					<h3>貸切バス・マイクロバス・特定バス</h3>
 					<p>
@@ -224,12 +231,13 @@
 						幅広くご利用いただいております。<br>
 					</p>
 					<h3>乗合バス・こすずめ号</h3>
-					<p>
+					</div>
+					<!-- <p>
 						小雀浄水場〜大船駅（循環）<br>
 						大船駅北口ターミナル〜小雀町内循環の乗合バス「こすずめ号」は、365日欠かさず運行しています。<br>
 						お近くの方はぜひご利用ください。
-					</p>
-				</section>
+					</p> -->
+				</section></a>
 			</div>
 		</section>
 
@@ -272,6 +280,7 @@
 
 		<section class="joinFront">
 			<h2>採用情報</h2>
+			<a href="/join">
 			<div><p>Join Us</p></div>
 			<section>
 				<p>
@@ -283,7 +292,7 @@
 				<p>
 					ドライバーについては、未経験者の方にもしっかりとした安全運転講習・新人研修などプロドライバーになるまでのサポート体制がありますので、輸送業務に興味のある方や将来のスキルアップを目指す方、ご応募をお待ちしています！
 				</p>
-			</section>
+			</section></a>
 		</section>
 
 		<?php get_template_part('pages/section-contactus'); ?>

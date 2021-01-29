@@ -1517,6 +1517,7 @@ nav.main-nav li {
 }
 
 .us h3::before, .us h3::after {
+  position: absolute;
   content: '';
   flex: 1;
   background: #fff;
@@ -1927,6 +1928,9 @@ textarea {
     z-index: 1;
     position: static;
     padding: 2rem;
+  }
+  .contactUs .atto:hover, .contactUs .atto:active, .contactUs .atto:focus {
+    height: 86px;
   }
 }
 

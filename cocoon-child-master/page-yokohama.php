@@ -77,7 +77,7 @@ Template Name: yokohama
 		</section>
 	</section>
 
-	<section class="buzContent">
+	<section class="buzContent" id="equipment">
 	 <h2>管理・設備</h2>
 	 <section class="equipment">
 		 <div>
@@ -101,18 +101,20 @@ Template Name: yokohama
 			 <h4>整備工場スペース</h4>
 			 <p>雨天対応の整備スペース</p>
 		 </div>
-
 		 <div>
 			 <img src="/wp/img/yokohama/yokohama-01.jpg" alt="">
 			 <h4>大型トラック用タイヤチェンジャー</h4>
+			 <p>大型のタイヤを１本あたり約５分でタイヤの組換えを完了します</p>
 		 </div>
 		 <div>
 			 <img src="/wp/img/yokohama/yokohama-13.jpg" alt="">
 			 <h4>アルコール検知器</h4>
+			 <p>２４時間対面点呼によるアルコール検知測定、測定時の写真撮影機能付き</p>
 		 </div>
 		 <div>
 			 <img src="/wp/img/yokohama/yokohama-02.jpg" alt="">
 			 <h4>モバイル型アルコール検知器</h4>
+			 <p>長距離輸送時の中間点呼の際はモバイル型アルコール検知器で顔写真と数値を本社へ送信します</p>
 		 </div>
 	 </section>
 	</section>
