@@ -1,0 +1,119 @@
+// main: ./pages-style.scss
+// main: ./blog-style.scss
+
+//* main-width $main-width: 940px;
+//----------------------------------------------------*/
+@mixin main-width {
+	width: $main-width;
+	margin: 0 auto;
+}
+
+//* W Line Heading
+//----------------------------------------------------*/
+@mixin Wline {
+	overflow: hidden;
+	align-items: center;
+	color: $col-Fa;
+	margin-top: .5rem;
+	line-height: 3;
+	display: flex;
+	border-radius: 2px;
+	// background: $blue;//#3cb3e4;
+}
+@mixin Wline-ba {
+	content: '';
+	flex: 1;
+	padding: 1px 0;
+	height: 0;
+	transform: rotate(45deg);
+	// background: #fff;
+}
+
+//* fade in anchor
+//----------------------------------------------------*/
+@mixin fina {
+	position: relative;
+   display: inline-block;
+   transition: .4s;
+}
+
+@mixin fina-hover {
+	color: $col-Fa;
+	transform: translate3d(0, 0, 10px);
+	width: 100%;
+}
+// z-index: 1;
+
+@mixin fina-before {
+	content: '';
+	position: absolute;
+	color: $col-Fa;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+	background: $rgb-08;
+	transform-origin: right top;
+   transform: scale(0, 1);
+   transition: transform .4s;
+	z-index: -1;
+}
+@mixin fina-hover-before {
+	transform-origin: left top;
+   transform: scale(1, 1);
+}
+
+//* COMPANY + PRIVACY-POLICY
+//----------------------------------------------------*/
+@mixin baseWrap {
+	text-align: center;
+	width: $sm-width;
+	margin: 0 auto;
+}
+
+@mixin titleH2 {
+	font-size: 2rem;
+	font-weight: normal;
+	margin: 4rem auto;
+	display: inline-block;
+	line-height: 2;
+}
+@mixin titleH2-pp {
+	font-weight: normal;
+	margin: 4rem auto;
+	display: inline-block;
+}
+
+@mixin titleH3 {
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin-bottom: 1rem;
+	&:before,&:after {
+		font-size: 2.2rem;
+		font-weight: 500;
+		vertical-align: -0.25rem;
+	}
+	&:before {
+		content: "< ";
+	}
+	&:after {
+		content: " >";
+	}
+}
+
+@mixin pBox {
+	text-align: left;
+	border-radius: 8px;
+	padding: 2rem;
+	line-height: 1.7;
+	margin-bottom: 2rem;
+	position: relative;
+}
+
+@mixin comDL {
+	margin: 0 auto 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	line-height: 1.7;
+	align-items: stretch;
+}
