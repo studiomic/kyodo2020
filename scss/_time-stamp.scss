@@ -3,7 +3,6 @@
 
 //* FRONT-PAGE BLOG SECTION
 //----------------------------------------------------*/
-// .blog-card
 .blog-card {
 	position: relative;
 	background: rgba(255, 255, 255, 0.7);
@@ -12,12 +11,12 @@
 	a {
 		display: block;
 		color: $text-color;
-		&:hover, &:active, &:focus {
-			background: rgba(255, 255, 255, 0.8);
-			time {
-				background: #000;
-			}
-		}
+		// &:hover, &:active, &:focus {
+		// 	background: rgba(255, 255, 255, 0.8);
+		// 	time {
+		// 		background: #000;
+		// 	}
+		// }
 	}
 	time {
 		position: absolute;
@@ -67,5 +66,17 @@
 			min-height: 7rem;
 			padding: 2rem 2rem 2rem 7rem;
 		}
+		a {
+			&:hover, &:active, &:focus {
+				background: rgba(255, 255, 255, 0.8);
+				time {
+					background: #000;
+				}
+			}
+		}
 	}
+
+
+
+
 }
