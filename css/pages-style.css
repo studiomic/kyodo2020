@@ -542,13 +542,22 @@ nav.main-nav li {
   border-bottom: 3px solid rgba(226, 120, 120, 0.6);
 }
 
+.ceo-message .wrapper {
+  background: rgba(180, 190, 130, 0.5);
+  background: rgba(226, 164, 120, 0.3);
+  text-align: center;
+  padding: 2rem;
+}
+
 .ceo-message section {
+  margin: 0 auto;
   display: flex;
+  width: 940px;
 }
 
 .ceo-message p {
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 2rem;
   line-height: 1.7;
 }
 
@@ -908,11 +917,6 @@ nav.main-nav li {
   border-bottom: 3px solid rgba(137, 184, 194, 0.6);
 }
 
-.yokohama .vehicleType div img {
-  max-height: 200px;
-  overflow: hidden;
-}
-
 .yokohama .vehicleType h4 {
   overflow: hidden;
   align-items: center;
@@ -951,28 +955,33 @@ nav.main-nav li {
 }
 
 .equipment {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1300px;
+  margin-bottom: 4rem;
 }
 
-.equipment div {
-  padding-bottom: 1rem;
+.equipment section {
+  width: 24%;
+  padding-bottom: 2rem;
 }
 
-.equipment div h4 {
+.equipment h4 {
   background: rgba(0, 0, 0, 0.8);
   color: #fafafa;
   padding: .5rem;
   margin: 4px 0 4px;
 }
 
-.equipment div p {
+.equipment p {
   text-align: left;
 }
 
 .equipment img {
   width: 100%;
-  display: block;
 }
 
 /* File...pages-yokohama */
@@ -2368,10 +2377,6 @@ textarea {
   .overview, .qualityManagement, .basicPrinciple, .companyHistory {
     width: 940px;
   }
-  .ceo-message {
-    width: 940px;
-    margin: 0 auto;
-  }
   .overview {
     width: 940px;
   }
@@ -2542,13 +2547,6 @@ textarea {
   }
   .buzContent {
     width: 940px;
-  }
-  .equipment {
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .equipment div {
-    width: 32%;
   }
   .atsugi img {
     height: 350px;

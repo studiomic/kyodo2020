@@ -60,10 +60,22 @@
 }
 
 .equipment {
-	width: 100%;
+// 	width: 100%;
+// 	display: flex;
 	display: flex;
-	div {
-		padding-bottom: 1rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1300px;
+	margin-bottom: 4rem;
+	section {
+		width: 24%;
+		padding-bottom: 2rem;
+		// margin: 2rem 1%;
+	}
+
+// 	div {
 		h4 {
 			background: $rgb-08;
 			color: $col-Fa;
@@ -73,9 +85,9 @@
 		p {
 			text-align: left;
 		}
-	}
+// 	}
 	img {
 		width: 100%;
-		display: block;
+		// display: block;
 	}
 }

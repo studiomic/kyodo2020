@@ -36,6 +36,20 @@
 		}
 	}	//* VEHICLE TYPE
 
+// .equipment
+	// .working	{
+	// 	width: 100%;
+	// 	max-width: 1300px;
+	// 	section {
+	// 		width: 24%;
+	// 		margin: 2rem 1%;
+	// 	}
+	// }
+
+
+
+
+
 	//* Page-Section.scss
 	//----------------------------------------------------*/
 	.newsFront {
@@ -164,12 +178,12 @@
 		width: $main-width;
 	}
 	// 代表メッセージ
-	.ceo-message {
-		// display: flex;
-		// text-align: left;
-		width: $main-width;
-		margin: 0 auto;
-	}
+	// .ceo-message {
+	// 	display: flex;
+	// 	text-align: left;
+	// 	width: $main-width;
+	// 	margin: 0 auto;
+	// }
 
 	.overview {
 		width: $main-width;
@@ -371,13 +385,13 @@
 	.buzContent {
 		width: $main-width;
 	}
-	.equipment {
-		flex-wrap: wrap;
-		justify-content: space-between;
-		div {
-			width: 32%;
-		}
-	}
+	// .equipment {
+	// 	flex-wrap: wrap;
+	// 	justify-content: space-between;
+	// 	div {
+	// 		width: 32%;
+	// 	}
+	// }
 	//* ATSUGI
 	//----------------------------------------------------*/
 	.atsugi {

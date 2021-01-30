@@ -91,22 +91,26 @@
 
 }
 
-
-
-
-
 // 代表メッセージ
 .ceo-message {
 	h2 {
 		@include titleH2;
 		border-bottom: 3px solid $red-06;
 	}
+	.wrapper {
+		background: rgba(180,190,130,.5);//$green;
+		background: $orange-03;
+		text-align: center;
+		padding: 2rem;
+	}
 	section {
+		margin: 0 auto;
 		display: flex;
+		width: $main-width;
 	}
 	p {
 		text-align: left;
-		padding: 1rem;
+		padding: 1rem 2rem;
 		line-height: 1.7;
 	}
 	// figcaption {

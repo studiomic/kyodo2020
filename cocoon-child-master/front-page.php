@@ -280,7 +280,7 @@
 
 		<section class="joinFront">
 			<h2>採用情報</h2>
-			<a href="/join">
+			<a href="/wp/join">
 			<div><p>Join Us</p></div>
 			<section>
 				<p>
