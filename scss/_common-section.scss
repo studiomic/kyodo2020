@@ -14,17 +14,16 @@
 .mixB {
 	// background: $rgb-F10;
 	// background: $rgb-10;
-	background: $iceBG;
 	// background: $bus-navy-07;
-
+	background: $iceBG;
 }
 .mixB4 {
-	background: $iceBG;
-	background: $rgb-F8;
+	// background: $iceBG;
+	// background: $rgb-F8;
 	// background: $bus-navy-09;
-	background: $bus-blue-08;
-	background: $bus-blue-07;
 	// background: #20262E;
+	// background: $bus-blue-08;
+	background: $bus-blue-07;
 }
 
 
@@ -53,7 +52,6 @@
 	ul {
 		display: flex;
 		justify-content: space-between;
-		// justify-content: center;
 		list-style: none;
 		width: $sm-width;
 		z-index: 1;
@@ -77,9 +75,9 @@
 		line-height: 3;
 		width: 100%;
 		display: inline-block;
-		&:hover, &:active, &:focus {
-			background: $rgb-10;
-		}
+		// &:hover, &:active, &:focus {
+		// 	background: $rgb-10;
+		// }
 	}
 }
 
@@ -92,7 +90,6 @@
 	background: $col-28;
 	border-radius: 8px;
 	color: $col-Fa;
-	// padding: 2rem;
 	padding: 1.5rem;
 	padding: 1rem 1.5rem 1.5rem;
 	text-align: center;
@@ -110,21 +107,40 @@
 	svg {
 		fill: $col-Fa;
 	}
-	.atto {
-		&:hover, &:active, &:focus {
-			fill: $col-aa;
-		}
-	}
+	// .atto {
+	// 	&:hover, &:active, &:focus {
+	// 		fill: $col-aa;
+	// 	}
+	// }
 	address {
 		font-family: $fontFamilySys;
-		// font-size: 2.6rem;
 		font-size: 2rem;
 		margin: 0 2rem;
 		a {
 			color: $col-Fa;
+			// &:hover, &:active, &:focus {
+			// 	color: $hover-color;
+			// 	text-decoration: underline;
+			// }
+		}
+	}
+}
+
+
+//* TRANSPORT ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.oukalink {
+		a {
 			&:hover, &:active, &:focus {
-				color: $hover-color;
-				text-decoration: underline;
+				background: $rgb-10;
+			}
+		}
+	}
+	.contactUs {
+		.atto {
+			&:hover, &:active, &:focus {
+				fill: $col-aa;
 			}
 		}
 	}
