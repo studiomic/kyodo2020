@@ -8,11 +8,6 @@ $sm-width: 100%;
 $smpadd-width: 90%;
 $uptoh2: 40px;
 
-@mixin main-width {
-	width: $main-width;
-	margin: 0 auto;
-}
-
 // $Pcwidth: 940px;
 // border: 1px solid $blue;
 // border: 1px solid $red;
@@ -30,8 +25,6 @@ $gray60: hsl(0,0%,60%);
 $gray70: hsl(0,0%,70%);
 $gray80: hsl(0,0%,80%);
 $gray90: hsl(0,0%,90%);
-
-
 
 //* SITE ROOT
 //----------------------------------------------------*/
@@ -198,8 +191,9 @@ $bus-year-02: rgba(170,137,189,.2);
 $bus-year-01: rgba(170,137,189,.1);
 
 $text-color: $col-36;
-$link-color: $col-B1;
-$hover-color: $blue;
+$link-color: $blue;//$cyan;
+
+$hover-color: $col-B1; //$blue;
 $footer-Bg-Color: $col-28;
 
 
