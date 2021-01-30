@@ -1,62 +1,8 @@
 // main: ../pages-style.scss
 
-@mixin baseWrap {
-	text-align: center;
-	width: $sm-width;
-	margin: 0 auto;
-}
-
-@mixin titleH2 {
-	font-size: 2rem;
-	font-weight: normal;
-	margin: 4rem auto;
-	display: inline-block;
-	line-height: 2;
-}
-
-@mixin titleH3 {
-	font-size: 1.3rem;
-	font-weight: normal;
-	margin-bottom: 1rem;
-	&:before,&:after {
-		font-size: 2.2rem;
-		font-weight: 500;
-		vertical-align: -0.25rem;
-	}
-	&:before {
-		content: "< ";
-	}
-	&:after {
-		content: " >";
-	}
-}
-
-@mixin pBox {
-	text-align: left;
-	border-radius: 8px;
-	padding: 2rem;
-	line-height: 1.7;
-	margin-bottom: 2rem;
-	position: relative;
-}
-
-@mixin comDL {
-	// width: 70%;
-	margin: 0 auto 4rem;
-	display: flex;
-	flex-wrap: wrap;
-	line-height: 1.7;
-	align-items: stretch;
-}
-
-//* CONTENT
+//* COMPANY
 //----------------------------------------------------*/
 // 会社概要
-// .company {
-// 	text-align: center;
-// 	padding-bottom: 4rem;
-// }
-
 .overview {
 	text-align: left;
 	width: $sm-width;
@@ -70,9 +16,9 @@
 	}
 	ul {
 		margin-left: 1.5rem;
-		// padding-left: 1rem;
 	}
 }
+// 営業所<dd
 .office {
 	h2 {
 		font-size: 1rem;
@@ -88,7 +34,6 @@
 		margin-bottom: 0;
 		padding-bottom: 0;
 	}
-
 }
 
 // 代表メッセージ
@@ -113,9 +58,6 @@
 		padding: 1rem 2rem;
 		line-height: 1.7;
 	}
-	// figcaption {
-	// 	// text-align: center;
-	// }
 }
 
 // 品質管理の4柱
@@ -138,8 +80,6 @@
 			@include pBox;
 			background: $cyan-01;
 			&:before {
-				// font-family: $fontFamilyMIN;
-				// font-family: $fontFamilyJP;
 				font-family: $fontFamilySys;
 				font-weight: bold;
 				font-size: 3rem;
@@ -199,6 +139,4 @@
 		font-weight: 500;
 		border-bottom: 2px solid $blue-04;
 	}
-	// dd {
-	// }
 } // .companyHistory
