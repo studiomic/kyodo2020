@@ -20,7 +20,6 @@
 	margin: 0 auto;
 	section {
 		text-align: center;
-		// z-index: 20;
 		p {
 			text-align: left;
 			padding: 1rem;
@@ -41,7 +40,6 @@
 		&::before,&::after {
 			content: '';
 		   flex: 1;
-		   // background: #fff;
 		   padding: 1px 0;
 		   height: 0;
 		   transform: rotate(45deg);
