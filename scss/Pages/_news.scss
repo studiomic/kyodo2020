@@ -15,7 +15,7 @@ $circleSIZE: 5.5rem;
 			font-size: 1.4rem;
 			font-weight: normal;
 			line-height: 1;
-			border-bottom: 2px solid rgba(226,120,120,0.4);
+			// border-bottom: 2px solid rgba(226,120,120,0.4);
 			border-bottom: 1px solid rgba(40,40,40,.5);
 			margin-left: $circleSIZE + 2rem;
 			padding: 1rem 0 .5rem 0;
@@ -24,6 +24,7 @@ $circleSIZE: 5.5rem;
 		p {
 			text-align: left;
 			margin-left: $circleSIZE + 2rem;
+			margin-bottom: 1rem;
 		}
 	}
 	time {
@@ -35,9 +36,7 @@ $circleSIZE: 5.5rem;
 		border-radius: 50%;
 		width: $circleSIZE;
 		height: $circleSIZE;
-		// display: inline-block;
 		display: inline-flex;
-		// flex-direction: column;
 		flex-direction: column-reverse;
 		justify-content: center;
 		text-align: center;
