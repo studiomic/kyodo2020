@@ -3,8 +3,6 @@
 //* JOIN US
 //----------------------------------------------------*/
 .join {
-	// text-align: center;
-	// padding-bottom: 4rem;
 	.title-group {
 		background: rgba(180,190,130,.5);
 	}
@@ -20,12 +18,9 @@
 .us {
 	display: flex;
 	margin: 0 auto;
-
 	section {
 		text-align: center;
-		// position: relative;
-		z-index: 20;
-
+		// z-index: 20;
 		p {
 			text-align: left;
 			padding: 1rem;
@@ -35,21 +30,6 @@
 		}
 	}
 	h3 {
-		// @include titleH2;
-		// font-size: 1.4rem;
-		// margin: 2rem auto 1rem;
-		// border-bottom: 2px solid $red-08;
-
-		// padding: 1rem 0;
-	   // margin: .5rem 0;
-	   // border: solid 3px rgba(60,179,228,.6);
-	   // position:relative;
-	   // border-radius: 4px;
-		// color: $gray40;
-		// background: #fff;
-
-
-
 		overflow: hidden;
 	   align-items: center;
 	   background: $blue;//#3cb3e4;
@@ -58,37 +38,19 @@
 	   line-height: 3;
 	   display: flex;
 		border-radius: 2px;
-
-
 		&::before,&::after {
-			// content: '';
-			// position: absolute;
-			// bottom: -7px;
-			// background: rgba(60,179,228,.6);//#3cb3e4;
-			// width: 25px;
-			// height: 20px;
-			// z-index: -1;
-
-
 			content: '';
 		   flex: 1;
-		   background: #fff;
+		   // background: #fff;
 		   padding: 1px 0;
 		   height: 0;
 		   transform: rotate(45deg);
-
 		}
 		&::after {
-			// left: 2px;
-			// transform: rotate(120deg);
 			background: #DBC5C9;
-
 		}
 		&::before {
-			// right: 2px;
-	      // transform: rotate(60deg);
 			background: #C3D8C7;
-
 		}
 	}
 }
@@ -148,7 +110,6 @@
 	dt {
 		width: 20%;
 		border-bottom: 2px solid $cyan-05;
-
 	}
 	dd {
 		border-bottom: 1px solid $gray80;

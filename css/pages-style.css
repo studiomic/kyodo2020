@@ -768,6 +768,15 @@ nav.main-nav li {
   margin: 2rem 0;
 }
 
+.bus .wrapper h3 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid #b4be82;
+}
+
 .kosuzume {
   width: 100%;
   margin-top: 40px;
@@ -811,6 +820,7 @@ nav.main-nav li {
 
 .vehicleType {
   display: flex;
+  margin: 0 auto;
   flex-wrap: wrap;
 }
 
@@ -819,29 +829,36 @@ nav.main-nav li {
 }
 
 .vehicleType h4 {
-  font-size: 1.2rem;
-  font-weight: normal;
-  padding: 12px;
-  background: #b4be82;
+  overflow: hidden;
+  align-items: center;
   color: #fafafa;
-  position: relative;
-  line-height: 1;
+  margin-top: .5rem;
+  line-height: 3;
+  display: flex;
+  border-radius: 2px;
+  background: #b4be82;
+}
+
+.vehicleType h4::before, .vehicleType h4::after {
+  content: '';
+  flex: 1;
+  padding: 1px 0;
+  height: 0;
+  transform: rotate(45deg);
+}
+
+.vehicleType h4::before {
+  background: #C3D8C7;
 }
 
 .vehicleType h4::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  border-style: solid;
-  border-color: transparent white transparent transparent;
-  border-width: 1.5rem 1rem;
-  border-width: 22px 1rem;
+  background: #DBC5C9;
 }
 
 .vehicleType p {
-  padding: 1rem;
+  padding: 1rem 1rem 2rem;
+  text-align: left;
+  line-height: 1.6;
 }
 
 .vehicleList {
@@ -882,8 +899,45 @@ nav.main-nav li {
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+.yokohama .wrapper h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6);
+}
+
+.yokohama .vehicleType div img {
+  max-height: 200px;
+  overflow: hidden;
+}
+
 .yokohama .vehicleType h4 {
+  overflow: hidden;
+  align-items: center;
+  color: #fafafa;
+  margin-top: .5rem;
+  line-height: 3;
+  display: flex;
+  border-radius: 2px;
   background: rgba(0, 0, 0, 0.9);
+}
+
+.yokohama .vehicleType h4::before, .yokohama .vehicleType h4::after {
+  content: '';
+  flex: 1;
+  padding: 1px 0;
+  height: 0;
+  transform: rotate(45deg);
+}
+
+.yokohama .vehicleType h4::before {
+  background: #C3D8C7;
+}
+
+.yokohama .vehicleType h4::after {
+  background: #DBC5C9;
 }
 
 .yokohama .headline {
@@ -1493,7 +1547,6 @@ nav.main-nav li {
 
 .us section {
   text-align: center;
-  z-index: 20;
 }
 
 .us section p {
@@ -1519,7 +1572,6 @@ nav.main-nav li {
 .us h3::before, .us h3::after {
   content: '';
   flex: 1;
-  background: #fff;
   padding: 1px 0;
   height: 0;
   transform: rotate(45deg);
@@ -2215,6 +2267,15 @@ textarea {
     transform-origin: left top;
     transform: scale(1, 1);
   }
+  .vehicleType {
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+  .vehicleType section {
+    width: 32%;
+  }
   .newsFront {
     flex-direction: row;
   }
@@ -2303,17 +2364,6 @@ textarea {
   }
   .postFront article:nth-child(even) section section p {
     margin: 0 0 1rem;
-  }
-  .greenMark {
-    max-width: 940px;
-    width: 640px;
-    background-position: right top;
-  }
-  .greenMark section img {
-    margin-right: 1rem;
-  }
-  .gmark {
-    background-position: right top;
   }
   .overview, .qualityManagement, .basicPrinciple, .companyHistory {
     width: 940px;
@@ -2461,18 +2511,6 @@ textarea {
   }
   .diya article:nth-child(even) section {
     border-left: 2px solid #2a3645;
-  }
-  .vehicleType {
-    justify-content: space-between;
-  }
-  .vehicleType div {
-    width: 50%;
-  }
-  .vehicleType div:nth-child(odd) {
-    padding-right: 1rem;
-  }
-  .vehicleType div:nth-child(even) {
-    padding-left: 1rem;
   }
   .vehicleList dt, .vehicleList dd {
     border: 1px solid white;

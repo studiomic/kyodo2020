@@ -27,11 +27,26 @@
 }
 
 .yokohama {
-	// text-align: center;
-	// padding-bottom: 4rem;
+	.wrapper {
+		h2 {
+			@include titleH2;
+			border-bottom: 3px solid $cyan-06;
+		}
+	}
 	.vehicleType {
 		h4 {
+			@include Wline;
+			// background: $green;
 			background: $rgb-09;
+			&::before,&::after {
+				@include Wline-ba;
+			}
+			&::before {
+				background: #C3D8C7;
+			}
+			&::after {
+				background: #DBC5C9;
+			}
 		}
 	}
 	.headline {

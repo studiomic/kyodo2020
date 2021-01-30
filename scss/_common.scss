@@ -35,6 +35,39 @@
 	padding-bottom: 4rem;
 }
 
+//* W Line Heading
+//----------------------------------------------------*/
+@mixin Wline {
+	overflow: hidden;
+	align-items: center;
+	// background: $blue;//#3cb3e4;
+	color: $col-Fa;
+	margin-top: .5rem;
+	line-height: 3;
+	display: flex;
+	border-radius: 2px;
+}
+@mixin Wline-ba {
+	content: '';
+	flex: 1;
+	// background: #fff;
+	padding: 1px 0;
+	height: 0;
+	transform: rotate(45deg);
+}
+// h3 {
+// 	&::before,&::after {
+// 	}
+// 	&::before {
+// 		background: #C3D8C7;
+// 	}
+// 	&::after {
+// 		background: #DBC5C9;
+// 	}
+// }
+
+
+
 //* fade in anchor
 //----------------------------------------------------*/
 @mixin fina {

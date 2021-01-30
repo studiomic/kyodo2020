@@ -3,7 +3,7 @@
 //* @media MD 1024
 //----------------------------------------------------*/
 @media (min-width:64em) {
-	//* Common Styles
+	//* Common Styles inpage BOK LINK
 	//----------------------------------------------------*/
 	.inpage {
 		li {
@@ -24,9 +24,17 @@
 			}
 		}
 	}
-
-
-
+	//* VEHICLE TYPE (BUS:YOKOHAMA)
+	//----------------------------------------------------*/
+	.vehicleType {
+		justify-content: space-between;
+		width: 90%;
+		margin: 0 auto;
+		max-width: 1300px;
+		section {
+			width: 32%;
+		}
+	}	//* VEHICLE TYPE
 
 	//* Page-Section.scss
 	//----------------------------------------------------*/
@@ -47,9 +55,6 @@
 			p {
 				text-align: left;
 				padding: 5rem 10rem 0;
-				// position: absolute;
-				// right: 150px;
-				// top: 90px;
 			}
 		}
 	} //.newsFront
@@ -139,19 +144,19 @@
 
 	//* FRONT PAGE GREENMARK
 	//----------------------------------------------------*/
-	.greenMark {
-		max-width: $main-width;
-		width: 640px;
-		background-position: right top;
-		section {
-			img {
-				margin-right: 1rem;
-			}
-		}
-	}
-	.gmark {
-		background-position: right top;
-	}
+	// .greenMark {
+	// 	max-width: $main-width;
+	// 	width: 640px;
+	// 	background-position: right top;
+	// 	section {
+	// 		img {
+	// 			margin-right: 1rem;
+	// 		}
+	// 	}
+	// }
+	// .gmark {
+	// 	background-position: right top;
+	// }
 
 	//* Company.scss
 	//----------------------------------------------------*/
@@ -317,20 +322,15 @@
 
 	//* VEHICLE TYPE
 	//----------------------------------------------------*/
-	.vehicleType {
-		// display: flex;
-		// flex-wrap: wrap;
-		justify-content: space-between;
-		div {
-			width: 50%;
-		}
-		div:nth-child(odd) {
-			padding-right: 1rem;
-		}
-		div:nth-child(even) {
-			padding-left: 1rem;
-		}
-	}	//* VEHICLE TYPE
+	// .vehicleType {
+	// 	justify-content: space-between;
+	// 	width: 90%;
+	// 	margin: 0 auto;
+	// 	max-width: 1300px;
+	// 	section {
+	// 		width: 32%;
+	// 	}
+	// }	//* VEHICLE TYPE
 
 	//* VEHICLE LIST
 	//----------------------------------------------------*/
