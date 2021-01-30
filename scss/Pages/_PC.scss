@@ -3,10 +3,6 @@
 //* @media MD 1024
 //----------------------------------------------------*/
 @media (min-width:64em) {
-   .descFront {
-      width: $main-width;
-      margin: 4rem auto;
-   }
 } //* @media MD 1024
 
 
@@ -16,6 +12,10 @@
 
 }
 
+// .descFront {
+//    width: $main-width;
+//    margin: 4rem auto;
+// }
 //
 // .demo {
 //   width: 500px;
