@@ -20,11 +20,11 @@
 			a {
 				background-size: 150px;
 				padding: 90px 1rem 0;
-				&:hover, &:active, &:focus {
-					background-size: 150px;
-					color: $col-aa;
-					text-decoration: none;
-				}
+				// &:hover, &:active, &:focus {
+				// 	background-size: 150px;
+				// 	color: $col-aa;
+				// 	text-decoration: none;
+				// }
 			}
 		}
 		address {
@@ -34,7 +34,6 @@
 			display: block;
 			padding-bottom: 1rem;
 		}
-
 	} //* FOOTER
 
 
@@ -55,21 +54,18 @@
 		svg {
 			width: 50px;
 		}
-		.atto {
-			&:hover, &:active, &:focus {
-				height: 50px;
-			}
-		}
+		// .atto {
+		// 	&:hover, &:active, &:focus {
+		// 		height: 50px;
+		// 	}
+		// }
 		address {
 			font-size: 24px;
 			margin: 0 .5rem;
 			white-space: nowrap;
 		}
 	} //contactUs
-
 } //* @media SM
-
-
 
 
 //* @media MD 1024
@@ -87,7 +83,6 @@
 
 	.contactUs {
 		width: 940px;
-		// width: 800px;
 		svg {
 			width: 70px;
 			height: 70px;
@@ -96,7 +91,6 @@
 			display: block;
 			margin: 0 auto -0.5em;
 			width: 40%;
-			// width: 50%;
 			z-index:10;
 			position: relative;
 			padding: 0 1rem;
@@ -106,13 +100,7 @@
 			position: static;
 			padding: 2rem;
 		}
-		// .atto {
-		// 	&:hover, &:active, &:focus {
-		// 		// height: 86px;
-		// 	}
-		// }
 	}
-
 } //@media MD 1024
 
 //* @media LG 1200
