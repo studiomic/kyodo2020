@@ -21,11 +21,11 @@ header {
 			margin: 0 auto;
 			width: 240px;
 			height: 135px;
-			&:hover, &:active, &:focus {
-				background: #aaa;
-				background-size: auto 180px;
-				mix-blend-mode: multiply;
-			}
+			// &:hover, &:active, &:focus {
+			// 	background: #aaa;
+			// 	background-size: auto 180px;
+			// 	mix-blend-mode: multiply;
+			// }
 		}
 	}
 }
@@ -50,14 +50,10 @@ nav.main-nav {
 /* 2ND NAV BAR
 ----------------------------------------------------*/
 .nav-bar {
-	// background: $col-28;
-	// background: $col-14;
-	// background-color: rgba(0, 0, 0, 0.84);
 	background-color: rgba(0, 0, 0, 0.9);
 	position: relative;
 	display: none;
 	height: 60px;
-
 	h1 {
 		background: url(../img/logo-onwhite.png)no-repeat;
 		background-position: center left;
@@ -73,10 +69,10 @@ nav.main-nav {
 			display: block;
 			width: 290px;
 			height: 60px;
-			&:hover, &:active, &:focus {
-				background: url(../img/logo-transparent.png)no-repeat;
-				background-position: center center;
-			}
+			// &:hover, &:active, &:focus {
+			// 	background: url(../img/logo-transparent.png)no-repeat;
+			// 	background-position: center center;
+			// }
 		}
 	}
 	ul {
@@ -92,10 +88,10 @@ nav.main-nav {
 	}
 	a {
 		color: $col-Fa;
-		&:hover, &:active, &:focus {
-			color: $col-66;
-			text-decoration: none;
-		}
+		// &:hover, &:active, &:focus {
+		// 	color: $col-66;
+		// 	text-decoration: none;
+		// }
 	}
 }
 
@@ -114,17 +110,72 @@ nav.main-nav {
 			width: auto;
 			color: $col-F5;
 			padding-top: 130px;
-			&:hover, &:active, &:focus {
-				background: url(../img/logo-onwhite.png)no-repeat;
-				background-position: center top;
-				background-size: 200px;
-				color: $col-aa;
-				text-decoration: none;
-			}
+			// &:hover, &:active, &:focus {
+			// 	background: url(../img/logo-onwhite.png)no-repeat;
+			// 	background-position: center top;
+			// 	background-size: 200px;
+			// 	color: $col-aa;
+			// 	text-decoration: none;
+			// }
 		}
 	}
 	small {
 		display: block;
 		margin-top: 4rem;
 	}
+}
+
+
+//* pages-base ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	/* HEADER
+	----------------------------------------------------*/
+	header {
+		h1 {
+			a {
+				&:hover, &:active, &:focus {
+					background: #aaa;
+					background-size: auto 180px;
+					mix-blend-mode: multiply;
+				}
+			}
+		}
+	}
+
+	/* 2ND NAV BAR
+	----------------------------------------------------*/
+	.nav-bar {
+		h1 {
+			a {
+				&:hover, &:active, &:focus {
+					background: url(../img/logo-transparent.png)no-repeat;
+					background-position: center center;
+				}
+			}
+		}
+		a {
+			&:hover, &:active, &:focus {
+				color: $col-66;
+				text-decoration: none;
+			}
+		}
+	}
+
+	//* Front-Page ONLY FOOTER CLASS
+	//----------------------------------------------------*/
+	.frontFoot {
+		h1 {
+			a {
+				&:hover, &:active, &:focus {
+					background: url(../img/logo-onwhite.png)no-repeat;
+					background-position: center top;
+					background-size: 200px;
+					color: $col-aa;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 }
