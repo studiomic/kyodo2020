@@ -1,22 +1,13 @@
 // main: ../pages-style.scss
 
-//* transport
+//* TRANSPORT move in Front
 //----------------------------------------------------*/
-// .transport {
-// 	h1 {
-// 		font-size: 3rem;
-// 		font-weight: normal;
-// 		margin: 4rem auto;
-// 	}
-// }
-
 .warehouse,.shipping {
 	.headline {
 		position: relative;
 		overflow: hidden;
 		mix-blend-mode: hard-light; //ハードライト
 		height: 400px;
-		// text-align: center;
 		color: $col-Fa;
 		font-size: 1.2rem;
 		h3 {
@@ -38,8 +29,8 @@
 		// background: url(../img/blog-head-full.png)no-repeat;
 		background: url(../img/4266221_m.jpg)no-repeat;
 		background-size: cover;
-		// background-position: center top 75%;
 		background-position: center center;
+		// background-position: center top 75%;
 		// mix-blend-mode: hard-light; //ハードライト
 		// mix-blend-mode: luminosity; //輝度
 		&::after {
@@ -80,20 +71,20 @@
 				display: block;
 				max-width: 100%;
 				overflow: hidden;
-				&:hover, &:active, &:focus {
-					img {
-						opacity: .8;
-						transform: perspective(50px) scaleZ(1.1) rotateY(10deg);
-						transform-origin : 50% 50%;
-						transition-duration: .4s;
-					}
-					h3 {
-						&::before,&::after {
-							transition-duration: .5s;
-							width: 95%;
-						}
-					}
-				}
+				// &:hover, &:active, &:focus {
+					// img {
+					// 	opacity: .8;
+					// 	transform: perspective(50px) scaleZ(1.1) rotateY(10deg);
+					// 	transform-origin : 50% 50%;
+					// 	transition-duration: .4s;
+					// }
+					// h3 {
+					// 	&::before,&::after {
+					// 		transition-duration: .5s;
+					// 		width: 95%;
+					// 	}
+					// }
+				// }
 			}
 		}
 		img {
@@ -150,22 +141,14 @@
 				top: 1rem;
 				right: 5%;
 				border-top: 2px solid $orange;
-				// border-top: 2px solid $cyan;
-				// border-top: 2px solid $gray60;
 			}
 			&::after {
 				left: 5%;
 				bottom: 1rem;
-				// position: absolute;
-				// content: "";
-				// width: 40%;
-				// display: block;
 				border-top: 2px solid $green;
-				// border-top: 2px solid $gray60;
 			}
 		}
 	}
-
 }
 
 
@@ -176,8 +159,6 @@
 		background-position: center center;
 		text-align: center;
 		padding-top: 6rem;
-		// mix-blend-mode: luminosity; //輝度
-		// mix-blend-mode: hard-light; //ハードライト
 		&::after {
 			content: '';
 			position: absolute;
@@ -189,20 +170,15 @@
 			width: 500px;
 			height: 1200px;
 			transform: rotate(45deg);
-			// border-radius: 25%;
 			z-index:-1;
 		}
 
 	}
 	.flex {
-		// width: 96%;
 		margin: 3rem auto;
 		max-width: 1300px;
-		// max-width: 1400px;
-		// justify-content:space-between;
 		justify-content: center;
 		flex-wrap: wrap;
-		// width: 100%;
 		article {
 			width: 45%;
 			margin: 0 1% 2rem;
@@ -215,4 +191,32 @@
 			text-align: left;
 		}
 	}
+}
+
+//* TRANSPORT ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.salesOffice {
+		.flex {
+			article {
+				a {
+					&:hover, &:active, &:focus {
+						img {
+							opacity: .8;
+							transform: perspective(50px) scaleZ(1.1) rotateY(10deg);
+							transform-origin : 50% 50%;
+							transition-duration: .4s;
+						}
+						h3 {
+							&::before,&::after {
+								transition-duration: .5s;
+								width: 95%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
 }
