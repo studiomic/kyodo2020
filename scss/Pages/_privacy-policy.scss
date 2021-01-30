@@ -1,16 +1,8 @@
 // main: ../pages-style.scss
 
-@mixin titleH2-pp {
-	font-weight: normal;
-	margin: 4rem auto;
-	display: inline-block;
-}
-
-//* CONTENT
+//* PRIVACY-POLICY
 //----------------------------------------------------*/
 .privacy-policy {
-	// text-align: center;
-	// padding-bottom: 4rem;
 	h2 {
 		@include titleH2-pp;
 		border-bottom: 2px solid $col-B1-08;
