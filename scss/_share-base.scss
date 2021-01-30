@@ -16,11 +16,6 @@ html, body {
 a {
 	text-decoration: none;
 	color: $link-color;
-	&:hover, &:active, &:focus {
-		color: $hover-color;
-		// text-decoration: underline;
-		transition-duration: 1s;
-	}
 }
 
 //* DRAWER + MAIN NAV SHARE STYLE
@@ -28,17 +23,12 @@ a {
 nav {
 	a {
 		color: $col-Fa;
-		&:hover, &:active, &:focus {
-			color: $col-66;
-			text-decoration: none;
-		}
 	}
 }
 
 .drawer-menu {
 	padding-bottom: 2rem;
 	li {
-		// font-size: $drawer-fontSize;
 		display: block;
 		padding: .75rem;
 	}
@@ -56,12 +46,6 @@ a.drawer-brand {
    text-indent: 100%;
    white-space: nowrap;
    overflow: hidden;
-   // border: 1px solid $red;
-}
-
-a:hover.drawer-brand {
-	background-color: rgba(0, 0, 0, 0.6);
-	background-blend-mode: darken;
 }
 
 //* FOOTER
@@ -69,12 +53,10 @@ a:hover.drawer-brand {
 footer {
 	width: 100%;
 	background: $footer-Bg-Color;
-	// background: #282828;
 	color: $col-F5;
 	text-align: center;
 	padding-top: 2rem;
 	address {
-		// font-style: normal;
 		font-size: 0.8rem;
 		line-height: 1.7;
 		margin-bottom: 4rem;
@@ -94,14 +76,55 @@ footer {
 			width: auto;
 			color: $col-F5;
 			padding-top: 130px;
+		}
+	}
+}
+
+
+//* share-base ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+
+	//* ANCHOR
+	//----------------------------------------------------*/
+	a {
+		&:hover, &:active, &:focus {
+			color: $hover-color;
+			transition-duration: 1s;
+		}
+	}
+
+	//* DRAWER + MAIN NAV SHARE STYLE
+	//----------------------------------------------------*/
+	nav {
+		a {
 			&:hover, &:active, &:focus {
-				background: url(../img/logo-onwhite.png)no-repeat;
-				background-position: center top;
-				background-size: 200px;
-				color: $col-aa;
-				// color: #4A4A4A;
+				color: $col-66;
 				text-decoration: none;
 			}
 		}
 	}
+
+	a:hover.drawer-brand {
+		background-color: rgba(0, 0, 0, 0.6);
+		background-blend-mode: darken;
+	}
+
+	//* FOOTER
+	//----------------------------------------------------*/
+	footer {
+		h2 {
+			a {
+				&:hover, &:active, &:focus {
+					background: url(../img/logo-onwhite.png)no-repeat;
+					background-position: center top;
+					background-size: 200px;
+					color: $col-aa;
+					// color: #4A4A4A;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 }
