@@ -2,31 +2,12 @@
 
 //* YOKOHAMA
 //----------------------------------------------------*/
-.busFront,.shipping,.warehouse,.yokohama,.atsugi,.koga {
-	.headline {
-		position: relative;
-		height: 500px;
-		text-align: left;
-		padding: 2rem 0 0 2rem;
-		h2 {
-			font-weight: normal;
-			font-size: 3rem;
-			font-size: 2.5rem;
-			line-height: 1.7;
-		}
-		address {
-			background: $col-B1-05;
-			font-size: 1.2rem;
-			padding: 2rem;
-			color: $col-Fa;
-			line-height: 1.7;
-			position: absolute;
-			border: 1px solid $rgb-F6;
-		}
-	}
-}
-
 .yokohama {
+	.headline {
+		background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
+		// background-size: cover;
+		mix-blend-mode: hard-light;
+	}
 	.wrapper {
 		h2 {
 			@include titleH2;
@@ -48,14 +29,6 @@
 			}
 		}
 	}
-	.headline {
-		background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
-		background-size: cover;
-		mix-blend-mode: hard-light;
-	}
-}
-.addr {
-	background: $col-B1-04;
 }
 
 .equipment {
@@ -83,3 +56,9 @@
 		width: 100%;
 	}
 }
+
+
+
+// .addr {
+// 	background: $col-B1-04;
+// }
