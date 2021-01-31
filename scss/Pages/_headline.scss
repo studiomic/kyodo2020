@@ -1,0 +1,32 @@
+// main: ../pages-style.scss
+
+//* HEADLINE
+//----------------------------------------------------*/
+.busFront,.shipping,.warehouse,.yokohama,.atsugi,.koga {
+	.headline {
+		position: relative;
+		text-align: left;
+		h2 {
+			font-weight: normal;
+			font-size: 3rem;
+			font-size: 2.5rem;
+			line-height: 1.7;
+		}
+	}
+}
+
+.yokohama,.atsugi,.koga {
+	.headline {
+		height: 500px;
+		padding: 2rem 0 0 2rem;
+		address {
+			background: $col-B1-05;
+			font-size: 1.2rem;
+			padding: 2rem;
+			color: $col-Fa;
+			line-height: 1.7;
+			position: absolute;
+			border: 1px solid $rgb-F6;
+		}
+	}
+}
