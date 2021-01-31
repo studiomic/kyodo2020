@@ -1,0 +1,155 @@
+// main: ../pages-style.scss
+
+//* BUS
+//----------------------------------------------------*/
+.bus {
+	width: $sm-width;
+	text-align: center;
+	.container {
+		text-align: left;
+		p {
+			margin-bottom: 1rem;
+			line-height: 1.7;
+		}
+		span {
+			font-weight: bold;
+			margin: 0 .5rem;
+		}
+	}
+	.title-group {
+		background: $bus-title;
+		// padding: 2rem;
+		// margin-bottom: 2rem;
+		// h1 {
+		// 	font-weight: normal;
+		// 	font-size: 3rem;
+		// }
+		// p {
+		// 	font-size: 1.4rem;
+		// }
+	}
+	h2 {
+		background: $bus-title;
+		font-weight: normal;
+		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+	h3 {
+		text-align: center;
+		font-weight: normal;
+		border-bottom: 2px solid $rgb-01;
+		margin: 2rem 0;
+	}
+	// nav {
+	// 	margin: 4rem 0;
+	// 	ul {
+	// 		display: flex;
+	// 		justify-content: space-between;
+	// 		list-style: none;
+	// 		width: $sm-width;
+	// 		z-index: 1;
+	// 	}
+	// 	li {
+	// 		a {
+	// 			color: $text-color;
+	// 			@include fina;
+	// 		}
+	// 	}
+	// }
+}
+
+//* KOSUZUME
+//----------------------------------------------------*/
+.kosuzume {
+	width: $sm-width;
+	margin-top: 40px;
+}
+
+//* KOSUZUME DAIYA
+//----------------------------------------------------*/
+.diya {
+	position: relative;
+	display: flex;
+	z-index: 1;
+	padding: 12rem 0 6rem;
+	&::before {
+		font-family: Impact;
+		font-style: italic;
+		content: "365";
+		position:absolute;
+		// font-size: 24rem;
+		color: $bus-year-03;
+		line-height: 1;
+		// top: -45px;
+		// right: 4rem;
+		z-index: -1;
+	}
+	h4 {
+		text-align: center;
+		color: $col-Fa;
+		height: 4rem;
+		line-height: 1.4;
+	}
+
+	article:nth-child(odd) {
+		h4 {
+			background: $bus-blue;
+			border-radius: 2rem 0 0 2rem;
+			padding: 1.2rem 0 0;
+		}
+	}
+	article:nth-child(even) {
+		h4 {
+			background: $bus-navy;
+			border-radius: 0 2rem 2rem 0;
+			padding: .5rem 0 0;
+		}
+	}
+} //.diya
+
+//* VEHICLE TYPE
+//----------------------------------------------------*/
+.vehicleType {
+	display: flex;
+	flex-wrap: wrap;
+	img {
+		width: 100%;
+	}
+	h4 {
+		font-size: 1.2rem;
+		font-weight: normal;
+		padding: 12px;
+		background: $green;
+		color: $col-Fa;
+		position:relative;
+		line-height: 1;
+		&::after {
+			content: '';
+			position:absolute;
+			top: 0;
+			right: 0;
+			width: 0;
+			border-style: solid;
+			border-color: transparent white transparent transparent;
+			border-width: 1.5rem 1rem;
+			border-width: 22px 1rem;
+		}
+	}
+	p {
+		padding: 1rem;
+	}
+}
+
+//* VEHICLE LIST
+//----------------------------------------------------*/
+.vehicleList {
+	display: flex;
+	flex-wrap: wrap;
+	width: $sm-width;
+	margin-bottom: 6rem;
+	dt,dd {
+		border: 1px solid $col-F;
+		padding: 1rem .5rem;
+		background: $col-F5;
+	}
+}
