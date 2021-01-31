@@ -7,10 +7,6 @@
 		padding: 3rem 0 0 6rem;
 		background: url(../img/4266221_m.jpg)no-repeat;
 		background-position: center center;
-		// background-size: cover;
-		// background-position: center top 75%;
-		// mix-blend-mode: hard-light; //ハードライト
-		// mix-blend-mode: luminosity; //輝度
 		&::after {
 			content: '';
 			position: absolute;
@@ -33,10 +29,6 @@
 .salesOffice {
 	text-align: center;
 	margin-top: 4rem;
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $cyan-06;
-	}
 	.flex {
 		margin: 0 auto;
 		max-width: 1300px;
@@ -47,35 +39,8 @@
 			margin: 0 1% 2rem;
 			a {
 				display: block;
-				max-width: 100%;
+				max-width: $sm-width;
 				overflow: hidden;
-			}
-		}
-		img {
-			width: 100%;
-		}
-		h3 {
-			background: $rgb-08;
-			color: $col-Fa;
-			font-weight: normal;
-			line-height: 5;
-			position: relative;
-			margin-bottom: 1rem;
-			&::before,&::after {
-				position: absolute;
-				content: '';
-				width: 50%;
-				display: block;
-			}
-			&::before {
-				top: 1rem;
-				right: 5%;
-				border-top: 2px solid $orange;
-			}
-			&::after {
-				left: 5%;
-				bottom: 1rem;
-				border-top: 2px solid $green;
 			}
 		}
 		p {
@@ -86,34 +51,6 @@
 	}
 }
 
-.salesOffice,.warehouse {
-	.flex {
-		h3 {
-			background: $rgb-08;
-			color: $col-Fa;
-			font-weight: normal;
-			line-height: 5;
-			position: relative;
-			margin-bottom: 1rem;
-			&::before,&::after {
-				position: absolute;
-				content: "";
-				width: 50%;
-				display: block;
-			}
-			&::before {
-				top: 1rem;
-				right: 5%;
-				border-top: 2px solid $orange;
-			}
-			&::after {
-				left: 5%;
-				bottom: 1rem;
-				border-top: 2px solid $green;
-			}
-		}
-	}
-}
 
 
 .warehouse {
@@ -147,7 +84,7 @@
 			margin: 0 1% 2rem;
 		}
 		img {
-			width: 100%;
+			// width: $sm-width;
 			height: 300px;
 		}
 		p {
@@ -219,4 +156,48 @@
 // 			display: inline-block;
 // 		}
 // 	}
+// }
+
+
+// background-size: cover;
+// background-position: center top 75%;
+// mix-blend-mode: hard-light; //ハードライト
+// mix-blend-mode: luminosity; //輝度
+
+// h3 {
+// 	background: $rgb-08;
+// 	color: $col-Fa;
+// 	font-weight: normal;
+// 	line-height: 5;
+// 	position: relative;
+// 	margin-bottom: 1rem;
+// 	&::before,&::after {
+// 		position: absolute;
+// 		content: '';
+// 		width: 50%;
+// 		display: block;
+// 	}
+// 	&::before {
+// 		top: 1rem;
+// 		right: 5%;
+// 		border-top: 2px solid $orange;
+// 	}
+// 	&::after {
+// 		left: 5%;
+// 		bottom: 1rem;
+// 		border-top: 2px solid $green;
+// 	}
+// }
+
+// background: $rgb-08;
+// color: $col-Fa;
+// font-weight: normal;
+// line-height: 5;
+// position: relative;
+// margin-bottom: 1rem;
+// &::before,&::after {
+// 	position: absolute;
+// 	content: "";
+// 	width: 50%;
+// 	display: block;
 // }

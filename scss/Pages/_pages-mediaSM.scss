@@ -25,7 +25,7 @@
 
 	//* header
 	header {
-		max-width: 100%;
+		max-width: $sm-width;
 		height: 140px;
 		background-size: auto 120px;
 		h1 {
@@ -38,7 +38,7 @@
 	}
 	nav.main-nav {
 		ul {
-			max-width: 100%;
+			max-width: $sm-width;
 			font-size: .8rem;
 		}
 		li {
@@ -52,7 +52,7 @@
 	}
 	//* Front-Page ONLY FOOTER CLASS
 	.frontFoot {
-		max-width: 100%;
+		max-width: $sm-width;
 		padding-top: 1rem;
 		h1 {
 			font-size: 1rem;
@@ -88,7 +88,7 @@
 		flex-direction: column;
 		flex-direction: column-reverse;
 		article {
-			width: 100%;
+			width: $sm-width;
 		}
 		article:nth-of-type(1) {
 			color: $col-Fa;
@@ -99,40 +99,39 @@
 		}
 	}
 	//* FRONT PAGE POST
-	.postFront {
-		article {
-			width: 100%;
-			padding-top: 1rem;
-			margin-bottom: 2rem;
-		}
-		h2 {
-			width: 100%;
-		}
-		img {
-			width: 100%;
-		}
-	}
+	// .postFront {
+	// 	article {
+	// 		width: $sm-width;
+	// 		padding-top: 1rem;
+	// 		margin-bottom: 2rem;
+	// 	}
+	// 	h2 {
+	// 		width: 100%;
+	// 	}
+	// 	img {
+	// 		width: $sm-width;
+	// 	}
+	// }
 	//* FRONT PAGE GREENMARK
-	.greenMark {
-		width: 100%;
-		background-position: right 10px bottom;
-		background-size: 200px;
-		section {
-			display: inline-flex;
-			flex-direction: column;
-			align-items: center;
-			margin-left: 30px;
-			img {
-				margin-bottom: 2rem;
-			}
-		}
-	}
-	.gmark {
-		// width: 100%;
-		height: 100%;
-		background-position: right 10px bottom;
-		background-size: 200px;
-	}
+	// .greenMark {
+	// 	width: 100%;
+	// 	background-position: right 10px bottom;
+	// 	background-size: 200px;
+	// 	section {
+	// 		display: inline-flex;
+	// 		flex-direction: column;
+	// 		align-items: center;
+	// 		margin-left: 30px;
+	// 		img {
+	// 			margin-bottom: 2rem;
+	// 		}
+	// 	}
+	// }
+	// .gmark {
+	// 	height: 100%;
+	// 	background-position: right 10px bottom;
+	// 	background-size: 200px;
+	// }
 
 	//* Company.scss
 	//----------------------------------------------------*/
@@ -238,12 +237,12 @@
 
 	.vehicleList {
 		dt {
-			width: 100%;
+			width: $sm-width;
 			font-weight: 500;
 			background: $col-F1;
 		}
 		dd{
-			width: 100%;
+			width: $sm-width;
 		}
 		dd:nth-child(4n){
 			text-align: right;
@@ -304,7 +303,7 @@
 	//----------------------------------------------------*/
 	.atsugi-photo {
 		article {
-			width: 100%;
+			width: $sm-width;
 		}
 	}
 

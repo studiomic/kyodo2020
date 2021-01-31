@@ -26,10 +26,11 @@
 	//* VEHICLE TYPE (BUS:YOKOHAMA)
 	//----------------------------------------------------*/
 	.vehicleType {
-		justify-content: space-between;
-		width: 90%;
-		margin: 0 auto;
-		max-width: 1300px;
+		// @include flex1300;
+		// justify-content: space-between;
+		// width: 90%;
+		// margin: 0 auto;
+		// max-width: 1300px;
 		section {
 			width: 32%;
 		}
@@ -105,7 +106,7 @@
 					width: 300%;
 				}
 				&:after {
-					width: 100%;
+					width: $sm-width;
 					left: -225%;
 					width: 320%;
 				}
@@ -123,7 +124,7 @@
 			&:after {
 				z-index: -3;
 				left: 50%;
-				width: 100%;
+				width: $sm-width;
 				display: block;
 			}
 			h2 {
@@ -329,18 +330,6 @@
 		}
 	} //.diya
 
-	//* VEHICLE TYPE
-	//----------------------------------------------------*/
-	// .vehicleType {
-	// 	justify-content: space-between;
-	// 	width: 90%;
-	// 	margin: 0 auto;
-	// 	max-width: 1300px;
-	// 	section {
-	// 		width: 32%;
-	// 	}
-	// }	//* VEHICLE TYPE
-
 	//* VEHICLE LIST
 	//----------------------------------------------------*/
 	.vehicleList {
@@ -428,7 +417,7 @@
 		}
 	}
 	.working	{
-		width: 100%;
+		width: $sm-width;
 		max-width: 1300px;
 		section {
 			width: 24%;
@@ -443,3 +432,14 @@
 //* @media LG 1200
 //----------------------------------------------------*/
 // @media (min-width:75em) {}
+//* VEHICLE TYPE
+//----------------------------------------------------*/
+// .vehicleType {
+// 	justify-content: space-between;
+// 	width: 90%;
+// 	margin: 0 auto;
+// 	max-width: 1300px;
+// 	section {
+// 		width: 32%;
+// 	}
+// }	//* VEHICLE TYPE

@@ -8,6 +8,15 @@
 	margin: 0 auto;
 }
 
+//* max1300px FLEX
+//----------------------------------------------------*/
+@mixin flex1300 {
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1300px;
+}
+
 //* W Line Heading
 //----------------------------------------------------*/
 @mixin Wline {
@@ -18,7 +27,6 @@
 	line-height: 3;
 	display: flex;
 	border-radius: 2px;
-	// background: $blue;//#3cb3e4;
 }
 @mixin Wline-ba {
 	content: '';
@@ -26,7 +34,6 @@
 	padding: 1px 0;
 	height: 0;
 	transform: rotate(45deg);
-	// background: #fff;
 }
 
 //* fade in anchor
@@ -40,9 +47,8 @@
 @mixin fina-hover {
 	color: $col-Fa;
 	transform: translate3d(0, 0, 10px);
-	width: 100%;
+	width: $sm-width;
 }
-// z-index: 1;
 
 @mixin fina-before {
 	content: '';
@@ -78,6 +84,7 @@
 	display: inline-block;
 	line-height: 2;
 }
+
 @mixin titleH2-pp {
 	font-weight: normal;
 	margin: 4rem auto;

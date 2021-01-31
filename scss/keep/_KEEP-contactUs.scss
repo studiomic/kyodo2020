@@ -1,5 +1,3 @@
-// main: ./pages-style.scss
-// main: ./blog-style.scss
 
 //* POSITION: FIXED
 //----------------------------------------------------*/
@@ -8,7 +6,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: $sm-width;
 	z-index: 100;
 }
 .mixB {

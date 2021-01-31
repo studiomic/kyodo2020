@@ -11,6 +11,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 	<script src="/wp/js/nav.js"></script>
+	<script src="/wp/js/scroll.js"></script>
 	<link rel="stylesheet" href="/wp/css/pages-style.css">
 </head>
 
@@ -102,8 +103,8 @@
 		<section class="transport" id="transport">
 			<h1>物流・運送・貨物事業</h1>
 			<section class="shipping">
-				<div class="mixB4">
-					<section class="headline">
+				<div class="mixB4" id="mixBG1">
+					<section class="headline" id="headline1">
 						<h2>輸送サービス</h2>
 							<div class="flex">
 							<article>
@@ -181,8 +182,8 @@
 			</section>
 
 			<section class="warehouse">
-				<div class="mixB4">
-					<section class="headline">
+				<div class="mixB4" id="mixBG2">
+					<section class="headline" id="headline2">
 						<h2>倉庫・保管サービス</h2>
 						<h3>拠点</h3>
 						<p>
@@ -218,9 +219,9 @@
 
 		<section class="busFront">
 			<h1>送迎バス・旅客事業</h1>
-			<div class="mixB4">
+			<div class="mixB4" id="mixBG3">
 				<a href="<?php echo site_url(); ?>/bus">
-				<section class="headline">
+				<section class="headline" id="headline3">
 					<div>
 					<h2>旅客事業部</h2>
 					<h3>貸切バス・マイクロバス・特定バス</h3>

@@ -14,7 +14,7 @@ header {
 		height: 140px;
 		line-height: 1;
 		a {
-			text-indent: 100%;
+			text-indent: $sm-width;
 			white-space: nowrap;
 			overflow: hidden;
 			display: block;
@@ -59,7 +59,7 @@ nav.main-nav {
 		background-position: center left;
 		width: 290px;
 		height: 60px;
-		text-indent: 100%;
+		text-indent: $sm-width;
       white-space: nowrap;
       overflow: hidden;
 		position: absolute;

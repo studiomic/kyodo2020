@@ -54,7 +54,7 @@ header {
 			width: 160px;
 			height: 60px;
 			margin: 0 auto;
-			text-indent: 100%;
+			text-indent: $sm-width;
 			white-space: nowrap;
 			overflow: hidden;
 			&:hover, &:active, &:focus {

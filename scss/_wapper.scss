@@ -3,12 +3,12 @@
 //* BASE BOX STYLE
 //----------------------------------------------------*/
 %fit {
-	width: 100%;
+	width: $sm-width;
 	height: 100vh;
 	position: relative;
 }
 .wrapper {
-	width: 100%;
+	width: $sm-width;
 }
 .flex {
 	display: flex;
@@ -18,7 +18,7 @@
 	flex-direction: column;
 }
 .container { //width: 940px;
-	margin: 0 auto;
+	// margin: 0 auto;
 	line-height: 1.7;
 }
 
@@ -33,7 +33,7 @@
 //----------------------------------------------------*/
 @media (max-width:63em) {
 	.container {
-		width: 100%;
+		width: $sm-width;
 	}
 } //* @media SM
 

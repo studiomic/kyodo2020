@@ -3,13 +3,17 @@
 //* COMPANY
 //----------------------------------------------------*/
 // 会社概要
+.companyHistory,
+.overview {
+	dl {
+		@include comDL;
+	}
+}
+
 .overview {
 	text-align: left;
 	width: $sm-width;
 	margin: 0 auto;
-	dl {
-		@include comDL;
-	}
 	dt {
 		font-weight: 500;
 		border-bottom: 2px solid $rgb-03;
@@ -38,10 +42,6 @@
 
 // 代表メッセージ
 .ceo-message {
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $red-06;
-	}
 	.wrapper {
 		background: rgba(180,190,130,.5);//$green;
 		background: $orange-03;
@@ -49,8 +49,8 @@
 		padding: 2rem;
 	}
 	section {
-		margin: 0 auto;
-		display: flex;
+		// margin: 0 auto;
+		// display: flex;
 		width: $main-width;
 	}
 	p {
@@ -64,20 +64,33 @@
 .ceo-message,.qualityManagement,.basicPrinciple,.companyHistory {
 	@include baseWrap;
 }
+
+.basicPrinciple,
 .qualityManagement {
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $cyan-06;
-	}
 	h3 {
 		@include titleH3;
+	}
+}
+.basicPrinciple,
+.qualityManagement {
+	article {
+		p {
+			@include pBox;
+		}
+	}
+}
+
+
+.qualityManagement {
+	h3 {
+		// @include titleH3;
 		&:before,&:after {
 			color: $cyan;
 		}
 	}
 	article {
 		p {
-			@include pBox;
+			// @include pBox;
 			background: $cyan-01;
 			&:before {
 				font-family: $fontFamilySys;
@@ -105,19 +118,15 @@
 
 // 品質維持の基本理念
 .basicPrinciple {
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $red-06;
-	}
 	h3 {
-		@include titleH3;
+		// @include titleH3;
 		&:before,&:after {
 			color: $red;
 		}
 	}
 	article {
 		p {
-			@include pBox;
+			// @include pBox;
 			background: $red-01;
 		}
 	}
@@ -125,13 +134,6 @@
 
 // 沿革
 .companyHistory {
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $blue-06;
-	}
-	dl {
-		@include comDL;
-	}
 	dt,dd {
 		text-align: left;
 	}
@@ -140,3 +142,17 @@
 		border-bottom: 2px solid $blue-04;
 	}
 } // .companyHistory
+
+
+// dl {
+// 	@include comDL;
+// }
+
+// h2 {
+// 	@include titleH2;
+// 	border-bottom: 3px solid $red-06;
+// }
+// h2 {
+// 	@include titleH2;
+// 	border-bottom: 3px solid $blue-06;
+// }

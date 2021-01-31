@@ -16,10 +16,15 @@
 	}
 }
 
+.warehouse {
+	.headline {
+		text-align: center;
+	}
+}
+
 .busFront,
 .warehouse,.shipping {
 	.headline {
-		// position: relative;
 		overflow: hidden;
 		mix-blend-mode: hard-light; //ハードライト
 		height: 400px;
@@ -42,7 +47,9 @@
 		padding: 2rem 0 0 2rem;
 		animation-delay: 1.5s;
 		animation: SlideIn 1.5s;
-		h2 {opacity: 0;}
+		h2 {
+			opacity: 0;
+		}
 		address {
 			opacity: 0;
 			background: $col-B1-05;
@@ -57,11 +64,10 @@
 }
 
 /* CSSアニメーションの指定 */
-.mixB,.mixB4 {
-	animation: SlideIn .4s;
-}
-
 .yokohama,.atsugi,.koga {
+	.mixB,.mixB4 {
+		animation: SlideIn .4s;
+	}
 	.headline {
 		h2 {
 			animation-delay: 2s;
@@ -118,18 +124,49 @@
   }
 }
 
+@keyframes SlideCin {
+  0% {
+	 background: $iceBG;
+    transform: translateX(-100%);
+  }
+  99% {
+	background: $iceBG;
+  }
+  100% {
+	 background: $bus-blue-06;
+	 transform: translateX(0);
+  }
+}
 
-// @keyframes SlideInr {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100%);
-//   }
-//   90% {
-//     opacity: 0;
-//     transform: translateX(20%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
+.fadeInBB {
+	// animation: SlideIn 1s;
+	animation: SlideCin 1s;
+	animation-fill-mode: both;
+}
+
+.fadeInX {
+  animation-delay: 8s;
+  animation: SlideIn 2s;
+  animation-timing-function: ease-in-out;
+}
+
+/* @keyframes */
+@keyframes Reverse {
+  100% {
+	 opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+
+// animation-fill-mode:forwards;
+// @keyframes txtEffect {
+// 	0% {
+//      opacity: 0;
+//      transform: translateX(-100%);
+//    }
+//    100% {
+//      opacity: 1;
+//      transform: translateX(0);
+//    }
 // }

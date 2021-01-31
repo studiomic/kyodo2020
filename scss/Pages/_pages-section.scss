@@ -85,11 +85,12 @@
 	margin: 0 auto;
 	width: $main-width;
 	h2 {
-		@include titleH2;
+		// @include titleH2;
 		border-bottom: 3px solid rgba(0,153,51,1); //#6ab574;
 	}
 	div {
-		height: 150px;
+		// height: 150px;
+		height: 160px;
 	}
 	.flex {
 		justify-content:space-between;
@@ -143,10 +144,10 @@
 		color: $text-color;
 		display: block;
 	}
-	h2 {
-		@include titleH2;
-		border-bottom: 3px solid $red-06;
-	}
+	// h2 {
+	// 	// @include titleH2;
+	// 	border-bottom: 3px solid $red-06;
+	// }
 	div {
 		position: relative;
 		margin: -4rem 0 0 -2rem;
