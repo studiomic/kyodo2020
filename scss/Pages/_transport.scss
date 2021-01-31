@@ -2,34 +2,12 @@
 
 //* TRANSPORT move in Front
 //----------------------------------------------------*/
-.warehouse,.shipping {
-	.headline {
-		position: relative;
-		overflow: hidden;
-		mix-blend-mode: hard-light; //ハードライト
-		height: 400px;
-		color: $col-Fa;
-		font-size: 1.2rem;
-		h3 {
-			font-size: 1.5rem;
-			font-weight: normal;
-			margin: 4rem 0 .5rem;
-			padding-bottom: .2rem;
-			border-bottom: 2px solid $col-Fa;
-			display: inline-block;
-		}
-	}
-}
-
 .shipping {
 	.headline {
 		padding: 3rem 0 0 6rem;
-		// background: url(../img/mono4.png)no-repeat;
-		// background: url(../img/595023_m.jpg)no-repeat;
-		// background: url(../img/blog-head-full.png)no-repeat;
 		background: url(../img/4266221_m.jpg)no-repeat;
-		background-size: cover;
 		background-position: center center;
+		// background-size: cover;
 		// background-position: center top 75%;
 		// mix-blend-mode: hard-light; //ハードライト
 		// mix-blend-mode: luminosity; //輝度
@@ -71,20 +49,6 @@
 				display: block;
 				max-width: 100%;
 				overflow: hidden;
-				// &:hover, &:active, &:focus {
-					// img {
-					// 	opacity: .8;
-					// 	transform: perspective(50px) scaleZ(1.1) rotateY(10deg);
-					// 	transform-origin : 50% 50%;
-					// 	transition-duration: .4s;
-					// }
-					// h3 {
-					// 	&::before,&::after {
-					// 		transition-duration: .5s;
-					// 		width: 95%;
-					// 	}
-					// }
-				// }
 			}
 		}
 		img {
@@ -154,7 +118,7 @@
 
 .warehouse {
 	.headline {
-		background: url(../img/302502_m.jpg)no-repeat;
+		// background: url(../img/302502_m.jpg)no-repeat;
 		background: url(../img/mono3.png)no-repeat;
 		background-position: center center;
 		text-align: center;
@@ -172,7 +136,6 @@
 			transform: rotate(45deg);
 			z-index:-1;
 		}
-
 	}
 	.flex {
 		margin: 3rem auto;
@@ -220,3 +183,40 @@
 	}
 
 }
+
+
+// background: url(../img/mono4.png)no-repeat;
+// background: url(../img/595023_m.jpg)no-repeat;
+// background: url(../img/blog-head-full.png)no-repeat;
+// &:hover, &:active, &:focus {
+	// img {
+	// 	opacity: .8;
+	// 	transform: perspective(50px) scaleZ(1.1) rotateY(10deg);
+	// 	transform-origin : 50% 50%;
+	// 	transition-duration: .4s;
+	// }
+	// h3 {
+	// 	&::before,&::after {
+	// 		transition-duration: .5s;
+	// 		width: 95%;
+	// 	}
+	// }
+// }
+// .warehouse,.shipping {
+// 	.headline {
+// 		position: relative;
+// 		overflow: hidden;
+// 		mix-blend-mode: hard-light; //ハードライト
+// 		height: 400px;
+// 		color: $col-Fa;
+// 		font-size: 1.2rem;
+// 		h3 {
+// 			font-size: 1.5rem;
+// 			font-weight: normal;
+// 			margin: 4rem 0 .5rem;
+// 			padding-bottom: .2rem;
+// 			border-bottom: 2px solid $col-Fa;
+// 			display: inline-block;
+// 		}
+// 	}
+// }

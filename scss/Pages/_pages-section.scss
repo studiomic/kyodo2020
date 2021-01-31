@@ -51,11 +51,11 @@
 		background: url(../img/bus.jpg)no-repeat;
 		background-position: center top 44%;
 		background-size: cover;
-		height: 400px;
-		mix-blend-mode: hard-light; //ハードライト
-		color: $col-Fa;
-		font-size: 1.2rem;
 		padding: 2rem 0 0 8.5rem !important;
+		// height: 400px;
+		// mix-blend-mode: hard-light; //ハードライト
+		// color: $col-Fa;
+		// font-size: 1.2rem;
 		&::after {
 			content: '';
 			position: absolute;
@@ -70,12 +70,12 @@
 			z-index:-1;
 		}
 		h3 {
-			font-size: 1.5rem;
-			font-weight: normal;
 			margin: 2rem 0 .5rem;
-			padding-bottom: .2rem;
-			border-bottom: 2px solid $col-Fa;
-			display: inline-block;
+			// font-size: 1.5rem;
+			// font-weight: normal;
+			// padding-bottom: .2rem;
+			// border-bottom: 2px solid $col-Fa;
+			// display: inline-block;
 		}
 	}
 }
@@ -142,13 +142,6 @@
 	a {
 		color: $text-color;
 		display: block;
-		// &:hover, &:active, &:focus {
-		// 	div::after {
-		// 		left: 73px;
-		// 		top: 40px;
-		// 		transition-duration: 1s;
-		// 	}
-		// }
 	}
 	h2 {
 		@include titleH2;
@@ -245,9 +238,6 @@
 			}
 		}
 	}
-
-
-
 
 }
 
@@ -595,5 +585,12 @@
 // 		h2 {
 // 			font-family: $fontFamilyMIN;
 // 		}
+// 	}
+// }
+// &:hover, &:active, &:focus {
+// 	div::after {
+// 		left: 73px;
+// 		top: 40px;
+// 		transition-duration: 1s;
 // 	}
 // }

@@ -6,6 +6,7 @@
 	.headline {
 		position: relative;
 		text-align: left;
+		background-size: cover;
 		h2 {
 			font-weight: normal;
 			font-size: 3rem;
@@ -15,11 +16,35 @@
 	}
 }
 
+.busFront,
+.warehouse,.shipping {
+	.headline {
+		// position: relative;
+		overflow: hidden;
+		mix-blend-mode: hard-light; //ハードライト
+		height: 400px;
+		color: $col-Fa;
+		font-size: 1.2rem;
+		h3 {
+			font-size: 1.5rem;
+			font-weight: normal;
+			padding-bottom: .2rem;
+			border-bottom: 2px solid $col-Fa;
+			display: inline-block;
+			margin: 4rem 0 .5rem;
+		}
+	}
+}
+
 .yokohama,.atsugi,.koga {
 	.headline {
 		height: 500px;
 		padding: 2rem 0 0 2rem;
+		animation-delay: 1.5s;
+		animation: SlideIn 1.5s;
+		h2 {opacity: 0;}
 		address {
+			opacity: 0;
 			background: $col-B1-05;
 			font-size: 1.2rem;
 			padding: 2rem;
@@ -30,3 +55,81 @@
 		}
 	}
 }
+
+/* CSSアニメーションの指定 */
+.mixB,.mixB4 {
+	animation: SlideIn .4s;
+}
+
+.yokohama,.atsugi,.koga {
+	.headline {
+		h2 {
+			animation-delay: 2s;
+			animation: SlideUp 2s;
+			animation-fill-mode:forwards;
+		}
+		address {
+			animation-delay: 4s;
+			animation: FideIn 1.5s;
+			animation-fill-mode:forwards;
+		}
+	}
+}
+
+/* @keyframes */
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+	 transform: translateY(100%);
+  }
+  50% {
+    opacity: 0;
+	 transform: translateY(150%);
+  }
+  100% {
+    opacity: 1;
+	 transform: translateX(0);
+  }
+}
+
+@keyframes FideIn {
+  0% {
+    opacity: 0;
+	 transform: translateX(100);
+  }
+  80% {
+    opacity: 0;
+	 transform: translateX(100);
+  }
+  100% {
+    opacity: 1;
+	 transform: translateX(0);
+  }
+}
+
+
+// @keyframes SlideInr {
+//   0% {
+//     opacity: 0;
+//     transform: translateX(100%);
+//   }
+//   90% {
+//     opacity: 0;
+//     transform: translateX(20%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateX(0);
+//   }
+// }
