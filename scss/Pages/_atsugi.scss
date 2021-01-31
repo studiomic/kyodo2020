@@ -4,11 +4,11 @@
 //----------------------------------------------------*/
 .atsugi {
 	.headline {
+		// background-size: cover;
 		// background: url(../img/atsugi/atsugi-6.png)no-repeat;
 		// background: url(../img/atsugi/8.jpg)no-repeat;
 		background: url(../img/atsugi/forklift.png)no-repeat;
 		background-position: center center;
-		background-size: cover;
 		mix-blend-mode: luminosity; //輝度
 		color: $col-Fa;
 		text-shadow: 0 2px 5px #000;
