@@ -42,7 +42,7 @@ $(function () {
 
 jQuery(function(){
     var windowWidth = $(window).width();
-    var headerHight = 100;
+    var headerHight = 60;
     jQuery('a[href^=#]').click(function() {
     var speed = 1000;
     var href= jQuery(this).attr("href");
@@ -52,6 +52,8 @@ jQuery(function(){
     return false;
    });
 });
+
+
 
 
 

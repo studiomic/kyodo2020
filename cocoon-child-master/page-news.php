@@ -18,7 +18,7 @@ Template Name: news
 		$wp_query->query( $my_posts );
 		if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
 	?>
-	<article id="post-<?php the_ID(); ?>">
+	<article id="<?php the_ID(); ?>">
 		<time datetime="<?php echo get_the_date(); ?>">
 			<span><?php echo get_the_date( 'Y' ); ?></span><span><?php echo get_the_date( 'm/d' ); ?></span>
 		</time>

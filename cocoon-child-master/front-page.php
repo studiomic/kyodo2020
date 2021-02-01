@@ -65,6 +65,35 @@
 			</article>
 
 			<article>
+				<!-- SLUG-POST -->
+				<?php
+					$wp_query = new WP_Query();
+					$my_posts = array(
+						'post_type' => 'post',
+						'category_name' => 'news',
+						'posts_per_page'=> '3',
+					);
+					$wp_query->query( $my_posts );
+					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
+				?>
+				<section class="blog-card">
+					<a href="<?php echo site_url(); ?>/news#<?php the_ID(); ?>">
+						<time datetime="<?php echo get_the_date(); ?>">
+							<span><?php echo get_post_time('M'); ?></span><span class="front-day"><?php echo get_the_date( 'd' ); ?></span><span><?php echo get_the_date( 'Y' ); ?></span>
+						</time>
+						<div>
+							<h2><?php the_title(); ?></h2>
+							<?php the_excerpt(); ?>
+						</div>
+					</a>
+				</section>
+			<?php endwhile; endif; wp_reset_postdata(); ?>
+			<!-- SLUG-POST -->
+			</article>
+		</section>
+
+
+<!--
 				<section class="blog-card">
 					<a href="#">
 						<time datetime="2018/3/3">
@@ -97,8 +126,13 @@
 						</div>
 					</a>
 				</section>
+ -->
+
+
+<!--
+
 			</article>
-		</section>
+		</section> -->
 
 		<section class="transport" id="transport">
 			<h1>物流・運送・貨物事業</h1>

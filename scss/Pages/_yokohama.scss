@@ -18,11 +18,11 @@
 .equipment {
 	// display: flex;
 	// margin: 0 auto;
-	// flex-wrap: wrap;
+	@include flex1300;
+	flex-wrap: wrap;
 	// justify-content: space-between;
 	// width: 90%;
 	// max-width: 1300px;
-	// @include flex1300;
 
 	margin-bottom: 4rem;
 	section {

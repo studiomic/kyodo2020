@@ -183,7 +183,6 @@ address {
 .equipment,
 .vehicleType {
   display: flex;
-  margin: 0 auto;
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
@@ -589,6 +588,8 @@ nav.main-nav li {
 }
 
 .news article {
+  padding-top: 60px;
+  margin-top: -60px;
   margin-bottom: 4rem;
 }
 
@@ -934,6 +935,11 @@ nav.main-nav li {
 }
 
 .equipment {
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1300px;
+  flex-wrap: wrap;
   margin-bottom: 4rem;
 }
 
@@ -1435,6 +1441,12 @@ nav.main-nav li {
   background-position: center bottom;
   background-size: cover;
   display: flex;
+}
+
+.newsFront h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+  text-decoration: underline;
 }
 
 .newsFront article {
