@@ -6,7 +6,7 @@ Template Name: atsugi
 <?php get_template_part('pages/ind-header'); ?>
 <main role="main" class="atsugi">
 	<h1>厚木営業所</h1>
-	<div class="mixB">
+	<div class="mixB4">
 		<section class="headline">
 			<h2>1,000坪以上のフリースペースを確保した上依知車庫</h2>
 			<address>

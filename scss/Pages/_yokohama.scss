@@ -6,7 +6,8 @@
 	.headline {
 		background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
 		background-size: cover;
-		mix-blend-mode: hard-light;
+		background-position: center center;
+		mix-blend-mode: hard-light; //ハードライト
 	}
 	.vehicleType {
 		h4 {
@@ -21,7 +22,7 @@
 	@include flex1300;
 	flex-wrap: wrap;
 	// justify-content: space-between;
-	// width: 90%;
+	width: 90%;
 	// max-width: 1300px;
 
 	margin-bottom: 4rem;

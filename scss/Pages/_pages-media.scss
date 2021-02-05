@@ -283,22 +283,34 @@
 	//----------------------------------------------------*/
 	.kosuzume {
 		img:nth-of-type(1) {
+		// img::first-child {
 			display: none;
 		}
 		width: $main-width;
-		background: url(../img/bus/01-kosuzume.jpg)no-repeat;
-		background-size: 160%;
-		background-position: left -110px top -330px;
+		// background: url(../img/bus/01-kosuzume.jpg)no-repeat;
+		background: url(../img/bus/ryokaku05.jpg)no-repeat;
+
+		// background-size: 160%;
+		background-size: $sm-width;
+		// background-position: left -110px top -330px;
+		background-position: center top -120px;
 		padding-top: 480px;
 		border-radius: 24px;
 		margin-top: 40px;
 		img {
 			width: (940px / 2);
 			border-top: 1px solid white;
-			border-radius: 24px;
+			// margin: 0;
+			// padding: 0;
+			// display: inline-block;
+			// line-height: 1;
+			// border-radius: 24px;
 		}
-		img:nth-child(even) {border-radius: 0 0 0 24px;}
-		img:nth-child(odd) {border-radius: 0 0 24px;}
+		img:nth-of-type(4) {border-radius: 0 0 0 24px;}
+		img:nth-of-type(5) {border-radius: 0 0 24px;}
+		img:nth-of-type(4),img:nth-of-type(5) {margin-top: -8px;}
+		// img:nth-child(even) {border-radius: 0 0 0 24px;}
+		// img:nth-child(odd) {border-radius: 0 0 24px;}
 	}
 
 	//* KOSUZUME DAIYA
@@ -359,7 +371,7 @@
 	//----------------------------------------------------*/
 	.yokohama,.atsugi,.koga {
 		.headline {
-			background-position: center center;
+			// background-position: center center;
 		}
 		address {
 			bottom: -1.5rem;

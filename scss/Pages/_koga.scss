@@ -4,10 +4,16 @@
 //----------------------------------------------------*/
 .koga {
 	.headline {
-		background: url(https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-large.png)no-repeat;
+		// background: url(https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-large.png)no-repeat;
+		// background: url(../img/koga/gm2.png)no-repeat;
+		// background: url(../img/koga/gm3.png)no-repeat;
+		background: url(../img/koga/gm1.png)no-repeat;
 		background-size: cover;
-		background-position: center center;
-		// mix-blend-mode: hard-light; //ハードライト
-		mix-blend-mode: luminosity; //輝度
+		// background-position: center center;
+		background-position: top 25% center;
+		background-position: center bottom 20%;
+		mix-blend-mode: hard-light; //ハードライト
+		color: $col-Fa;
+		// mix-blend-mode: luminosity; //輝度
 	}
 }

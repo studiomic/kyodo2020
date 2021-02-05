@@ -56,10 +56,6 @@ address {
   text-align: center;
 }
 
-.pb4 {
-  padding-bottom: 4rem;
-}
-
 .fina {
   position: relative;
   display: inline-block;
@@ -519,11 +515,27 @@ nav.main-nav li {
   background: rgba(255, 255, 255, 0.7);
   text-align: left;
   line-height: 1.7;
+  overflow: hidden;
 }
 
 .blog-card a {
   display: block;
   color: #363636;
+}
+
+.blog-card h2 {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.blog-card figure {
+  margin-right: 1rem;
+  float: left;
+}
+
+.blog-card img {
+  width: 170px;
+  height: auto;
 }
 
 .blog-card time {
@@ -603,10 +615,16 @@ nav.main-nav li {
   margin-bottom: 1rem;
 }
 
-.news article p {
+.news article figure, .news article p {
   text-align: left;
   margin-left: 7.5rem;
   margin-bottom: 1rem;
+}
+
+.news article figcaption {
+  text-align: center;
+  background: #f2f2f2;
+  line-height: 2;
 }
 
 .news time {
@@ -678,7 +696,7 @@ nav.main-nav li {
 }
 
 .ceo-message section {
-  width: 940px;
+  width: 100%;
 }
 
 .ceo-message p {
@@ -814,6 +832,10 @@ nav.main-nav li {
 }
 
 /* File...pages-bus */
+#bus {
+  padding-bottom: 4rem;
+}
+
 .bus {
   width: 100%;
   text-align: center;
@@ -927,6 +949,7 @@ nav.main-nav li {
 .yokohama .headline {
   background: url(../img/yokohama/yokohama-03.jpg) no-repeat;
   background-size: cover;
+  background-position: center center;
   mix-blend-mode: hard-light;
 }
 
@@ -940,6 +963,7 @@ nav.main-nav li {
   margin: 0 auto;
   max-width: 1300px;
   flex-wrap: wrap;
+  width: 90%;
   margin-bottom: 4rem;
 }
 
@@ -961,12 +985,10 @@ nav.main-nav li {
 
 /* File...pages-yokohama */
 .atsugi .headline {
-  background: url(../img/atsugi/forklift.png) no-repeat;
+  background: url(../img/atsugi/PA100010.JPG) no-repeat;
   background-size: cover;
   background-position: center center;
-  mix-blend-mode: luminosity;
-  color: #fafafa;
-  text-shadow: 0 2px 5px #000;
+  mix-blend-mode: hard-light;
 }
 
 .atsugi-photo {
@@ -988,10 +1010,12 @@ nav.main-nav li {
 
 /* File...pages-koga */
 .koga .headline {
-  background: url(https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-large.png) no-repeat;
+  background: url(../img/koga/gm1.png) no-repeat;
   background-size: cover;
-  background-position: center center;
-  mix-blend-mode: luminosity;
+  background-position: top 25% center;
+  background-position: center bottom 20%;
+  mix-blend-mode: hard-light;
+  color: #fafafa;
 }
 
 /* File...pages-transport */
@@ -1022,18 +1046,6 @@ nav.main-nav li {
 .salesOffice {
   text-align: center;
   margin-top: 4rem;
-}
-
-.salesOffice .flex {
-  margin: 0 auto;
-  max-width: 1300px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.salesOffice .flex article {
-  width: 30%;
-  margin: 0 1% 2rem;
 }
 
 .salesOffice .flex article a {
@@ -1069,20 +1081,9 @@ nav.main-nav li {
   z-index: -1;
 }
 
-.warehouse .flex {
-  margin: 3rem auto;
-  max-width: 1300px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.warehouse .flex article {
-  width: 45%;
-  margin: 0 1% 2rem;
-}
-
 .warehouse .flex img {
-  height: 300px;
+  width: 100%;
+  height: 350px;
 }
 
 .warehouse .flex p {
@@ -1322,7 +1323,6 @@ nav.main-nav li {
 .greenSafety {
   text-align: center;
   margin: 0 auto;
-  width: 940px;
 }
 
 .greenSafety h2 {
@@ -1333,15 +1333,7 @@ nav.main-nav li {
   height: 160px;
 }
 
-.greenSafety .flex {
-  justify-content: space-between;
-}
-
-.greenSafety .flex section {
-  width: 32%;
-}
-
-.greenSafety .flex section p {
+.greenSafety .flex p {
   text-align: left;
   line-height: 1.7;
 }
@@ -1376,9 +1368,6 @@ nav.main-nav li {
 }
 
 .joinFront {
-  text-align: center;
-  margin: 0 auto;
-  width: 940px;
   position: relative;
 }
 
@@ -1389,45 +1378,13 @@ nav.main-nav li {
 
 .joinFront div {
   position: relative;
-  margin: -4rem 0 0 -2rem;
-}
-
-.joinFront div p {
-  display: none;
-}
-
-.joinFront div::before, .joinFront div::after {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  background-size: cover;
-}
-
-.joinFront div::before {
-  background: url(../img/person-m.png) no-repeat;
-  left: 150px;
-  top: 80px;
-}
-
-.joinFront div::after {
-  background: url(../img/person-f.png) no-repeat;
-  left: 0px;
-  top: 0px;
 }
 
 .joinFront section {
   position: relative;
-  border-radius: 50%;
   display: inline-block;
   z-index: 1;
-  margin-left: 440px;
-  padding: 4rem 0 4rem 4rem;
-  display: inline-block;
   text-align: left;
-  background: rgba(255, 255, 255, 0.8);
 }
 
 .joinFront section p {
@@ -1441,12 +1398,6 @@ nav.main-nav li {
   background-position: center bottom;
   background-size: cover;
   display: flex;
-}
-
-.newsFront h2 {
-  font-size: 1.1rem;
-  font-weight: normal;
-  text-decoration: underline;
 }
 
 .newsFront article {
@@ -1528,8 +1479,6 @@ nav.main-nav li {
 }
 
 .recruitment {
-  width: 600px;
-  max-width: 940px;
   margin: 0 auto 4rem;
   margin-top: 4rem;
 }
@@ -1661,6 +1610,140 @@ textarea {
   }
 }
 
+@media (max-width: 63em) {
+  .equipment,
+  .working {
+    flex-direction: column;
+  }
+  .equipment section,
+  .working section {
+    width: 100%;
+  }
+  .news img {
+    max-width: 100%;
+    height: auto;
+  }
+  .ceo-message section {
+    width: 100%;
+  }
+  .warehouse .flex,
+  .salesOffice .flex {
+    flex-direction: column;
+  }
+  .greenSafety .flex {
+    flex-direction: column;
+  }
+  .greenSafety .flex section {
+    width: 100%;
+  }
+  .joinFront section {
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+  }
+  .joinFront div {
+    position: relative;
+    width: 100%;
+    height: 400px;
+  }
+  .joinFront div::before, .joinFront div::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center center;
+  }
+  .joinFront div::before {
+    background: url(../img/person-m.png) no-repeat;
+    right: 5px;
+    top: 60px;
+  }
+  .joinFront div::after {
+    background: url(../img/person-f.png) no-repeat;
+    left: 5px;
+    top: 0px;
+  }
+}
+
+@media (min-width: 64em) {
+  .recruitment {
+    width: 600px;
+    max-width: 940px;
+  }
+  .news img {
+    max-width: 755px;
+    height: auto;
+  }
+  .ceo-message section {
+    width: 940px;
+  }
+  .warehouse .flex,
+  .salesOffice .flex {
+    margin: 0 auto;
+    max-width: 1300px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .warehouse .flex article,
+  .salesOffice .flex article {
+    margin: 0 1% 2rem;
+  }
+  .salesOffice article {
+    width: 30%;
+  }
+  .warehouse article {
+    width: 45%;
+  }
+  .greenSafety {
+    width: 940px;
+  }
+  .greenSafety .flex {
+    justify-content: space-between;
+  }
+  .greenSafety .flex section {
+    width: 32%;
+  }
+  .joinFront {
+    text-align: center;
+    margin: 0 auto;
+    width: 940px;
+    position: relative;
+  }
+  .joinFront div {
+    position: relative;
+    margin: -4rem 0 0 -2rem;
+  }
+  .joinFront div p {
+    display: none;
+  }
+  .joinFront div::before, .joinFront div::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+  .joinFront div::before {
+    background: url(../img/person-m.png) no-repeat;
+    left: 150px;
+    top: 80px;
+  }
+  .joinFront div::after {
+    background: url(../img/person-f.png) no-repeat;
+    left: 0px;
+    top: 0px;
+  }
+  .joinFront section {
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-left: 440px;
+    padding: 4rem 0 4rem 4rem;
+  }
+}
+
 /* File...common-section */
 .fixed {
   display: block;
@@ -1762,6 +1845,11 @@ textarea {
   margin: 0 2rem;
 }
 
+.contactUs address span {
+  font-size: 1.5rem;
+  display: block;
+}
+
 .contactUs address a {
   color: #fafafa;
 }
@@ -1852,6 +1940,14 @@ textarea {
     z-index: 1;
     position: static;
     padding: 2rem;
+  }
+  #bus svg {
+    width: 85px;
+    height: 85px;
+  }
+  #bus .phone {
+    width: 120px;
+    height: auto;
   }
 }
 
@@ -2059,7 +2155,7 @@ textarea {
   .equipment {
     flex-direction: column;
   }
-  .equipment div {
+  .equipment section {
     width: 100%;
   }
   .equipment p {
@@ -2300,9 +2396,9 @@ textarea {
   }
   .kosuzume {
     width: 940px;
-    background: url(../img/bus/01-kosuzume.jpg) no-repeat;
-    background-size: 160%;
-    background-position: left -110px top -330px;
+    background: url(../img/bus/ryokaku05.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center top -120px;
     padding-top: 480px;
     border-radius: 24px;
     margin-top: 40px;
@@ -2313,13 +2409,15 @@ textarea {
   .kosuzume img {
     width: 470px;
     border-top: 1px solid white;
-    border-radius: 24px;
   }
-  .kosuzume img:nth-child(even) {
+  .kosuzume img:nth-of-type(4) {
     border-radius: 0 0 0 24px;
   }
-  .kosuzume img:nth-child(odd) {
+  .kosuzume img:nth-of-type(5) {
     border-radius: 0 0 24px;
+  }
+  .kosuzume img:nth-of-type(4), .kosuzume img:nth-of-type(5) {
+    margin-top: -8px;
   }
   .diya::before {
     font-size: 24rem;
@@ -2365,9 +2463,6 @@ textarea {
   }
   .mapbtm span {
     margin-right: 1rem;
-  }
-  .yokohama .headline, .atsugi .headline, .koga .headline {
-    background-position: center center;
   }
   .yokohama address, .atsugi address, .koga address {
     bottom: -1.5rem;

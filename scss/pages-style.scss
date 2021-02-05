@@ -46,12 +46,6 @@
 /* File...pages-headline */
 @import "Pages/headline";
 
-
-
-
-
-
-
 /* File...pages-section */
 @import "Pages/pages-section";
 /* File...pages-join */
@@ -59,8 +53,9 @@
 /* File...pages-contact */
 @import "Pages/contact";
 
-// @import "Pages/SM";
-// @import "Pages/PC";
+
+@import "Pages/SM";
+@import "Pages/PC";
 
 /* File...common-section */
 @import "common-section";

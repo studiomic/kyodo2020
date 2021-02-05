@@ -8,6 +8,7 @@
 	background: rgba(255, 255, 255, 0.7);
 	text-align: left;
 	line-height: 1.7;
+	overflow: hidden;
 	a {
 		display: block;
 		color: $text-color;
@@ -17,6 +18,29 @@
 		// 		background: #000;
 		// 	}
 		// }
+	}
+	h2 {
+		font-size: 1.1rem;
+		font-weight: normal;
+		// text-decoration: underline;
+		// border-bottom: 1px solid $rgb-06;
+	}
+
+	figure {
+		margin-right: 1rem;
+		// display: inline-block;
+		// border: 1px solid PINK;
+		float: left;
+	}
+	// figure + p {
+	// 	// min-height: 120px;
+	// 	// border: 1px solid $red;
+	// 	// margin-left: 210px;
+	// 	// display: inline-block;
+	// }
+	img {
+		width: 170px;
+		height: auto;
 	}
 	time {
 		position: absolute;

@@ -30,13 +30,13 @@
 	text-align: center;
 	margin-top: 4rem;
 	.flex {
-		margin: 0 auto;
-		max-width: 1300px;
-		justify-content: center;
-		flex-wrap: wrap;
+		// margin: 0 auto;
+		// max-width: 1300px;
+		// justify-content: center;
+		// flex-wrap: wrap;
 		article {
-			width: 30%;
-			margin: 0 1% 2rem;
+			// width: 30%;
+			// margin: 0 1% 2rem;
 			a {
 				display: block;
 				max-width: $sm-width;
@@ -75,17 +75,17 @@
 		}
 	}
 	.flex {
-		margin: 3rem auto;
-		max-width: 1300px;
-		justify-content: center;
-		flex-wrap: wrap;
-		article {
-			width: 45%;
-			margin: 0 1% 2rem;
-		}
+		// margin: 3rem auto;
+		// max-width: 1300px;
+		// justify-content: center;
+		// flex-wrap: wrap;
+		// article {
+		// 	width: 45%;
+		// 	margin: 0 1% 2rem;
+		// }
 		img {
-			// width: $sm-width;
-			height: 300px;
+			width: $sm-width;
+			height: 350px;
 		}
 		p {
 			text-align: left;
