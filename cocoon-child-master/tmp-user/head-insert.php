@@ -11,7 +11,7 @@
 	<script src="/wp/js/nav.js"></script>
 
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="/wp/css/blog-style.css">
+	<!-- <link rel="stylesheet" href="/wp/css/blog-style.css"> -->
 
 <?php if (!is_user_administrator()) :
 //管理者を除外してカウントする場合は以下に挿入 ?>

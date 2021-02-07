@@ -24,7 +24,6 @@
 				<li><a href="<?php echo site_url(); ?>/#transport">運送・貨物・倉庫</a></li>
 				<li><a href="<?php echo site_url(); ?>/bus">旅客事業部</a></li>
 				<li><a href="<?php echo site_url(); ?>/join">採用情報</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">アクセスマップ</a></li>
 			</ul>
 		</nav>
 
@@ -35,7 +34,6 @@
 				<li><a href="<?php echo site_url(); ?>#transport">works</a></li>
 				<li><a href="<?php echo site_url(); ?>/bus">passenger bus</a></li>
 				<li><a href="<?php echo site_url(); ?>/join">join us</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">Access Map</a></li>
 			</ul>
 		</nav>
 
@@ -56,7 +54,6 @@
 				<li><a href="<?php echo site_url(); ?>/join">採用情報</a></li>
 				<li><a href="<?php echo site_url(); ?>/contact">お問い合わせ</a></li>
 				<li><a href="<?php echo site_url(); ?>/privacy-policy">プライバシーポリシー</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">Access Map</a></li>
 			</ul>
 		</nav>
   </header>
@@ -68,38 +65,40 @@
 			</article>
 
 			<article>
-				<!-- SLUG-POST -->
-				<?php
-					$wp_query = new WP_Query();
-					$my_posts = array(
-						'post_type' => 'post',
-						'category_name' => 'news',
-						'posts_per_page'=> '3',
-					);
-					$wp_query->query( $my_posts );
-					if( $wp_query->have_posts() ): while( $wp_query->have_posts() ) : $wp_query->the_post();
-				?>
 				<section class="blog-card">
-					<a href="<?php echo site_url(); ?>/news#<?php the_ID(); ?>">
-						<time datetime="<?php echo get_the_date(); ?>">
-							<span><?php echo get_post_time('M'); ?></span><span class="front-day"><?php echo get_the_date( 'd' ); ?></span><span><?php echo get_the_date( 'Y' ); ?></span>
+					<a href="#">
+						<time datetime="2018/3/3">
+							<span>Mar</span><span class="front-day">03</span><span>2018</span>
 						</time>
 						<div>
-						<?php if ( has_post_thumbnail() ): // thumbnail ?>
-							<figure><?php the_post_thumbnail(); ?></figure>
-						<?php else: // not.thumbnail ?>
-							<?php endif; ?>
-							<h2>&#9654; <?php the_title(); ?></h2>
-							<?php the_excerpt(); ?>
+							<p>NEWSカテゴリ最新3POSTの抜粋文表示...NEWSカテゴリ最新3POSTの抜粋文表示...</p>
 						</div>
 					</a>
 				</section>
-			<?php endwhile; endif; wp_reset_postdata(); ?>
-			<!-- SLUG-POST -->
+
+				<section class="blog-card">
+					<a href="#">
+						<time datetime="2018/2/25">
+							<span>Feb</span><span class="front-day">25</span><span>2018</span>
+						</time>
+						<div>
+							<p>健康診断車とUNICクレーンの記事は、写真とテキスト原稿待ち...健康診断車とUNICクレーンの記事は、写真とテキスト原稿待ち...</p>
+						</div>
+					</a>
+				</section>
+
+				<section class="blog-card">
+					<a href="#">
+						<time datetime="2019/3/1">
+							<span>Mar</span><span class="front-day">01</span><span>2019</span>
+						</time>
+						<div>
+							<p>NEWSカテゴリ最新3POSTの抜粋文表示...NEWSカテゴリ最新3POSTの抜粋文表示...</p>
+						</div>
+					</a>
+				</section>
 			</article>
 		</section>
-
-
 
 		<section class="transport" id="transport">
 			<h1>物流・運送・貨物事業</h1>
@@ -154,7 +153,7 @@
 						</article>
 						<article>
 							<a href="<?php echo site_url(); ?>/koga">
-								<img src="/wp/img/koga/gm4.png">
+								<img src="/wp/img/atsugi/atsugi-9.jpg">
 								<h3><span>古河営業所</span></h3></a>
 							<p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
 						</article>
@@ -205,12 +204,12 @@
 				</section>
 				<section class="flex">
 					<article>
-						<img src="/wp/img/koga/gm1.png">
+						<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
 						<h3>物流コストの削減</h3>
 						<p>写真や提案数によって横列は3でも4でも可。4は狭くなるので、2列2段で見やすく配置もあり。</p>
 					</article>
 					<article>
-						<img src="/wp/img/koga/gm4.png">
+						<img src="https://j-netline.com/wp/wp-content/themes/cocoon-master/images/no-image-320.png" alt="" height="270">
 						<h3>商品管理のアウトソーシング</h3>
 						<p>吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
 					</article>

@@ -21,6 +21,7 @@
 			<li><a href="<?php echo site_url(); ?>/join">採用情報</a></li>
 			<li><a href="<?php echo site_url(); ?>/contact">お問い合わせ</a></li>
 			<li><a href="<?php echo site_url(); ?>/privacy-policy">プライバシーポリシー</a></li>
+			<li><a href="<?php echo site_url(); ?>/map">Access Map</a></li>
 		</ul>
 	</nav>
 </header>

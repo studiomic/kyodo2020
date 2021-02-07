@@ -194,6 +194,7 @@ address {
   line-height: 2;
 }
 
+.accessMap h2,
 .buzContent h2,
 .qualityManagement h2,
 .salesOffice h2,
@@ -1162,6 +1163,10 @@ nav.main-nav li {
   border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
+.yokohama .headline address a, .atsugi .headline address a, .koga .headline address a {
+  color: #fafafa;
+}
+
 /* CSSアニメーションの指定 */
 .yokohama .mixB, .yokohama .mixB4, .atsugi .mixB, .atsugi .mixB4, .koga .mixB, .koga .mixB4 {
   animation: SlideIn .4s;
@@ -1254,7 +1259,50 @@ nav.main-nav li {
   }
 }
 
+/* File...pages-map */
+.accessMap .map {
+  width: 70%;
+}
+
+.accessMap .route {
+  width: 30%;
+  background: #f2f2f2;
+  padding: 0 0 1px 1px;
+}
+
+.accessMap .flex address {
+  background: #fafafa;
+  line-height: 1.7;
+}
+
+.accessMap h3 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.accessMap address {
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.accessMap div {
+  background: white;
+  padding: 1rem;
+}
+
+.accessMap div p {
+  text-align: left;
+}
+
+.accessMap svg {
+  width: 18px;
+  height: 18px;
+  margin: 10px 0;
+}
+
 /* File...pages-section */
+.accessMap,
 .Front, .news,
 .transport,
 .privacy-policy,

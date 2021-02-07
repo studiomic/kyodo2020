@@ -11,7 +11,7 @@ Template Name: koga
 			<h2>古河営業所の特徴</h2>
 			<address>
 				<p>〒306-0125<br>茨城県古河市仁連2307-1</p>
-				<p>TEL &nbsp; 0280-23-4933 &nbsp; &nbsp; FAX &nbsp; 0280-23-4934</p>
+				<p>TEL &nbsp; <a href="tel:0280-23-4933">0280-23-4933</a> &nbsp; &nbsp; FAX &nbsp; 0280-23-4934</p>
 			</address>
 		</section>
 	</div>

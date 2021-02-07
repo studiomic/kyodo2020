@@ -6,10 +6,11 @@
  * @license: http://www.gnu.org/licenses/gpl-2.0.html GPL v2 or later
  */
 if ( !defined( 'ABSPATH' ) ) exit; ?>
-<!DOCTYPE html>
+<!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
@@ -33,7 +34,6 @@ if ($domains) {
 foreach ($domains as $domain): ?>
 <link rel="preconnect dns-prefetch" href="//<?php echo $domain; ?>">
 <?php endforeach; ?>
-
 <?php //Google Tag Manager
 if (is_analytics() && $tracking_id = get_google_tag_manager_tracking_id()): ?>
 <!-- Google Tag Manager -->
@@ -49,6 +49,7 @@ get_template_part('tmp/ad-auto-adsense'); ?>
 <?php //WordPressが出力するヘッダー情報
 wp_head();
 ?>
+
 <!-- Preload -->
 <link rel="preload" as="font" type="font/woff" href="<?php echo FONT_ICOMOON_WOFF_URL; ?>" crossorigin>
 <link rel="preload" as="font" type="font/ttf" href="<?php echo FONT_ICOMOON_TTF_URL; ?>" crossorigin>
@@ -62,19 +63,21 @@ wp_head();
 
 <?php //カスタムフィールドの挿入（カスタムフィールド名：head_custom
 get_template_part('tmp/head-custom-field'); ?>
+
 <?php //headで読み込む必要があるJavaScript
 get_template_part('tmp/head-javascript'); ?>
+
 <?php //PWAスクリプト
 get_template_part('tmp/head-pwa'); ?>
+
 <?php //ヘッドタグ内挿入用のユーザー用テンプレート
 get_template_part('tmp-user/head-insert'); ?>
 </head>
 
-<body class="drawer drawer--top">
+<body <?php body_class(); ?> itemscope itemtype="https://schema.org/WebPage" data-barba="wrapper">
+
 <?php //body最初に挿入するアクセス解析ヘッダータグの取得
   get_template_part('tmp/body-top-analytics'); ?>
-<?php //サイトヘッダーからコンテンツまでbodyタグ最初のHTML
-  get_template_part('tmp/body-top');
- ?>
 
-<p>HEADER</p>
+<?php //サイトヘッダーからコンテンツまでbodyタグ最初のHTML
+get_template_part('tmp/body-top'); ?>

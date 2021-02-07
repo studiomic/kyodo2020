@@ -1,0 +1,20 @@
+// main: ../Rewrite.scss
+
+/* テーマのClassに上書き
+----------------------------------------------------*/
+.entry-title {
+	font-family: $fontFamilyMIN;
+}
+
+.entry-content {
+	line-height: 1.7;
+	p {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.container {
+	footer {
+		background: transparent;
+	}
+}

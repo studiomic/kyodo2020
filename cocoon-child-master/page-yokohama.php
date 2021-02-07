@@ -14,7 +14,7 @@ Template Name: yokohama
 			</h2>
 			<address>
 				<p>〒244-0845<br>神奈川県横浜市栄区金井町164-1</p>
-				<p>TEL &nbsp; 045-851-1551 &nbsp; &nbsp; FAX &nbsp; 045-851-0081</p>
+				<p>TEL &nbsp; <a href="tel:045-851-1551">045-851-1551</a> &nbsp; &nbsp; FAX &nbsp; 045-851-0081</p>
 			</address>
 		</section>
 	</div>

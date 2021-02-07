@@ -1,0 +1,72 @@
+// main: ../Rewrite.scss
+
+/* HEADER
+----------------------------------------------------*/
+header {
+	font-family: $BasefontFamily;
+	position: relative;
+	background: url(../img/blog-head-full.png)no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 350px;
+	text-align: center;
+	padding-top: 65px;
+	h1 {
+		// font-family: $fontFamilyEN;
+		line-height: 1.2;
+		font-weight: normal;
+		position: relative;
+		span { display: none;}
+		a {
+			display: block;
+			width: 300px;
+			margin: 0 auto;
+			text-decoration: none;
+			background: url(../img/logo-onwhite.png)no-repeat;
+			background-position: center top;
+			min-height: 200px;
+			color: $col-Fa;
+			opacity: 0.7;
+			font-size: 5.4rem;
+			padding-top: 110px;
+			letter-spacing: 0.1em;
+			mix-blend-mode: hard-light;
+			&:hover, &:active, &:focus {
+				background: url(../img/logo-transparent.png)no-repeat;
+				background-position: center top;
+				opacity: 0.4;
+				text-decoration: none;
+				color: $col-24;
+			}
+		}
+	}
+}
+
+
+/* 2ND NAV BAR
+----------------------------------------------------*/
+.nav-bar {
+	// background-color: rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.9) url(../img/kyoudou.png)no-repeat;
+	background-position: center center;
+	display: none;
+	height: 60px;
+	h2 {
+		text-align: center;
+		a {
+			// border: 1px solid $blue;
+			display: block;
+			width: 160px;
+			height: 60px;
+			margin: 0 auto;
+			text-indent: $sm-width;
+			white-space: nowrap;
+			overflow: hidden;
+			&:hover, &:active, &:focus {
+				background-color: rgba(0, 0, 0, 0.6);
+				background-blend-mode: darken;
+			}
+
+		}
+	}
+}

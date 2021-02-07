@@ -11,7 +11,7 @@ Template Name: atsugi
 			<h2>1,000坪以上のフリースペースを確保した上依知車庫</h2>
 			<address>
 				<p>〒243-0801<br>神奈川県厚木市上依知2847-1</p>
-				<p>TEL &nbsp; 046-265-0608 &nbsp; &nbsp; FAX &nbsp; 046-265-0618</p>
+				<p>TEL &nbsp; <a href="tel:046-265-0608">046-265-0608</a> &nbsp; &nbsp; FAX &nbsp; 046-265-0618</p>
 			</address>
 		</section>
 	</div>
