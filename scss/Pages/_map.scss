@@ -2,6 +2,77 @@
 
 //* accessMap
 //----------------------------------------------------*/
+.FourMap {
+	// border: 1px solid $red;
+	margin: 0;
+	padding: 0;
+	div {
+		position: relative;
+		margin: 0 auto;
+		width: 940px;
+		height: 480px;
+		// border: 1px solid $purple;
+		a {
+			display: block;
+			position: absolute;
+			// &:hover {
+			// 	background: rgba(255,255,255,.2);
+			// }
+		}
+	}
+}
+.kogaMap,.atsugiMap,.busMap,.yokohamaMap {
+	width: 200px;
+	height: 45px;
+}
+
+.kogaMap {
+	top: 0;
+}
+.atsugiMap {
+	top: 200px;
+}
+.busMap {
+	top: 286px;
+}
+.yokohamaMap {
+	top: 390px;
+}
+
+.kogaPin,.atsugiPin,.busPin,.yokohamaPin {
+	border-radius: 50%;
+}
+.kogaPin,.atsugiPin {
+	width: 40px;
+	height: 40px;
+}
+
+.busPin,.yokohamaPin {
+	width: 34px;
+	height: 34px;
+}
+
+.kogaPin {
+	top: 8px;
+	left: 595px;
+}
+.atsugiPin {
+	top: 335px;
+	left: 416px;
+}
+.busPin {
+	top: 380px;
+	left: 468px;
+}
+.yokohamaPin {
+	top: 400px;
+	left: 495px;
+}
+
+
+
+
+
 .accessMap {
 	.map {
 		width: 70%;
@@ -10,6 +81,15 @@
 		width: 30%;
 		background: hsl(0,0%,95%);
 		padding: 0 0 1px 1px;
+		div {
+			background: $col-F;
+			padding: 1rem;
+			p {
+				text-align: left;
+				// padding: 0 1rem;
+			}
+		}
+
 	}
 	.flex {
 		address {
@@ -25,15 +105,6 @@
 		font-size: 1.4rem;
 		padding: 1rem;
 		text-align: left;
-	}
-	div {
-		background: $col-F;
-		padding: 1rem;
-
-		p {
-			text-align: left;
-			// padding: 0 1rem;
-		}
 	}
 	svg {
 		width: 18px;

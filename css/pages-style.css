@@ -837,6 +837,44 @@ nav.main-nav li {
   padding-bottom: 4rem;
 }
 
+#bus .headline {
+  background: url(../img/bus/2501.JPG) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  mix-blend-mode: hard-light;
+  height: 450px;
+  margin-bottom: 2rem;
+  color: #fafafa;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+#bus .headline h1 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 1.7;
+  padding: 2.4rem 4rem;
+}
+
+#bus .headline p {
+  padding: 0 4rem;
+  font-size: 1.2rem;
+}
+
+#bus .headline::after {
+  content: '';
+  position: absolute;
+  left: -200px;
+  top: 0;
+  background: rgba(43, 85, 136, 0.7);
+  display: block;
+  width: 900px;
+  height: 600px;
+  transform: rotate(65deg);
+  z-index: -1;
+}
+
 .bus {
   width: 100%;
   text-align: center;
@@ -948,9 +986,10 @@ nav.main-nav li {
 
 /* File...pages-yokohama */
 .yokohama .headline {
-  background: url(../img/yokohama/yokohama-03.jpg) no-repeat;
+  background: url(../img/yokohama/0550.JPG) no-repeat;
   background-size: cover;
   background-position: center center;
+  background-position: center top 20%;
   mix-blend-mode: hard-light;
 }
 
@@ -986,27 +1025,105 @@ nav.main-nav li {
 
 /* File...pages-yokohama */
 .atsugi .headline {
-  background: url(../img/atsugi/PA100010.JPG) no-repeat;
+  background: url(../img/atsugi/0583.JPG) no-repeat;
+  background: url(../img/atsugi/0588.JPG) no-repeat;
+  background: url(../img/atsugi/0571.JPG) no-repeat;
+  background: url(../img/atsugi/0577.JPG) no-repeat;
+  background: url(../img/atsugi/0578.JPG) no-repeat;
+  background: url(../img/atsugi/0576.JPG) no-repeat;
+  background: url(../img/atsugi/6795.JPG) no-repeat;
+  background: url(../img/atsugi/0580.JPG) no-repeat;
   background-size: cover;
   background-position: center center;
   mix-blend-mode: hard-light;
+  color: #fafafa;
+}
+
+.atsugi .vehicleType h4 {
+  background: rgba(0, 0, 0, 0.9);
 }
 
 .atsugi-photo {
-  margin-top: 4rem;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.atsugi-photo img {
+  width: 640px;
 }
 
 .atsugi-photo article {
+  width: 940px;
+  margin: 4rem auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.atsugi-photo article:before, .atsugi-photo article:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 50%;
+  z-index: 0;
+}
+
+.atsugi-photo article h3, .atsugi-photo article p {
+  text-align: left;
+}
+
+.atsugi-photo article h3 {
+  font-weight: normal;
+  text-align: center;
   padding: 1rem 0;
   margin-bottom: 1rem;
 }
 
+.atsugi-photo article p {
+  margin-bottom: 1rem;
+}
+
 .atsugi-photo article:nth-child(odd) {
-  background: rgba(133, 160, 199, 0.15);
+  background: #dfe5ef;
+}
+
+.atsugi-photo article:nth-child(odd)::before {
+  background: #dfe5ef;
+  left: -50%;
+}
+
+.atsugi-photo article:nth-child(odd) h3, .atsugi-photo article:nth-child(odd) p {
+  margin-right: 1rem;
+}
+
+.atsugi-photo article:nth-child(odd) h3 {
+  background: #eef1f6;
+  background: #fcfcfc;
 }
 
 .atsugi-photo article:nth-child(even) {
-  background: rgba(185, 201, 223, 0.15);
+  background: #eef1f6;
+}
+
+.atsugi-photo article:nth-child(even)::after {
+  background: #eef1f6;
+  right: -50%;
+}
+
+.atsugi-photo article:nth-child(even) h3, .atsugi-photo article:nth-child(even) p {
+  margin-left: 1rem;
+}
+
+.atsugi-photo article:nth-child(even) h3 {
+  background: #dfe5ef;
+  background: #fcfcfc;
+}
+
+.atsugi-photo .flex {
+  width: 908px;
+  z-index: 1;
 }
 
 /* File...pages-koga */
@@ -1260,6 +1377,78 @@ nav.main-nav li {
 }
 
 /* File...pages-map */
+.FourMap {
+  margin: 0;
+  padding: 0;
+}
+
+.FourMap div {
+  position: relative;
+  margin: 0 auto;
+  width: 940px;
+  height: 480px;
+}
+
+.FourMap div a {
+  display: block;
+  position: absolute;
+}
+
+.kogaMap, .atsugiMap, .busMap, .yokohamaMap {
+  width: 200px;
+  height: 45px;
+}
+
+.kogaMap {
+  top: 0;
+}
+
+.atsugiMap {
+  top: 200px;
+}
+
+.busMap {
+  top: 286px;
+}
+
+.yokohamaMap {
+  top: 390px;
+}
+
+.kogaPin, .atsugiPin, .busPin, .yokohamaPin {
+  border-radius: 50%;
+}
+
+.kogaPin, .atsugiPin {
+  width: 40px;
+  height: 40px;
+}
+
+.busPin, .yokohamaPin {
+  width: 34px;
+  height: 34px;
+}
+
+.kogaPin {
+  top: 8px;
+  left: 595px;
+}
+
+.atsugiPin {
+  top: 335px;
+  left: 416px;
+}
+
+.busPin {
+  top: 380px;
+  left: 468px;
+}
+
+.yokohamaPin {
+  top: 400px;
+  left: 495px;
+}
+
 .accessMap .map {
   width: 70%;
 }
@@ -1268,6 +1457,15 @@ nav.main-nav li {
   width: 30%;
   background: #f2f2f2;
   padding: 0 0 1px 1px;
+}
+
+.accessMap .route div {
+  background: white;
+  padding: 1rem;
+}
+
+.accessMap .route div p {
+  text-align: left;
 }
 
 .accessMap .flex address {
@@ -1283,15 +1481,6 @@ nav.main-nav li {
 .accessMap address {
   font-size: 1.4rem;
   padding: 1rem;
-  text-align: left;
-}
-
-.accessMap div {
-  background: white;
-  padding: 1rem;
-}
-
-.accessMap div p {
   text-align: left;
 }
 
@@ -1808,6 +1997,13 @@ textarea {
 
 .mixB4 {
   background: rgba(43, 85, 136, 0.7);
+}
+
+.mixY {
+  background: #89b8c2;
+  background: #333333;
+  background: #84a0c6;
+  background: rgba(22, 24, 34, 0.7);
 }
 
 .buzContent {
@@ -2518,21 +2714,6 @@ textarea {
   }
   .buzContent {
     width: 940px;
-  }
-  .atsugi img {
-    height: 350px;
-  }
-  .atsugi-photo {
-    margin-top: 4rem;
-  }
-  .atsugi-photo article {
-    width: 80%;
-  }
-  .atsugi-photo article:nth-child(odd) {
-    margin: 0 auto 1rem 0;
-  }
-  .atsugi-photo article:nth-child(even) {
-    margin: 0 0 1rem auto;
   }
   .join .inpage li:nth-of-type(2) {
     flex-grow: 2;

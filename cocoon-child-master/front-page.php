@@ -99,8 +99,6 @@
 			</article>
 		</section>
 
-
-
 		<section class="transport" id="transport">
 			<h1>物流・運送・貨物事業</h1>
 			<section class="shipping">
@@ -141,13 +139,15 @@
 					<section class="flex">
 						<article>
 							<a href="<?php echo site_url(); ?>/yokohama">
-								<img src="/wp/img/yokohama/yokohama-27.jpg">
+								<!-- <img src="/wp/img/yokohama/yokohama-27.jpg"> -->
+								<img src="/wp/img/yokohama/0554.JPG">
 								<h3><span>横浜営業所</span></h3></a>
 							<p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p>
 						</article>
 						<article>
 							<a href="<?php echo site_url(); ?>/atsugi">
-								<img src="/wp/img/atsugi/forklift.png">
+								<!-- <img src="/wp/img/atsugi/forklift.png"> -->
+								<img src="/wp/img/atsugi/6795.JPG">
 								<h3><span>厚木営業所</span></h3></a>
 							<p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
 							<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p>

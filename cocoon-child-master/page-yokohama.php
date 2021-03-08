@@ -6,7 +6,7 @@ Template Name: yokohama
 <?php get_template_part('pages/ind-header'); ?>
 <main role="main" class="yokohama">
 	<h1>横浜営業所</h1>
-	<div class="mixB">
+	<div class="mixY">
 		<section class="headline">
 			<h2>
 				24時間車両を集中管理する<br>
@@ -25,6 +25,95 @@ Template Name: yokohama
 		<p>精密機器輸送・食品・飲料・衣料品・引越など、どの様なご依頼にも対応出来る車両を揃え、地場輸送、長距離輸送を問わず幅広くご依頼いただいております。</p>
 		<p>雑貨貨物・路線貨物・飲料・食品・衣類・精密機械・家電・イベント機器・引越荷物、お客様から依頼のあった商品全てが対象商品です。</p>
 	</section>
+
+	<section class="wrapper">
+		<section class="vehicleType">
+			<section>
+				<img src="/wp/img/yokohama/0551.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p>奥行きのあるこの写真と</p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0559.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p>事務所部分が大写しにできるこの写真を切り取り使い</p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0560.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p>もしくは全景で収まりの良いこちらか</p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0553.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0546.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0547.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0548.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0549.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p>車種の多さはこれ？</p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0554.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p>整然としてカッコいいこれをフロントの横浜リンク扉に使う</p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0555.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0556.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0557.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0561.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/0562.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+			<section>
+				<img src="/wp/img/yokohama/2502.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+
+			<section>
+				<img src="/wp/img/yokohama/2503.JPG" alt="" width="800" height="auto">
+				<h4>タイトル</h4>
+				<p></p>
+			</section>
+
+		</section>
+	</section>
+
+
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.1870151246403!2d139.519785951233!3d35.375817354170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185005ee9c9633%3A0x525069450d626b64!2z77yI5qCq77yJ5YWx5ZCM!5e0!3m2!1sja!2sus!4v1609830202764!5m2!1sja!2sus" width="90%" height="299" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
@@ -74,7 +163,11 @@ Template Name: yokohama
 				<h4>２トンバン</h4>
 				<p>２トンアルミバン：１台保有</p>
 			</section>
-			<section>&nbsp;</section>
+			<section>
+				<img src="/wp/img/yokohama/2467.JPG" alt="" width="800" height="auto">
+				<h4>追加車種・トレーラー？？</h4>
+				<p>入れる位置が決まってから左右と高さを揃える</p>
+			</section>
 		</section>
 	</section>
 
@@ -102,6 +195,40 @@ Template Name: yokohama
 			 <h4>整備工場スペース</h4>
 			 <p>雨天対応の整備スペース</p>
 		 </section>
+
+		 <section>
+			 <img src="/wp/img/yokohama/0551.JPG" alt="" width="800" height="auto">
+			 <h4>整備工場スペース</h4>
+			 <p>整備工場をどの写真にするか、この写真が広さはいちばん感じるが</p>
+		 </section>
+		 <section>
+			 <img src="/wp/img/yokohama/0552.JPG" alt="" width="800" height="auto">
+			 <h4>整備工場スペース</h4>
+
+		 </section>
+		 <section>
+			 <img src="/wp/img/yokohama/0550.JPG" alt="" width="800" height="auto">
+			 <h4>整備工場スペース</h4>
+			 <p>この写真が建物に角度がつきすぎていないので切り取って高さを他と揃えて使う</p>
+
+		 </section>
+		 <section>
+			 <img src="/wp/img/yokohama/0559.JPG" alt="" width="800" height="auto">
+			 <h4>整備工場スペース</h4>
+			 <p>この写真はどちらかと言えばオフィス部分</p>
+
+		 </section>
+		 <section>
+			 <img src="/wp/img/yokohama/0560.JPG" alt="" width="800" height="auto">
+			 <h4>整備工場スペース</h4>
+			 <p>全景ちょうど収まっているのでいいかも</p>
+		 </section>
+
+
+
+
+
+
 		 <section>
 			 <img src="/wp/img/yokohama/yokohama-01.jpg" alt="">
 			 <h4>大型トラック用タイヤチェンジャー</h4>

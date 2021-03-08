@@ -5,13 +5,25 @@
 .atsugi {
 	.headline {
 		// background-size: cover;
-		// background: url(../img/atsugi/atsugi-6.png)no-repeat;
-		// background: url(../img/atsugi/8.jpg)no-repeat;
-		// background: url(../img/atsugi/forklift.png)no-repeat;
-		background: url(../img/atsugi/PA100010.JPG)no-repeat;
+		// background: url(../img/atsugi/PA100010.JPG)no-repeat;
+		background: url(../img/atsugi/0583.JPG)no-repeat;
+		background: url(../img/atsugi/0588.JPG)no-repeat;
+
+		background: url(../img/atsugi/0571.JPG)no-repeat;
+		background: url(../img/atsugi/0577.JPG)no-repeat;
+		background: url(../img/atsugi/0578.JPG)no-repeat;
+
+
+		background: url(../img/atsugi/0576.JPG)no-repeat;
+
+		background: url(../img/atsugi/6795.JPG)no-repeat;
+		background: url(../img/atsugi/0580.JPG)no-repeat;
 		background-size: cover;
-		// background-size: 100%;
 		background-position: center center;
+		// background-position: center top 45%;
+
+
+		// background-size: 100%;
 		// background-position: center top 60%;
 		// background-position: center bottom 30%;
 		// background-position: center bottom 36%;
@@ -19,21 +31,112 @@
 
 		// mix-blend-mode: luminosity; //輝度
 		mix-blend-mode: hard-light; //ハードライト
-		// color: $col-Fa;
+		color: $col-Fa;
 		// text-shadow: 0 2px 5px #000;
+	}
+	.vehicleType {
+		h4 {
+			background: $rgb-09;
+		}
 	}
 }
 
 .atsugi-photo {
-	margin-top: 4rem;
+	// margin-top: 4rem;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	img {
+		// width: (940px/1.5);
+		width: 640px;
+	}
 	article {
-		padding: 1rem 0;
-		margin-bottom: 1rem;
+		width: 940px;
+		margin: 4rem auto;
+		padding: 1rem;
+		// margin-bottom: 10rem;
+		position: relative;
+
+
+		&:before,&:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			bottom: 0;
+			display: block;
+			width: 50%;
+			z-index: 0;
+		}
+		h3,p {
+			text-align: left;
+			// border: 1px solid $purple;
+		}
+		h3 {
+			// background: $col-Fa;
+			// background: $gray10;
+			font-weight: normal;
+			text-align: center;
+			padding: 1rem 0;
+			margin-bottom: 1rem;
+		}
+		p {
+			margin-bottom: 1rem;
+		}
+
 	}
 	article:nth-child(odd) {
-		background: hsla(215, 37%, 65%, 0.15);
+		// background: hsla(215, 37%, 65%, 0.15);
+		background: rgb(223,229,239);//#DFE5EF;
+		&::before {
+			background: rgb(223,229,239);
+			left: -50%;
+			// border: 1px solid $purple;
+		}
+		h3,p {
+			margin-right: 1rem;
+		}
+		h3 {
+			background: rgb(238,241,246);
+			background: $col-Fc;
+
+		}
 	}
 	article:nth-child(even) {
-		background: hsla(215, 37%, 80%, 0.15);
+		// background: hsla(215, 37%, 80%, 0.15);
+		background: rgb(238,241,246);//#EEF1F6;
+		// text-align: left;
+		&::after {
+			background: rgb(238,241,246);//#EEF1F6;
+			right: -50%;
+			// border: 1px solid $purple;
+		}
+		h3,p {
+			margin-left: 1rem;
+		}
+		h3 {
+			background: rgb(223,229,239);
+			background: $col-Fc;
+		}
+
 	}
+	.flex {
+		width: (940px-16px-16px);
+		// width: 940px;
+		z-index: 1;
+	}
+	// .flex {
+	// 	// margin: 0 0 0 auto;
+	// }
+	// .flex {
+	// 	// margin: 0 auto 0 0;
+	// }
+
+
+
 }
+
+
+// background: $gray20;
+// z-index: -1;
+// #EEF1F6
+// #F5F7FA

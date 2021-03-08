@@ -6,16 +6,18 @@ Template Name: map
 <?php get_template_part('pages/ind-header'); ?>
 <main role="main" class="accessMap">
 	<h1>アクセスマップ</h1>
-	<iframe src="https://www.google.com/maps/d/embed?mid=1U_OmF25f3vyogMGMBSGrJL1dsyQXou3r" width="100%" height="600"></iframe>
-	<section class="container">
-		<nav class="inpage">
-			<ul>
-				<li><a href="#yokohamaMap">横浜営業所</a></li>
-				<li><a href="#atsugiMap">厚木営業所</a></li>
-				<li><a href="#kogaMap">古河営業所</a></li>
-				<li><a href="#busMap">旅客事業部</a></li>
-			</ul>
-		</nav>
+	<section class="FourMap">
+		<div>
+			<img src="/wp/img/map.png" alt="">
+			<a href="#kogaMap" class="kogaMap"></a>
+			<a href="#atsugiMap" class="atsugiMap"></a>
+			<a href="#busMap" class="busMap"></a>
+			<a href="#yokohamaMap" class="yokohamaMap"></a>
+			<a href="#kogaMap" class="kogaPin"></a>
+			<a href="#atsugiMap" class="atsugiPin"></a>
+			<a href="#busMap" class="busPin"></a>
+			<a href="#yokohamaMap" class="yokohamaPin"></a>
+		</div>
 	</section>
 
 	<h2 id="yokohamaMap">横浜営業所</h2>

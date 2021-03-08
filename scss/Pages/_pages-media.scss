@@ -390,25 +390,27 @@
 	// }
 	//* ATSUGI
 	//----------------------------------------------------*/
-	.atsugi {
-		img {
-			height: 350px;
-		}
-	}
+	// .atsugi {
+	// 	img {
+	// 		height: 350px;
+	// 	}
+	// }
 
-	.atsugi-photo {
-		margin-top: 4rem;
-		article {
-			width: 80%;
-		}
-		article:nth-child(odd) {
-			margin: 0 auto 1rem 0;
-		}
+	// .atsugi-photo {
+	// 	margin-top: 4rem;
+	// 	article {
+	// 		width: 100%;
+	// 	}
+	// 	article:nth-child(odd) {
+	// 		margin: 0 auto 3rem 0;
+	// 	}
+	// 	article:nth-child(even) {
+	// 		margin: 0 0 3rem auto;
+	// 	}
+	// }
 
-		article:nth-child(even) {
-			margin: 0 0 1rem auto;
-		}
-	}
+
+
 	//* JOIN
 	//----------------------------------------------------*/
 	.join {

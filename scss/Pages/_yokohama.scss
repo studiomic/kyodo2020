@@ -4,9 +4,14 @@
 //----------------------------------------------------*/
 .yokohama {
 	.headline {
-		background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
+		// background: url(../img/yokohama/0560.JPG)no-repeat;
+		// background: url(../img/yokohama/yokohama-03.jpg)no-repeat;
+		// background: url(../img/yokohama/0552.JPG)no-repeat;
+		// background: url(../img/yokohama/0551.JPG)no-repeat;
+		background: url(../img/yokohama/0550.JPG)no-repeat;
 		background-size: cover;
 		background-position: center center;
+		background-position: center top 20%;
 		mix-blend-mode: hard-light; //ハードライト
 	}
 	.vehicleType {
