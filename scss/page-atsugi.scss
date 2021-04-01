@@ -1,0 +1,98 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: atsugi
+// 	h1: pageTitle
+// 	div: .mixY { section: .headline }
+// 	section: .buzContent
+// 	section: .wrapper{ section: .vehicleType }
+// 	iframe map
+// 	section: .atsugi-photo{ section: .flex }
+// 	section: .contactUs //* share
+
+
+
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+// .yokohama {
+// 	text-align: center;
+// 	padding-bottom: 4rem;
+// }
+
+/* File...common */
+.wrapper {
+	width: $sm-width;
+}
+.flex {
+	display: flex;
+}
+.buzContent {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+}
+
+/* File...pages-yokohama */
+@import "Pages/atsugi";
+/* File...common-section */
+@import "common/common-basic";
+/* File...pages-headline */
+@import "Pages/headline";
+/* File...pages-bus */// @import "Pages/bus";
+@import "Pages/vehicleType";
+
+
+
+
+
+
+
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (min-width:40em) {}//640px
+@media (max-width:63.99875em) {
+	// .atsugi-photo {
+	// 	article {
+	// 		width: $sm-width;
+	// 	}
+	// }
+}
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.vehicleType {
+		section {
+			width: 32%;
+		}
+	}	//* VEHICLE TYPE
+	address {
+		bottom: -1.5rem;
+		right: 1rem;
+	}
+}
+
+
+// @import "common-section";
+/* File...share-media */
+// @import "share-media";
+
+/* File...media */
+// @import "Pages/pages-mediaSM";
+// @import "Pages/pages-media";
+
+
+//* DRAWER NAV TOP
+//----------------------------------------------------*/

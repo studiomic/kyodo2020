@@ -1,0 +1,91 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: company
+// 	h1: pageTitle
+// 	section: .overview
+// 	iframe map
+// 	section: .ceo-message
+// 	section: .qualityManagement
+// 	section: .basicPrinciple
+// 	section: .companyHistory
+// 	section: .contactUs //* share
+
+
+//* IMPORT module FILES
+//----------------------------------------------------*/
+/* File...common */
+// @import "common";
+// text-align: center;
+* main > h1 {
+	font-size: 3rem;
+	font-weight: normal;
+	margin: 4rem auto;
+}
+
+.company {
+	text-align: center;
+	padding-bottom: 4rem;
+}
+
+.ceo-message section {
+	display: flex;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+
+.companyHistory,
+.qualityManagement {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+}
+
+.qualityManagement {
+	h2 {
+		// @include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+}
+
+.companyHistory {
+	h2 {
+		// @include titleH2;
+		border-bottom: 3px solid $blue-06;
+	}
+}
+
+
+// .basicPrinciple,
+.basicPrinciple,
+.ceo-message {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $red-06;
+	}
+}
+
+
+/* File...pages-company */
+@import "Pages/company";
+@import "Media/company-media";
+
+/* File...wapper */// @import "wapper";
+// .wrapper {
+// 	width: $sm-width;
+// }
+// .flex {
+// 	display: flex;
+// }
+/* File...pages-section */// @import "Pages/pages-section";

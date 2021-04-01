@@ -18,6 +18,35 @@
   padding: 0;
   margin: 0;
 }
+.testimonial-content-wrapper > .attachment-150x150.size-150x150.wp-post-image {
+		width: 300px;
+  height: 300px;
+  }
+
+.drop-cap-color: {
+ color: #ff2a68;
+}
+
+.testimonial-content-section-headline h2 {
+ display: none;
+}
+
+.testimonial-content-section-headline {
+ display: none;
+}
+
+
+
+
+body.single div.custom-header-content {
+ max-height: 25vh;
+}
+
+
+<body class="jetpack-portfolio-template-default single single-jetpack-portfolio postid-5724 logged-in admin-bar no-customize-support wp-embed-responsive ect-post fluid-layout no-sidebar content-width-layout gradient-buttons header-right-menu-disabled bordered-blog simple-sidebar header-center-layout color-scheme-corporate">
+custom-header-content sections header-media-section
+
+.attachment-150x150.size-150x150.wp-post-image
 
 address {
   font-style: normal;

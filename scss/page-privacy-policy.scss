@@ -1,0 +1,91 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+/* File...pages-contact */
+// @import "Pages/contact";
+
+
+/* File...pages-privacy-policy */
+@import "Pages/privacy-policy";
+
+
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (min-width:40em) {}//640px
+@media (max-width:63.99875em) {
+	//* privacy-policy
+	.privacy-policy {
+		h1 {
+			font-size: 2rem;
+		}
+		h2 {
+			font-size: 22px;
+		}
+		article {
+			width: 90%;
+			margin: 0 auto;
+			h3 {
+				font-size: 1.1rem;
+			}
+			h4 {
+				margin: 3rem 0 2rem;
+			}
+		}
+		span {
+			display: block;
+		}
+	}
+
+
+}
+
+
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	//* .privacy-policy
+	.privacy-policy {
+		section {
+			width: $main-width;
+			text-align: left;
+			margin: 0 auto;
+		}
+		article {
+			section {
+				section {
+					padding: 0 0 2rem 2rem;
+					p {
+						margin: 0 0 0 1rem;
+					}
+				}
+			}
+			h3 {
+				letter-spacing: .2em;
+			}
+			h4 {
+				margin: 1rem 0;
+			}
+			p {
+				margin: 0 0 2rem 2rem;
+			}
+			ul {
+				// margin: 0;
+				padding-left: 2.5rem;
+			}
+		}
+	}
+
+
+}

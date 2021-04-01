@@ -4,6 +4,8 @@ Template Name: map
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-map.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="accessMap">
 	<h1>アクセスマップ</h1>
 	<section class="FourMap">

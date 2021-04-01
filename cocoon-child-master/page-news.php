@@ -4,6 +4,8 @@ Template Name: news
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-news.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="news">
 	<h1>NEWS</h1>
 	<section class="container">

@@ -4,6 +4,8 @@ Template Name: privacy-policy
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-privacy-policy.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main class="privacy-policy">
 	<!-- SLUG-POST -->
 	<?php

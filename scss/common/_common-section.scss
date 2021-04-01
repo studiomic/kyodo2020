@@ -1,0 +1,132 @@
+// main: ./pages-style.scss
+// main: ./blog-style.scss
+
+//* POSITION: FIXED
+//----------------------------------------------------*/
+.fixed {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: $sm-width;
+	z-index: 100;
+}
+.mixB {
+	background: $iceBG;
+}
+.mixB4 {
+	background: $bus-blue-07;
+}
+.mixY {
+	background: rgba(137,184,194,1);
+	background: $gray20;
+	background: rgba(132,160,198,1);
+	background: rgba(22,24,34,.7);
+}
+
+//* YOKOHANA 事業内容
+//----------------------------------------------------*/
+.buzContent {
+	margin: 0 auto;
+	p {
+		text-align: left;
+		margin-bottom: 1rem;
+		line-height: 1.7;
+	}
+	ul {
+		text-align: left;
+	}
+}
+
+//* BOX BLOCS LINK
+//----------------------------------------------------*/
+// .inpage {
+// 	margin: 4rem 0;
+// 	ul {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		list-style: none;
+// 		width: $sm-width;
+// 		z-index: 1;
+// 	}
+// 	li {
+// 		a {
+// 			color: $text-color;
+// 			@include fina;
+// 			flex-grow: 1;
+// 		}
+// 	}
+// }
+
+// .oukalink {
+// 	font-size: 1.4rem;
+// 	border-radius: 8px;
+// 	a {
+// 		border-radius: 8px;
+// 		background: $col-28;
+// 		color: $col-Fa;
+// 		line-height: 3;
+// 		width: $sm-width;
+// 		display: inline-block;
+// 	}
+// }
+
+//* contactUs
+//----------------------------------------------------*/
+// .contactUs {
+// 	position: relative;
+// 	width: 96%;
+// 	margin: 0 auto;
+// 	background: $col-28;
+// 	border-radius: 8px;
+// 	color: $col-Fa;
+// 	padding: 1.5rem;
+// 	padding: 1rem 1.5rem 1.5rem;
+// 	text-align: center;
+// 	h3 {
+// 		background: $col-28;
+// 		line-height: 1;
+// 		font-weight: normal;
+// 	}
+// 	div {
+// 		border: 1px solid $col-Fa;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 	}
+// 	svg {
+// 		fill: $col-Fa;
+// 	}
+// 	address {
+// 		font-family: $fontFamilySys;
+// 		font-size: 2rem;
+// 		margin: 0 2rem;
+// 		span {
+// 			font-size: 1.5rem;
+// 			display: block;
+// 		}
+// 		a {
+// 			color: $col-Fa;
+// 		}
+// 	}
+// }
+
+
+//* TRANSPORT ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.oukalink {
+		a {
+			&:hover, &:active, &:focus {
+				background: $rgb-10;
+			}
+		}
+	}
+	.contactUs {
+		.atto {
+			&:hover, &:active, &:focus {
+				fill: $col-aa;
+			}
+		}
+	}
+}

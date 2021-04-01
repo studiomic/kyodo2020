@@ -1,0 +1,65 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: yokohama
+// 	h1: pageTitle
+// 	div: .mixY { section: .headline }
+// 	section: .wrapper{ section: .vehicleType }
+// 	iframe map
+// 	section: .wrapper{ section: .vehicleType }
+// 	section: .wrapper{ section: .equipment}
+
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+.news {
+	text-align: center;
+	padding-bottom: 4rem;
+	img {
+		max-width: $sm-width;
+		height: auto;
+	}
+}
+
+
+.container { //width: 940px;
+	line-height: 1.7;
+}
+
+
+
+/* File...pages-yokohama */
+@import "Pages/news";
+/* File...common-section */
+// @import "common";
+/* File...pages-headline */
+// @import "Pages/headline";
+/* File...pages-bus */// @import "Pages/bus";
+// @import "Pages/vehicleType";
+
+//* @media SM
+//----------------------------------------------------*/
+@media (max-width:63.99875em) {
+	.container {
+		width: $sm-width;
+	}
+} //* @media SM
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.container {
+		width: 940px;
+		margin: 0 auto;
+	}
+} //* @media MD 1024

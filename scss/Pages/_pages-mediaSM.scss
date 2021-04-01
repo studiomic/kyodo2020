@@ -157,106 +157,84 @@
 		}
 	}	//* Company.scss
 
-	//* privacy-policy
-	//----------------------------------------------------*/
-	.privacy-policy {
-		h1 {
-			font-size: 2rem;
-		}
-		h2 {
-			font-size: 22px;
-		}
-		article {
-			width: 90%;
-			margin: 0 auto;
-			h3 {
-				font-size: 1.1rem;
-			}
-			h4 {
-				margin: 3rem 0 2rem;
-			}
-		}
-		span {
-			display: block;
-		}
-	}	//* privacy-policy
 
-	//* BUS
-	//----------------------------------------------------*/
-	.saftyBus {
-		margin-top: 4rem;
-		img {
-			display: block;
-			margin: 0 auto;
-		}
-	} // .saftyBus
 
-	.bus {
-		.container {
-			p {
-				margin: auto 1rem 1rem;
-			}
-		}
-		h2 {
-			font-size: 1.3rem;
-		}
-		h3 {
-			font-size: 1.3rem;
-		}
-	} // .bus
-
-	.kosuzume {
-		img {
-			width: $sm-width;
-		}
-	}
-	.diya {
-		flex-direction: column;
-		&::before {
-			font-size: 12rem;
-			top: -25px;
-			right: 24px;
-		}
-		article {
-			width: $sm-width;
-			section {
-				margin: 2rem 1rem 0;
-			}
-		}
-		article:nth-child(odd) {
-			h4 {
-				margin-left: .5rem;
-			}
-		}
-		article:nth-child(even) {
-			h4 {
-				margin-right: .5rem;
-			}
-		}
-	} // .diya
-
-	.vehicleList {
-		dt {
-			width: $sm-width;
-			font-weight: 500;
-			background: $col-F1;
-		}
-		dd{
-			width: $sm-width;
-		}
-		dd:nth-child(4n){
-			text-align: right;
-		}
-		dt:nth-of-type(1),dd:nth-of-type(1),dd:nth-of-type(2),dd:nth-of-type(3) {
-			display: none;
-		}
-	}
-	.mapbtm {
-		margin: 1rem auto 4rem 1rem;
-		span {
-			display: block;
-		}
-	}
+	// //* BUS
+	// //----------------------------------------------------*/
+	// .saftyBus {
+	// 	margin-top: 4rem;
+	// 	img {
+	// 		display: block;
+	// 		margin: 0 auto;
+	// 	}
+	// } // .saftyBus
+	//
+	// .bus {
+	// 	.container {
+	// 		p {
+	// 			margin: auto 1rem 1rem;
+	// 		}
+	// 	}
+	// 	h2 {
+	// 		font-size: 1.3rem;
+	// 	}
+	// 	h3 {
+	// 		font-size: 1.3rem;
+	// 	}
+	// } // .bus
+	//
+	// .kosuzume {
+	// 	img {
+	// 		width: $sm-width;
+	// 	}
+	// }
+	// .diya {
+	// 	flex-direction: column;
+	// 	&::before {
+	// 		font-size: 12rem;
+	// 		top: -25px;
+	// 		right: 24px;
+	// 	}
+	// 	article {
+	// 		width: $sm-width;
+	// 		section {
+	// 			margin: 2rem 1rem 0;
+	// 		}
+	// 	}
+	// 	article:nth-child(odd) {
+	// 		h4 {
+	// 			margin-left: .5rem;
+	// 		}
+	// 	}
+	// 	article:nth-child(even) {
+	// 		h4 {
+	// 			margin-right: .5rem;
+	// 		}
+	// 	}
+	// } // .diya
+	//
+	// .vehicleList {
+	// 	dt {
+	// 		width: $sm-width;
+	// 		font-weight: 500;
+	// 		background: $col-F1;
+	// 	}
+	// 	dd{
+	// 		width: $sm-width;
+	// 	}
+	// 	dd:nth-child(4n){
+	// 		text-align: right;
+	// 	}
+	// 	dt:nth-of-type(1),dd:nth-of-type(1),dd:nth-of-type(2),dd:nth-of-type(3) {
+	// 		display: none;
+	// 	}
+	// }
+	// .mapbtm {
+	// 	margin: 1rem auto 4rem 1rem;
+	// 	span {
+	// 		display: block;
+	// 	}
+	// }
 
 	//* yokohama
 	//----------------------------------------------------*/
@@ -283,12 +261,12 @@
 		}
 	}
 
-	.buzContent {
-		width: $sm-width;
-		p {
-			padding: 0 1rem;
-		}
-	}
+	// .buzContent {
+	// 	width: $sm-width;
+	// 	p {
+	// 		padding: 0 1rem;
+	// 	}
+	// }
 	.equipment {
 		flex-direction: column;
 		section {
@@ -301,20 +279,11 @@
 
 	//* ATSUGI
 	//----------------------------------------------------*/
-	.atsugi-photo {
-		article {
-			width: $sm-width;
-		}
-	}
-
-	//* JOIN
-	//----------------------------------------------------*/
-	.us {
-		flex-direction: column;
-		section {
-			width: $sm-width;
-		}
-	}
+	// .atsugi-photo {
+	// 	article {
+	// 		width: $sm-width;
+	// 	}
+	// }
 
 
 	.intro {

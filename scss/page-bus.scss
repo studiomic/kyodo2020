@@ -1,0 +1,363 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: #bus
+// 	section: .bus{ section: .title-group }
+// 	section: .container{ nav: .inpage }
+// 	h2: contentTitle
+// 	section: .container{
+//			section: .kosuzume
+//			section: .dia }
+// 	h2: contentTitle
+// 	section: .container
+// 	section: .wrapper{ section: .vehicleType }
+// 	section: .container{ dl:vehicleList }
+// 	div: .mixY { section: .headline }
+// 	section: .wrapper{ section: .equipment }
+// 	iframe map
+
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+/* File...wapper */
+.wrapper {
+	width: $sm-width;
+}
+.container { //width: 940px;
+	width: $sm-width;
+	line-height: 1.7;
+}
+
+.title-group {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	h1 {
+		font-weight: normal;
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+}
+
+/* File...pages-yokohama */
+@import "Pages/bus";
+/* File...common-section */
+@import "common/common-basic";
+/* File...common-inpage */
+@import "common/common-inpage";
+/* File...pages-headline */
+@import "Pages/headline";
+/* File...pages-bus */// @import "Pages/bus";
+@import "Pages/vehicleType";
+
+
+.equipment {
+	@include flex1300;
+	flex-wrap: wrap;
+	width: 90%;
+	margin-bottom: 4rem;
+	section {
+		width: 24%;
+		padding-bottom: 2rem;
+	}
+	h4 {
+		background: $rgb-08;
+		color: $col-Fa;
+		padding: .5rem;
+		margin: 4px 0 4px;
+	}
+	p {
+		text-align: left;
+	}
+}
+
+//* @media SM
+//----------------------------------------------------*/
+@media (max-width:63.99875em) {
+	//* Common Styles
+	//----------------------------------------------------*/
+	nav.inpage {
+		ul {
+			flex-wrap: wrap;
+			flex-direction: column;
+			border-bottom: 1px solid $col-cc;
+		}
+		li {
+			border-top: 1px solid $col-cc;
+			background: $col-Fa;
+			width: $sm-width;
+
+			a {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+	//* BUS
+	//----------------------------------------------------*/
+	.saftyBus {
+		margin-top: 4rem;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+	} // .saftyBus
+
+	.bus {
+		.container {
+			p {
+				margin: auto 1rem 1rem;
+			}
+		}
+		h2 {
+			font-size: 1.3rem;
+		}
+		h3 {
+			font-size: 1.3rem;
+		}
+	} // .bus
+
+	.kosuzume {
+		img {
+			width: $sm-width;
+		}
+	}
+	.diya {
+		flex-direction: column;
+		&::before {
+			font-size: 12rem;
+			top: -25px;
+			right: 24px;
+		}
+		article {
+			width: $sm-width;
+			section {
+				margin: 2rem 1rem 0;
+			}
+		}
+		article:nth-child(odd) {
+			h4 {
+				margin-left: .5rem;
+			}
+		}
+		article:nth-child(even) {
+			h4 {
+				margin-right: .5rem;
+			}
+		}
+	} // .diya
+
+	.vehicleList {
+		dt {
+			width: $sm-width;
+			font-weight: 500;
+			background: $col-F1;
+		}
+		dd{
+			width: $sm-width;
+		}
+		dd:nth-child(4n){
+			text-align: right;
+		}
+		dt:nth-of-type(1),dd:nth-of-type(1),dd:nth-of-type(2),dd:nth-of-type(3) {
+			display: none;
+		}
+	}
+	.mapbtm {
+		margin: 1rem auto 4rem 1rem;
+		span {
+			display: block;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.container {
+		margin: 0 auto;
+		width: $main-width;
+		// width: 940px;
+	}
+	.inpage {
+		li {
+			border: 1px solid $col-cc;
+			position: relative;
+			a {
+				padding: 2rem 4rem;
+				&:hover {
+					@include fina-hover;
+				}
+				&::before {
+					@include fina-before;
+				}
+				&:hover::before {
+					@include fina-hover-before;
+				}
+			}
+		}
+	}
+	.vehicleType {
+		section {
+			width: 32%;
+		}
+	}	//* VEHICLE TYPE
+	//* BUS
+	//----------------------------------------------------*/
+	.saftyBus {
+	 text-align: center;
+	 margin-top: 4rem;
+	}
+	.bus {
+		h2 {
+			font-size: 2rem;
+		}
+		h3 {
+			font-size: 1.6rem;
+		}
+		nav {
+			li {
+				border: 1px solid $col-cc;
+				position: relative;
+				a {
+					padding: 2rem 4rem;
+					// @include fina;
+					&:hover {
+						@include fina-hover;
+					}
+					&::before {
+						@include fina-before;
+					}
+					&:hover::before {
+						@include fina-hover-before;
+					}
+				}
+			}
+		}
+	}	//* BUS
+	//* KOSUZUME
+	//----------------------------------------------------*/
+	.kosuzume {
+		img:nth-of-type(1) {
+		// img::first-child {
+			display: none;
+		}
+		width: $main-width;
+		// background: url(../img/bus/01-kosuzume.jpg)no-repeat;
+		background: url(../img/bus/ryokaku05.jpg)no-repeat;
+
+		// background-size: 160%;
+		background-size: $sm-width;
+		// background-position: left -110px top -330px;
+		background-position: center top -120px;
+		padding-top: 480px;
+		border-radius: 24px;
+		margin-top: 40px;
+		img {
+			width: (940px / 2);
+			border-top: 1px solid white;
+		}
+		img:nth-of-type(4) {border-radius: 0 0 0 24px;}
+		img:nth-of-type(5) {border-radius: 0 0 24px;}
+		img:nth-of-type(4),img:nth-of-type(5) {margin-top: -8px;}
+	}
+
+	//* KOSUZUME DAIYA
+	//----------------------------------------------------*/
+	.diya {
+		&::before {
+			font-size: 24rem;
+			top: -45px;
+			right: 4rem;
+		}
+		article {
+			width: 50%;
+			section {
+				margin: 2rem 2rem 0 2rem;
+				padding-left: 1rem;
+			}
+		}
+		article:nth-child(odd) {
+			margin-right: .5rem;
+			section {
+				border-left: 2px solid $bus-blue;
+			}
+		}
+		article:nth-child(even) {
+			margin-left: .5rem;
+			section {
+				border-left: 2px solid $bus-navy;
+			}
+		}
+	} //.diya
+	//* VEHICLE LIST
+	//----------------------------------------------------*/
+	.vehicleList {
+		dt,dd {
+			border: 1px solid $col-F;
+			padding: 1rem .5rem;
+			background: $col-F5;
+		}
+		dt {
+			width: 25%;
+		}
+		dd {
+			width: 30%;
+		}
+		dd:nth-child(4n) {
+			width: 15%;
+		}
+	}
+	.mapbtm {
+		width: $main-width;
+		margin: 1rem auto 4rem;
+		text-align: left;
+
+		span {
+			margin-right: 1rem;
+		}
+	}
+	.oukalink {
+		a {
+			&:hover, &:active, &:focus {
+				background: $rgb-10;
+			}
+		}
+	}
+
+}
+
+
+// @import "common-section";
+/* File...share-media */
+// @import "share-media";
+
+/* File...media */
+// @import "Pages/pages-mediaSM";
+// @import "Pages/pages-media";
+
+
+//* DRAWER NAV TOP
+//----------------------------------------------------*/
+
+/* File...share-base */
+// @import "share-base";
+/* File...base */
+// @import "Pages/pages-base";

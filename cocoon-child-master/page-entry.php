@@ -4,6 +4,8 @@ Template Name: entry
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-contact.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="contact">
 	<h1>エントリーフォーム</h1>
 	<p>

@@ -1,0 +1,72 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: yokohama
+// 	h1: pageTitle
+// 	div: .mixY { section: .headline }
+// 	section: .wrapper{ section: .vehicleType }
+// 	iframe map
+// 	section: .wrapper{ section: .vehicleType }
+// 	section: .wrapper{ section: .equipment}
+
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+.flex {
+	display: flex;
+}
+
+.accessMap {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+}
+
+
+/* File...pages-yokohama */
+@import "Pages/map";
+/* File...common-section */
+// @import "common";
+/* File...pages-headline */
+// @import "Pages/headline";
+/* File...pages-bus */// @import "Pages/bus";
+// @import "Pages/vehicleType";
+
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	// .vehicleType {
+	// 	section {
+	// 		width: 32%;
+	// 	}
+	// }	//* VEHICLE TYPE
+	// address {
+	// 	bottom: -1.5rem;
+	// 	right: 1rem;
+	// }
+}
+
+
+// @import "common-section";
+/* File...share-media */
+// @import "share-media";
+
+/* File...media */
+// @import "Pages/pages-mediaSM";
+// @import "Pages/pages-media";
+
+
+//* DRAWER NAV TOP
+//----------------------------------------------------*/

@@ -1,0 +1,51 @@
+// main: ../pages-style.scss
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.overview,.qualityManagement,.basicPrinciple,.companyHistory {
+		width: $main-width;
+	}
+	.overview {
+		width: $main-width;
+		dl {
+			width: 70%;
+		}
+		dt,dd {
+			padding: 1rem 0 1rem 1rem;
+		}
+		dt {
+			width: 20%;
+			font-weight: 500;
+		}
+		dd {
+			width: 80%;
+			border-bottom: 1px solid $rgb-01;
+		}
+	}
+	.companyHistory {
+		dl {
+			width: 70%;
+		}
+		dt,dd {
+			padding: 1rem 0 1rem 1rem;
+		}
+		dt {
+			width: 30%;
+			font-weight: 500;
+		}
+		dd {
+			width: 70%;
+			border-bottom: 1px solid $blue-02;
+		}
+	}
+	.ceo-message {
+		.wrapper {
+			section {
+				width: $main-width;
+				margin: 0 auto;
+			}
+		}
+	}
+
+} //@media MD 1024

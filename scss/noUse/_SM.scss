@@ -1,0 +1,28 @@
+// main: ../pages-style.scss
+
+//* @media SM
+//----------------------------------------------------*/
+@media (max-width:63em) {
+
+
+
+
+// NEWS
+.news {
+	img {
+		max-width: $sm-width;
+		height: auto;
+	}
+}
+
+// 代表メッセージ
+.ceo-message {
+	section {
+		// width: $main-width;
+		width: $sm-width;
+	}
+}
+
+
+
+} //* @media SM

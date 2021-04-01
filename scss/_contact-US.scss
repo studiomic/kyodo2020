@@ -1,0 +1,41 @@
+
+.contactUs {
+	position: relative;
+	width: 96%;
+	margin: 0 auto;
+	background: $col-28;
+	border-radius: 8px;
+	color: $col-Fa;
+	padding: 1.5rem;
+	padding: 1rem 1.5rem 1.5rem;
+	text-align: center;
+	h3 {
+		background: $col-28;
+		line-height: 1;
+		font-weight: normal;
+	}
+	div {
+		border: 1px solid $col-Fa;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	svg {
+		fill: $col-Fa;
+	}
+	address {
+		font-family: $fontFamilySys;
+		font-size: 2rem;
+		margin: 0 2rem;
+		span {
+			font-size: 1.5rem;
+			// line-height: .8;
+			display: block;
+			// padding-top: 1rem;
+			// border-top: 1px solid #000;
+		}
+		a {
+			color: $col-Fa;
+		}
+	}
+}

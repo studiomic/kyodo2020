@@ -13,19 +13,19 @@
 @import "box-sizing";
 
 /* File...share-base */
-@import "share-base";
+@import "noUse/share-base";
 
 /* File...base */
 @import "Blog/blog-base";
 
 
 /* File...wapper */
-@import "wapper";
+@import "noUse/wapper";
 /* File...common-section.scss */
-@import "common-section.scss";
+@import "common/common-section.scss";
 
 /* File...share-media */
-@import "share-media";
+@import "noUse/share-media";
 /* File...media */
 @import "Blog/media";
 

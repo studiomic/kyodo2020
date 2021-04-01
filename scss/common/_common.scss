@@ -1,0 +1,171 @@
+// main: ./pages-style.scss
+// main: ./blog-style.scss
+
+//* TATEGAKI
+//----------------------------------------------------*/
+// .vertical {
+// 	-ms-writing-mode: tb-rl;
+// 	writing-mode: vertical-rl;
+// }
+
+// text-align: center;
+// * main > h1 {
+// 	font-size: 3rem;
+// 	font-weight: normal;
+// 	margin: 4rem auto;
+// }
+
+// .title-group {
+// 	padding: 2rem;
+// 	margin-bottom: 2rem;
+// 	h1 {
+// 		font-weight: normal;
+// 		font-size: 3rem;
+// 	}
+// 	p {
+// 		font-size: 1.4rem;
+// 	}
+// }
+
+.tac {
+	text-align: center;
+}
+
+//* fade in anchor
+//----------------------------------------------------*/
+.fina {
+	@include fina;
+}
+
+.fina:hover {
+	@include fina-hover;
+}
+
+.fina::before {
+	@include fina-before;
+}
+
+.fina:hover::before {
+	@include fina-hover-before;
+}
+
+//* Double Diagonal W Line Heading
+//----------------------------------------------------*/
+// .working h4,
+.warehouse .flex h3,
+.salesOffice h3 {
+	color: $col-Fa;
+	font-weight: normal;
+	line-height: 5;
+	position: relative;
+	margin-bottom: 1rem;
+	&::before,&::after {
+		position: absolute;
+		content: '';
+		width: 50%;
+		display: block;
+	}
+	&::before {
+		top: 1rem;
+		right: 5%;
+	}
+	&::after {
+		left: 5%;
+		bottom: 1rem;
+	}
+}
+
+.salesOffice,.warehouse {
+	.flex {
+		h3 {
+			background: $rgb-08;
+			&::before {
+				border-top: 2px solid $orange;
+			}
+			&::after {
+				border-top: 2px solid $green;
+			}
+		}
+	}
+}
+
+//* Diagonal W Line Heading
+//----------------------------------------------------*/
+// .us h3,
+.vehicleType h4 {
+	@include Wline;
+	&::before,&::after {
+		@include Wline-ba;
+	}
+	&::before {
+		background: rgb(195, 216, 199);//#C3D8C7;
+	}
+	&::after {
+		background: rgb(219, 197, 201);//#DBC5C9;
+	}
+}
+
+//* IMG W 100
+//----------------------------------------------------*/
+// .flex,
+.salesOffice,
+.warehouse .flex,
+// .us,
+.equipment,
+.vehicleType {
+	img {
+		width: $sm-width;
+	}
+}
+
+//* layout block FLEX
+//----------------------------------------------------*/
+// .us,
+// .working {
+.ceo-message section {
+	display: flex;
+	margin: 0 auto;
+}
+
+.equipment,
+.vehicleType {
+	display: flex;
+	@include flex1300;
+}
+
+//* @include titleH2;
+//----------------------------------------------------*/
+.greenSafety h2,
+.bus .wrapper h3 {
+	@include titleH2;
+}
+
+// .Front .wrapper,
+// .accessMap,
+.buzContent,
+.qualityManagement,
+.salesOffice,
+.yokohama .wrapper {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $cyan-06;
+	}
+}
+
+// .companyHistory {
+// 	h2 {
+// 		@include titleH2;
+// 		border-bottom: 3px solid $blue-06;
+// 	}
+// }
+
+// .joinFront,
+// .basicPrinciple,
+// .ceo-message {
+
+.joinFront {
+	h2 {
+		@include titleH2;
+		border-bottom: 3px solid $red-06;
+	}
+}

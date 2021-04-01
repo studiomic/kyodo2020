@@ -15,15 +15,15 @@
 @import "box-sizing";
 
 /* File...common */
-@import "common";
+@import "common/common";
 /* File...share-base */
-@import "share-base";
+@import "noUse/share-base";
 /* File...base */
 @import "Pages/pages-base";
 /* File...wapper */
-@import "wapper";
+@import "noUse/wapper";
 /* File...time-stamp */
-@import "time-stamp";
+@import "Pages/time-stamp";
 
 /* File...pages-news */
 @import "Pages/news";
@@ -37,7 +37,7 @@
 @import "Pages/bus";
 /* File...pages-yokohama */
 @import "Pages/yokohama";
-/* File...pages-yokohama */
+/* File...pages-atsugi */
 @import "Pages/atsugi";
 /* File...pages-koga */
 @import "Pages/koga";
@@ -58,13 +58,13 @@
 @import "Pages/contact";
 
 
-@import "Pages/SM";
-@import "Pages/PC";
+// @import "Pages/SM";noUse/
+// @import "Pages/PC";noUse/
 
 /* File...common-section */
-@import "common-section";
+@import "common/common-section";
 /* File...share-media */
-@import "share-media";
+@import "noUse/share-media";
 /* File...media */
 @import "Pages/pages-mediaSM";
 @import "Pages/pages-media";

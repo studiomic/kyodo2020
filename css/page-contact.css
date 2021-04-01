@@ -1,0 +1,74 @@
+/* File...pages-contact */
+.contact {
+  width: 100%; }
+  .contact p {
+    margin-bottom: 1rem; }
+  .contact input[type=checkbox] {
+    margin-left: 2rem; }
+  .contact form {
+    margin-bottom: 4rem; }
+    .contact form p {
+      text-align: center;
+      position: relative;
+      display: block; }
+  .contact dl {
+    margin: 4rem 0 0;
+    text-align: left; }
+  .contact dt span {
+    font-size: .7rem;
+    color: #f6f6f6;
+    background: #e14c68;
+    margin-left: .5rem;
+    border: 4px solid #e14c68;
+    border-radius: 4px;
+    line-height: 1; }
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit; }
+
+input[type=submit] {
+  font-size: 1.1rem;
+  background: #282828;
+  text-align: center;
+  margin: 0 auto;
+  color: #fafafa;
+  width: 98%;
+  padding: 1rem 0;
+  line-height: 1rem;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer; }
+  input[type=submit]:hover {
+    background: rgba(40, 40, 40, 0.7);
+    transition-duration: 1s; }
+
+input[type=tel],
+input[type=email],
+input[type=text],
+textarea {
+  width: 98%;
+  background: #f2f2f2;
+  padding: .5rem;
+  border: 4px solid #f2f2f2;
+  border-radius: 4px; }
+
+textarea {
+  height: 180px; }
+
+@media (max-width: 63.99875em) {
+  .contact dd {
+    margin-bottom: 2rem; } }
+@media (min-width: 64em) {
+  .contact {
+    width: 940px;
+    margin: 0 auto; }
+    .contact dd {
+      margin: 0 0 2rem 12rem; }
+    .contact dt {
+      padding-top: .4rem;
+      float: left; }
+    .contact dt:first-child {
+      padding-top: 0; } }
+
+/*# sourceMappingURL=page-contact.css.map */

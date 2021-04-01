@@ -1,0 +1,35 @@
+// main: ../pages-style.scss
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+
+// NEWS
+.news {
+	img {
+		max-width: 755px;
+		height: auto;
+	}
+}
+
+.ceo-message {
+	section {
+		width: $main-width;
+		// width: $sm-width;
+	}
+}
+
+
+
+
+
+} //* @media MD 1024
+
+
+//* @media MD 1200
+//----------------------------------------------------*/
+@media (min-width:75em) {
+
+
+
+}

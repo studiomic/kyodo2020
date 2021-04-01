@@ -1,0 +1,164 @@
+// main: ../site-style.scss
+// main: ../pages-style.scss
+// main: ./Rewrite.scss
+
+//* HTML BODY
+//----------------------------------------------------*/
+body {
+	color: $text-color;
+	background: $col-F;
+	position: relative;
+	font-size: 16px;
+	font-family: $BasefontFamily;
+}
+
+/* HEADER
+----------------------------------------------------*/
+header {
+	position: relative;
+	background: $col-00 url(../img/logo-onwhite.png)no-repeat;
+	background-position: center center;
+	background-size: auto 180px;
+	height: 180px;
+	text-align: center;
+	color: $col-Fa;
+	h1 {
+		height: 140px;
+		line-height: 1;
+		a {
+			text-indent: $sm-width;
+			white-space: nowrap;
+			overflow: hidden;
+			display: block;
+			margin: 0 auto;
+			width: 240px;
+			height: 135px;
+		}
+	}
+}
+
+//* ANCHOR
+//----------------------------------------------------*/
+a {
+	text-decoration: none;
+	color: $link-color;
+}
+
+//* DRAWER + MAIN NAV SHARE STYLE
+//----------------------------------------------------*/
+nav {
+	a {
+		color: $col-Fa;
+	}
+}
+
+.drawer-menu {
+	padding-bottom: 2rem;
+	li {
+		display: block;
+		padding: .75rem;
+	}
+	li:last-of-type {
+		padding-bottom: 3rem;
+	}
+}
+
+a.drawer-brand {
+	display: inline-block;
+   background: url(../img/kyoudou.png)no-repeat;
+   background-position: center center;
+	width: 160px;
+   height: 50px;
+   text-indent: $sm-width;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+//* FOOTER
+//----------------------------------------------------*/
+footer {
+	width: $sm-width;
+	background: $footer-Bg-Color;
+	color: $col-F5;
+	text-align: center;
+	padding-top: 2rem;
+	address {
+		font-size: 0.8rem;
+		line-height: 1.7;
+		margin-bottom: 4rem;
+	}
+	small {
+		color: $col-aa;
+		line-height: 1;
+	}
+	h2 {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+		a {
+			background: url(../img/logo-transparent.png)no-repeat;
+			background-position: center top;
+			background-size: 200px;
+			display: inline-block;
+			width: auto;
+			color: $col-F5;
+			padding-top: 130px;
+		}
+	}
+}
+
+/* FIRST VISUAL NAV
+----------------------------------------------------*/
+nav.main-nav {
+	position: relative;
+	z-index: 10;
+	ul {
+		list-style: none;
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+	}
+	li {
+		padding: 0 1rem;
+	}
+}
+/* 2ND NAV BAR
+----------------------------------------------------*/
+.nav-bar {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: relative;
+	display: none;
+	height: 60px;
+	h1 {
+		background: url(../img/logo-onwhite.png)no-repeat;
+		background-position: center left;
+		width: 290px;
+		height: 60px;
+		text-indent: $sm-width;
+      white-space: nowrap;
+      overflow: hidden;
+		position: absolute;
+		top: 0;
+		left: 0;
+		a {
+			display: block;
+			width: 290px;
+			height: 60px;
+		}
+	}
+	ul {
+		list-style: none;
+		font-size: 1.2rem;
+		height: 60px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		padding: 0 1rem;
+	}
+	a {
+		color: $col-Fa;
+	}
+}

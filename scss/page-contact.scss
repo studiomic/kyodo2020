@@ -1,0 +1,15 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+/* File...pages-contact */
+@import "Pages/contact";

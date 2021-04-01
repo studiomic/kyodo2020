@@ -1,0 +1,73 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+/* File...extend-color */
+@import "extend-color";
+/* File...mixin */
+@import "mixin";
+/* File...fontfamily */
+@import "fontfamily";
+
+//* Page Stack
+//----------------------------------------------------*/
+// main: .Front
+// 	section: .newsFront
+// 	section: .transport
+// 	section: .busFront
+// 	section: .greenSafety
+// 	section: .joinFront
+// 	section: .contactUs //* share
+
+
+//* IMPORT module FILES
+//----------------------------------------------------*/
+/* File...wapper */
+.wrapper {
+	width: $sm-width;
+}
+.flex {
+	display: flex;
+}
+
+/* File...common */
+@import "common/front-common";
+/* File...time-stamp */
+@import "Pages/time-stamp";
+/* File...pages-transport */
+@import "Pages/transport";
+/* File...pages-headline */
+@import "Pages/headline";
+/* File...pages-section */
+@import "Pages/pages-section";
+/* File...common-section */// @import "common-section";
+.buzContent {
+	margin: 0 auto;
+	p {
+		text-align: left;
+		margin-bottom: 1rem;
+		line-height: 1.7;
+	}
+	ul {
+		text-align: left;
+	}
+}
+.introduction {
+	padding: 4rem 0;
+	text-align: left;
+	background: $gray90;
+	background: $col-Fa;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+
+
+
+
+//* @media
+//----------------------------------------------------*/
+@import "Media/front-media";

@@ -76,5 +76,3 @@ get_template_part('tmp-user/head-insert'); ?>
 <?php //サイトヘッダーからコンテンツまでbodyタグ最初のHTML
   get_template_part('tmp/body-top');
  ?>
-
-<p>HEADER</p>

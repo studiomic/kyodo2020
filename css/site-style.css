@@ -1,0 +1,461 @@
+@charset "UTF-8";
+/* File...extend-color */
+/* File...mixin */
+/* File...fontfamily */
+/* File...box-sizing */
+/* BOX　SIZING
+----------------------------------------------------*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* RESET `PADDING` AND `MARGIN` OF ALL ELEMENTS
+----------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0; }
+
+address {
+  font-style: normal; }
+
+/* HEADER NAV BOX　SIZING
+----------------------------------------------------*/
+/* File...site-base */
+body {
+  color: #363636;
+  background: #fff;
+  position: relative;
+  font-size: 16px;
+  font-family: "Lato", "Noto Sans JP", system-ui, sans-serif; }
+
+/* HEADER
+----------------------------------------------------*/
+header {
+  position: relative;
+  background: black url(../img/logo-onwhite.png) no-repeat;
+  background-position: center center;
+  background-size: auto 180px;
+  height: 180px;
+  text-align: center;
+  color: #fafafa; }
+  header h1 {
+    height: 140px;
+    line-height: 1; }
+    header h1 a {
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      display: block;
+      margin: 0 auto;
+      width: 240px;
+      height: 135px; }
+
+a {
+  text-decoration: none;
+  color: #84a0c6; }
+
+nav a {
+  color: #fafafa; }
+
+.drawer-menu {
+  padding-bottom: 2rem; }
+  .drawer-menu li {
+    display: block;
+    padding: .75rem; }
+  .drawer-menu li:last-of-type {
+    padding-bottom: 3rem; }
+
+a.drawer-brand {
+  display: inline-block;
+  background: url(../img/kyoudou.png) no-repeat;
+  background-position: center center;
+  width: 160px;
+  height: 50px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden; }
+
+footer {
+  width: 100%;
+  background: #282828;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 2rem; }
+  footer address {
+    font-size: 0.8rem;
+    line-height: 1.7;
+    margin-bottom: 4rem; }
+  footer small {
+    color: #aaaaaa;
+    line-height: 1; }
+  footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem; }
+    footer h2 a {
+      background: url(../img/logo-transparent.png) no-repeat;
+      background-position: center top;
+      background-size: 200px;
+      display: inline-block;
+      width: auto;
+      color: whitesmoke;
+      padding-top: 130px; }
+
+/* FIRST VISUAL NAV
+----------------------------------------------------*/
+nav.main-nav {
+  position: relative;
+  z-index: 10; }
+  nav.main-nav ul {
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    height: 40px;
+    display: flex;
+    justify-content: center; }
+  nav.main-nav li {
+    padding: 0 1rem; }
+
+/* 2ND NAV BAR
+----------------------------------------------------*/
+.nav-bar {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  display: none;
+  height: 60px; }
+  .nav-bar h1 {
+    background: url(../img/logo-onwhite.png) no-repeat;
+    background-position: center left;
+    width: 290px;
+    height: 60px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0; }
+    .nav-bar h1 a {
+      display: block;
+      width: 290px;
+      height: 60px; }
+  .nav-bar ul {
+    list-style: none;
+    font-size: 1.2rem;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .nav-bar li {
+    padding: 0 1rem; }
+  .nav-bar a {
+    color: #fafafa; }
+
+* main > h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 4rem auto; }
+
+main {
+  text-align: center;
+  padding-bottom: 4rem; }
+
+/* File...contact-US */
+.contactUs {
+  position: relative;
+  width: 96%;
+  margin: 0 auto;
+  background: #282828;
+  border-radius: 8px;
+  color: #fafafa;
+  padding: 1.5rem;
+  padding: 1rem 1.5rem 1.5rem;
+  text-align: center; }
+  .contactUs h3 {
+    background: #282828;
+    line-height: 1;
+    font-weight: normal; }
+  .contactUs div {
+    border: 1px solid #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contactUs svg {
+    fill: #fafafa; }
+  .contactUs address {
+    font-family: system-ui, sans-serif;
+    font-size: 2rem;
+    margin: 0 2rem; }
+    .contactUs address span {
+      font-size: 1.5rem;
+      display: block; }
+    .contactUs address a {
+      color: #fafafa; }
+
+.fixed {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+/*
+    Base
+*/
+.drawer-open {
+  overflow: hidden !important; }
+
+.drawer-nav {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  overflow: hidden;
+  width: 16.25rem;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.drawer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.drawer-menu-item {
+  font-size: 1rem;
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #fff; }
+
+.drawer-menu-item:hover {
+  text-decoration: underline;
+  color: #555;
+  background-color: transparent; }
+
+/*! overlay */
+.drawer-overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.drawer-open .drawer-overlay {
+  display: block; }
+
+/*
+    Top
+*/
+.drawer--top .drawer-nav {
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  transition: top 0.6s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.drawer--top.drawer-open .drawer-nav {
+  top: 0; }
+
+.drawer--top .drawer-hamburger,
+.drawer--top.drawer-open .drawer-hamburger {
+  right: 0; }
+
+/*
+    Hamburger
+*/
+.drawer-hamburger {
+  position: fixed;
+  z-index: 104;
+  top: 0;
+  display: block;
+  box-sizing: content-box;
+  width: 2rem;
+  padding: 0;
+  padding-top: 18px;
+  padding-right: 0.75rem;
+  padding-bottom: 30px;
+  padding-left: 0.75rem;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translate3d(0, 0, 0);
+  border: 0;
+  outline: 0;
+  background-color: transparent; }
+
+.drawer-hamburger:hover {
+  cursor: pointer;
+  background-color: transparent; }
+
+.drawer-hamburger-icon {
+  position: relative;
+  display: block;
+  margin-top: 10px; }
+
+.drawer-hamburger-icon,
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  width: 100%;
+  height: 1px;
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  background-color: #fff; }
+
+.drawer-hamburger-icon:before,
+.drawer-hamburger-icon:after {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  content: ' '; }
+
+.drawer-hamburger-icon:after {
+  top: 10px; }
+
+.drawer-open .drawer-hamburger-icon {
+  background-color: transparent; }
+
+.drawer-open .drawer-hamburger-icon:before,
+.drawer-open .drawer-hamburger-icon:after {
+  top: 0; }
+
+.drawer-open .drawer-hamburger-icon:before {
+  transform: rotate(45deg); }
+
+.drawer-open .drawer-hamburger-icon:after {
+  transform: rotate(-45deg); }
+
+/*
+    accessibility
+*/
+/*
+ // * Only display content to screen readers
+ // * See: http://a11yproject.com/posts/how-to-hide-content
+*/
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0; }
+
+/*
+ // * Use in conjunction with .sr-only to only display content when it's focused.
+ // * Useful for "Skip to main content" links; see http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G1
+ // * Credit: HTML5 Boilerplate
+*/
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  overflow: visible;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0; }
+
+@media (max-width: 63.99875em) {
+  img {
+    max-width: 100%; }
+
+  footer {
+    min-height: 240px;
+    padding-top: 1rem; }
+    footer h2 {
+      font-size: 1rem;
+      margin-bottom: 1rem; }
+      footer h2 a {
+        background-size: 150px;
+        padding: 90px 1rem 0; }
+    footer address {
+      margin-bottom: 1rem; }
+    footer span {
+      display: block;
+      padding-bottom: 1rem; }
+
+  .contactUs {
+    padding: 1rem 1rem 0; }
+    .contactUs h3 {
+      font-size: 1rem;
+      font-weight: normal;
+      padding-bottom: .8rem;
+      border-bottom: 1px solid #fafafa; }
+    .contactUs div {
+      border: none;
+      padding: 0;
+      justify-content: space-between; }
+    .contactUs svg {
+      width: 50px; }
+    .contactUs address {
+      font-size: 24px;
+      margin: 0 .5rem;
+      white-space: nowrap; }
+
+  .buzContent {
+    width: 100%; }
+    .buzContent p {
+      padding: 0 1rem; } }
+@media (min-width: 64em) {
+  a[href^="tel:"] {
+    pointer-events: none; }
+
+  a:hover, a:active, a:focus {
+    color: #4c678b;
+    transition-duration: 1s; }
+
+  header h1 a:hover, header h1 a:active, header h1 a:focus {
+    background: #aaa;
+    background-size: auto 180px;
+    mix-blend-mode: multiply; }
+
+  nav a:hover, nav a:active, nav a:focus {
+    color: #666666;
+    text-decoration: none; }
+
+  a:hover.drawer-brand {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken; }
+
+  .nav-bar h1 a:hover, .nav-bar h1 a:active, .nav-bar h1 a:focus {
+    background: url(../img/logo-transparent.png) no-repeat;
+    background-position: center center; }
+  .nav-bar a:hover, .nav-bar a:active, .nav-bar a:focus {
+    color: #666666;
+    text-decoration: none; }
+
+  footer {
+    height: 350px; }
+    footer h2 a:hover, footer h2 a:active, footer h2 a:focus {
+      background: url(../img/logo-onwhite.png) no-repeat;
+      background-position: center top;
+      background-size: 200px;
+      color: #aaaaaa;
+      text-decoration: none; }
+    footer address {
+      margin-bottom: 4rem; }
+
+  .contactUs {
+    width: 940px; }
+    .contactUs svg {
+      width: 70px;
+      height: 70px; }
+    .contactUs h3 {
+      display: block;
+      margin: 0 auto -0.5em;
+      width: 40%;
+      z-index: 10;
+      position: relative;
+      padding: 0 1rem; }
+    .contactUs div {
+      z-index: 1;
+      position: static;
+      padding: 2rem; }
+
+  .buzContent {
+    width: 940px; } }
+
+/*# sourceMappingURL=site-style.css.map */

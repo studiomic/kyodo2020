@@ -1,0 +1,62 @@
+.news {
+  text-align: center;
+  padding-bottom: 4rem; }
+  .news img {
+    max-width: 100%;
+    height: auto; }
+
+.container {
+  line-height: 1.7; }
+
+/* File...pages-yokohama */
+.news .container {
+  text-align: left;
+  padding: 0 2rem; }
+.news article {
+  padding-top: 60px;
+  margin-top: -60px;
+  margin-bottom: 4rem; }
+  .news article h2 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1;
+    border-bottom: 1px solid rgba(40, 40, 40, 0.5);
+    margin-left: 7.5rem;
+    padding: 1rem 0 .5rem 0;
+    margin-bottom: 1rem; }
+  .news article figure, .news article p {
+    text-align: left;
+    margin-left: 7.5rem;
+    margin-bottom: 1rem; }
+  .news article figcaption {
+    text-align: center;
+    background: #f2f2f2;
+    line-height: 2; }
+.news time {
+  float: left;
+  font-family: Georgia, sans-serif;
+  line-height: 1.2;
+  background: #282828;
+  color: #fafafa;
+  border-radius: 50%;
+  width: 5.5rem;
+  height: 5.5rem;
+  display: inline-flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  text-align: center; }
+  .news time span:nth-of-type(2) {
+    font-size: 1.5rem; }
+
+/* File...common-section */
+/* File...pages-headline */
+/* File...pages-bus */
+@media (max-width: 63.99875em) {
+  .container {
+    width: 100%; } }
+@media (min-width: 64em) {
+  .container {
+    width: 940px;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=page-news.css.map */

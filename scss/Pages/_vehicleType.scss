@@ -1,0 +1,61 @@
+
+// main: ../pages-style.scss
+
+//* VEHICLE TYPE
+//----------------------------------------------------*/
+//* Diagonal W Line Heading
+//----------------------------------------------------*/
+// .us h3,
+.vehicleType h4 {
+	@include Wline;
+	&::before,&::after {
+		@include Wline-ba;
+	}
+	&::before {
+		background: rgb(195, 216, 199);//#C3D8C7;
+	}
+	&::after {
+		background: rgb(219, 197, 201);//#DBC5C9;
+	}
+}
+
+.equipment,
+.vehicleType {
+	display: flex;
+	@include flex1300;
+	img {
+		width: $sm-width;
+	}
+}
+
+.vehicleType {
+	flex-wrap: wrap;
+	h4 {
+		background: $green;
+	}
+	p {
+		padding: 1rem 1rem 2rem;
+		text-align: left;
+		line-height: 1.6;
+	}
+}
+
+//* VEHICLE LIST
+//----------------------------------------------------*/
+.vehicleList {
+	display: flex;
+	flex-wrap: wrap;
+	width: $sm-width;
+	margin-bottom: 6rem;
+	dt,dd {
+		border: 1px solid $col-F;
+		padding: 1rem .5rem;
+		background: $col-F5;
+	}
+}
+
+// .vehicleType {
+// 	img {
+// 		width: $sm-width;
+// 	}
+//

@@ -1,0 +1,195 @@
+
+//* @media SM
+//----------------------------------------------------*/
+// @media (min-width:40em) {}//640px
+@media (max-width:63.99875em) {
+	// FRONT
+	.warehouse,
+	.salesOffice {
+		.flex {
+			flex-direction: column;
+		}
+	}
+
+	.greenSafety {
+		.flex {
+			flex-direction: column;
+			section {
+				width: $sm-width;
+			}
+		}
+	}
+
+	.joinFront {
+		section {
+			margin: 1rem 1.5rem 1.5rem 1.5rem;
+		}
+		div {
+			position: relative;
+			width: $sm-width;
+			height: 400px;
+			// border: 1px solid $purple;
+
+			// margin: -4rem 0 0 -2rem;
+		// }
+			&::before,&::after {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 310px;
+				height: 310px;
+				border-radius: 50%;
+				background-size: cover;
+				// background-size: cover;
+				background-position: center center;
+
+			}
+			&::before {
+				background: url(../img/person-m.png)no-repeat;
+				right: 5px;
+				top: 60px;
+			}
+			&::after {
+				background: url(../img/person-f.png)no-repeat;
+				left: 5px;
+				top: 0px;
+			}
+
+
+
+
+		}
+
+
+	}
+
+
+}
+
+
+//* share-base ANCHOR
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.introduction {
+		div {
+			width: $main-width;
+			margin: 0 auto;
+		}
+	}
+
+
+	//* Page-Section.scss
+	//----------------------------------------------------*/
+	.newsFront {
+		flex-direction: row;
+		article {
+			width: 50%;
+			text-align: center;
+			padding: 4rem 0;
+		}
+		article:nth-of-type(1) {
+			font-size: 2.5rem;
+			text-align: left;
+			line-height: 2;
+			text-shadow: 0 2px 5px #000;
+			font-family: $fontFamilyMIN;
+			font-weight: 500;
+			p {
+				text-align: left;
+				padding: 5rem 10rem 0;
+			}
+		}
+	} //.newsFront
+
+
+	// FRONT
+		.warehouse,
+		.salesOffice {
+			// text-align: center;
+			// margin-top: 4rem;
+			.flex {
+				margin: 0 auto;
+				max-width: 1300px;
+				justify-content: center;
+				flex-wrap: wrap;
+				article {
+					// width: 30%;
+					margin: 0 1% 2rem;
+				}
+			}
+		}
+		.salesOffice {
+			article {
+				width: 30%;
+				// margin: 0 1% 2rem;
+			}
+		}
+		.warehouse {
+			article {
+				width: 45%;
+				// margin: 0 1% 2rem;
+			}
+
+		}
+
+	.greenSafety {
+		width: $main-width;
+		.flex {
+			justify-content:space-between;
+			section {
+				width: 32%;
+			}
+		}
+	}
+
+
+	.joinFront {
+		text-align: center;
+		margin: 0 auto;
+		width: $main-width;
+		position: relative;
+		div {
+			position: relative;
+			margin: -4rem 0 0 -2rem;
+			p {
+				display: none;
+			}
+			&::before,&::after {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 400px;
+				height: 400px;
+				border-radius: 50%;
+				background-size: cover;
+			}
+			&::before {
+				background: url(../img/person-m.png)no-repeat;
+				left: 150px;
+				top: 80px;
+			}
+			&::after {
+				background: url(../img/person-f.png)no-repeat;
+				left: 0px;
+				top: 0px;
+			}
+		}
+		section {
+			border-radius: 50%;
+			background: rgba(255,255,255,.8);
+			margin-left: 440px;
+			padding: 4rem 0 4rem 4rem;
+		}
+	}
+	.contactUs {
+		.atto {
+			&:hover, &:active, &:focus {
+				fill: $col-aa;
+			}
+		}
+	}
+
+
+
+
+}

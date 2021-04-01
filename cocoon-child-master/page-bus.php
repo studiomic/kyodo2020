@@ -4,6 +4,8 @@ Template Name: bus
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-bus.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="pb4" id="bus">
 	<!-- SLUG-POST -->
 	<?php

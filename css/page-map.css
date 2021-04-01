@@ -1,0 +1,104 @@
+.flex {
+  display: flex; }
+
+.accessMap h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6); }
+
+/* File...pages-yokohama */
+.accessMap {
+  text-align: center;
+  padding-bottom: 4rem; }
+
+.FourMap {
+  margin: 0;
+  padding: 0; }
+  .FourMap div {
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+    height: 480px; }
+    .FourMap div a {
+      display: block;
+      position: absolute; }
+
+.kogaMap, .atsugiMap, .busMap, .yokohamaMap {
+  width: 200px;
+  height: 45px; }
+
+.kogaMap {
+  top: 0; }
+
+.atsugiMap {
+  top: 200px; }
+
+.busMap {
+  top: 286px; }
+
+.yokohamaMap {
+  top: 390px; }
+
+.kogaPin, .atsugiPin, .busPin, .yokohamaPin {
+  border-radius: 50%; }
+
+.kogaPin, .atsugiPin {
+  width: 40px;
+  height: 40px; }
+
+.busPin, .yokohamaPin {
+  width: 34px;
+  height: 34px; }
+
+.kogaPin {
+  top: 8px;
+  left: 595px; }
+
+.atsugiPin {
+  top: 335px;
+  left: 416px; }
+
+.busPin {
+  top: 380px;
+  left: 468px; }
+
+.yokohamaPin {
+  top: 400px;
+  left: 495px; }
+
+.accessMap .map {
+  width: 70%; }
+.accessMap .route {
+  width: 30%;
+  background: #f2f2f2;
+  padding: 0 0 1px 1px; }
+  .accessMap .route div {
+    background: #fff;
+    padding: 1rem; }
+    .accessMap .route div p {
+      text-align: left; }
+.accessMap .flex address {
+  background: #fafafa;
+  line-height: 1.7; }
+.accessMap h3 {
+  text-align: center;
+  padding: 1rem; }
+.accessMap address {
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: left; }
+.accessMap svg {
+  width: 18px;
+  height: 18px;
+  margin: 10px 0; }
+
+/* File...common-section */
+/* File...pages-headline */
+/* File...pages-bus */
+/* File...share-media */
+/* File...media */
+
+/*# sourceMappingURL=page-map.css.map */

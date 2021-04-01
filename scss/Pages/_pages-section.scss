@@ -1,11 +1,15 @@
 // main: ../pages-style.scss
 
-.accessMap,
-.Front,.news,
+// .company,
+.Front,
 .transport,
 .privacy-policy,
-.join,.contact,.company,
-.koga,.yokohama,.atsugi {
+.join,.contact,
+.koga,
+// .accessMap,
+// .yokohama,
+// .news,
+.atsugi {
 	text-align: center;
 	padding-bottom: 4rem;
 }
@@ -23,6 +27,7 @@
 .greenSafety h2,
 .joinFront h2,
 .Front .buzContent h2 {
+// .Front .wrapper h2 {
 	font-family: $fontFamilyMIN;
 }
 

@@ -1,0 +1,182 @@
+/* File...common */
+* main > h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 4rem auto; }
+
+.company {
+  text-align: center;
+  padding-bottom: 4rem; }
+
+.ceo-message section {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.companyHistory h2,
+.qualityManagement h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6); }
+
+.qualityManagement h2 {
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6); }
+
+.companyHistory h2 {
+  border-bottom: 3px solid rgba(132, 160, 198, 0.6); }
+
+.basicPrinciple h2,
+.ceo-message h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(226, 120, 120, 0.6); }
+
+/* File...pages-company */
+.companyHistory dl,
+.overview dl {
+  margin: 0 auto 4rem;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 1.7;
+  align-items: stretch; }
+
+.overview {
+  text-align: left;
+  width: 100%;
+  margin: 0 auto; }
+  .overview dt {
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+  .overview ul {
+    margin-left: 1.5rem; }
+
+.office h2 {
+  font-size: 1rem;
+  font-weight: normal; }
+.office p {
+  padding: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.office p:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+.ceo-message .wrapper {
+  background: rgba(180, 190, 130, 0.5);
+  background: rgba(226, 164, 120, 0.3);
+  text-align: center;
+  padding: 2rem; }
+.ceo-message section {
+  width: 100%; }
+.ceo-message p {
+  text-align: left;
+  padding: 1rem 2rem;
+  line-height: 1.7; }
+
+.ceo-message, .qualityManagement, .basicPrinciple, .companyHistory {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; }
+
+.basicPrinciple h3,
+.qualityManagement h3 {
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 1rem; }
+  .basicPrinciple h3:before, .basicPrinciple h3:after,
+  .qualityManagement h3:before,
+  .qualityManagement h3:after {
+    font-size: 2.2rem;
+    font-weight: 500;
+    vertical-align: -0.25rem; }
+  .basicPrinciple h3:before,
+  .qualityManagement h3:before {
+    content: "< "; }
+  .basicPrinciple h3:after,
+  .qualityManagement h3:after {
+    content: " >"; }
+
+.basicPrinciple article p,
+.qualityManagement article p {
+  text-align: left;
+  border-radius: 8px;
+  padding: 2rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  position: relative; }
+
+.qualityManagement h3:before, .qualityManagement h3:after {
+  color: #89b8c2; }
+.qualityManagement article p {
+  background: rgba(137, 184, 194, 0.1); }
+  .qualityManagement article p:before {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    position: absolute;
+    top: -2.5rem;
+    color: #89b8c2; }
+.qualityManagement article p:nth-of-type(1):before {
+  content: "1."; }
+.qualityManagement article p:nth-of-type(2):before {
+  content: "2."; }
+.qualityManagement article p:nth-of-type(3):before {
+  content: "3."; }
+.qualityManagement article p:nth-of-type(4):before {
+  content: "4."; }
+
+.basicPrinciple h3:before, .basicPrinciple h3:after {
+  color: #e27878; }
+.basicPrinciple article p {
+  background: rgba(226, 120, 120, 0.1); }
+.basicPrinciple article span {
+  padding-left: 1rem; }
+
+.companyHistory dt, .companyHistory dd {
+  text-align: left; }
+.companyHistory dt {
+  font-weight: 500;
+  border-bottom: 2px solid rgba(132, 160, 198, 0.4); }
+
+@media (min-width: 64em) {
+  .overview, .qualityManagement, .basicPrinciple, .companyHistory {
+    width: 940px; }
+
+  .overview {
+    width: 940px; }
+    .overview dl {
+      width: 70%; }
+    .overview dt, .overview dd {
+      padding: 1rem 0 1rem 1rem; }
+    .overview dt {
+      width: 20%;
+      font-weight: 500; }
+    .overview dd {
+      width: 80%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+  .companyHistory dl {
+    width: 70%; }
+  .companyHistory dt, .companyHistory dd {
+    padding: 1rem 0 1rem 1rem; }
+  .companyHistory dt {
+    width: 30%;
+    font-weight: 500; }
+  .companyHistory dd {
+    width: 70%;
+    border-bottom: 1px solid rgba(132, 160, 198, 0.2); }
+
+  .ceo-message .wrapper section {
+    width: 940px;
+    margin: 0 auto; } }
+/* File...wapper */
+/* File...pages-section */
+
+/*# sourceMappingURL=page-company.css.map */

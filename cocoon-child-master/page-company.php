@@ -4,6 +4,8 @@ Template Name: company
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-company.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="company">
 	<!-- SLUG-POST -->
 	<?php

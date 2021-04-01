@@ -1,5 +1,6 @@
-// main: ./pages-style.scss
-// main: ./blog-style.scss
+// main: ../site-style.scss
+// main: ../pages-style.scss
+// main: ./Rewrite.scss
 
 //* @media SM
 //----------------------------------------------------*/
@@ -9,7 +10,6 @@
 		max-width: $sm-width;
 	}
 	//* header-SHARE
-
 	//* FOOTER
 	footer {
 		min-height: 240px;
@@ -20,11 +20,6 @@
 			a {
 				background-size: 150px;
 				padding: 90px 1rem 0;
-				// &:hover, &:active, &:focus {
-				// 	background-size: 150px;
-				// 	color: $col-aa;
-				// 	text-decoration: none;
-				// }
 			}
 		}
 		address {
@@ -35,7 +30,6 @@
 			padding-bottom: 1rem;
 		}
 	} //* FOOTER
-
 
 	//* contactUs
 	.contactUs {
@@ -54,41 +48,107 @@
 		svg {
 			width: 50px;
 		}
-		// .atto {
-		// 	&:hover, &:active, &:focus {
-		// 		height: 50px;
-		// 	}
-		// }
 		address {
 			font-size: 24px;
 			margin: 0 .5rem;
 			white-space: nowrap;
 		}
 	} //contactUs
+	.buzContent {
+		width: $sm-width;
+		p {
+			padding: 0 1rem;
+		}
+	}
+
 } //* @media SM
 
 
-//* @media MD 1024
+
+//* share-base ANCHOR
 //----------------------------------------------------*/
 @media (min-width:64em) {
 	a[href^="tel:"]{
     pointer-events: none;
 	}
+
+	//* ANCHOR
+	a {
+		&:hover, &:active, &:focus {
+			color: $hover-color;
+			transition-duration: 1s;
+		}
+	}
+
+	//* HEADER
+	header {
+		h1 {
+			a {
+				&:hover, &:active, &:focus {
+					background: #aaa;
+					background-size: auto 180px;
+					mix-blend-mode: multiply;
+				}
+			}
+		}
+	}
+
+	//* DRAWER + MAIN NAV SHARE STYLE
+	nav {
+		a {
+			&:hover, &:active, &:focus {
+				color: $col-66;
+				text-decoration: none;
+			}
+		}
+	}
+	a:hover.drawer-brand {
+		background-color: rgba(0, 0, 0, 0.6);
+		background-blend-mode: darken;
+	}
+
+	//* 2ND NAV BAR
+	.nav-bar {
+		h1 {
+			a {
+				&:hover, &:active, &:focus {
+					background: url(../img/logo-transparent.png)no-repeat;
+					background-position: center center;
+				}
+			}
+		}
+		a {
+			&:hover, &:active, &:focus {
+				color: $col-66;
+				text-decoration: none;
+			}
+		}
+	}
+	//* FOOTER
 	footer {
 		height: 350px;
+		h2 {
+			a {
+				&:hover, &:active, &:focus {
+					background: url(../img/logo-onwhite.png)no-repeat;
+					background-position: center top;
+					background-size: 200px;
+					color: $col-aa;
+					// color: #4A4A4A;
+					text-decoration: none;
+				}
+			}
+		}
 		address {
 			margin-bottom: 4rem;
 		}
 	}
-
+	//* contactUs
 	.contactUs {
 		width: 940px;
 		svg {
 			width: 70px;
 			height: 70px;
-			// width: 110px;
-			// height: 110px;
-			// fill: $purple;
 		}
 		h3 {
 			display: block;
@@ -104,18 +164,9 @@
 			padding: 2rem;
 		}
 	}
-	#bus {
-		svg {
-			width: 85px;
-			height: 85px;
-		}
-		.phone {
-			width: 120px;
-			height: auto;
-		}
+	//* buzContent
+	.buzContent {
+		width: $main-width;
 	}
-} //@media MD 1024
 
-//* @media LG 1200
-//----------------------------------------------------*/
-// @media (min-width:75em) {}
+}

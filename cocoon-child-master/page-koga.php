@@ -4,6 +4,8 @@ Template Name: koga
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-koga.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="koga">
 	<h1>古河営業所</h1>
 	<div class="mixB4">

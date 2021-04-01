@@ -4,6 +4,8 @@ Template Name: join
 */
 ?>
 <?php get_template_part('pages/ind-header'); ?>
+	<link rel="stylesheet" href="/wp/css/page-join.css">
+<?php get_template_part('pages/ind-nav'); ?>
 <main role="main" class="join">
 	<section class="title-group">
 		<h1>採用情報</h1>

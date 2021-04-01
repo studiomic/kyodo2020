@@ -2,8 +2,9 @@
 # cache = false
 #asset_cache_buster :none
 
-
 http_path = "/"
+project_path = "kyodo2020"
+# cache_dir = "/.sass-cache"
 css_dir = "css"
 sass_dir = "sass"
 images_dir = "img"
@@ -17,6 +18,5 @@ line_comments = false
 
 # Disable .sass-cache
 cache = false
-
 
 # add_import_path "/Users/sakuraiizuka/Sites/JNL/Web/"

@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* File...common */
+.wrapper {
+  width: 100%; }
+
+.flex {
+  display: flex; }
+
+.buzContent h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  margin: 4rem auto;
+  display: inline-block;
+  line-height: 2;
+  border-bottom: 3px solid rgba(137, 184, 194, 0.6); }
+
+/* File...pages-yokohama */
+.atsugi .headline {
+  background: url(../img/atsugi/0583.JPG) no-repeat;
+  background: url(../img/atsugi/0588.JPG) no-repeat;
+  background: url(../img/atsugi/0571.JPG) no-repeat;
+  background: url(../img/atsugi/0577.JPG) no-repeat;
+  background: url(../img/atsugi/0578.JPG) no-repeat;
+  background: url(../img/atsugi/0576.JPG) no-repeat;
+  background: url(../img/atsugi/6795.JPG) no-repeat;
+  background: url(../img/atsugi/0580.JPG) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  mix-blend-mode: hard-light;
+  color: #fafafa; }
+.atsugi .vehicleType h4 {
+  background: rgba(0, 0, 0, 0.9); }
+
+.atsugi-photo {
+  width: 100%;
+  overflow: hidden;
+  text-align: center; }
+  .atsugi-photo img {
+    width: 640px; }
+  .atsugi-photo article {
+    width: 940px;
+    margin: 4rem auto;
+    padding: 1rem;
+    position: relative; }
+    .atsugi-photo article:before, .atsugi-photo article:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      bottom: 0;
+      display: block;
+      width: 50%;
+      z-index: 0; }
+    .atsugi-photo article h3, .atsugi-photo article p {
+      text-align: left; }
+    .atsugi-photo article h3 {
+      font-weight: normal;
+      text-align: center;
+      padding: 1rem 0;
+      margin-bottom: 1rem; }
+    .atsugi-photo article p {
+      margin-bottom: 1rem; }
+  .atsugi-photo article:nth-child(odd) {
+    background: #dfe5ef; }
+    .atsugi-photo article:nth-child(odd)::before {
+      background: #dfe5ef;
+      left: -50%; }
+    .atsugi-photo article:nth-child(odd) h3, .atsugi-photo article:nth-child(odd) p {
+      margin-right: 1rem; }
+    .atsugi-photo article:nth-child(odd) h3 {
+      background: #eef1f6;
+      background: #fcfcfc; }
+  .atsugi-photo article:nth-child(even) {
+    background: #eef1f6; }
+    .atsugi-photo article:nth-child(even)::after {
+      background: #eef1f6;
+      right: -50%; }
+    .atsugi-photo article:nth-child(even) h3, .atsugi-photo article:nth-child(even) p {
+      margin-left: 1rem; }
+    .atsugi-photo article:nth-child(even) h3 {
+      background: #dfe5ef;
+      background: #fcfcfc; }
+  .atsugi-photo .flex {
+    width: 908px;
+    z-index: 1; }
+
+/* File...common-section */
+.mixB {
+  background: #161822; }
+
+.mixB4 {
+  background: rgba(43, 85, 136, 0.7); }
+
+.mixY {
+  background: rgba(22, 24, 34, 0.7); }
+
+.buzContent {
+  margin: 0 auto; }
+  .buzContent p {
+    text-align: left;
+    margin-bottom: 1rem;
+    line-height: 1.7; }
+  .buzContent ul {
+    text-align: left; }
+
+/* File...pages-headline */
+.busFront .headline, .shipping .headline, .warehouse .headline, .yokohama .headline, .atsugi .headline, .koga .headline {
+  position: relative;
+  text-align: left;
+  background-size: cover; }
+  .busFront .headline h2, .shipping .headline h2, .warehouse .headline h2, .yokohama .headline h2, .atsugi .headline h2, .koga .headline h2 {
+    font-weight: normal;
+    font-size: 3rem;
+    font-size: 2.5rem;
+    line-height: 1.7; }
+
+.warehouse .headline {
+  text-align: center; }
+
+.busFront .headline,
+.warehouse .headline, .shipping .headline {
+  overflow: hidden;
+  mix-blend-mode: hard-light;
+  height: 400px;
+  color: #fafafa;
+  font-size: 1.2rem; }
+  .busFront .headline h3,
+  .warehouse .headline h3, .shipping .headline h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #fafafa;
+    display: inline-block;
+    margin: 4rem 0 .5rem; }
+
+.yokohama .headline, .atsugi .headline, .koga .headline {
+  height: 500px;
+  padding: 2rem 0 0 2rem;
+  animation-delay: 1.5s;
+  animation: SlideIn 1.5s; }
+  .yokohama .headline h2, .atsugi .headline h2, .koga .headline h2 {
+    opacity: 0; }
+  .yokohama .headline address, .atsugi .headline address, .koga .headline address {
+    opacity: 0;
+    background: rgba(76, 103, 139, 0.5);
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: #fafafa;
+    line-height: 1.7;
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.6); }
+    .yokohama .headline address a, .atsugi .headline address a, .koga .headline address a {
+      color: #fafafa; }
+
+/* CSSアニメーションの指定 */
+.yokohama .mixB, .yokohama .mixB4, .atsugi .mixB, .atsugi .mixB4, .koga .mixB, .koga .mixB4 {
+  animation: SlideIn .4s; }
+.yokohama .headline h2, .atsugi .headline h2, .koga .headline h2 {
+  animation-delay: 2s;
+  animation: SlideUp 2s;
+  animation-fill-mode: forwards; }
+.yokohama .headline address, .atsugi .headline address, .koga .headline address {
+  animation-delay: 4s;
+  animation: FideIn 1.5s;
+  animation-fill-mode: forwards; }
+
+/* @keyframes */
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); }
+  50% {
+    opacity: 0;
+    transform: translateY(150%); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes FideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100); }
+  80% {
+    opacity: 0;
+    transform: translateX(100); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+@keyframes SlideCin {
+  0% {
+    background: #161822;
+    transform: translateX(-100%); }
+  99% {
+    background: #161822; }
+  100% {
+    background: rgba(43, 85, 136, 0.6);
+    transform: translateX(0); } }
+.fadeInBB {
+  animation: SlideCin 1s;
+  animation-fill-mode: both; }
+
+.fadeInX {
+  animation-delay: 8s;
+  animation: SlideIn 2s;
+  animation-timing-function: ease-in-out; }
+
+/* @keyframes */
+@keyframes Reverse {
+  100% {
+    opacity: 0;
+    transform: translateX(-100%); } }
+/* File...pages-bus */
+.vehicleType h4 {
+  overflow: hidden;
+  align-items: center;
+  color: #fafafa;
+  margin-top: .5rem;
+  line-height: 3;
+  display: flex;
+  border-radius: 2px; }
+  .vehicleType h4::before, .vehicleType h4::after {
+    content: '';
+    flex: 1;
+    padding: 1px 0;
+    height: 0;
+    transform: rotate(45deg); }
+  .vehicleType h4::before {
+    background: #c3d8c7; }
+  .vehicleType h4::after {
+    background: #dbc5c9; }
+
+.equipment,
+.vehicleType {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1300px; }
+  .equipment img,
+  .vehicleType img {
+    width: 100%; }
+
+.vehicleType {
+  flex-wrap: wrap; }
+  .vehicleType h4 {
+    background: #b4be82; }
+  .vehicleType p {
+    padding: 1rem 1rem 2rem;
+    text-align: left;
+    line-height: 1.6; }
+
+.vehicleList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 6rem; }
+  .vehicleList dt, .vehicleList dd {
+    border: 1px solid #fff;
+    padding: 1rem .5rem;
+    background: whitesmoke; }
+
+@media (min-width: 64em) {
+  .vehicleType section {
+    width: 32%; }
+
+  address {
+    bottom: -1.5rem;
+    right: 1rem; } }
+/* File...share-media */
+/* File...media */
+
+/*# sourceMappingURL=page-atsugi.css.map */

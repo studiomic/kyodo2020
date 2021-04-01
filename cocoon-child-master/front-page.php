@@ -12,59 +12,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 	<script src="/wp/js/nav.js"></script>
 	<script src="/wp/js/scroll.js"></script>
-	<link rel="stylesheet" href="/wp/css/pages-style.css">
-</head>
-
-<body class="drawer drawer--top">
-	<header role="banner">
-		<nav class="nav-bar">
-			<h1><a href="<?php echo site_url(); ?>">株式会社共同</a></h1>
-			<ul>
-				<li><a href="<?php echo site_url(); ?>/company">会社概要</a></li>
-				<li><a href="<?php echo site_url(); ?>/#transport">運送・貨物・倉庫</a></li>
-				<li><a href="<?php echo site_url(); ?>/bus">旅客事業部</a></li>
-				<li><a href="<?php echo site_url(); ?>/join">採用情報</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">アクセスマップ</a></li>
-			</ul>
-		</nav>
-
-		<h1><a href="<?php echo site_url(); ?>">Kyoudou</a></h1>
-		<nav class="main-nav">
-			<ul>
-				<li><a href="<?php echo site_url(); ?>/company">company</a></li>
-				<li><a href="<?php echo site_url(); ?>#transport">works</a></li>
-				<li><a href="<?php echo site_url(); ?>/bus">passenger bus</a></li>
-				<li><a href="<?php echo site_url(); ?>/join">join us</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">Access Map</a></li>
-			</ul>
-		</nav>
-
-		<button type="button" class="drawer-toggle drawer-hamburger">
-			<span class="sr-only">toggle navigation</span>
-			<span class="drawer-hamburger-icon"></span>
-		</button>
-		<nav class="drawer-nav" role="navigation">
-			<ul class="drawer-menu">
-				<li><a class="drawer-brand" href="<?php echo site_url(); ?>">Kyoudou</a></li>
-				<li><a href="<?php echo site_url(); ?>#transport">物流・運送・貨物事業</a></li>
-				<li><a href="<?php echo site_url(); ?>/yokohama">横浜営業所</a></li>
-				<li><a href="<?php echo site_url(); ?>/atsugi">厚木営業所</a></li>
-				<li><a href="<?php echo site_url(); ?>/koga">古河営業所</a></li>
-				<li><a href="<?php echo site_url(); ?>/bus">旅客事業部</a></li>
-				<li><a href="<?php echo site_url(); ?>/news">NEWS</a></li>
-				<li><a href="<?php echo site_url(); ?>/company">会社概要</a></li>
-				<li><a href="<?php echo site_url(); ?>/join">採用情報</a></li>
-				<li><a href="<?php echo site_url(); ?>/contact">お問い合わせ</a></li>
-				<li><a href="<?php echo site_url(); ?>/privacy-policy">プライバシーポリシー</a></li>
-				<li><a href="<?php echo site_url(); ?>/map">Access Map</a></li>
-			</ul>
-		</nav>
-  </header>
+	<link rel="stylesheet" href="/wp/css/site-style.css">
+	<link rel="stylesheet" href="/wp/css/site-front.css">
+<?php get_template_part('pages/ind-nav'); ?>
 
 	<main role="main" class="Front">
 		<section class="newsFront">
 			<article>
-				<p>創業<span>25</span>周年<br>東京、神奈川、関東圏に強い物流会社で<br>若さ、やる気、お待ちしています。</p>
+				<p>創業<span>25</span>年<br>共同　KYOUDOU<br>感謝、感動、希望の会社</p>
+				<!-- <p>創業<span>25</span>年<br>共同は<br>神奈川・首都圏中心の<br>総合物流企業です。</p> -->
 			</article>
 
 			<article>
@@ -98,6 +54,17 @@
 			<!-- SLUG-POST -->
 			</article>
 		</section>
+<!--
+		<section class="introduction">
+			<div>
+				<p>
+					株式会社共同のホームページをご覧いただき、誠にありがとうご ざいます。<br>
+					共同は社会と共に人と貨物を通して、感謝・感動・希望の会社を目指して25年を迎えました。<br>
+					共同は従業員と共に働きやすい、明るい、健康で安全な職場、そしてご家族にも安心していただける会社を目指しています。<br>
+					共同はお客様のために、ロジスティクスと旅客輸送の安全と品質を高め、多様化するお客様の変化とニーズに応える会社を目指します。
+				</p>
+			</div>
+		</section> -->
 
 		<section class="transport" id="transport">
 			<h1>物流・運送・貨物事業</h1>
@@ -108,7 +75,7 @@
 							<div class="flex">
 							<article>
 								<h3>拠点</h3>
-								<p>横浜営業所（神奈川県横浜市）<br>厚木営業所（神奈川県厚木市）<br>古河営業所（茨城県古河市）</p>
+								<p>横浜営業所（横浜市栄区）<br>厚木営業所（厚木市上依知）<br>古河営業所（茨城県古河市）</p>
 							</article>
 							<article>
 								<h3>配送</h3>
@@ -125,38 +92,84 @@
 						自動車フレーム（トラックシャシー）輸送を専属で行なっている厚木営業所では、上依知車庫にある大型倉庫をクライアントの外部倉庫として部品ストックなどにご活用いただいております。<br>
 						古河の説明が抜けている。UNICクレーンや、巡回健康診断車などの話も、運送事業部のトップで説明する。
 					</p>
-					<ul>
-						<li>各種輸送業務 ー 自動車部品・鉄鋼製品・自衛隊関係・米軍関係・住宅建材・輸送機器・メディカル品・米穀・たばこ・廃家電</li>
-						<li>検診車業務</li>
-						<li>自動車部品 ー 保管、入出庫、管理業務</li>
-						<li>物流センター業務</li>
-						<li>サブリース業</li>
-						<li>輸入家具 ー 保管・輸送</li>
-					</ul>
 				</section>
+<!--
+				<section class="buscon">
+					<article>
+						<h3>横浜営業所（横浜市栄区）</h3>
+						<ul>
+							<li>大型（ウイング車・平ボディ車）輸送</li>
+							<li>中型（ユニック車）機械等の区域輸送</li>
+							<li>小型（パワーゲート車）精密機械等輸送</li>
+							<li>産業廃棄物収取運搬業務</li>
+							<li>車両運行管理業務（健康診断車）</li>
+							<li>施設・倉庫賃賃貸業務</li>
+						</ul>
+					</article>
+					<article>
+						<h3>厚木営業所（厚木市上依知）</h3>
+						<ul>
+							<li>大型（平ボディ車）自動車部品等輸送</li>
+							<li>3,000坪の施設での保管・荷役・管理業務</li>
+						</ul>
+					</article>
+					<article>
+						<h3>古河営業所（茨城県古河市）</h3>
+						<ul>
+							<li>大型（ウイング車・平ボディ車）輸送</li>
+							<li>営業所施設1000坪内　営業倉庫200坪</li>
+							<li>駐車場・資材等置き場　500坪</li>
+							<li>保管・荷役・在庫管理・施設賃貸業務</li>
+						</ul>
+					</article>
+				</section>
+-->
 
 				<section class="salesOffice">
 					<section class="flex">
 						<article>
 							<a href="<?php echo site_url(); ?>/yokohama">
-								<!-- <img src="/wp/img/yokohama/yokohama-27.jpg"> -->
-								<img src="/wp/img/yokohama/0554.JPG">
+								<img src="/wp/img/thumbnail-yokohama.jpg">
 								<h3><span>横浜営業所</span></h3></a>
-							<p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p>
+								<h4>サービス概要</h4>
+								<ul>
+									<li>大型（ウイング車・平ボディ車）輸送</li>
+									<li>中型（ユニック車）機械等の区域輸送</li>
+									<li>小型（パワーゲート車）精密機械等輸送</li>
+									<li>産業廃棄物収取運搬業務</li>
+									<li>車両運行管理業務（健康診断車）</li>
+									<li>施設・倉庫賃貸借業務</li>
+								</ul>
+
+								<!-- <p>24時間車両を集中管理できる整備工場スペースを有する横浜営業所では、精密機器輸送・食品・飲料・衣料品など企業様の物流を中心に個人宅の引越しまで、あらゆる商品とニーズに対応できる車両を幅広く揃え、地場輸送・長距離輸送ともに、オールマイティーにお客様のご依頼に応えています。</p> -->
 						</article>
 						<article>
 							<a href="<?php echo site_url(); ?>/atsugi">
-								<!-- <img src="/wp/img/atsugi/forklift.png"> -->
-								<img src="/wp/img/atsugi/6795.JPG">
+								<img src="/wp/img/thumbnail-atsugi.jpg">
 								<h3><span>厚木営業所</span></h3></a>
-							<p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
-							<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p>
+								<h4>サービス概要</h4>
+								<ul>
+									<li>大型（平ボディ車）自動車部品等輸送</li>
+									<li>3,000坪の施設での保管・荷役・管理業務</li>
+								</ul>
+
+
+								<!-- <p>1,000坪以上のフリースペースを確保した厚木市・上依知車庫では、武部鉄工所製作による日野自動車と三菱自動車のトラックシャシーを各メーカー様へ納入しております。</p>
+								<p>また大型倉庫はお客様の外部倉庫として部品ストックなどに活用していただいています。</p> -->
 						</article>
 						<article>
 							<a href="<?php echo site_url(); ?>/koga">
-								<img src="/wp/img/koga/gm4.png">
+								<img src="/wp/img/thumbnail-koga.jpg">
 								<h3><span>古河営業所</span></h3></a>
-							<p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+								<h4>サービス概要</h4>
+								<ul>
+									<li>大型（ウイング車・平ボディ車）輸送</li>
+									<li>営業所施設1000坪内　営業倉庫200坪</li>
+									<li>駐車場・資材等置き場　500坪</li>
+									<li>保管・荷役・在庫管理・施設賃貸業務</li>
+								</ul>
+
+								<!-- <p>古河営業所説明。吾輩は猫である。名前はまだ無い。どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p> -->
 						</article>
 						<article>
 							<a href="<?php echo site_url(); ?>/yokohama#equipment">

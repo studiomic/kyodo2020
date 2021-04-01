@@ -1,0 +1,172 @@
+// compileExpanded: ../css/$1.css
+// compileCompressed: ../css/$1.css
+
+@charset "utf-8";
+
+//* IMPORT variables FILES
+//----------------------------------------------------*/
+@import "extend-color";
+@import "mixin";
+@import "fontfamily";
+
+//* IMPORT MODULE FILES
+//----------------------------------------------------*/
+.container { //width: 940px;
+	// margin: 0 auto;
+	line-height: 1.7;
+}
+
+.title-group {
+	padding: 2rem;
+	margin-bottom: 2rem;
+	h1 {
+		font-weight: normal;
+		font-size: 3rem;
+	}
+	p {
+		font-size: 1.4rem;
+	}
+}
+
+
+.us,
+.working {
+	display: flex;
+	margin: 0 auto;
+}
+.us {
+	img {
+		width: $sm-width;
+	}
+}
+
+/* File...common-inpage */
+@import "common/common-inpage";
+
+/* File...pages-join */
+@import "Pages/join";
+
+//* Diagonal W Line Heading
+//----------------------------------------------------*/
+.us h3 {
+	@include Wline;
+	&::before,&::after {
+		@include Wline-ba;
+	}
+	&::before {
+		background: rgb(195, 216, 199);//#C3D8C7;
+	}
+	&::after {
+		background: rgb(219, 197, 201);//#DBC5C9;
+	}
+}
+
+
+// .warehouse .flex h3,
+// .salesOffice h3
+.working h4 {
+	color: $col-Fa;
+	font-weight: normal;
+	line-height: 5;
+	position: relative;
+	margin-bottom: 1rem;
+	&::before,&::after {
+		position: absolute;
+		content: '';
+		width: 50%;
+		display: block;
+	}
+	&::before {
+		top: 1rem;
+		right: 5%;
+	}
+	&::after {
+		left: 5%;
+		bottom: 1rem;
+	}
+}
+
+
+
+
+//* @media SM
+//----------------------------------------------------*/
+@media (max-width:63.99875em) {
+	.us {
+		flex-direction: column;
+		section {
+			width: $sm-width;
+		}
+	}
+	// JOIN
+	.equipment,
+	.working	{
+		flex-direction: column;
+		section {
+			width: $sm-width;
+		}
+	}
+}
+
+//* @media MD 1024
+//----------------------------------------------------*/
+@media (min-width:64em) {
+	.container {
+		margin: 0 auto;
+		width: $main-width;
+	}
+	//* JOIN
+	//----------------------------------------------------*/
+	.join {
+		.inpage {
+			li:nth-of-type(2) {
+				flex-grow: 2;
+				margin: 0 1rem;
+			}
+		}
+	}
+	.us {
+		width: 90%;
+		max-width: 1300px;
+		section {
+			// width: 32%;
+			width: 32%;
+			margin: 0 1% 2rem;
+		}
+	}
+	.working	{
+		width: $sm-width;
+		max-width: 1300px;
+		section {
+			width: 24%;
+			margin: 2rem 1%;
+		}
+	}
+	// JOIN
+		.recruitment {
+			width: 600px;
+			max-width: $main-width;
+			// margin: 0 auto 4rem;
+			// margin-top: 4rem;
+		}
+	.inpage {
+		li {
+			border: 1px solid $col-cc;
+			position: relative;
+			a {
+				padding: 2rem 4rem;
+				&:hover {
+					@include fina-hover;
+				}
+				&::before {
+					@include fina-before;
+				}
+				&:hover::before {
+					@include fina-hover-before;
+				}
+			}
+		}
+	}
+
+
+}
